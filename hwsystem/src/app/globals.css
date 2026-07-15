@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+ * HWSystem design tokens — docs/DESIGN.md
+ * Industrial premium: ink/steel/concrete + single signal accent (< 5% of screen).
+ */
+@theme {
+  --color-ink: #101418;
+  --color-steel: #5a6673;
+  --color-mist: #9aa3ad;
+  --color-concrete: #f4f5f6;
+  --color-line: #e2e5e8;
+  --color-signal: #d93a1e;
+  --color-signal-hover: #bf3018;
+  --color-success: #1d7a4d;
+  --color-warning: #b8791b;
+  --color-danger: #c4342a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-inter-tight), var(--font-inter), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  --shadow-overlay: 0 8px 24px rgba(16, 20, 24, 0.1);
+
+  --text-display: 3.5rem;
+  --text-display--line-height: 1.05;
+  --text-display--font-weight: 600;
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 1.15;
+  --text-h1--font-weight: 600;
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.25;
+  --text-h2--font-weight: 600;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.35;
+  --text-h3--font-weight: 600;
+}
+
+body {
+  background: var(--color-concrete);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
