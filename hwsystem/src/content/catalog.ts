@@ -106,14 +106,7 @@ export const products: Product[] = [
       "50 Nm Ø45 tube motor with mechanical limits for roller garage doors up to 8 m².",
     description:
       "The LT50 CSI is the workhorse of roller garage door automation. Mechanical limit switches, manual override eyelet for power cuts, and Somfy's 5-year warranty. Fits 60 mm octagonal tube with the supplied crown and drive adaptors.",
-    images: [
-      {
-        url: "/images/products/tube-link.jpg",
-        alt: "Somfy LT50 tubular motor in octagonal tube",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "torque", value: 50, unit: "Nm" },
       { key: "tubeDiameter", value: 45 },
@@ -155,14 +148,7 @@ export const products: Product[] = [
       "Factory-direct 30 Nm Ø45 motor for domestic roller doors and shutters up to 5 m².",
     description:
       "Made in SBI's own European factory and tested on the line with the doors it drives. Mechanical limits, 4-wire connection, compatible with standard 60 mm octagonal tube. The best price-to-torque ratio in our range.",
-    images: [
-      {
-        url: "/images/products/tube-link.jpg",
-        alt: "SBI TM45 tubular motor with tube link",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "torque", value: 30, unit: "Nm" },
       { key: "tubeDiameter", value: 45 },
@@ -204,14 +190,7 @@ export const products: Product[] = [
       "Factory-direct 50 Nm Ø45 motor — the standard pick for single roller garage doors.",
     description:
       "The volume seller. 50 Nm lifts a standard 7'–8' insulated roller curtain with margin. Mechanical limits, manual override option, and same-day dispatch from UK stock.",
-    images: [
-      {
-        url: "/images/products/tube-link.jpg",
-        alt: "SBI TM45 50 Nm tubular motor",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "torque", value: 50, unit: "Nm" },
       { key: "tubeDiameter", value: 45 },
@@ -253,14 +232,7 @@ export const products: Product[] = [
       "Heavy-duty 100 Nm Ø59 motor for double and commercial roller doors.",
     description:
       "For wide or heavy curtains: 100 Nm on a Ø59 frame, electronic limits, and a thermal cut-out rated for commercial duty cycles. Pairs with our safety brake for EN-compliant industrial installs.",
-    images: [
-      {
-        url: "/images/products/tube-link.jpg",
-        alt: "SBI TM59 heavy-duty tubular motor",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "torque", value: 100, unit: "Nm" },
       { key: "tubeDiameter", value: 59 },
@@ -344,14 +316,7 @@ export const products: Product[] = [
       "140 Nm axial operator for compact and mid-size roller doors, factory-matched to SBI curtains.",
     description:
       "Fitted as standard on SBI compact roller doors and available as a spare or upgrade. Built-in adjustable limits, manual override crank, and a duty cycle rated for daily domestic use.",
-    images: [
-      {
-        url: "/images/products/automation.jpg",
-        alt: "SBI axial motor operating a garage door",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "torque", value: 140, unit: "Nm" },
       { key: "voltage", value: "230V AC" },
@@ -385,14 +350,7 @@ export const products: Product[] = [
       "230V control unit with built-in 433.92 MHz receiver for one motor, photocell and safety edge inputs.",
     description:
       "One box that runs the whole door: motor output, integrated rolling-code receiver, dedicated photocell and safety edge terminals, and courtesy light relay. DIN-rail or wall mount.",
-    images: [
-      {
-        url: "/images/products/moovi-barrier.png",
-        alt: "SBI CP1 control panel",
-        width: 600,
-        height: 600,
-      },
-    ],
+    images: [],
     specs: [
       { key: "voltage", value: "230V AC" },
       { key: "frequency", value: "433.92 MHz" },
@@ -471,14 +429,7 @@ export const products: Product[] = [
       "4-channel 433.92 MHz handset for SBI receivers — run four doors from one remote.",
     description:
       "Slim 4-button transmitter paired with SBI control panels and plug-in receivers. Rolling code, keyring loop, battery included.",
-    images: [
-      {
-        url: "/images/products/bft-remote.jpg",
-        alt: "SBI 4-channel remote handset",
-        width: 400,
-        height: 400,
-      },
-    ],
+    images: [],
     specs: [
       { key: "frequency", value: "433.92 MHz" },
       { key: "channels", value: 4 },
@@ -515,14 +466,7 @@ export const products: Product[] = [
       "Infrared photocell transmitter + receiver pair, 12–24V, up to 20 m range.",
     description:
       "EN 12453 requires supplementary protection on automated doors in most settings — this is the standard fit. Relay output wires straight into SBI, Somfy and BFT control panels. IP54 housings, swivel brackets included.",
-    images: [
-      {
-        url: "/images/doors/h105-commercial.png",
-        alt: "Commercial roller shutter door with safety photocells",
-        width: 1200,
-        height: 675,
-      },
-    ],
+    images: [],
     specs: [
       { key: "voltage", value: "24V DC" },
       { key: "ipRating", value: "IP54" },
@@ -554,14 +498,7 @@ export const products: Product[] = [
       "8.2 kΩ resistive bottom edge for roller and sectional doors, cut-to-size 2.5 m profile.",
     description:
       "Pressure-sensitive rubber profile with 8.2 kΩ terminating resistor, monitored by the control panel for EN 12978 compliance. Trims to width with standard tools; end caps and glue supplied.",
-    images: [
-      {
-        url: "/images/slats/insulated.png",
-        alt: "Roller door slat profile with safety edge",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "cableLength", value: "2.5m profile" },
       { key: "material", value: "EPDM rubber" },
@@ -593,14 +530,7 @@ export const products: Product[] = [
       "Sectional door torsion spring, wound to order. State door make, width and wire size.",
     description:
       "Pattern torsion springs for the common sectional platforms. Wound left or right, standard 25.4 mm bore cones fitted. If you're unsure of the spec, send us the old spring's wire diameter, inside diameter and length — we'll match it.",
-    images: [
-      {
-        url: "/images/doors/thumb-sectional.jpg",
-        alt: "Sectional garage door with torsion spring assembly",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "material", value: "Oil-tempered spring steel" },
       { key: "warrantyYears", value: 1 },
@@ -631,14 +561,7 @@ export const products: Product[] = [
       "Galvanised 7×19 wire rope pair with ferruled loops, for sectional doors up to 2.5 m high.",
     description:
       "Pre-made lifting cable pair with pressed loops, ready to fit. 3 mm galvanised 7×19 construction — flexible enough for drum winding, rated with a generous margin over standard door weights.",
-    images: [
-      {
-        url: "/images/doors/thumb-roller.jpg",
-        alt: "Garage door lifting cable on drum",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "cableLength", value: "6m pair" },
       { key: "material", value: "Galvanised steel 7×19" },
@@ -672,14 +595,7 @@ export const products: Product[] = [
       "Keyed-alike bullet lock pair with guide-rail strikers for roller garage doors.",
     description:
       "Positive mechanical locking for manually operated roller doors, or secondary security on automated ones. Two locks keyed alike, strikers, and fixings included.",
-    images: [
-      {
-        url: "/images/doors/thumb-sliding.jpg",
-        alt: "Roller door guide rail with lock",
-        width: 400,
-        height: 300,
-      },
-    ],
+    images: [],
     specs: [
       { key: "material", value: "Zinc alloy body, steel bolt" },
       { key: "warrantyYears", value: 2 },
@@ -743,14 +659,7 @@ export const products: Product[] = [
       "Anti-fall safety brake for industrial roller shutters — mandatory on most commercial installs.",
     description:
       "Centrifugal safety brake that locks the barrel if the curtain free-falls. Microswitch output cuts the control circuit. Sized for 102 mm tube; other sizes to order.",
-    images: [
-      {
-        url: "/images/doors/h105-industrial.jpg",
-        alt: "Industrial roller shutter door installation",
-        width: 632,
-        height: 1024,
-      },
-    ],
+    images: [],
     specs: [
       { key: "tubeDiameter", value: 102 },
       { key: "material", value: "Cast housing, steel internals" },
