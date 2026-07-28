@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 import { Database, LogOut } from "lucide-react";
 import { AdminNav } from "@/components/admin/AdminNav";
 import { isAdminAuthed } from "@/lib/adminAuth";
-import { getLiveCounts } from "@/lib/adminOps";
 
 export const metadata: Metadata = {
   title: {
@@ -20,8 +19,6 @@ export default async function AdminPanelLayout({
     redirect("/admin/login");
   }
 
-  const live = await getLiveCounts();
-
   return (
     <main className="mx-auto w-full max-w-[1280px] flex-1 px-6 py-10">
       <div className="flex flex-wrap items-start justify-between gap-4">
@@ -29,9 +26,8 @@ export default async function AdminPanelLayout({
           <h1 className="text-h1 text-ink">Admin panel</h1>
           <p className="mt-2 flex items-center gap-1.5 text-sm text-steel">
             <Database aria-hidden className="size-4" strokeWidth={1.5} />
-            {live.leads + live.tickets > 0
-              ? `${live.leads} live leads and ${live.tickets} live tickets from the site, alongside seeded demo records.`
-              : "No live site submissions yet — showing seeded demo records. Orders stay seed-only until the WooCommerce integration."}
+            Live data only — leads and tickets come from site form
+            submissions; orders arrive with the WooCommerce integration.
           </p>
         </div>
         <form action="/api/admin/logout" method="post">

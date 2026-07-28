@@ -8,31 +8,20 @@
 import "server-only";
 
 import type { Row } from "@libsql/client";
-import { staff } from "@/content/adminOps";
 import { getDb } from "@/lib/db";
 import { getProducts, getProductsBySkus } from "@/lib/catalog";
 import type {
+  AdminOrder,
   LeadDay,
   LeadKind,
   LeadRecord,
   LeadStatus,
   OrderStatus,
-  RecordSource,
-  StaffMember,
-  StoredOrder,
-  StoredTicket,
+  SupportTicket,
   TicketChannel,
   TicketPriority,
   TicketStatus,
 } from "@/types/admin";
-
-export function getStaff(): StaffMember[] {
-  return staff;
-}
-
-export function getStaffById(id: string): StaffMember | undefined {
-  return staff.find((s) => s.id === id);
-}
 
 function rowToLead(row: Row): LeadRecord {
   return {
@@ -43,12 +32,11 @@ function rowToLead(row: Row): LeadRecord {
     phone: String(row.phone),
     detail: String(row.detail),
     status: row.status as LeadStatus,
-    source: row.source as RecordSource,
     createdAt: String(row.created_at),
   };
 }
 
-function rowToTicket(row: Row): StoredTicket {
+function rowToTicket(row: Row): SupportTicket {
   return {
     id: String(row.id),
     subject: String(row.subject),
@@ -59,12 +47,10 @@ function rowToTicket(row: Row): StoredTicket {
     openedAt: String(row.opened_at),
     firstResponseMins:
       row.first_response_mins === null ? undefined : Number(row.first_response_mins),
-    assignedTo: String(row.assigned_to),
-    source: row.source as RecordSource,
   };
 }
 
-function rowToOrder(row: Row): StoredOrder {
+function rowToOrder(row: Row): AdminOrder {
   return {
     id: String(row.id),
     customer: String(row.customer),
@@ -75,8 +61,6 @@ function rowToOrder(row: Row): StoredOrder {
     status: row.status as OrderStatus,
     placedAt: String(row.placed_at),
     nextDay: Number(row.next_day) === 1,
-    handledBy: String(row.handled_by),
-    source: row.source as RecordSource,
   };
 }
 
@@ -106,13 +90,13 @@ export async function recordLead(lead: NewLead): Promise<void> {
   await db.batch(
     [
       {
-        sql: `INSERT INTO leads (id, kind, name, email, phone, detail, status, source, created_at)
-              VALUES (?, ?, ?, ?, ?, ?, 'new', 'live', ?)`,
+        sql: `INSERT INTO leads (id, kind, name, email, phone, detail, status, created_at)
+              VALUES (?, ?, ?, ?, ?, ?, 'new', ?)`,
         args: [`L-${suffix}`, lead.kind, lead.name, lead.email, lead.phone, detail, now],
       },
       {
-        sql: `INSERT INTO tickets (id, subject, customer, channel, status, priority, opened_at, first_response_mins, assigned_to, source)
-              VALUES (?, ?, ?, ?, 'open', 'normal', ?, NULL, 'staff-support', 'live')`,
+        sql: `INSERT INTO tickets (id, subject, customer, channel, status, priority, opened_at, first_response_mins)
+              VALUES (?, ?, ?, ?, 'open', 'normal', ?, NULL)`,
         args: [
           `T-${suffix}`,
           lead.kind === "quote"
@@ -217,7 +201,7 @@ export async function getLeadsSummary(): Promise<LeadsSummary> {
 // Support tickets
 // ---------------------------------------------------------------------------
 
-export async function getSupportTickets(limit = 25): Promise<StoredTicket[]> {
+export async function getSupportTickets(limit = 25): Promise<SupportTicket[]> {
   const db = await getDb();
   const { rows } = await db.execute({
     sql: "SELECT * FROM tickets ORDER BY opened_at DESC LIMIT ?",
@@ -259,6 +243,8 @@ export interface SupportSummary {
   open: number;
   pending: number;
   resolved: number;
+  /** Tickets with a recorded first response. */
+  responded: number;
   avgFirstResponseMins: number;
   /** Share of answered tickets first-answered within 60 minutes. */
   slaHitRate: number;
@@ -295,6 +281,7 @@ export async function getSupportSummary(): Promise<SupportSummary> {
     open,
     pending,
     resolved,
+    responded: responded.length,
     avgFirstResponseMins: Math.round(avg),
     slaHitRate: Math.round((withinSla / Math.max(responded.length, 1)) * 100),
     byChannel,
@@ -311,7 +298,7 @@ export async function getSupportSummary(): Promise<SupportSummary> {
 // Orders
 // ---------------------------------------------------------------------------
 
-export async function getOrders(limit = 25): Promise<StoredOrder[]> {
+export async function getOrders(limit = 25): Promise<AdminOrder[]> {
   const db = await getDb();
   const { rows } = await db.execute({
     sql: "SELECT * FROM orders ORDER BY placed_at DESC LIMIT ?",
@@ -395,26 +382,8 @@ export async function getOrdersSummary(): Promise<OrdersSummary> {
 }
 
 // ---------------------------------------------------------------------------
-// Cross-cutting
+// Catalog
 // ---------------------------------------------------------------------------
-
-export interface LiveCounts {
-  leads: number;
-  tickets: number;
-}
-
-/** How much of the database is real site traffic vs the demo seed. */
-export async function getLiveCounts(): Promise<LiveCounts> {
-  const db = await getDb();
-  const [leads, tickets] = await Promise.all([
-    db.execute("SELECT COUNT(*) AS n FROM leads WHERE source = 'live'"),
-    db.execute("SELECT COUNT(*) AS n FROM tickets WHERE source = 'live'"),
-  ]);
-  return {
-    leads: Number(leads.rows[0].n),
-    tickets: Number(tickets.rows[0].n),
-  };
-}
 
 export interface CatalogSummary {
   totalProducts: number;

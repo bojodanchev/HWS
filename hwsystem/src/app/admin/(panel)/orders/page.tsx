@@ -35,18 +35,26 @@ export default async function AdminOrdersPage() {
         <StatCard
           label="Orders on record"
           value={String(summary.count)}
-          hint={`${summary.tradeShare}% from trade accounts`}
+          hint={
+            summary.count > 0
+              ? `${summary.tradeShare}% from trade accounts`
+              : "Arrive with the Woo integration"
+          }
           icon={ShoppingCart}
         />
         <StatCard
           label="Revenue on record"
           value={formatGBP(summary.revenue)}
-          hint={`Average order ${formatGBP(summary.averageOrderValue)}`}
+          hint={
+            summary.count > 0
+              ? `Average order ${formatGBP(summary.averageOrderValue)}`
+              : "No orders recorded yet"
+          }
           icon={Banknote}
         />
         <StatCard
           label="Next-day dispatch"
-          value={`${summary.nextDayShare}%`}
+          value={summary.count > 0 ? `${summary.nextDayShare}%` : "—"}
           hint="Share of orders on next-day service"
           icon={Truck}
         />
@@ -76,22 +84,34 @@ export default async function AdminOrdersPage() {
         <section className="rounded-md border border-line bg-white p-6">
           <h2 className="text-h3 text-ink">Most ordered products</h2>
           <p className="mt-1 text-sm text-steel">
-            By number of orders containing the SKU, this month.
+            By number of orders containing the SKU.
           </p>
           <div className="mt-5">
-            <BreakdownBars
-              unit="orders"
-              items={summary.topProducts.map((p) => ({
-                label: p.name,
-                value: p.orders,
-              }))}
-            />
+            {summary.topProducts.length === 0 ? (
+              <p className="rounded-md border border-line bg-concrete px-4 py-6 text-center text-sm text-steel">
+                No orders recorded yet.
+              </p>
+            ) : (
+              <BreakdownBars
+                unit="orders"
+                items={summary.topProducts.map((p) => ({
+                  label: p.name,
+                  value: p.orders,
+                }))}
+              />
+            )}
           </div>
         </section>
       </div>
 
       <section className="rounded-md border border-line bg-white p-6">
         <h2 className="text-h3 text-ink">Recent orders</h2>
+        {orders.length === 0 ? (
+          <p className="mt-4 rounded-md border border-line bg-concrete px-4 py-6 text-center text-sm text-steel">
+            No orders yet. This view fills in once the WooCommerce
+            integration starts feeding real orders.
+          </p>
+        ) : (
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[920px] text-left text-sm">
             <thead>
@@ -141,6 +161,7 @@ export default async function AdminOrdersPage() {
             </tbody>
           </table>
         </div>
+        )}
       </section>
     </div>
   );
