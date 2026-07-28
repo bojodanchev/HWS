@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Native SQLite bindings must stay external to the server bundle.
+  serverExternalPackages: ["@libsql/client", "libsql"],
 };
 
 export default nextConfig;
