@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import { recordLead } from "@/lib/adminOps";
 import { deliverLead } from "@/lib/leads";
 
 const schema = z.object({
@@ -31,6 +32,15 @@ export async function POST(request: Request) {
 
   const { company_website: _hp, ...fields } = parsed.data;
   await deliverLead({ kind: "quote", fields });
+
+  // Persist for the admin panel; delivery above must not depend on the DB.
+  await recordLead({
+    kind: "quote",
+    name: fields.name,
+    email: fields.email,
+    phone: fields.phone,
+    detail: `${fields.postcode} — ${fields.message}`,
+  }).catch((err) => console.error("[lead] db persist failed", err));
 
   return NextResponse.json({ ok: true });
 }

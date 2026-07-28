@@ -1,16 +1,16 @@
 /**
- * SAMPLE operational data for the internal admin panel.
+ * SEED data for the internal admin panel database (src/lib/db.ts).
  *
- * There is no order/ticket backend yet (quote-first MVP — Woo swap pending),
- * so the panel runs on this representative data set. Every admin screen
- * carries a "Sample data" notice until the WooCommerce integration lands.
- * Swap seam: replace this module behind src/lib/adminOps.ts, components
- * untouched — same pattern as src/content/catalog.ts.
+ * Inserted once into empty tables with source='seed' so the dashboards are
+ * readable before real traffic accumulates; live quote/trade submissions
+ * are stored alongside with source='live'. Orders remain seed-only until
+ * the WooCommerce integration lands. The staff roster is static config —
+ * there are no admin accounts until real auth exists.
  */
 
 import type {
   AdminOrder,
-  LeadDay,
+  LeadRecord,
   StaffMember,
   SupportTicket,
 } from "@/types/admin";
@@ -45,15 +45,118 @@ export const staff: StaffMember[] = [
   },
 ];
 
-/** Last 7 days of inbound leads (quote form + trade applications). */
-export const leadDays: LeadDay[] = [
-  { day: "Wed 22", quotes: 6, tradeApps: 1 },
-  { day: "Thu 23", quotes: 8, tradeApps: 2 },
-  { day: "Fri 24", quotes: 7, tradeApps: 1 },
-  { day: "Sat 25", quotes: 3, tradeApps: 0 },
-  { day: "Sun 26", quotes: 2, tradeApps: 0 },
-  { day: "Mon 27", quotes: 9, tradeApps: 3 },
-  { day: "Tue 28", quotes: 5, tradeApps: 1 },
+/** Seed leads spread over the week before the seed date. */
+export const seedLeads: LeadRecord[] = [
+  {
+    id: "L-1010",
+    kind: "quote",
+    name: "M. Whitfield",
+    email: "m.whitfield@example.co.uk",
+    phone: "+44 7700 900101",
+    detail: "Roller door for a 4.2m opening, motor and controls included",
+    status: "new",
+    source: "seed",
+    createdAt: "2026-07-28T07:31:00Z",
+  },
+  {
+    id: "L-1009",
+    kind: "trade_application",
+    name: "GDS Installations Ltd",
+    email: "accounts@gds-installations.example.co.uk",
+    phone: "+44 7700 900102",
+    detail: "Trade application — monthly volume 500–2000",
+    status: "contacted",
+    source: "seed",
+    createdAt: "2026-07-27T14:55:00Z",
+  },
+  {
+    id: "L-1008",
+    kind: "quote",
+    name: "Dawson Doors (Leeds)",
+    email: "workshop@dawsondoors.example.co.uk",
+    phone: "+44 7700 900103",
+    detail: "Six LT50 motors plus torsion springs for a housing job",
+    status: "contacted",
+    source: "seed",
+    createdAt: "2026-07-27T09:12:00Z",
+  },
+  {
+    id: "L-1007",
+    kind: "quote",
+    name: "K. Lindqvist",
+    email: "k.lindqvist@example.com",
+    phone: "+44 7700 900104",
+    detail: "NovoPort 4 for a sectional door, track compatibility question",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-26T16:40:00Z",
+  },
+  {
+    id: "L-1006",
+    kind: "quote",
+    name: "R. Patel",
+    email: "r.patel@example.com",
+    phone: "+44 7700 900105",
+    detail: "Photocell kit and safety edge for an existing installation",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-25T11:02:00Z",
+  },
+  {
+    id: "L-1005",
+    kind: "trade_application",
+    name: "Apex Shutters",
+    email: "office@apexshutters.example.co.uk",
+    phone: "+44 7700 900106",
+    detail: "Trade application — monthly volume 2000+",
+    status: "contacted",
+    source: "seed",
+    createdAt: "2026-07-24T15:26:00Z",
+  },
+  {
+    id: "L-1004",
+    kind: "quote",
+    name: "Severn Garage Doors",
+    email: "jobs@severngaragedoors.example.co.uk",
+    phone: "+44 7700 900107",
+    detail: "TM45 motors and tube adapters for a five-door contract",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-24T10:08:00Z",
+  },
+  {
+    id: "L-1003",
+    kind: "quote",
+    name: "J. Okafor",
+    email: "j.okafor@example.com",
+    phone: "+44 7700 900108",
+    detail: "Replacement RM4 receiver and a spare Mitto remote",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-23T13:44:00Z",
+  },
+  {
+    id: "L-1002",
+    kind: "quote",
+    name: "J. Novak",
+    email: "j.novak@example.com",
+    phone: "+44 7700 900109",
+    detail: "Bullet lock and lifting cables for an older roller door",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-22T15:19:00Z",
+  },
+  {
+    id: "L-1001",
+    kind: "quote",
+    name: "Highfield Property Care",
+    email: "maintenance@highfieldpc.example.co.uk",
+    phone: "+44 7700 900110",
+    detail: "Side motor options for a gate refurbishment",
+    status: "closed",
+    source: "seed",
+    createdAt: "2026-07-22T09:37:00Z",
+  },
 ];
 
 export const supportTickets: SupportTicket[] = [

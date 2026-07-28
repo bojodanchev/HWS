@@ -57,3 +57,30 @@ export interface LeadDay {
   quotes: number;
   tradeApps: number;
 }
+
+/** Where a stored record came from: one-time demo seed or the live site. */
+export type RecordSource = "seed" | "live";
+
+export type LeadKind = "quote" | "trade_application";
+export type LeadStatus = "new" | "contacted" | "closed";
+
+export interface LeadRecord {
+  id: string;
+  kind: LeadKind;
+  name: string;
+  email: string;
+  phone: string;
+  /** Message excerpt (quote) or company + volume summary (trade). */
+  detail: string;
+  status: LeadStatus;
+  source: RecordSource;
+  createdAt: string; // ISO datetime
+}
+
+export interface StoredTicket extends SupportTicket {
+  source: RecordSource;
+}
+
+export interface StoredOrder extends AdminOrder {
+  source: RecordSource;
+}

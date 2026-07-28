@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Banknote, PackageCheck, ShoppingCart, Truck } from "lucide-react";
-import { Badge } from "@/components/admin/Badge";
 import { BreakdownBars } from "@/components/admin/BreakdownBars";
 import { StatCard } from "@/components/admin/StatCard";
+import { StatusSelect } from "@/components/admin/StatusSelect";
 import { formatGBP } from "@/lib/catalog";
 import {
   formatShortDateTime,
@@ -13,31 +13,34 @@ import type { OrderStatus } from "@/types/admin";
 
 export const metadata: Metadata = { title: "Order manager" };
 
-const STATUS_META: Record<OrderStatus, { label: string; tone: "neutral" | "success" | "warning" | "danger" }> = {
-  awaiting_payment: { label: "Awaiting payment", tone: "warning" },
-  on_hold: { label: "On hold", tone: "danger" },
-  processing: { label: "Processing", tone: "neutral" },
-  picking: { label: "Picking", tone: "neutral" },
-  dispatched: { label: "Dispatched", tone: "success" },
-  delivered: { label: "Delivered", tone: "success" },
+const STATUS_LABELS: Record<OrderStatus, string> = {
+  awaiting_payment: "Awaiting payment",
+  on_hold: "On hold",
+  processing: "Processing",
+  picking: "Picking",
+  dispatched: "Dispatched",
+  delivered: "Delivered",
 };
 
-export default function AdminOrdersPage() {
-  const summary = getOrdersSummary();
-  const orders = getOrders();
+const ORDER_STATUS_OPTIONS = Object.entries(STATUS_LABELS).map(
+  ([value, label]) => ({ value, label }),
+);
+
+export default async function AdminOrdersPage() {
+  const [summary, orders] = await Promise.all([getOrdersSummary(), getOrders(25)]);
 
   return (
     <div className="space-y-8">
       <section aria-label="Order key numbers" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard
-          label="Orders this month"
-          value={String(summary.countThisMonth)}
+          label="Orders on record"
+          value={String(summary.count)}
           hint={`${summary.tradeShare}% from trade accounts`}
           icon={ShoppingCart}
         />
         <StatCard
-          label="Revenue this month"
-          value={formatGBP(summary.revenueThisMonth)}
+          label="Revenue on record"
+          value={formatGBP(summary.revenue)}
           hint={`Average order ${formatGBP(summary.averageOrderValue)}`}
           icon={Banknote}
         />
@@ -63,7 +66,7 @@ export default function AdminOrdersPage() {
             <BreakdownBars
               unit="orders"
               items={summary.byStatus.map((s) => ({
-                label: STATUS_META[s.status].label,
+                label: STATUS_LABELS[s.status],
                 value: s.count,
               }))}
             />
@@ -90,7 +93,7 @@ export default function AdminOrdersPage() {
       <section className="rounded-md border border-line bg-white p-6">
         <h2 className="text-h3 text-ink">Recent orders</h2>
         <div className="mt-4 overflow-x-auto">
-          <table className="w-full min-w-[880px] text-left text-sm">
+          <table className="w-full min-w-[920px] text-left text-sm">
             <thead>
               <tr className="border-b border-line text-[13px] text-steel">
                 <th scope="col" className="py-2 pr-4 font-medium">Order</th>
@@ -104,34 +107,37 @@ export default function AdminOrdersPage() {
               </tr>
             </thead>
             <tbody>
-              {orders.map((order) => {
-                const status = STATUS_META[order.status];
-                return (
-                  <tr key={order.id} className="border-b border-line last:border-0 align-top">
-                    <td className="py-3 pr-4">
-                      <p className="font-mono text-[13px] text-ink">{order.id}</p>
-                      <p className="text-[13px] text-steel">{order.skus.join(", ")}</p>
-                    </td>
-                    <td className="py-3 pr-4 text-steel">{order.customer}</td>
-                    <td className="py-3 pr-4 text-steel">
-                      {order.account === "trade" ? "Trade" : "Retail"}
-                    </td>
-                    <td className="py-3 pr-4 text-ink tabular-nums">{order.units}</td>
-                    <td className="py-3 pr-4 text-ink tabular-nums">
-                      {formatGBP(order.value)}
-                    </td>
-                    <td className="py-3 pr-4 text-steel">
-                      {order.nextDay ? "Next day" : "Standard"}
-                    </td>
-                    <td className="py-3 pr-4">
-                      <Badge tone={status.tone} label={status.label} />
-                    </td>
-                    <td className="py-3 text-steel">
-                      {formatShortDateTime(order.placedAt)}
-                    </td>
-                  </tr>
-                );
-              })}
+              {orders.map((order) => (
+                <tr key={order.id} className="border-b border-line last:border-0 align-top">
+                  <td className="py-3 pr-4">
+                    <p className="font-mono text-[13px] text-ink">{order.id}</p>
+                    <p className="text-[13px] text-steel">{order.skus.join(", ")}</p>
+                  </td>
+                  <td className="py-3 pr-4 text-steel">{order.customer}</td>
+                  <td className="py-3 pr-4 text-steel">
+                    {order.account === "trade" ? "Trade" : "Retail"}
+                  </td>
+                  <td className="py-3 pr-4 text-ink tabular-nums">{order.units}</td>
+                  <td className="py-3 pr-4 text-ink tabular-nums">
+                    {formatGBP(order.value)}
+                  </td>
+                  <td className="py-3 pr-4 text-steel">
+                    {order.nextDay ? "Next day" : "Standard"}
+                  </td>
+                  <td className="py-3 pr-4">
+                    <StatusSelect
+                      endpoint={`/api/admin/orders/${order.id}`}
+                      field="status"
+                      value={order.status}
+                      options={ORDER_STATUS_OPTIONS}
+                      label={`Status for order ${order.id}`}
+                    />
+                  </td>
+                  <td className="py-3 text-steel">
+                    {formatShortDateTime(order.placedAt)}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

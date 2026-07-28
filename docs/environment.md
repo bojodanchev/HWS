@@ -34,8 +34,9 @@ cp .env.example .env.local   # only needed once Woo/lead delivery is configured
 | `SLACK_WEBHOOK_URL` | Lead delivery to Slack |
 | `RESEND_API_KEY` + `LEAD_INBOX_EMAIL` | Lead delivery by email |
 | `NEXT_PUBLIC_SITE_URL` | Canonical base for metadata/sitemap (defaults to hwsystem.vercel.app) |
+| `DATABASE_URL` (+ `DATABASE_AUTH_TOKEN`) | Admin panel database (libSQL/Turso remote). Unset: local dev uses `hwsystem/data/hws-admin.db` (gitignored); Vercel falls back to `file:/tmp` — functional but ephemeral per serverless instance, so set this for durable production storage |
 
-Leads always land in Vercel function logs as `[lead] {...}` even with nothing configured.
+Leads always land in Vercel function logs as `[lead] {...}` even with nothing configured, and are persisted to the admin database (with an auto-opened support ticket) by the form API routes.
 
 ## External Services
 - Real-brand sites (image/content sources): sbigaragedoors.co.uk, sbi-bg.com (needs `curl -k`), hwsystem.co.uk (WP "coming soon" shell — the eventual Woo backend)
