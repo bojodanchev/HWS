@@ -2,10 +2,11 @@
  * Admin database — libSQL/SQLite behind a single seam.
  *
  * - Local dev: a SQLite file at data/hws-admin.db (gitignored).
- * - Production: set DATABASE_URL (+ DATABASE_AUTH_TOKEN for Turso/libSQL
- *   remote). Without it, Vercel falls back to file:/tmp — functional but
- *   ephemeral per serverless instance, so leads still also go out through
- *   deliverLead (Slack/email/logs).
+ * - Production: set TURSO_DATABASE_URL + TURSO_AUTH_TOKEN (the convention
+ *   used across our Vercel projects; DATABASE_URL/DATABASE_AUTH_TOKEN are
+ *   accepted as a fallback). Without them, Vercel falls back to file:/tmp —
+ *   functional but ephemeral per serverless instance, so leads still also
+ *   go out through deliverLead (Slack/email/logs).
  *
  * Schema is created on first use. Tables start empty and fill with real
  * records only: leads and tickets come from live site form submissions;
@@ -19,6 +20,12 @@ import path from "node:path";
 import { createClient, type Client } from "@libsql/client";
 
 function resolveUrl(): { url: string; authToken?: string } {
+  if (process.env.TURSO_DATABASE_URL) {
+    return {
+      url: process.env.TURSO_DATABASE_URL,
+      authToken: process.env.TURSO_AUTH_TOKEN,
+    };
+  }
   if (process.env.DATABASE_URL) {
     return {
       url: process.env.DATABASE_URL,
