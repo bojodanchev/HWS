@@ -389,7 +389,7 @@ export function CustomerAssistant() {
                         required
                         minLength={2}
                         maxLength={80}
-                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-sm outline-none focus:border-ink focus:ring-2 focus:ring-signal/20"
+                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-base outline-none focus:border-ink focus:ring-2 focus:ring-signal/20 sm:text-sm"
                       />
                     </label>
                     <label className="text-xs font-medium text-ink">
@@ -399,7 +399,7 @@ export function CustomerAssistant() {
                         type="email"
                         required
                         maxLength={254}
-                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-sm outline-none focus:border-ink focus:ring-2 focus:ring-signal/20"
+                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-base outline-none focus:border-ink focus:ring-2 focus:ring-signal/20 sm:text-sm"
                       />
                     </label>
                     <label className="text-xs font-medium text-ink">
@@ -410,7 +410,7 @@ export function CustomerAssistant() {
                         required
                         minLength={7}
                         maxLength={32}
-                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-sm outline-none focus:border-ink focus:ring-2 focus:ring-signal/20"
+                        className="mt-1 h-10 w-full rounded-md border border-line px-3 text-base outline-none focus:border-ink focus:ring-2 focus:ring-signal/20 sm:text-sm"
                       />
                     </label>
                     <input
@@ -481,7 +481,7 @@ export function CustomerAssistant() {
                   minLength={2}
                   maxLength={1200}
                   placeholder={t.placeholder}
-                  className="h-11 min-w-0 flex-1 rounded-md border border-line bg-white px-3 text-sm text-ink outline-none placeholder:text-mist focus:border-ink focus:ring-2 focus:ring-signal/20"
+                  className="h-11 min-w-0 flex-1 rounded-md border border-line bg-white px-3 text-base text-ink outline-none placeholder:text-mist focus:border-ink focus:ring-2 focus:ring-signal/20 sm:text-sm"
                 />
                 <button
                   type="submit"
