@@ -195,3 +195,40 @@ Index: `sku`, `name`, `brand`, `replacesSkus`, `compatibility`, `specs`.
 
 ---
 
+## Operational Support Records
+
+These records live behind `src/lib/db.ts` and are separate from the product
+catalogue.
+
+### ChatConversation
+
+```typescript
+type ChatConversation = {
+  id: `CHAT-${string}`;
+  locale: 'en' | 'bg';
+  status: 'active' | 'needs_follow_up' | 'contacted' | 'closed';
+  visitorName?: string;
+  visitorEmail?: string;
+  visitorPhone?: string;
+  createdAt: string;
+  updatedAt: string;
+};
+```
+
+### ChatMessage
+
+```typescript
+type ChatMessage = {
+  id: `MSG-${string}`;
+  conversationId: ChatConversation['id'];
+  role: 'user' | 'assistant';
+  content: string;
+  source?: 'catalog' | 'openai';
+  createdAt: string;
+};
+```
+
+The server owns message history. Browser requests never supply prior turns.
+`tickets.source_ref` links at most one support ticket to a conversation through
+a partial unique index. Rate-limit counters are stored in `rate_limits` using a
+hashed IP/user-agent fingerprint; raw fingerprints are not stored.

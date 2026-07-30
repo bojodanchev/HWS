@@ -28,6 +28,12 @@ HWSystem е търговски канал за компоненти и авто�
 
 ## 3. Tech Stack
 
+> **Current implementation note (2026-07-30):** the checked-in public
+> catalogue and customer assistant are standalone and use the typed local
+> catalogue. WooCommerce is an optional future CMS/commerce adapter, not a
+> runtime requirement for browsing, chat or support follow-up. See
+> `docs/decisions/2026-07-30-standalone-ai-assistant.md`.
+
 | Layer | Technology |
 |-------|------------|
 | **Frontend** | Next.js 15 (App Router), TypeScript, Tailwind, shadcn/ui, Framer Motion (пестеливо) |
@@ -163,4 +169,3 @@ HWSystem е търговски канал за компоненти и авто�
 - Rate limit on forms; honeypot + Turnstile
 
 ---
-

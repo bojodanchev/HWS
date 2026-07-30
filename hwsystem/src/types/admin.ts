@@ -3,7 +3,12 @@
  * orders). Catalog/product types stay in src/types/catalog.ts.
  */
 
-export type TicketChannel = "phone" | "email" | "quote_form" | "trade_form";
+export type TicketChannel =
+  | "phone"
+  | "email"
+  | "quote_form"
+  | "trade_form"
+  | "ai_chat";
 export type TicketStatus = "open" | "pending" | "resolved";
 export type TicketPriority = "low" | "normal" | "high";
 
@@ -16,6 +21,7 @@ export interface SupportTicket {
   priority: TicketPriority;
   openedAt: string; // ISO datetime
   firstResponseMins?: number;
+  sourceRef?: string;
 }
 
 export type OrderStatus =

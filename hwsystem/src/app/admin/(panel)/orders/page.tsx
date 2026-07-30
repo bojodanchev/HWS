@@ -38,7 +38,7 @@ export default async function AdminOrdersPage() {
           hint={
             summary.count > 0
               ? `${summary.tradeShare}% from trade accounts`
-              : "Arrive with the Woo integration"
+              : "Awaiting a connected checkout"
           }
           icon={ShoppingCart}
         />
@@ -108,8 +108,8 @@ export default async function AdminOrdersPage() {
         <h2 className="text-h3 text-ink">Recent orders</h2>
         {orders.length === 0 ? (
           <p className="mt-4 rounded-md border border-line bg-concrete px-4 py-6 text-center text-sm text-steel">
-            No orders yet. This view fills in once the WooCommerce
-            integration starts feeding real orders.
+            No orders yet. This view fills in when a checkout or commerce
+            adapter starts feeding real orders.
           </p>
         ) : (
         <div className="mt-4 overflow-x-auto">

@@ -47,6 +47,7 @@ function rowToTicket(row: Row): SupportTicket {
     openedAt: String(row.opened_at),
     firstResponseMins:
       row.first_response_mins === null ? undefined : Number(row.first_response_mins),
+    sourceRef: row.source_ref ? String(row.source_ref) : undefined,
   };
 }
 
@@ -269,7 +270,13 @@ export async function getSupportSummary(): Promise<SupportSummary> {
     (t) => (t.firstResponseMins ?? Infinity) <= SLA_FIRST_RESPONSE_MINS,
   ).length;
 
-  const channels: TicketChannel[] = ["phone", "email", "quote_form", "trade_form"];
+  const channels: TicketChannel[] = [
+    "phone",
+    "email",
+    "quote_form",
+    "trade_form",
+    "ai_chat",
+  ];
   const byChannel = channels
     .map((channel) => ({
       channel,

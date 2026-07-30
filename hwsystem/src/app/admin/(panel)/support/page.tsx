@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { AlertTriangle, CheckCircle2, Clock, Inbox } from "lucide-react";
+import Link from "next/link";
+import {
+  AlertTriangle,
+  CheckCircle2,
+  Clock,
+  Inbox,
+  MessageSquareText,
+} from "lucide-react";
 import { BreakdownBars } from "@/components/admin/BreakdownBars";
 import { StatCard } from "@/components/admin/StatCard";
 import { StatusSelect } from "@/components/admin/StatusSelect";
@@ -8,6 +15,7 @@ import {
   getSupportSummary,
   getSupportTickets,
 } from "@/lib/adminOps";
+import { getRecentChatConversations } from "@/lib/chatStore";
 import type { TicketChannel } from "@/types/admin";
 
 export const metadata: Metadata = { title: "Customer support" };
@@ -17,6 +25,7 @@ const CHANNEL_LABELS: Record<TicketChannel, string> = {
   email: "Email",
   quote_form: "Quote form",
   trade_form: "Trade form",
+  ai_chat: "AI chat",
 };
 
 const TICKET_STATUS_OPTIONS = [
@@ -32,9 +41,10 @@ const TICKET_PRIORITY_OPTIONS = [
 ];
 
 export default async function AdminSupportPage() {
-  const [summary, tickets] = await Promise.all([
+  const [summary, tickets, conversations] = await Promise.all([
     getSupportSummary(),
     getSupportTickets(25),
+    getRecentChatConversations(12),
   ]);
 
   return (
@@ -85,6 +95,84 @@ export default async function AdminSupportPage() {
       </section>
 
       <section className="rounded-md border border-line bg-white p-6">
+        <div className="flex items-start gap-3">
+          <MessageSquareText
+            aria-hidden
+            className="mt-0.5 size-5 text-steel"
+            strokeWidth={1.5}
+          />
+          <div>
+            <h2 className="text-h3 text-ink">AI conversations</h2>
+            <p className="mt-1 text-sm text-steel">
+              Standalone catalogue conversations. Follow-up requests also open
+              a support ticket.
+            </p>
+          </div>
+        </div>
+        {conversations.length === 0 ? (
+          <p className="mt-4 rounded-md border border-line bg-concrete px-4 py-6 text-center text-sm text-steel">
+            No AI conversations yet.
+          </p>
+        ) : (
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full min-w-[780px] text-left text-sm">
+              <thead>
+                <tr className="border-b border-line text-[13px] text-steel">
+                  <th scope="col" className="py-2 pr-4 font-medium">
+                    Conversation
+                  </th>
+                  <th scope="col" className="py-2 pr-4 font-medium">
+                    Contact
+                  </th>
+                  <th scope="col" className="py-2 pr-4 font-medium">
+                    Status
+                  </th>
+                  <th scope="col" className="py-2 pr-4 font-medium">
+                    Messages
+                  </th>
+                  <th scope="col" className="py-2 font-medium">
+                    Updated
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {conversations.map((conversation) => (
+                  <tr
+                    key={conversation.id}
+                    className="border-b border-line last:border-0 align-top"
+                  >
+                    <td className="max-w-[360px] py-3 pr-4">
+                      <Link
+                        href={`/admin/support/chats/${conversation.id}`}
+                        className="font-mono text-[13px] text-ink underline-offset-2 hover:underline"
+                      >
+                        {conversation.id}
+                      </Link>
+                      <p className="mt-1 truncate text-steel">
+                        {conversation.lastMessage ?? "—"}
+                      </p>
+                    </td>
+                    <td className="py-3 pr-4 text-steel">
+                      {conversation.visitorEmail ?? "Anonymous"}
+                    </td>
+                    <td className="py-3 pr-4 text-ink">
+                      {conversation.status.replaceAll("_", " ")}
+                    </td>
+                    <td className="py-3 pr-4 text-ink tabular-nums">
+                      {conversation.messageCount}
+                    </td>
+                    <td className="py-3 text-steel">
+                      {formatShortDateTime(conversation.updatedAt)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      <section className="rounded-md border border-line bg-white p-6">
         <h2 className="text-h3 text-ink">Ticket queue</h2>
         {tickets.length === 0 ? (
           <p className="mt-4 rounded-md border border-line bg-concrete px-4 py-6 text-center text-sm text-steel">
@@ -110,7 +198,16 @@ export default async function AdminSupportPage() {
                   <tr key={ticket.id} className="border-b border-line last:border-0 align-top">
                     <td className="max-w-[300px] py-3 pr-4">
                       <p className="font-mono text-[13px] text-steel">{ticket.id}</p>
-                      <p className="font-medium text-ink">{ticket.subject}</p>
+                      {ticket.sourceRef ? (
+                        <Link
+                          href={`/admin/support/chats/${ticket.sourceRef}`}
+                          className="font-medium text-ink underline-offset-2 hover:underline"
+                        >
+                          {ticket.subject}
+                        </Link>
+                      ) : (
+                        <p className="font-medium text-ink">{ticket.subject}</p>
+                      )}
                     </td>
                     <td className="py-3 pr-4 text-steel">{ticket.customer}</td>
                     <td className="py-3 pr-4 text-steel">

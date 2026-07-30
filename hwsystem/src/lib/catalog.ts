@@ -1,7 +1,7 @@
 /**
  * Catalog data access. Components import ONLY from here — the backing
- * store (src/content today, WooCommerce via src/lib/woo.ts later) is an
- * implementation detail.
+ * store (the standalone typed content source today, with optional adapters
+ * later) is an implementation detail.
  *
  * Trade prices are stripped before data leaves this module unless an
  * authenticated trade tier is supplied. There is no trade auth yet, so
