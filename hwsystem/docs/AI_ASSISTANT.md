@@ -1,5 +1,9 @@
 # Standalone customer assistant
 
+> Architecture decision:
+> [`decisions/2026-07-30-standalone-ai-assistant.md`](decisions/2026-07-30-standalone-ai-assistant.md).
+> Environment and deployment details: [`environment.md`](environment.md).
+
 ## Boundary
 
 The customer assistant does not import or call `src/lib/woo.ts`.

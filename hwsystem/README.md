@@ -19,10 +19,19 @@ The floating English/Bulgarian assistant:
 See [docs/AI_ASSISTANT.md](docs/AI_ASSISTANT.md) for architecture, environment
 variables and validation.
 
+## Project knowledge
+
+- [Architecture](docs/architecture.md)
+- [Environment and operations](docs/environment.md)
+- [Known gotchas](docs/gotchas.md)
+- [Discovery log](docs/discovery-log.md)
+- [Standalone assistant decision](docs/decisions/2026-07-30-standalone-ai-assistant.md)
+
 ## Local development
 
 ```bash
 npm install
+cp .env.example .env.local
 npm run dev
 ```
 
