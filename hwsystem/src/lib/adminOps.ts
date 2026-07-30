@@ -210,6 +210,18 @@ export async function getSupportTickets(limit = 25): Promise<SupportTicket[]> {
   return rows.map(rowToTicket);
 }
 
+/** Store the visitor's first chat question in the support queue. */
+export async function recordChatQuestion(question: string): Promise<void> {
+  const db = await getDb();
+  const now = new Date().toISOString();
+  const suffix = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`.toUpperCase();
+  await db.execute({
+    sql: `INSERT INTO tickets (id, subject, customer, channel, status, priority, opened_at, first_response_mins)
+          VALUES (?, ?, 'Website visitor', 'ai_chat', 'resolved', 'normal', ?, 0)`,
+    args: [`T-${suffix}`, `AI chat — ${question.slice(0, 180)}`, now],
+  });
+}
+
 const TICKET_STATUSES: TicketStatus[] = ["open", "pending", "resolved"];
 const TICKET_PRIORITIES: TicketPriority[] = ["low", "normal", "high"];
 
@@ -269,7 +281,13 @@ export async function getSupportSummary(): Promise<SupportSummary> {
     (t) => (t.firstResponseMins ?? Infinity) <= SLA_FIRST_RESPONSE_MINS,
   ).length;
 
-  const channels: TicketChannel[] = ["phone", "email", "quote_form", "trade_form"];
+  const channels: TicketChannel[] = [
+    "phone",
+    "email",
+    "quote_form",
+    "trade_form",
+    "ai_chat",
+  ];
   const byChannel = channels
     .map((channel) => ({
       channel,

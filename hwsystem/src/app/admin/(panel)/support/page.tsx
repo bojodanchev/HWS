@@ -17,6 +17,7 @@ const CHANNEL_LABELS: Record<TicketChannel, string> = {
   email: "Email",
   quote_form: "Quote form",
   trade_form: "Trade form",
+  ai_chat: "AI chat",
 };
 
 const TICKET_STATUS_OPTIONS = [
