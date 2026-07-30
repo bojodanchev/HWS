@@ -47,6 +47,7 @@ function rowToTicket(row: Row): SupportTicket {
     openedAt: String(row.opened_at),
     firstResponseMins:
       row.first_response_mins === null ? undefined : Number(row.first_response_mins),
+    sourceRef: row.source_ref ? String(row.source_ref) : undefined,
   };
 }
 
@@ -208,18 +209,6 @@ export async function getSupportTickets(limit = 25): Promise<SupportTicket[]> {
     args: [limit],
   });
   return rows.map(rowToTicket);
-}
-
-/** Store the visitor's first chat question in the support queue. */
-export async function recordChatQuestion(question: string): Promise<void> {
-  const db = await getDb();
-  const now = new Date().toISOString();
-  const suffix = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`.toUpperCase();
-  await db.execute({
-    sql: `INSERT INTO tickets (id, subject, customer, channel, status, priority, opened_at, first_response_mins)
-          VALUES (?, ?, 'Website visitor', 'ai_chat', 'resolved', 'normal', ?, 0)`,
-    args: [`T-${suffix}`, `AI chat — ${question.slice(0, 180)}`, now],
-  });
 }
 
 const TICKET_STATUSES: TicketStatus[] = ["open", "pending", "resolved"];

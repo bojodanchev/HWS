@@ -26,8 +26,8 @@ export default async function AdminPanelLayout({
           <h1 className="text-h1 text-ink">Admin panel</h1>
           <p className="mt-2 flex items-center gap-1.5 text-sm text-steel">
             <Database aria-hidden className="size-4" strokeWidth={1.5} />
-            Live data only — leads and tickets come from site form
-            submissions; orders arrive with the WooCommerce integration.
+            Live data only — leads, AI conversations and tickets come from the
+            site; orders can be supplied by any connected checkout.
           </p>
         </div>
         <form action="/api/admin/logout" method="post">

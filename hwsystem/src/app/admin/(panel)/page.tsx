@@ -52,7 +52,7 @@ export default async function AdminOverviewPage() {
           hint={
             orders.count > 0
               ? `${orders.needsAction} need action`
-              : "Arrive with the Woo integration"
+              : "Awaiting a connected checkout"
           }
           icon={ShoppingCart}
         />

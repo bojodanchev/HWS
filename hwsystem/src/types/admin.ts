@@ -21,6 +21,7 @@ export interface SupportTicket {
   priority: TicketPriority;
   openedAt: string; // ISO datetime
   firstResponseMins?: number;
+  sourceRef?: string;
 }
 
 export type OrderStatus =
