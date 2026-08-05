@@ -2,15 +2,15 @@
 
 Reverse-chronological. Most recent first.
 
-## [2026-08-05] Integrated public-metadata build passes; release evidence pending
-**Context**: Owner-approved option 1 is being implemented for the full public Somfy Pro UK and Beninca metadata import.
+## [2026-08-05] Integrated public-metadata release verified
+**Context**: Owner-approved option 1 was implemented and released for the full public Somfy Pro UK and Beninca metadata import.
 **Handoff**:
 - Main HWS worktree contains the data-side changes in `hwsystem/src/types/catalog.ts`, `hwsystem/src/content/catalog.ts`, `hwsystem/src/content/vendor-catalog.ts`, and the 1,302-record `hwsystem/src/content/vendor-catalog.json` snapshot. The generated `supplierCatalog.ts` file is no longer used.
 - Manifest reports 1,097 Somfy Pro UK records + 205 Beninca records = 1,302 total, with canonical source URLs/public facts, empty images/documents, quote-only pricing, and unknown stock.
 - Quote-only and unknown-availability UI support is integrated in main; the equivalent isolated UI patch has the same patch identity as the main quote-support commit.
 - Combined validation on the reconciled tree: the 1,302-record integrity check passed; `npm test` passed (9 tests); `npm run lint` passed with 0 errors and 6 existing warnings; and `npm run build` passed with TypeScript clean and 1,358 static pages, including 1,319 product routes (17 baseline + 1,302 imported). The only build warning is the existing multiple-lockfile workspace-root inference.
-- Route/search/sitemap/SEO and final diff review remain part of the release gate; commit/push and public production verification are pending.
-**Boundary**: No login, gated or fabricated commercial values, unapproved assets, credential changes, or deployment.
+- Route, sitemap, and public product checks passed after pushing `main` at `b58d991a871c481fc1d4dcc8d8e15b096b74ed6e`. Vercel deployment `dpl_9ioWY3GgG69TzUZavWNt2vK67mA7` reached Ready and aliases `https://hwsystem.vercel.app`; homepage, imported SKU page, and sitemap returned HTTP 200, with quote-only and unknown-availability copy visible on the imported page.
+**Boundary**: No login, gated or fabricated commercial values, unapproved assets, or credential changes were used. Production deployment followed the owner-requested `main` push.
 
 ## [2026-08-05] Owner authorized full public-metadata import with unknown-commercial states
 **Context**: Operations recorded the owner scope update for the two-site Somfy Pro UK + Beninca import.

@@ -57,7 +57,7 @@ No env vars required to run. Optional: `SLACK_WEBHOOK_URL` / `RESEND_API_KEY`+`L
 ## Recent Decisions
 > History: [docs/decisions/](docs/decisions/)
 
-- [2026-08-05] Somfy Pro UK + Beninca: 1,302-record public-metadata import integrated; combined tests, lint, and production build pass, release/public verification pending ([decision](docs/decisions/2026-08-05-somfy-beninca-catalog-import.md))
+- [2026-08-05] Somfy Pro UK + Beninca: 1,302-record public-metadata import integrated and pushed to production; combined tests, lint, build, and public route checks pass ([decision](docs/decisions/2026-08-05-somfy-beninca-catalog-import.md))
 - [2026-07-16] Lead sourcing via OSM Overpass + business.bg (free/public) over trade platforms & paid data
 - [2026-07-15] Mock content layer now, Woo later — swap seam in `lib/woo.ts`
 - [2026-07-15] Quote-first MVP — no cart/checkout/auth until Woo backend exists
@@ -69,6 +69,6 @@ MVP live and validated e2e (2026-07-15). Outreach lead lists built (2026-07-16):
 ## Discovery Log (Recent)
 > Full log: [docs/discovery-log.md](docs/discovery-log.md)
 
-- [2026-08-05] Main worktree contains the integrated 1,302-record handoff (1,097 Somfy + 205 Beninca) via `hwsystem/src/content/vendor-catalog.json` and the typed loader; data checks, tests, lint, and build pass, while release/public verification remains pending, with assets/commercial values constrained.
+- [2026-08-05] Main worktree contains the integrated 1,302-record handoff (1,097 Somfy + 205 Beninca) via `hwsystem/src/content/vendor-catalog.json` and the typed loader; data checks, tests, lint, build, and public production checks pass, with assets/commercial values constrained.
 - [2026-07-16] 1,000-lead BG+UK list delivered from business.bg + OSM; handyman segment thin in public data.
 - [2026-07-15] MVP built/deployed/validated; competitor cues (SWR, Ellard) and Telegram context captured.

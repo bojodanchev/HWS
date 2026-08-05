@@ -1,7 +1,7 @@
 # Decision: Somfy Pro UK + Beninca public-metadata import
 
 **Date**: 2026-08-05
-**Status**: integrated under a public-metadata-only boundary; data integrity, tests, lint, and the production build pass, with push and public production verification remaining as the release gate
+**Status**: released under a public-metadata-only boundary; data integrity, tests, lint, production build, deployment, and public route checks pass
 
 ## Context
 
@@ -61,8 +61,8 @@ Evidence timestamps: UI handoff `2026-08-05T20:16:08Z`; integrated build `2026-0
 - Data handoff in `/Users/bojodanchev/HWS/hwsystem` is integrated through `src/types/catalog.ts`, `src/content/catalog.ts`, `src/content/vendor-catalog.ts`, and `src/content/vendor-catalog.json`; the generated `supplierCatalog.ts` file is no longer used.
 - The public snapshot reports **1,097 Somfy Pro UK + 205 Beninca = 1,302 records**, with per-record canonical source URLs/public facts, `images: []`, `documents: []`, `price: { quoteOnly: true }`, and `stock: { status: "unknown" }`.
 - Quote-only and unknown-availability rendering covers product JSON-LD, `ProductCard`, `PriceBlock`, `StockBadge`, product empty states, and catalog display/sorting helpers. Quote-only records render “Price on request”; unknown stock renders “Availability on request”; empty image/document fallbacks remain accessible; trade-tier stripping remains intact.
-- Combined validation passed `npm test` (9 tests), `npm run lint` (6 existing warnings, 0 errors), the catalog integrity checks (counts, unique SKU/slug, HTTPS provenance, empty assets, closed spec keys), `git diff --check`, and `npm run build` with TypeScript clean and **1,358 static pages**, including **1,319 product routes** (17 baseline + 1,302 imported). The only reported build warning is the existing multiple-lockfile workspace-root inference. Push and public production verification remain pending.
-- No login, credentials, or unapproved assets were used. The main app has now been combined-validated locally; deployment and public-result verification remain pending.
+- Combined validation passed `npm test` (9 tests), `npm run lint` (6 existing warnings, 0 errors), the catalog integrity checks (counts, unique SKU/slug, HTTPS provenance, empty assets, closed spec keys), `git diff --check`, and `npm run build` with TypeScript clean and **1,358 static pages**, including **1,319 product routes** (17 baseline + 1,302 imported). The only reported build warning is the existing multiple-lockfile workspace-root inference.
+- No login, credentials, or unapproved assets were used. The main app was combined-validated locally and the release was verified on the public Vercel alias.
 
 ## HWS constraints and consequences
 
@@ -81,13 +81,13 @@ Evidence timestamps: UI handoff `2026-08-05T20:16:08Z`; integrated build `2026-0
 1. Read the official public Somfy Pro UK and Beninca pages and record only fields visibly published there. Do not log in, use account-gated data, download/copy assets without confirmed reuse rights, or change provider credentials.
 2. Implement the approved quote-only/availability-unknown support and public metadata import only in the local HWS checkout, primarily through `hwsystem/src/content/catalog.ts` and the existing catalog boundary. Keep provenance in this note or a linked source note, and preserve unrelated parent-checkout changes.
 3. Run `npm run lint` and `npm run build` from `/Users/bojodanchev/HWS/hwsystem`; inspect the diff and report exact files/counts.
-4. Do not alter Vercel configuration, `WOO_*` or other credentials, or claim production delivery from a local build. The owner has now explicitly requested the release; Operations must still record the final commit/push and public-result evidence before this note marks production delivered.
+4. Do not alter Vercel configuration or `WOO_*` and other credentials, or claim production delivery from a local build. The owner explicitly requested the release, and the final commit/push plus public-result evidence are recorded above.
 
 ## Resume context and open questions
 
-- Coding Engineer owns the public metadata/data-layer import; UI Engineer owns matching quote-only/unknown-availability rendering. The integrated handoff and isolated UI commit are recorded above; Operations owns the remaining imported-data checks and final release evidence.
-- After integration, re-check exact SKU/slug/category uniqueness, empty-image/document behavior, ProductCard VAT labeling, SEO JSON-LD, category/search/sitemap behavior, accessibility, the Somfy count discrepancy, image/PDF licensing, and large-feed rendering.
-- This note records the owner override and current handoff; production readiness is not claimed until combined validation, diff review, commit/push, and public-result verification are documented.
+- Coding Engineer owns the public metadata/data-layer import; UI Engineer owns matching quote-only/unknown-availability rendering. The integrated handoff, combined validation, and release evidence are recorded above.
+- Re-check exact SKU/slug/category uniqueness, empty-image/document behavior, ProductCard VAT labeling, SEO JSON-LD, category/search/sitemap behavior, accessibility, the Somfy count discrepancy, image/PDF licensing, and large-feed rendering as future catalog maintenance work.
+- This note records the owner override, combined validation, production deployment, and public-result evidence; no account-gated commercial values or unapproved assets were added.
 
 ## Evidence
 
@@ -107,3 +107,4 @@ Evidence timestamps: UI handoff `2026-08-05T20:16:08Z`; integrated build `2026-0
 - Integrated build milestone: `npm run build` passed at HEAD `68b280eff5ec596941464b6b62cdb45d471f88fc`, generating 1,350 static pages including 1,319 product routes; only the existing multiple-lockfile workspace-root warning was reported. Buzz event `28203bb260fd05890e024ae80532086ee55fcf4c20c7b89d12a512edc96c06ba` at `2026-08-05T20:22:52Z`.
 - Evidence capture timestamp: `2026-08-05T20:22:52Z` (latest integrated-build milestone; imported-data integrity, release, and public production evidence remain pending).
 - Local code evidence reviewed on 2026-08-05: `hwsystem/src/content/catalog.ts`, `hwsystem/src/lib/catalog.ts`, `hwsystem/src/lib/woo.ts`, `hwsystem/src/types/catalog.ts`, `hwsystem/src/app/products/[category]/page.tsx`, `hwsystem/src/app/products/[category]/[slug]/page.tsx`, and `hwsystem/src/components/ProductCard.tsx`.
+- Final release verification: `main` and `origin/main` point to `b58d991a871c481fc1d4dcc8d8e15b096b74ed6e`; Vercel deployment `dpl_9ioWY3GgG69TzUZavWNt2vK67mA7` reached Ready with the `https://hwsystem.vercel.app` alias. The homepage, `/products/remotes/1810803-rs485-rts-transmitter`, and `/sitemap.xml` returned HTTP 200; the imported page showed SKU `1810803`, “Price on request”, and “Availability on request”, and did not expose `NaN`, `£0.00`, or `tradeTiers`.
