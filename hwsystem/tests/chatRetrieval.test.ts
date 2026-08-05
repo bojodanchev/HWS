@@ -59,4 +59,18 @@ describe("standalone assistant catalogue retrieval", () => {
     expect(assistantProduct).not.toHaveProperty("tradeTiers");
     expect(assistantProduct).not.toHaveProperty("priceBreaks");
   });
+
+  it("does not invent price or availability for public vendor metadata", () => {
+    const result = retrieveChatProducts(
+      "What is the public price of 1810803?",
+      products,
+    );
+    const answer = deterministicCatalogAnswer(result, "en", formatGBP);
+
+    expect(answer.products[0]).toMatchObject({
+      sku: "1810803",
+      price: "price on request",
+      stock: "availability on request",
+    });
+  });
 });

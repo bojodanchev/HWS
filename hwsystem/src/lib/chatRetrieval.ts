@@ -157,8 +157,9 @@ export function retrieveChatProducts(
     .filter((product) => !requestedCategory || product.category === requestedCategory)
     .map((product) => {
       const haystack = productHaystack(product);
+      const haystackTokens = new Set(tokens(haystack));
       const exact = exactIdentifierMatch(message, product);
-      const matchedTokens = queryTokens.filter((token) => haystack.includes(token));
+      const matchedTokens = queryTokens.filter((token) => haystackTokens.has(token));
       const score =
         (exact ? 120 : 0) +
         (requestedCategory ? 35 : 0) +
@@ -202,12 +203,14 @@ function stockLabel(product: Product, locale: ChatLocale): string {
       low: "low stock",
       backorder: "available to backorder",
       out: "out of stock",
+      unknown: "availability on request",
     },
     bg: {
       in_stock: "в наличност",
       low: "ограничена наличност",
       backorder: "с доставка по заявка",
       out: "изчерпан",
+      unknown: "наличност по заявка",
     },
   } as const;
   return labels[locale][product.stock.status];
@@ -218,6 +221,13 @@ export function toAssistantProduct(
   locale: ChatLocale,
   formatPrice: (value: number) => string,
 ): AssistantProduct {
+  const publicPrice =
+    product.price.quoteOnly !== true && typeof product.price.rrp === "number"
+      ? `${formatPrice(product.price.rrp)} ex VAT`
+      : locale === "bg"
+        ? "цената е по заявка"
+        : "price on request";
+
   return {
     name: product.name,
     sku: product.sku,
@@ -225,7 +235,7 @@ export function toAssistantProduct(
     category: product.category,
     shortDescription: product.shortDescription,
     compatibility: product.compatibility,
-    price: `${formatPrice(product.price.rrp)} ex VAT`,
+    price: publicPrice,
     stock: stockLabel(product, locale),
     specs: product.specs.map(
       (spec) => `${spec.key}: ${spec.value}${spec.unit ? ` ${spec.unit}` : ""}`,

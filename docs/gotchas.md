@@ -16,6 +16,13 @@
 - **`vercel logs` requires a linked project** (`vercel link --yes --project hwsystem`) and only streams NEW logs — start streaming, then trigger the request.
 - **useSearchParams needs `<Suspense>`** around the client filter/sort components on server-rendered pages.
 
+## Lead Scraping (2026-07-16 run)
+- **Overpass API returns 406 for default python-requests UA**: set a descriptive `User-Agent` with contact email. curl works out of the box.
+- **All 3 Overpass mirrors (overpass-api.de, kumi.systems, private.coffee) 504/timeout under evening EU load**: queries eventually land after 1-5 retries. For long runs: rotate mirrors, capped exponential backoff (15s→240s), and checkpoint each query result to disk atomically — a first version that only wrote at the end lost 7 categories to a restart.
+- **business.bg URL anatomy**: `o-N/` = sector, `k-N/` = keyword category, `f-N/` = firm page, `c-N/` = city filter. Search via `index.php?act=search&srchstr=<kw>&srchcity=all&s=<page>`. Firm pages expose `tel:`/`mailto:` links, `itemprop="streetAddress"`, and the city inside the meta description after " - ".
+- **Fake BG "directories"**: bgcatalog.com and firmite.bg are WordPress shells with no firm data; zlatnistranici.bg is dead. business.bg is the real one.
+- **craft=handyman is unused in OSM** (0 results in both BG and GB); the installer segment comes from craft=carpenter/joiner/window_construction and shop=locksmith instead.
+
 ## Browser Automation
 - **Telegram Web K**: navigating with a `#chatId` hash into a fresh SPA load doesn't open the chat; set `location.hash` again via JS after load. Messages live in `.bubbles-group .bubble` (dataset.mid, `.name`, `.message`, `.time-inner[title]`).
 - **computer type+Tab into React forms is unreliable** (hydration timing); use `find` refs + `form_input` instead — it sets values that React registers.
