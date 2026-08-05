@@ -4,11 +4,11 @@ import { supplierProducts } from "@/content/supplierCatalog";
 /**
  * Catalog content — the MVP data layer.
  *
- * This file stands in for WooCommerce until the WP attribute schema is
- * finalised; src/lib/catalog.ts is the only consumer, so swapping to
- * src/lib/woo.ts later touches no components. Product images marked
- * "real" come from SBI Group's own sites (sbigaragedoors.co.uk /
- * sbi-bg.com); items without photography yet use specs-first cards.
+ * This is the standalone typed catalogue source. src/lib/catalog.ts is the
+ * only consumer, so an optional commerce adapter can be added later without
+ * becoming a runtime requirement. Product images marked "real" come from SBI
+ * Group's own sites (sbigaragedoors.co.uk / sbi-bg.com); items without
+ * photography yet use specs-first cards.
  */
 
 export const categories: Category[] = [
