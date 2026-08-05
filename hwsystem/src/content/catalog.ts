@@ -1,5 +1,5 @@
 import type { Category, Product } from "@/types/catalog";
-import { supplierProducts } from "@/content/supplierCatalog";
+import { vendorProducts } from "@/content/vendor-catalog";
 
 /**
  * Catalog content — the MVP data layer.
@@ -751,5 +751,5 @@ export const products: Product[] = [
     relatedSkus: ["BFT-MITTO-B2", "SBI-PHOTO-KIT"],
     replacesSkus: [],
   },
-  ...supplierProducts,
+  ...vendorProducts,
 ];

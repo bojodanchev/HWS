@@ -82,11 +82,12 @@ export type TradeTier = "bronze" | "silver" | "gold";
  * never ship it to an unauthenticated client.
  */
 export type Price = {
-  /** Always visible when a public RRP is available (B2C). */
+  /** Public RRP when the source publishes one; quote-only rows omit it. */
   rrp?: number;
+  /** Currency and VAT semantics are omitted when the price is quote-only. */
   currency?: "GBP";
   vatIncluded?: boolean;
-  /** Supplier listing has no approved public RRP; request a current quote. */
+  /** True when a public RRP is not available and a quote is required. */
   quoteOnly?: boolean;
   tradeTiers?: Record<TradeTier, number>;
   priceBreaks?: { qty: number; price: number }[]; // 1 / 5 / 10 / 25
@@ -98,7 +99,7 @@ export type Stock = {
   status: StockStatus;
   /** Show only "10+ in stock", never the exact number */
   qty?: number;
-  /** The key promise, omitted when the supplier does not publish it. */
+  /** The key promise; omitted when public availability is unknown. */
   nextDayEligible?: boolean;
   leadTimeDays?: number;
 };
