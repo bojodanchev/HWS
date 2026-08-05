@@ -1,19 +1,46 @@
 import Link from "next/link";
-import type { Price } from "@/types/catalog";
-import { formatGBP } from "@/lib/catalog";
+import { formatGBP, hasPublicPrice, type DisplayPrice } from "@/lib/catalog";
 
 /**
- * Shows RRP for everyone. Trade prices never reach this component for
- * unauthenticated viewers — src/lib/catalog.ts strips them server-side —
- * so the trade gate is a link, not a reveal.
+ * Shows a public RRP when one is available. Trade prices never reach this
+ * component for unauthenticated viewers — src/lib/catalog.ts strips them
+ * server-side — so the trade gate is a link, not a reveal.
  */
-export function PriceBlock({ price, compact = false }: { price: Price; compact?: boolean }) {
+export function PriceBlock({
+  price,
+  compact = false,
+  quoteHref = "/quote",
+}: {
+  price: DisplayPrice;
+  compact?: boolean;
+  quoteHref?: string;
+}) {
+  if (!hasPublicPrice(price)) {
+    return (
+      <div>
+        <p className={compact ? "text-xl font-semibold text-ink" : "text-2xl font-semibold text-ink"}>
+          Price on request
+        </p>
+        <Link
+          href={quoteHref}
+          className="mt-1 inline-block text-sm font-medium text-steel underline-offset-4 hover:text-ink hover:underline"
+        >
+          Request a quote
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div>
       <p className={compact ? "text-xl font-semibold text-ink" : "text-2xl font-semibold text-ink"}>
         {formatGBP(price.rrp)}
         <span className="ml-1.5 text-sm font-normal text-mist">
-          {price.vatIncluded ? "inc VAT" : "ex VAT"}
+          {price.vatIncluded === true
+            ? "inc VAT"
+            : price.vatIncluded === false
+              ? "ex VAT"
+              : "VAT status on request"}
         </span>
       </p>
       <Link

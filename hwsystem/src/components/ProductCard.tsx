@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/types/catalog";
-import { formatGBP } from "@/lib/catalog";
+import { formatGBP, hasPublicPrice } from "@/lib/catalog";
 import { StockBadge } from "@/components/StockBadge";
 
 function specChips(product: Product): string[] {
@@ -24,6 +24,7 @@ export function ProductCard({ product }: { product: Product }) {
   const href = `/products/${product.category}/${product.slug}`;
   const chips = specChips(product);
   const image = product.images[0];
+  const publicPrice = hasPublicPrice(product.price) ? product.price : undefined;
 
   return (
     <article className="group flex flex-col rounded-md border border-line bg-white transition-colors duration-150 hover:border-ink">
@@ -52,11 +53,23 @@ export function ProductCard({ product }: { product: Product }) {
           <p className="mt-2 text-[13px] text-steel">{chips.join(" · ")}</p>
         )}
         <div className="mt-4 border-t border-line pt-4">
-          <p className="text-xl font-semibold text-ink">
-            {formatGBP(product.price.rrp)}
-            <span className="ml-1.5 text-sm font-normal text-mist">ex VAT</span>
+          {publicPrice ? (
+            <p className="text-xl font-semibold text-ink">
+              {formatGBP(publicPrice.rrp)}
+              <span className="ml-1.5 text-sm font-normal text-mist">
+                {publicPrice.vatIncluded === true
+                  ? "inc VAT"
+                  : publicPrice.vatIncluded === false
+                    ? "ex VAT"
+                    : "VAT status on request"}
+              </span>
+            </p>
+          ) : (
+            <p className="text-xl font-semibold text-ink">Price on request</p>
+          )}
+          <p className="mt-0.5 text-sm text-steel">
+            {publicPrice ? "or open a trade account" : "Request a quote for this part"}
           </p>
-          <p className="mt-0.5 text-sm text-steel">or open a trade account</p>
           <StockBadge stock={product.stock} className="mt-2" />
         </div>
       </Link>

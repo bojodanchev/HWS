@@ -14,8 +14,32 @@ import type {
   FilterKey,
   Price,
   Product,
+  Stock,
+  StockStatus,
   TradeTier,
 } from "@/types/catalog";
+
+/** Public rendering view for products with no safe RRP. */
+export type DisplayPrice = Omit<Price, "rrp"> & {
+  rrp?: number;
+  quoteOnly?: boolean;
+};
+
+export type DisplayStockStatus = StockStatus | "unknown";
+
+export type DisplayStock = Omit<Stock, "status"> & {
+  status: DisplayStockStatus;
+};
+
+export function hasPublicPrice(
+  price: DisplayPrice,
+): price is DisplayPrice & { rrp: number } {
+  return price.quoteOnly !== true && typeof price.rrp === "number" && Number.isFinite(price.rrp);
+}
+
+export function hasKnownStock(stock: DisplayStock): boolean {
+  return stock.status !== "unknown";
+}
 
 function publicPrice(price: Price, tier?: TradeTier): Price {
   if (tier && price.tradeTiers) return price;
@@ -73,10 +97,10 @@ export function getProducts(filters: CatalogFilters = {}, tier?: TradeTier): Pro
 
   switch (filters.sort) {
     case "price-asc":
-      list.sort((a, b) => a.price.rrp - b.price.rrp);
+      list.sort((a, b) => comparePrices(a.price, b.price));
       break;
     case "price-desc":
-      list.sort((a, b) => b.price.rrp - a.price.rrp);
+      list.sort((a, b) => comparePrices(b.price, a.price));
       break;
     case "name":
       list.sort((a, b) => a.name.localeCompare(b.name));
@@ -86,6 +110,16 @@ export function getProducts(filters: CatalogFilters = {}, tier?: TradeTier): Pro
   }
 
   return list.map((p) => publicProduct(p, tier));
+}
+
+function comparePrices(a: DisplayPrice, b: DisplayPrice): number {
+  const aValue = hasPublicPrice(a) ? a.rrp : undefined;
+  const bValue = hasPublicPrice(b) ? b.rrp : undefined;
+
+  if (aValue === undefined && bValue === undefined) return 0;
+  if (aValue === undefined) return 1;
+  if (bValue === undefined) return -1;
+  return aValue - bValue;
 }
 
 export function getProductBySlug(slug: string, tier?: TradeTier): Product | undefined {

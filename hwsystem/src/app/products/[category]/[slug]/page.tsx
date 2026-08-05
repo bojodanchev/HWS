@@ -3,7 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, PhoneCall } from "lucide-react";
-import { getCategory, getProductBySlug, getProducts, getProductsBySkus } from "@/lib/catalog";
+import {
+  getCategory,
+  getProductBySlug,
+  getProducts,
+  getProductsBySkus,
+  hasKnownStock,
+  hasPublicPrice,
+  type DisplayStockStatus,
+} from "@/lib/catalog";
 import { PriceBlock } from "@/components/PriceBlock";
 import { StockBadge } from "@/components/StockBadge";
 import { SpecTable } from "@/components/SpecTable";
@@ -36,6 +44,27 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
   if (!product || product.category !== category) notFound();
   const cat = getCategory(product.category);
   const related = getProductsBySkus(product.relatedSkus).slice(0, 3);
+  const publicPrice = hasPublicPrice(product.price) ? product.price : undefined;
+  const stockStatus: DisplayStockStatus = product.stock.status;
+  const knownStock = hasKnownStock(product.stock);
+
+  const offer = publicPrice
+    ? {
+        "@type": "Offer",
+        price: publicPrice.rrp,
+        ...(publicPrice.currency ? { priceCurrency: publicPrice.currency } : {}),
+        ...(knownStock
+          ? {
+              availability:
+                stockStatus === "out"
+                  ? "https://schema.org/OutOfStock"
+                  : stockStatus === "backorder"
+                    ? "https://schema.org/BackOrder"
+                    : "https://schema.org/InStock",
+            }
+          : {}),
+      }
+    : undefined;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -44,18 +73,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
     sku: product.sku,
     brand: { "@type": "Brand", name: product.brand },
     description: product.shortDescription,
-    image: product.images.map((i) => i.url),
-    offers: {
-      "@type": "Offer",
-      price: product.price.rrp,
-      priceCurrency: product.price.currency,
-      availability:
-        product.stock.status === "out"
-          ? "https://schema.org/OutOfStock"
-          : product.stock.status === "backorder"
-            ? "https://schema.org/BackOrder"
-            : "https://schema.org/InStock",
-    },
+    ...(product.images.length > 0 ? { image: product.images.map((i) => i.url) } : {}),
+    ...(offer ? { offers: offer } : {}),
   };
 
   return (
@@ -116,7 +135,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           <p className="mt-4 text-steel">{product.shortDescription}</p>
 
           <div className="mt-6 rounded-md border border-line bg-white p-6">
-            <PriceBlock price={product.price} />
+            <PriceBlock price={product.price} quoteHref={`/quote?sku=${encodeURIComponent(product.sku)}`} />
             <StockBadge stock={product.stock} className="mt-4" />
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
@@ -151,14 +170,20 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
 
       {/* Details */}
       <div className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_1fr]">
-        <section aria-labelledby="spec-heading">
-          <h2 id="spec-heading" className="text-h2 text-ink">
-            Specifications
+        <section aria-labelledby={product.specs.length > 0 ? "spec-heading" : "description-heading"}>
+          {product.specs.length > 0 && (
+            <>
+              <h2 id="spec-heading" className="text-h2 text-ink">
+                Specifications
+              </h2>
+              <div className="mt-5 rounded-md border border-line bg-white p-6">
+                <SpecTable specs={product.specs} />
+              </div>
+            </>
+          )}
+          <h2 id="description-heading" className="mt-10 text-h2 text-ink">
+            Description
           </h2>
-          <div className="mt-5 rounded-md border border-line bg-white p-6">
-            <SpecTable specs={product.specs} />
-          </div>
-          <h2 className="mt-10 text-h2 text-ink">Description</h2>
           <p className="mt-4 leading-relaxed text-steel">{product.description}</p>
           {product.compatibility.length > 0 && (
             <>
