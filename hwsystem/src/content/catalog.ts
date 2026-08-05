@@ -1,4 +1,5 @@
 import type { Category, Product } from "@/types/catalog";
+import { supplierProducts } from "@/content/supplierCatalog";
 
 /**
  * Catalog content — the MVP data layer.
@@ -26,6 +27,22 @@ export const categories: Category[] = [
       "Axial and side-mounted operators for sectional and industrial doors, including chain and shaft drives.",
     image: "/images/products/automation.jpg",
     filters: ["brand", "torque", "voltage", "inStock", "nextDay"],
+  },
+  {
+    slug: "gate-automation",
+    name: "Gate automation",
+    description:
+      "Beninca automation systems for swinging and sliding gates, imported from the public manufacturer catalogue.",
+    image: "/images/products/automation.jpg",
+    filters: ["brand", "torque", "voltage", "frequency", "inStock", "nextDay"],
+  },
+  {
+    slug: "barriers",
+    name: "Barriers & car park automation",
+    description:
+      "Public Beninca barrier and car-park automation metadata, available for quotation pending commercial confirmation.",
+    image: "/images/products/moovi-barrier.png",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
   },
   {
     slug: "control-panels",
@@ -90,6 +107,14 @@ export const categories: Category[] = [
       "Complete SBI sectional and roller doors, made in our own European factory. Quoted, not carted.",
     image: "/images/doors/sectional-installed.jpg",
     filters: [],
+  },
+  {
+    slug: "supplier-products",
+    name: "Supplier catalogue",
+    description:
+      "Public supplier product metadata imported without account-gated pricing, stock promises, or unapproved assets.",
+    image: "/images/products/automation.jpg",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
   },
 ];
 
@@ -726,4 +751,5 @@ export const products: Product[] = [
     relatedSkus: ["BFT-MITTO-B2", "SBI-PHOTO-KIT"],
     replacesSkus: [],
   },
+  ...supplierProducts,
 ];

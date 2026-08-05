@@ -82,22 +82,24 @@ export type TradeTier = "bronze" | "silver" | "gold";
  * never ship it to an unauthenticated client.
  */
 export type Price = {
-  /** Always visible (B2C) */
-  rrp: number;
-  currency: "GBP";
-  vatIncluded: boolean;
+  /** Always visible when a public RRP is available (B2C). */
+  rrp?: number;
+  currency?: "GBP";
+  vatIncluded?: boolean;
+  /** Supplier listing has no approved public RRP; request a current quote. */
+  quoteOnly?: boolean;
   tradeTiers?: Record<TradeTier, number>;
   priceBreaks?: { qty: number; price: number }[]; // 1 / 5 / 10 / 25
 };
 
-export type StockStatus = "in_stock" | "low" | "backorder" | "out";
+export type StockStatus = "in_stock" | "low" | "backorder" | "out" | "unknown";
 
 export type Stock = {
   status: StockStatus;
   /** Show only "10+ in stock", never the exact number */
   qty?: number;
-  /** The key promise */
-  nextDayEligible: boolean;
+  /** The key promise, omitted when the supplier does not publish it. */
+  nextDayEligible?: boolean;
   leadTimeDays?: number;
 };
 
