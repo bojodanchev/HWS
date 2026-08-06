@@ -1,7 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CustomerAssistant } from "@/components/CustomerAssistant";
-import { ContactCapturePopup } from "@/components/ContactCapturePopup";
+import { FloatingSupportWidgets } from "@/components/FloatingSupportWidgets";
 
 /** Public site shell — marketing and catalogue pages share the full chrome. */
 export default function SiteLayout({
@@ -12,8 +11,7 @@ export default function SiteLayout({
       <Header />
       {children}
       <Footer />
-      <CustomerAssistant />
-      <ContactCapturePopup />
+      <FloatingSupportWidgets />
     </>
   );
 }

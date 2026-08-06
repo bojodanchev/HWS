@@ -2,6 +2,7 @@
 
 import {
   FormEvent,
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -86,7 +87,11 @@ function initialMessages(locale: ChatLocale): UiMessage[] {
   return [{ role: "assistant", content: copy[locale].welcome }];
 }
 
-export function CustomerAssistant() {
+export function CustomerAssistant({
+  onOpenChange,
+}: {
+  onOpenChange?: (open: boolean) => void;
+}) {
   const [open, setOpen] = useState(false);
   const [locale, setLocale] = useState<ChatLocale>("en");
   const [messages, setMessages] = useState<UiMessage[]>(initialMessages("en"));
@@ -106,17 +111,22 @@ export function CustomerAssistant() {
   const reduceMotion = useReducedMotion();
   const t = copy[locale];
 
+  const setAssistantOpen = useCallback((nextOpen: boolean) => {
+    setOpen(nextOpen);
+    onOpenChange?.(nextOpen);
+  }, [onOpenChange]);
+
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setOpen(false);
+        setAssistantOpen(false);
         launcherRef.current?.focus();
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
+  }, [open, setAssistantOpen]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
@@ -276,7 +286,7 @@ export function CustomerAssistant() {
                 <button
                   type="button"
                   onClick={() => {
-                    setOpen(false);
+                    setAssistantOpen(false);
                     launcherRef.current?.focus();
                   }}
                   aria-label={t.close}
@@ -522,8 +532,9 @@ export function CustomerAssistant() {
         ref={launcherRef}
         type="button"
         onClick={() => {
-          setOpen((current) => !current);
-          window.setTimeout(() => inputRef.current?.focus(), 0);
+          const nextOpen = !open;
+          setAssistantOpen(nextOpen);
+          if (nextOpen) window.setTimeout(() => inputRef.current?.focus(), 0);
         }}
         aria-expanded={open}
         aria-controls="customer-assistant-dialog"

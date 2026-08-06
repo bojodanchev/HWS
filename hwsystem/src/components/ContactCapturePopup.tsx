@@ -64,7 +64,7 @@ export function ContactCapturePopup() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 w-[min(100%-2rem,380px)]">
+    <div className="fixed bottom-24 right-6 z-40 w-[min(100%-2rem,380px)]">
       {!open ? (
         <button
           type="button"
