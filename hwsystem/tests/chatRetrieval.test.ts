@@ -54,7 +54,7 @@ describe("standalone assistant catalogue retrieval", () => {
 
     expect(assistantProduct).toMatchObject({
       sku: "SBI-RM4-433",
-      price: "£18.50 ex VAT",
+      price: "£18.50 ex VAT (+ VAT £3.70; £22.20 inc VAT)",
     });
     expect(assistantProduct).not.toHaveProperty("tradeTiers");
     expect(assistantProduct).not.toHaveProperty("priceBreaks");

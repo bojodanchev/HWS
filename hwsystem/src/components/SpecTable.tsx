@@ -11,6 +11,7 @@ const SPEC_LABELS: Record<SpecKey, string> = {
   frequency: "Frequency",
   channels: "Channels",
   maxDoorArea: "Max door area",
+  maxGateWeight: "Max gate weight",
   cableLength: "Length / range",
   material: "Material",
   warrantyYears: "Warranty",

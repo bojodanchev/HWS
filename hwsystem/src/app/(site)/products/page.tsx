@@ -16,6 +16,9 @@ export default function ProductsPage() {
   for (const p of getProducts()) {
     counts.set(p.category, (counts.get(p.category) ?? 0) + 1);
   }
+  const visibleCategories = categories.filter(
+    (cat) => cat.slug === "doors" || (counts.get(cat.slug) ?? 0) > 0,
+  );
 
   return (
     <main className="mx-auto w-full max-w-[1280px] px-6 py-12 lg:py-16">
@@ -33,7 +36,7 @@ export default function ProductsPage() {
         and compliance documents.
       </p>
       <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((cat) => {
+        {visibleCategories.map((cat) => {
           const count = counts.get(cat.slug) ?? 0;
           const href = cat.slug === "doors" ? "/doors" : `/products/${cat.slug}`;
           return (

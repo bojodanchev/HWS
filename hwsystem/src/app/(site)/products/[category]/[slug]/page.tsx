@@ -7,7 +7,7 @@ import {
   getCategory,
   getProductBySlug,
   getProducts,
-  getProductsBySkus,
+  getRecommendationGroups,
   hasKnownStock,
   hasPublicPrice,
   type DisplayStockStatus,
@@ -43,7 +43,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
   const product = getProductBySlug(slug);
   if (!product || product.category !== category) notFound();
   const cat = getCategory(product.category);
-  const related = getProductsBySkus(product.relatedSkus).slice(0, 3);
+  const recommendations = getRecommendationGroups(product);
   const publicPrice = hasPublicPrice(product.price) ? product.price : undefined;
   const stockStatus: DisplayStockStatus = product.stock.status;
   const knownStock = hasKnownStock(product.stock);
@@ -217,14 +217,28 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         </section>
       </div>
 
-      {/* Related */}
-      {related.length > 0 && (
+      {/* Recommendations */}
+      {recommendations.curated.length > 0 && (
         <section aria-labelledby="related-heading" className="mt-20">
           <h2 id="related-heading" className="text-h2 text-ink">
-            Often bought together
+            Recommended for this installation
           </h2>
           <ul className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {related.map((p) => (
+            {recommendations.curated.map((p) => (
+              <li key={p.id}>
+                <ProductCard product={p} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {recommendations.related.length > 0 && (
+        <section aria-labelledby="related-products-heading" className="mt-20">
+          <h2 id="related-products-heading" className="text-h2 text-ink">
+            Related products
+          </h2>
+          <ul className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {recommendations.related.map((p) => (
               <li key={p.id}>
                 <ProductCard product={p} />
               </li>

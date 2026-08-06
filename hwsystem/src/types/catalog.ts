@@ -5,7 +5,7 @@
  * Hierarchy: Category → Subcategory → Product → Variant (SKU)
  */
 
-export type Brand = "Somfy" | "Nice" | "Beninca" | "Teleco" | "SBI" | "Generic";
+export type Brand = "Somfy" | "Nice" | "Beninca" | "BFT" | "Teleco" | "SBI" | "Generic";
 
 export type FilterKey =
   | "brand"
@@ -39,6 +39,7 @@ export type SpecKey =
   | "frequency" // 433.92 MHz | 868 MHz
   | "channels"
   | "maxDoorArea" // m²
+  | "maxGateWeight" // kg
   | "cableLength"
   | "material"
   | "warrantyYears";
@@ -82,13 +83,17 @@ export type TradeTier = "bronze" | "silver" | "gold";
  * never ship it to an unauthenticated client.
  */
 export type Price = {
-  /** Public RRP when the source publishes one; quote-only rows omit it. */
+  /** Public sale price, always normalised to GBP ex VAT. */
   rrp?: number;
   /** Currency and VAT semantics are omitted when the price is quote-only. */
   currency?: "GBP";
   vatIncluded?: boolean;
+  /** VAT rate as a decimal; UK standard-rated products use 0.2 by default. */
+  vatRate?: number;
   /** True when a public RRP is not available and a quote is required. */
   quoteOnly?: boolean;
+  /** Corporate purchase cost; stripped before public rendering. */
+  purchaseCostExVat?: number;
   tradeTiers?: Record<TradeTier, number>;
   priceBreaks?: { qty: number; price: number }[]; // 1 / 5 / 10 / 25
 };
@@ -132,6 +137,7 @@ export type Product = {
   documents: ProductDocument[];
   price: Price;
   stock: Stock;
+  purchasePolicy?: PurchasePolicy;
   variants?: Variant[];
   relatedSkus: string[];
   /** "Replaces old model X" — big SEO/UX win */
@@ -148,4 +154,11 @@ export type TradeAccount = {
   status: TradeAccountStatus;
   approvedAt?: Date;
   creditTerms?: "prepay" | "net30";
+};
+
+export type PurchaseAudience = "public" | "trade-account";
+
+export type PurchasePolicy = {
+  audience: PurchaseAudience;
+  minQuantity?: number;
 };

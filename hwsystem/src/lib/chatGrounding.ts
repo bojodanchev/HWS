@@ -31,8 +31,10 @@ export function isGroundedCatalogAnswer(
   }
 
   const allowedPrices = new Set(
-    catalog.products.map((product) =>
-      Number(product.price.replace(/[^\d.]/g, "")).toFixed(2),
+    catalog.products.flatMap((product) =>
+      [...product.price.matchAll(/£\s*([\d,.]+)/g)].map((match) =>
+        Number(match[1].replace(/,/g, "")).toFixed(2),
+      ),
     ),
   );
   const prices = [...answer.matchAll(/£\s*([\d,.]+)/g)].map((match) =>

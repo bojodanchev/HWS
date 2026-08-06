@@ -1,5 +1,7 @@
 import type { Category, Product } from "@/types/catalog";
 import { vendorProducts } from "@/content/vendor-catalog";
+import { niceProducts } from "@/content/nice-catalog";
+import { bftProducts } from "@/content/bft-catalog";
 
 /**
  * Catalog content — the MVP data layer.
@@ -27,6 +29,38 @@ export const categories: Category[] = [
       "Axial and side-mounted operators for sectional and industrial doors, including chain and shaft drives.",
     image: "/images/products/automation.jpg",
     filters: ["brand", "torque", "voltage", "inStock", "nextDay"],
+  },
+  {
+    slug: "sliding-gates",
+    name: "Sliding gate automation",
+    description:
+      "Complete sliding-gate operators, motors and rack systems for residential, commercial and heavy gates.",
+    image: "/images/products/automation.jpg",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
+  },
+  {
+    slug: "swing-gates",
+    name: "Swing gate automation",
+    description:
+      "Articulated-arm, linear and hydraulic operators for single- and double-leaf swing gates.",
+    image: "/images/doors/thumb-sliding.jpg",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
+  },
+  {
+    slug: "garage-door-automation",
+    name: "Garage door automation",
+    description:
+      "Ceiling and shaft-drive operators for sectional, up-and-over and roller garage-door installations.",
+    image: "/images/doors/sectional-installed.jpg",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
+  },
+  {
+    slug: "controls-and-safety",
+    name: "Controls & safety",
+    description:
+      "Receivers, transmitters, photocells, flashing lights and installation controls for safer automation.",
+    image: "/images/products/bft-remote.jpg",
+    filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
   },
   {
     slug: "gate-automation",
@@ -751,5 +785,7 @@ export const products: Product[] = [
     relatedSkus: ["BFT-MITTO-B2", "SBI-PHOTO-KIT"],
     replacesSkus: [],
   },
+  ...bftProducts,
+  ...niceProducts,
   ...vendorProducts,
 ];

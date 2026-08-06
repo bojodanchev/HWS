@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { formatGBP, hasPublicPrice, type DisplayPrice } from "@/lib/catalog";
+import {
+  formatGBP,
+  formatVatRate,
+  getPriceBreakdown,
+  hasPublicPrice,
+  type DisplayPrice,
+} from "@/lib/catalog";
 
 /**
  * Shows a public RRP when one is available. Trade prices never reach this
@@ -21,6 +27,7 @@ export function PriceBlock({
         <p className={compact ? "text-xl font-semibold text-ink" : "text-2xl font-semibold text-ink"}>
           Price on request
         </p>
+        <p className="mt-1 text-sm text-steel">VAT calculated on the confirmed quote.</p>
         <Link
           href={quoteHref}
           className="mt-1 inline-block text-sm font-medium text-steel underline-offset-4 hover:text-ink hover:underline"
@@ -31,17 +38,20 @@ export function PriceBlock({
     );
   }
 
+  const breakdown = getPriceBreakdown(price);
+  if (!breakdown) return null;
+
   return (
     <div>
       <p className={compact ? "text-xl font-semibold text-ink" : "text-2xl font-semibold text-ink"}>
-        {formatGBP(price.rrp)}
-        <span className="ml-1.5 text-sm font-normal text-mist">
-          {price.vatIncluded === true
-            ? "inc VAT"
-            : price.vatIncluded === false
-              ? "ex VAT"
-              : "VAT status on request"}
-        </span>
+        {formatGBP(breakdown.exVat)}
+        <span className="ml-1.5 text-sm font-normal text-mist">ex VAT</span>
+      </p>
+      <p className="mt-1 text-sm text-steel">
+        + VAT ({formatVatRate(breakdown.vatRate)}): {formatGBP(breakdown.vat)}
+      </p>
+      <p className="mt-1 text-sm font-medium text-ink">
+        {formatGBP(breakdown.incVat)} <span className="font-normal text-mist">inc VAT</span>
       </p>
       <Link
         href="/trade"
@@ -54,20 +64,25 @@ export function PriceBlock({
           <caption className="mb-1 text-left text-xs font-medium uppercase tracking-[0.08em] text-mist">
             Volume pricing
           </caption>
-          <thead>
-            <tr className="border-b border-line text-left text-steel">
-              <th className="py-1.5 pr-4 font-medium">Qty</th>
-              <th className="py-1.5 font-medium">Unit price ex VAT</th>
-            </tr>
-          </thead>
-          <tbody>
-            {price.priceBreaks.map((b) => (
-              <tr key={b.qty} className="border-b border-line">
-                <td className="py-1.5 pr-4 font-mono text-ink">{b.qty}+</td>
-                <td className="py-1.5 text-ink">{formatGBP(b.price)}</td>
+            <thead>
+              <tr className="border-b border-line text-left text-steel">
+                <th className="py-1.5 pr-4 font-medium">Qty</th>
+                <th className="py-1.5 pr-4 font-medium">Ex VAT</th>
+                <th className="py-1.5 font-medium">Inc VAT</th>
               </tr>
-            ))}
-          </tbody>
+            </thead>
+            <tbody>
+              {price.priceBreaks.map((b) => {
+                const breakDown = getPriceBreakdown({ ...price, rrp: b.price });
+                return (
+                  <tr key={b.qty} className="border-b border-line">
+                    <td className="py-1.5 pr-4 font-mono text-ink">{b.qty}+</td>
+                    <td className="py-1.5 pr-4 text-ink">{formatGBP(breakDown?.exVat ?? b.price)}</td>
+                    <td className="py-1.5 text-ink">{formatGBP(breakDown?.incVat ?? b.price)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
         </table>
       )}
     </div>

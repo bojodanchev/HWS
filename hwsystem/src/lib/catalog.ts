@@ -19,10 +19,19 @@ import type {
   TradeTier,
 } from "@/types/catalog";
 
+export const STANDARD_VAT_RATE = 0.2;
+
 /** Public rendering view for products with no safe RRP. */
-export type DisplayPrice = Omit<Price, "rrp"> & {
+export type DisplayPrice = Omit<Price, "rrp" | "purchaseCostExVat" | "tradeTiers"> & {
   rrp?: number;
   quoteOnly?: boolean;
+};
+
+export type PriceBreakdown = {
+  exVat: number;
+  vat: number;
+  incVat: number;
+  vatRate: number;
 };
 
 export type DisplayStockStatus = StockStatus | "unknown";
@@ -41,10 +50,33 @@ export function hasKnownStock(stock: DisplayStock): boolean {
   return stock.status !== "unknown";
 }
 
+export function getPriceBreakdown(price: DisplayPrice): PriceBreakdown | undefined {
+  if (!hasPublicPrice(price)) return undefined;
+
+  const vatRate =
+    typeof price.vatRate === "number" && Number.isFinite(price.vatRate)
+      ? price.vatRate
+      : STANDARD_VAT_RATE;
+  const exVat = price.vatIncluded === true ? price.rrp / (1 + vatRate) : price.rrp;
+  const vat = exVat * vatRate;
+
+  return {
+    exVat,
+    vat,
+    incVat: exVat + vat,
+    vatRate,
+  };
+}
+
+export function formatVatRate(rate: number): string {
+  return `${Math.round(rate * 100)}%`;
+}
+
 function publicPrice(price: Price, tier?: TradeTier): Price {
-  if (tier && price.tradeTiers) return price;
-  const { tradeTiers: _hidden, ...rest } = price;
-  return rest;
+  const withoutCost = { ...price };
+  delete withoutCost.purchaseCostExVat;
+  if (!tier) delete withoutCost.tradeTiers;
+  return withoutCost;
 }
 
 function publicProduct(p: Product, tier?: TradeTier): Product {
@@ -128,9 +160,57 @@ export function getProductBySlug(slug: string, tier?: TradeTier): Product | unde
 }
 
 export function getProductsBySkus(skus: string[], tier?: TradeTier): Product[] {
-  return products
-    .filter((p) => skus.includes(p.sku))
-    .map((p) => publicProduct(p, tier));
+  const bySku = new Map(products.map((product) => [product.sku, product]));
+  return skus
+    .map((sku) => bySku.get(sku))
+    .filter((product): product is Product => Boolean(product))
+    .map((product) => publicProduct(product, tier));
+}
+
+export type RecommendationGroups = {
+  curated: Product[];
+  related: Product[];
+};
+
+/**
+ * Return curated add-ons first, then a conservative same-brand/category
+ * fallback for imported products that do not yet have relationship data.
+ * The fallback is deliberately labelled as related, never as purchase history.
+ */
+export function getRecommendationGroups(
+  product: Product,
+  tier?: TradeTier,
+): RecommendationGroups {
+  const curated = getProductsBySkus(product.relatedSkus, tier).slice(0, 4);
+  const selected = new Set([product.sku, ...curated.map((item) => item.sku)]);
+  const productSpecValues = new Set(
+    product.specs
+      .filter((spec) => ["voltage", "frequency", "tubeDiameter"].includes(spec.key))
+      .map((spec) => `${spec.key}:${String(spec.value).toLowerCase()}`),
+  );
+
+  const related = products
+    .filter((candidate) => !selected.has(candidate.sku))
+    .map((candidate) => {
+      let score = 0;
+      if (candidate.brand === product.brand) score += 3;
+      if (candidate.category === product.category) score += 3;
+      for (const spec of candidate.specs) {
+        if (productSpecValues.has(`${spec.key}:${String(spec.value).toLowerCase()}`)) {
+          score += 1;
+        }
+      }
+      return { candidate, score };
+    })
+    .filter(({ score }) => score >= 3)
+    .sort(
+      (left, right) =>
+        right.score - left.score || left.candidate.name.localeCompare(right.candidate.name),
+    )
+    .slice(0, 4)
+    .map(({ candidate }) => publicProduct(candidate, tier));
+
+  return { curated, related };
 }
 
 /** SKU-first search: SKU, replacesSkus, then name/brand/compatibility. */

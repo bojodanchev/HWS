@@ -221,12 +221,20 @@ export function toAssistantProduct(
   locale: ChatLocale,
   formatPrice: (value: number) => string,
 ): AssistantProduct {
-  const publicPrice =
-    product.price.quoteOnly !== true && typeof product.price.rrp === "number"
-      ? `${formatPrice(product.price.rrp)} ex VAT`
-      : locale === "bg"
-        ? "цената е по заявка"
-        : "price on request";
+  const publicPrice = (() => {
+    if (product.price.quoteOnly === true || typeof product.price.rrp !== "number") {
+      return locale === "bg" ? "цената е по заявка" : "price on request";
+    }
+
+    const vatRate = product.price.vatRate ?? 0.2;
+    const exVat =
+      product.price.vatIncluded === true
+        ? product.price.rrp / (1 + vatRate)
+        : product.price.rrp;
+    const vat = exVat * vatRate;
+    const incVat = exVat + vat;
+    return `${formatPrice(exVat)} ex VAT (+ VAT ${formatPrice(vat)}; ${formatPrice(incVat)} inc VAT)`;
+  })();
 
   return {
     name: product.name,

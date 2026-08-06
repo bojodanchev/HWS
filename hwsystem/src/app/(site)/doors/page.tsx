@@ -244,20 +244,20 @@ export default function DoorsPage() {
           <div>
             <h2 className="text-h1 text-ink">Get a door quote</h2>
             <p className="mt-4 max-w-md text-steel">
-              Doors are quoted, not carted — every opening is different. Send
-              the rough size and postcode and we&apos;ll price it same-day,
-              usually within the hour.
+              Doors are sold through approved Trade Accounts only, with a
+              minimum order of five doors. Send the rough size, quantity and
+              postcode and we&apos;ll prepare a checked quote.
             </p>
             <p className="mt-4 max-w-md text-steel">
-              Installers: door quotes carry your trade tier, and we can
-              drop-ship to site.{" "}
+              Installers: door quotes carry your verified trade account, and
+              we can drop-ship to site.{" "}
               <Link href="/trade" className="font-medium text-ink underline underline-offset-4">
                 No account yet?
               </Link>
             </p>
           </div>
           <div className="rounded-md border border-line bg-white p-6 lg:p-8">
-            <QuoteForm subject="Complete door" />
+            <QuoteForm subject="Complete door" productType="garage-door" />
           </div>
         </div>
       </section>

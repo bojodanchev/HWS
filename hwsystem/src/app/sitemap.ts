@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const categoryRoutes = getCategories()
-    .filter((c) => c.slug !== "doors")
+    .filter((c) => c.slug !== "doors" && getProducts({ category: c.slug }).length > 0)
     .map((c) => ({
       url: `${BASE}/products/${c.slug}`,
       changeFrequency: "weekly" as const,

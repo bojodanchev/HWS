@@ -63,7 +63,7 @@ type Product = {
   replacesSkus: string[];      // "replaces old model X" — big SEO/UX win
 };
 
-type Brand = 'Somfy' | 'Nice' | 'Beninca' | 'Teleco' | 'SBI' | 'Generic';
+type Brand = 'Somfy' | 'Nice' | 'Beninca' | 'BFT' | 'Teleco' | 'SBI' | 'Generic';
 
 type Image = {
   url: string;
@@ -95,6 +95,7 @@ type SpecKey =
   | 'frequency'     // 433.92 MHz | 868 MHz
   | 'channels'
   | 'maxDoorArea'   // m²
+  | 'maxGateWeight' // kg
   | 'cableLength'
   | 'material'
   | 'warrantyYears';
@@ -108,15 +109,18 @@ type SpecKey =
 
 ```typescript
 type Price = {
-  rrp: number;                        // always visible (B2C)
+  rrp?: number;                       // public sale price, GBP ex VAT
   currency: 'GBP';
-  vatIncluded: boolean;
+  vatIncluded?: boolean;              // source semantics; UI normalises to ex VAT
+  vatRate?: number;                   // decimal, defaults to 0.20
+  purchaseCostExVat?: number;         // server-only corporate cost
+  quoteOnly?: boolean;                // no public amount available
   tradeTiers?: {                      // VISIBLE ONLY AFTER LOGIN
     bronze: number;
     silver: number;
     gold: number;
   };
-  priceBreaks?: { qty: number; price: number }[];  // 1 / 5 / 10 / 25
+  priceBreaks?: { qty: number; price: number }[];  // ex VAT, 1 / 5 / 10 / 25
 };
 ```
 
@@ -124,6 +128,8 @@ type Price = {
 - Unauthenticated → show `rrp` + button `Log in for trade price`
 - Trade user → show price for their tier + price breaks
 - **Never** send `tradeTiers` to client if not logged in. Filter on server.
+- Render known prices as `£X.XX ex VAT`, `+ VAT`, and `£Y.YY inc VAT`.
+- Never expose `purchaseCostExVat`; it is a pricing input, not a customer price.
 
 ---
 
