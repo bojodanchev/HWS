@@ -46,6 +46,20 @@ Without `OPENAI_API_KEY`, the assistant still answers from the deterministic
 catalogue. Without database variables, local development creates the ignored
 file `data/hws-admin.db`.
 
+## External catalogue inputs
+
+The complete product migration depends on access to the sister-site files and
+Drive folders requested by the owner. That access was still pending on
+2026-08-06. The six supplied spreadsheet links and the Nice catalogue are
+source inputs, not a replacement for the current Drive exports that will be
+provided later.
+
+When access is available, preserve raw exports and source URLs in an import
+snapshot/audit, then commit only the reviewed, normalised catalogue artifacts.
+Do not put Drive credentials, private share tokens or browser-side Drive URLs
+in the repository. The runtime should consume the checked-in source snapshot
+or a server-side CMS adapter, never a client-side Drive fetch.
+
 ## Validation
 
 Run these from the `hwsystem/` directory:

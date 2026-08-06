@@ -50,3 +50,27 @@
 
 - Admin authentication is still a hardcoded shared-password prototype in
   `src/lib/adminAuth.ts`. Do not treat it as production-grade authentication.
+
+## Catalogue migration
+
+- `vendor-catalog.ts` currently maps the 1,302 public Somfy/Beninca records to
+  `images: []`, `price: { quoteOnly: true }` and unknown stock. This is useful
+  discovery metadata, not completed commercial catalogue content.
+- Do not deduplicate by product name or source-specific `id`. Normalise the
+  manufacturer SKU/part number first; retain a conflict report when the same
+  SKU appears in multiple workbooks or sites.
+- A 52% corporate discount is a pricing input, not a public price. Keep source
+  price, corporate purchase cost and public GBP sale price separate, and keep
+  `purchaseCostExVat` server-only through `src/lib/catalog.ts`.
+- Interpret the garage-door instruction as a commercial rule that needs an
+  explicit margin/markup formula recorded in the audit. “60% profit margin on
+  purchase cost” must not be silently converted to a different markup model.
+- The old Nice PDF is a product/content reference. It must not be treated as
+  current UK pricing; current Nice prices require owner confirmation.
+- Use original supplied images where available and manufacturer/official web
+  images for missing-image tables, while retaining source URL and review
+  status. Never replace missing photography with an unverified or fabricated
+  image.
+- Do not mark the migration complete while records still contain placeholder
+  descriptions, empty images, unresolved duplicate identities, or quote-only
+  pricing where an approved current price exists.

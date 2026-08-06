@@ -22,7 +22,7 @@ npm run dev
 ## Project Structure
 - `PROJECT.md` — master spec (PRD, data model, design system, tasks, rules). Authoritative.
 - `hwsystem/` — the Next.js app; its `docs/{PRD,DESIGN,DATA_MODEL,TASKS,RULES}.md` are the spec split for per-component work; `AGENTS.md` has the coding rules.
-- `hwsystem/src/content/catalog.ts` — all product data (mock until Woo)
+- `hwsystem/src/content/catalog.ts` — canonical catalogue composition; source snapshots and typed loaders live in `src/content/`
 - `hwsystem/src/lib/catalog.ts` — the ONLY data access components use
 - `docs/` — this knowledge base + Telegram context + Alex-Shon's mockup screenshots
 
@@ -58,17 +58,19 @@ No env vars required to run. Optional: `SLACK_WEBHOOK_URL` / `RESEND_API_KEY`+`L
 > History: [docs/decisions/](docs/decisions/)
 
 - [2026-08-05] Somfy Pro UK + Beninca: 1,302-record public-metadata import integrated and pushed to production; combined tests, lint, build, and public route checks pass ([decision](docs/decisions/2026-08-05-somfy-beninca-catalog-import.md))
+- [2026-08-06] Complete sister-site and Drive product migration is the primary workstream; current imports are partial and must be completed with SKU-first deduplication, reviewed imagery and verified commercial data ([decision](hwsystem/docs/decisions/2026-08-06-product-catalogue-migration.md))
 - [2026-07-16] Lead sourcing via OSM Overpass + business.bg (free/public) over trade platforms & paid data
 - [2026-07-15] Mock content layer now, Woo later — swap seam in `lib/woo.ts`
 - [2026-07-15] Quote-first MVP — no cart/checkout/auth until Woo backend exists
 - [2026-07-15] Genuine photos only on product cards — honest "Photo to follow" otherwise
 
 ## Active Context
-MVP live and validated e2e (2026-07-15). Outreach lead lists built (2026-07-16): `hws_leads_top1000.csv` + full `hws_leads.csv` (10,978 BG+UK, untracked, repo root). Waiting on Alex-Shon: real contact details, product photography, WP attribute schema for the Woo swap, real domain. Milestones 4–5 (trade auth, cart/checkout) unstarted by design.
+MVP live and validated e2e (2026-07-15). Complete product migration is now the primary workstream; Drive access and additional sister-site source files are pending. Outreach lead lists built (2026-07-16): `hws_leads_top1000.csv` + full `hws_leads.csv` (10,978 BG+UK, untracked, repo root). Milestones 4–5 (trade auth, cart/checkout) remain unstarted by design.
 
 ## Discovery Log (Recent)
 > Full log: [docs/discovery-log.md](docs/discovery-log.md)
 
 - [2026-08-05] Main worktree contains the integrated 1,302-record handoff (1,097 Somfy + 205 Beninca) via `hwsystem/src/content/vendor-catalog.json` and the typed loader; data checks, tests, lint, build, and public production checks pass, with assets/commercial values constrained.
+- [2026-08-06] The 1,302-record vendor handoff is discovery metadata rather than a complete sellable catalogue: the loader has empty images and quote-only pricing; full migration waits on Drive access and reviewed source enrichment.
 - [2026-07-16] 1,000-lead BG+UK list delivered from business.bg + OSM; handyman segment thin in public data.
 - [2026-07-15] MVP built/deployed/validated; competitor cues (SWR, Ellard) and Telegram context captured.

@@ -11,6 +11,42 @@ HWSystem is a Next.js App Router application with three current data paths:
 3. `src/lib/woo.ts` is an optional future commerce adapter. The current public
    catalogue and customer assistant do not call it.
 
+## Product catalogue migration boundary
+
+The product catalogue is the primary business data set. Source material must
+be normalised before it reaches the public `Product` model:
+
+```text
+sister websites / workbooks / Drive exports / official catalogues
+  -> source snapshot plus provenance and import audit
+  -> typed loaders in src/content/*
+  -> src/content/catalog.ts (canonical composition)
+  -> src/lib/catalog.ts (public projection and pricing boundary)
+  -> product pages, search, recommendations and assistant retrieval
+```
+
+The current source loaders are:
+
+- `src/content/bft-catalog.json` + `bft-catalog.ts` for the structured BFT
+  workbook and its image manifest.
+- `src/content/vendor-catalog.json` + `vendor-catalog.ts` for the public
+  Somfy Pro UK and Beninca snapshot.
+- `src/content/nice-catalog.ts` for the selected Nice families from the
+  supplied catalogue; commercial values remain quote-only until current UK
+  prices are confirmed.
+
+Future spreadsheet and Drive imports must enter through this same boundary.
+The browser and product pages must not fetch Drive files or sister-site pages
+at request time. Source-specific provenance and unresolved conflicts belong in
+the import snapshot/audit; the public `Product` type remains the stable output
+consumed by the catalogue and assistant.
+
+The migration is not complete until every publishable record has an identity
+based on manufacturer/SKU, usable English copy, structured specifications,
+appropriate imagery or an explicit blocked status, and verified commercial
+semantics. A record that is only metadata, quote-only, or image-less is an
+imported lead, not a completed product listing.
+
 The current order dashboard is a consumer of the generic `orders` table. A
 native checkout is not implemented in this repository; an order source can be
 added later without changing the assistant boundary.
