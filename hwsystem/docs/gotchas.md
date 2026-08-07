@@ -74,3 +74,15 @@
 - Do not mark the migration complete while records still contain placeholder
   descriptions, empty images, unresolved duplicate identities, or quote-only
   pricing where an approved current price exists.
+- The owner may mention only two newly shared files, but Gmail share notices
+  can reveal more. Search the personal `gog` account before declaring the
+  commercial source inventory complete.
+- The 2026-08-07 reviewed snapshot contains 178 rows and 154 unique keys;
+  `1871148` is a real ICC EUR/BGN conflict and must stay out of the public
+  projection until reviewed. BGN rows remain quote-only without approved FX.
+- Existing BFT image-backed SKUs take precedence over newly shared rows. The
+  `9011069` overlap was the duplicate caught by the final assembled-catalogue
+  check.
+- The Google Sheets in this batch contained no usable image media. Keep empty
+  image arrays and an explicit audit gap rather than assigning a nearby product
+  image.

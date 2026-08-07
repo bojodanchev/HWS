@@ -19,7 +19,8 @@
     │   ├── doors/ products/ finishes/ slats/ brand/
     ├── public/docs/placeholder.pdf   # honest interim doc-library PDF
     └── src/
-        ├── content/catalog.ts   # MVP data layer: 9 categories, 17 products (mock, realistic)
+        ├── content/catalog.ts   # canonical composition of typed catalogue loaders
+        ├── content/somfy-controls-catalog.json/.ts # audited REC/REA/ICC/HA/Controls import
         ├── lib/catalog.ts       # ONLY data access components use; strips tradeTiers server-side
         ├── lib/woo.ts           # server-only Woo client (mappers throw until WP schema final)
         ├── lib/leads.ts         # lead delivery: always logs; Slack/Resend if env set
@@ -43,6 +44,8 @@
 
 ## Important Files
 - `hwsystem/src/content/catalog.ts` — all product/category data (edit here until Woo)
+- `hwsystem/src/content/somfy-controls-catalog.json` + `.ts` — source snapshot,
+  provenance audit and typed projection for the owner-shared commercial workbooks
 - `hwsystem/src/lib/catalog.ts` — filtering, search scoring (SKU > replaces > name), facets, GBP formatting
 - `hwsystem/docs/RULES.md` + `hwsystem/AGENTS.md` — coding rules every session must follow
 - `PROJECT.md` — the authoritative spec (do not drift from it silently)

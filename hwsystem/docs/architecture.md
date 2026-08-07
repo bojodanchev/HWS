@@ -34,6 +34,10 @@ The current source loaders are:
 - `src/content/nice-catalog.ts` for the selected Nice families from the
   supplied catalogue; commercial values remain quote-only until current UK
   prices are confirmed.
+- `src/content/somfy-controls-catalog.json` +
+  `somfy-controls-catalog.ts` for the reviewed owner-shared REC, REA, ICC, HA
+  PRO and Controls workbooks. It retains source rows and audit fields, then
+  projects only the selected commercial records into the canonical array.
 
 Future spreadsheet and Drive imports must enter through this same boundary.
 The browser and product pages must not fetch Drive files or sister-site pages

@@ -1,5 +1,9 @@
 # Catalog source and pricing audit — 2026-08-06
 
+> Access status was superseded on 2026-08-07 by
+> [`2026-08-07-commercial-workbook-import.md`](2026-08-07-commercial-workbook-import.md).
+> The pricing, provenance and image-quality rules below remain in force.
+
 ## Scope
 
 This decision records the first auditable catalog pass for the six supplied

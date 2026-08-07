@@ -48,17 +48,25 @@ file `data/hws-admin.db`.
 
 ## External catalogue inputs
 
-The complete product migration depends on access to the sister-site files and
-Drive folders requested by the owner. That access was still pending on
-2026-08-06. The six supplied spreadsheet links and the Nice catalogue are
-source inputs, not a replacement for the current Drive exports that will be
-provided later.
+The personal `gog` account `bojodanchev@gmail.com` can now read the owner-shared
+commercial workbooks. On 2026-08-07, Gmail discovery found the supplied BFT and
+Controls sheets plus REC, REA, ICC and HA PRO. The reviewed snapshot is checked
+in at `src/content/somfy-controls-catalog.json`; it contains 178 source rows
+and retains source URLs/IDs and the import audit.
 
-When access is available, preserve raw exports and source URLs in an import
-snapshot/audit, then commit only the reviewed, normalised catalogue artifacts.
-Do not put Drive credentials, private share tokens or browser-side Drive URLs
-in the repository. The runtime should consume the checked-in source snapshot
-or a server-side CMS adapter, never a client-side Drive fetch.
+Use read-only access when refreshing the source inventory:
+
+```bash
+gog --account=bojodanchev@gmail.com --readonly gmail search \
+  'newer_than:30d from:(drive-shares-dm-noreply@google.com)' --json --wrap-untrusted --max=50
+gog --account=bojodanchev@gmail.com --readonly sheets export <spreadsheet-id> \
+  --format=csv --out=/private/tmp/<name>.csv --overwrite
+```
+
+Preserve raw exports and source URLs in an import snapshot/audit, then commit
+only the reviewed, normalised catalogue artifacts. The runtime must consume a
+checked-in source snapshot or server-side adapter; never fetch Drive files from
+the browser. Do not put Drive credentials or private share tokens in the repo.
 
 ## Validation
 

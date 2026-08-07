@@ -8,7 +8,30 @@
 - **Placeholder facts still on the site**: phone `+44 (0)330 123 4567`, "Bristol BS16" address, 500+/95%/24hr stats come from Alex-Shon's mockup. Confirm with him before real-domain launch.
 - **No fabricated testimonials**: the mockup had fake named customers; deliberately not implemented.
 
+## Catalogue migration
+- Gmail share notifications may reveal more files than the owner initially
+  names. On 2026-08-07, the two supplied Sheets were joined by REC, REA, ICC
+  and HA PRO; search the personal Gmail account before declaring source coverage.
+- Use manufacturer SKU as identity. The shared import found 178 raw rows and
+  154 unique keys, but `1871148` appeared twice in ICC with conflicting EUR
+  and BGN values; preserve both audit rows and exclude the SKU until reviewed.
+- Do not convert BGN prices with an assumed FX rate. Keep them quote-only.
+  For EUR rows, use the established `0.8572` boundary and keep purchase cost
+  out of the public projection.
+- Check new spreadsheet SKUs against the image-backed BFT snapshot before
+  adding them. `9011069` was already canonical in BFT and would have created
+  a final duplicate if the commercial projection had not excluded it.
+- Google Sheets exports may contain no images or embedded workbook media. An
+  empty image array is an honest source state; do not fill it with guessed or
+  borrowed photography.
+- The reviewed snapshot lives in
+  `hwsystem/src/content/somfy-controls-catalog.json`; the typed loader and
+  vendor-override composition live in `src/content/somfy-controls-catalog.ts`
+  and `src/content/catalog.ts`.
+
+
 ## Build & Tooling
+
 - **Next.js 16 breaking changes**: read `node_modules/next/dist/docs/` before nontrivial work (per hwsystem/AGENTS.md). `params`/`searchParams` are Promises — always `await`.
 - **Tailwind v4**: no `tailwind.config.*`; tokens go in `@theme` in `globals.css`. `components.json` has `tailwind.config: ""`.
 - **shadcn CLI init can't run headless** (interactive component-library prompt swallows piped input). `components.json` was hand-written; `npx shadcn add <component>` works from there.

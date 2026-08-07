@@ -2,6 +2,29 @@
 
 Reverse-chronological. Most recent first.
 
+## [2026-08-07] Shared commercial workbooks imported and released
+**Context**: Read-only `gog` access under `bojodanchev@gmail.com` exposed the
+two supplied Sheets plus four additional Gmail share notifications: REC, REA,
+ICC and HA PRO.
+**Learnings**:
+- `hwsystem/src/content/somfy-controls-catalog.json` preserves 178 raw rows,
+  154 unique SKU keys, source currencies, source rows, pricing audit and the
+  unresolved `1871148` ICC conflict. Its typed loader selects 150 products:
+  143 GBP-priced and 7 quote-only.
+- The import precedence is REC, REA, ICC, HA PRO, then Controls. Existing
+  image-backed BFT records remain canonical for overlaps, including `9011069`.
+  The BFT workbook matched 203 existing records with zero name, cost or RRP
+  mismatches; the 3 local-only records were retained.
+- The shared Sheets contained no usable source images or embedded media. BGN
+  rows remain quote-only, and no image or currency conversion was invented.
+**Validation**: 15 tests, TypeScript, lint (four pre-existing warnings) and a
+1,681-page production build passed. Commit `860f0a2` was pushed to `main`;
+Vercel deployment `dpl_H3N9nkgqwYnRwYsN5iVq2ZRCTpvw` reached Ready and the
+canonical OXIMO route plus sitemap returned HTTP 200.
+**Communication**: Progress was posted as a Codex agent message in the HWS
+topic `Abundance → SBI/Jidoro/HWS/Vectra`, Telegram message `2567`.
+
+
 ## [2026-08-05] Integrated public-metadata release verified
 **Context**: Owner-approved option 1 was implemented and released for the full public Somfy Pro UK and Beninca metadata import.
 **Handoff**:
