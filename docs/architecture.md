@@ -21,6 +21,7 @@
     └── src/
         ├── content/catalog.ts   # canonical composition of typed catalogue loaders
         ├── content/somfy-controls-catalog.json/.ts # audited REC/REA/ICC/HA/Controls import
+        ├── content/somfy-image-manifest.json       # image provenance and local asset mapping
         ├── lib/catalog.ts       # ONLY data access components use; strips tradeTiers server-side
         ├── lib/woo.ts           # server-only Woo client (mappers throw until WP schema final)
         ├── lib/leads.ts         # lead delivery: always logs; Slack/Resend if env set
@@ -46,6 +47,9 @@
 - `hwsystem/src/content/catalog.ts` — all product/category data (edit here until Woo)
 - `hwsystem/src/content/somfy-controls-catalog.json` + `.ts` — source snapshot,
   provenance audit and typed projection for the owner-shared commercial workbooks
+- `hwsystem/src/content/somfy-image-manifest.json` +
+  `hwsystem/public/images/vendor/somfy/` — manufacturer image provenance and
+  local media used by the commercial projection
 - `hwsystem/src/lib/catalog.ts` — filtering, search scoring (SKU > replaces > name), facets, GBP formatting
 - `hwsystem/docs/RULES.md` + `hwsystem/AGENTS.md` — coding rules every session must follow
 - `PROJECT.md` — the authoritative spec (do not drift from it silently)

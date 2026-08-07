@@ -1,0 +1,1065 @@
+{
+  "generatedAt": "2026-08-07",
+  "policy": "Use official Somfy manufacturer pages and asset.somfy.com media first. Family-reference images are explicitly marked when an exact SKU asset is not available. Existing BFT supplied images remain provenance-preserving.",
+  "sourcePriority": [
+    "somfy.bg exact product listing",
+    "somfypro.co.uk exact product page/API",
+    "Somfy master e-catalogue exact product page",
+    "existing BFT supplied image manifest",
+    "official manufacturer family-reference image"
+  ],
+  "products": {
+    "1241058": {
+      "status": "exact",
+      "matchedSku": "1241058",
+      "sourcePageUrl": "https://www.somfy.bg/products/1241058/oximo-solar-io-6-18-kit-10l",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Oximo_40_Solar_io.jpg",
+      "localPath": "/images/vendor/somfy/1241058-1.jpg"
+    },
+    "1241059": {
+      "status": "exact",
+      "matchedSku": "1241059",
+      "sourcePageUrl": "https://www.somfy.bg/products/1241059/oximo-solar-io-10-12-kit",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Oximo_40_Solar_io.jpg",
+      "localPath": "/images/vendor/somfy/1241059-1.jpg"
+    },
+    "1245763": {
+      "status": "family-reference",
+      "matchedSku": "1245764",
+      "sourcePageUrl": "https://www.somfy.bg/products/1245764/rs100-solar-io-10-12-kit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/a05b7807-1ca7-4fe4-a817-cd4d368eb579_small.png",
+      "localPath": "/images/vendor/somfy/1245763-1.png"
+    },
+    "1245764": {
+      "status": "exact",
+      "matchedSku": "1245764",
+      "sourcePageUrl": "https://www.somfy.bg/products/1245764/rs100-solar-io-10-12-kit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/a05b7807-1ca7-4fe4-a817-cd4d368eb579_small.png",
+      "localPath": "/images/vendor/somfy/1245764-1.png"
+    },
+    "1245765": {
+      "status": "family-reference",
+      "matchedSku": "1245764",
+      "sourcePageUrl": "https://www.somfy.bg/products/1245764/rs100-solar-io-10-12-kit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/a05b7807-1ca7-4fe4-a817-cd4d368eb579_small.png",
+      "localPath": "/images/vendor/somfy/1245765-1.png"
+    },
+    "1245766": {
+      "status": "family-reference",
+      "matchedSku": "1245764",
+      "sourcePageUrl": "https://www.somfy.bg/products/1245764/rs100-solar-io-10-12-kit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/a05b7807-1ca7-4fe4-a817-cd4d368eb579_small.png",
+      "localPath": "/images/vendor/somfy/1245766-1.png"
+    },
+    "1030116": {
+      "status": "exact",
+      "matchedSku": "1030116",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1030116",
+      "sourceImageUrl": "https://asset.somfy.com/Image/e4f8df7d-332a-413d-9397-ef2959caaa2f_ALTUS_40_RTS_star7.jpg",
+      "localPath": "/images/vendor/somfy/1030116-1.jpg"
+    },
+    "1038015": {
+      "status": "exact",
+      "matchedSku": "1038015",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1038015",
+      "sourceImageUrl": "https://asset.somfy.com/Image/e4f8df7d-332a-413d-9397-ef2959caaa2f_ALTUS_40_RTS_star7.jpg",
+      "localPath": "/images/vendor/somfy/1038015-1.jpg"
+    },
+    "1039947": {
+      "status": "exact",
+      "matchedSku": "1039947",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1039947",
+      "sourceImageUrl": "https://asset.somfy.com/Image/e4f8df7d-332a-413d-9397-ef2959caaa2f_ALTUS_40_RTS_star7.jpg",
+      "localPath": "/images/vendor/somfy/1039947-1.jpg"
+    },
+    "1033114": {
+      "status": "exact",
+      "matchedSku": "1033114",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033114/rs-100-io-6-17-vvf-2m",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/rs100-AFG.png",
+      "localPath": "/images/vendor/somfy/1033114-1.png"
+    },
+    "1033115": {
+      "status": "exact",
+      "matchedSku": "1033115",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033115/s-so-rs-100-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/23ca112e-3dee-478d-baba-cbabb2d3f0a6_RS_100_IO1.jpg",
+      "localPath": "/images/vendor/somfy/1033115-1.jpg"
+    },
+    "1033116": {
+      "status": "exact",
+      "matchedSku": "1033116",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033116/s-so-rs-100-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/23ca112e-3dee-478d-baba-cbabb2d3f0a6_RS_100_IO1.jpg",
+      "localPath": "/images/vendor/somfy/1033116-1.jpg"
+    },
+    "1033117": {
+      "status": "exact",
+      "matchedSku": "1033117",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033117/s-so-rs-100-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/23ca112e-3dee-478d-baba-cbabb2d3f0a6_RS_100_IO1.jpg",
+      "localPath": "/images/vendor/somfy/1033117-1.jpg"
+    },
+    "1033107": {
+      "status": "exact",
+      "matchedSku": "1033107",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033107/rs-100-io-hybrid-6-17-vvf-2m",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SSO-RS100-roller-shutter-motor.jpg",
+      "localPath": "/images/vendor/somfy/1033107-1.jpg"
+    },
+    "1033111": {
+      "status": "exact",
+      "matchedSku": "1033111",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033111/s-so-rs-100-io-hybrid",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/RS100_io_Hybrid.jpg",
+      "localPath": "/images/vendor/somfy/1033111-1.jpg"
+    },
+    "1033112": {
+      "status": "exact",
+      "matchedSku": "1033112",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033112/s-so-rs-100-io-hybrid",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/RS100_io_Hybrid.jpg",
+      "localPath": "/images/vendor/somfy/1033112-1.jpg"
+    },
+    "1033113": {
+      "status": "exact",
+      "matchedSku": "1033113",
+      "sourcePageUrl": "https://www.somfy.bg/products/1033113/s-so-rs-100-io-hybrid",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/RS100_io_Hybrid.jpg",
+      "localPath": "/images/vendor/somfy/1033113-1.jpg"
+    },
+    "1130334": {
+      "status": "exact",
+      "matchedSku": "1130334",
+      "sourcePageUrl": "https://www.somfy.bg/products/1130334/oximo-50s-auto-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Oximo_50_S_AUTO_IO_Star.jpg",
+      "localPath": "/images/vendor/somfy/1130334-1.jpg"
+    },
+    "1032728": {
+      "status": "exact",
+      "matchedSku": "1032728",
+      "sourcePageUrl": "https://www.somfy.bg/products/1032728/oximo-io-6-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1032728-1.jpg"
+    },
+    "1037711": {
+      "status": "exact",
+      "matchedSku": "1037711",
+      "sourcePageUrl": "https://www.somfy.bg/products/1037711/oximo-io-10-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1037711-1.jpg"
+    },
+    "1039611": {
+      "status": "exact",
+      "matchedSku": "1039611",
+      "sourcePageUrl": "https://www.somfy.bg/products/1039611/oximo-io-15-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1039611-1.jpg"
+    },
+    "1041648": {
+      "status": "exact",
+      "matchedSku": "1041648",
+      "sourcePageUrl": "https://www.somfy.bg/products/1041648/oximo-io-20-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1041648-1.jpg"
+    },
+    "1045533": {
+      "status": "exact",
+      "matchedSku": "1045533",
+      "sourcePageUrl": "https://www.somfy.bg/products/1045533/oximo-io-30-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1045533-1.jpg"
+    },
+    "1049620": {
+      "status": "exact",
+      "matchedSku": "1049620",
+      "sourcePageUrl": "https://www.somfy.bg/products/1049620/oximo-io-40-17-vvf-3m-gb-e-p-gr-unit",
+      "sourceImageUrl": "https://asset.somfy.com/Image/d3c12ccd-4b37-4bb3-a256-3f82b3adb0d5_Oximo_50_io_Star.jpg",
+      "localPath": "/images/vendor/somfy/1049620-1.jpg"
+    },
+    "1049719": {
+      "status": "exact",
+      "matchedSku": "1049719",
+      "sourcePageUrl": "https://www.somfy.bg/products/1049719/50",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/OXIMO_50_io_50-12_VVF_3M.jpg",
+      "localPath": "/images/vendor/somfy/1049719-1.jpg"
+    },
+    "1134061": {
+      "status": "exact",
+      "matchedSku": "1134061",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134061",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134061-1.jpg"
+    },
+    "1134062": {
+      "status": "exact",
+      "matchedSku": "1134062",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134062",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134062-1.jpg"
+    },
+    "1134063": {
+      "status": "exact",
+      "matchedSku": "1134063",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134063",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134063-1.jpg"
+    },
+    "1134064": {
+      "status": "exact",
+      "matchedSku": "1134064",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134064",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134064-1.jpg"
+    },
+    "1134065": {
+      "status": "exact",
+      "matchedSku": "1134065",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134065",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134065-1.jpg"
+    },
+    "1134066": {
+      "status": "exact",
+      "matchedSku": "1134066",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1134066",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2e1f3559-34f0-4c8f-94f9-4309cb41ed12_Altus_60_IO_star1.jpg",
+      "localPath": "/images/vendor/somfy/1134066-1.jpg"
+    },
+    "1115271": {
+      "status": "exact",
+      "matchedSku": "1115271",
+      "sourcePageUrl": "https://www.somfy.bg/products/1115271/sunea-50-io-csi-30-17-vvf-3m",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SUNEA_50_CSI_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1115271-1.jpg"
+    },
+    "1117286": {
+      "status": "exact",
+      "matchedSku": "1117286",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/1117286-sunea-50-csi-io-40-12-vvf-3m",
+      "sourceImageUrl": "https://asset.somfy.com/Image/86b11f3b-47b9-401a-8701-d43875c31fd9_1114304-Sunea.jpg",
+      "localPath": "/images/vendor/somfy/1117286-1.jpg"
+    },
+    "1118213": {
+      "status": "exact",
+      "matchedSku": "1118213",
+      "sourcePageUrl": "https://www.somfy.bg/products/1118213/sunea-50-io-csi-50-12-vvf-3m",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SUNEA_50_CSI_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1118213-1.jpg"
+    },
+    "9015801": {
+      "status": "exact",
+      "matchedSku": "9015801",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9015801-bracket-for-sunea-csi-rts-eu",
+      "sourceImageUrl": "https://asset.somfy.com/Image/f6e1ef3b-c770-4421-8a0a-e3ab3795fcb4_Sunea_Bracket.jpg",
+      "localPath": "/images/vendor/somfy/9015801-1.jpg"
+    },
+    "9020579": {
+      "status": "exact",
+      "matchedSku": "9020579",
+      "sourcePageUrl": "https://www.somfy.bg/products/9020579/--hybrid",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Somfy_Universal_Setting_Cable_Kit_io_Hybrid.jpg",
+      "localPath": "/images/vendor/somfy/9020579-1.jpg"
+    },
+    "1870314": {
+      "status": "exact",
+      "matchedSku": "1870314",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870314/situo-1-io-pure-ii-se-mea",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_1_io_Pure_II.jpg",
+      "localPath": "/images/vendor/somfy/1870314-1.jpg"
+    },
+    "1870330": {
+      "status": "exact",
+      "matchedSku": "1870330",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870330/situo-5-io-pure-ii-se-mea",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SITUO_5_io_PURE_II.jpg",
+      "localPath": "/images/vendor/somfy/1870330-1.jpg"
+    },
+    "1870318": {
+      "status": "family-reference",
+      "matchedSku": "1870317",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/1870317-situo-1-io-iron-ii",
+      "sourceImageUrl": "https://asset.somfy.com/Image/f86ece5b-ea88-446c-b552-4e7a567d35c7_Situo_1_iron_II_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1870318-1.jpg"
+    },
+    "1870334": {
+      "status": "exact",
+      "matchedSku": "1870334",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870334/situo-5-io-iron-ii-se-mea",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_5_io_iron.png",
+      "localPath": "/images/vendor/somfy/1870334-1.png"
+    },
+    "1870365": {
+      "status": "exact",
+      "matchedSku": "1870365",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870365/situo-1-var-io-pure-ii-d",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_Variation_1_io_Pure.png",
+      "localPath": "/images/vendor/somfy/1870365-1.png"
+    },
+    "1870371": {
+      "status": "exact",
+      "matchedSku": "1870371",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870371/situo-5-var-a-m-io-pure-ii-d",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_Variation_5_io_Pure.png",
+      "localPath": "/images/vendor/somfy/1870371-1.png"
+    },
+    "1870368": {
+      "status": "exact",
+      "matchedSku": "1870368",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870368/situo-1-var-io-iron-ii-d",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_Variation_1_io_Iron.png",
+      "localPath": "/images/vendor/somfy/1870368-1.png"
+    },
+    "1870375": {
+      "status": "exact",
+      "matchedSku": "1870375",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870375/situo-5-var-a-m-io-iron-ii-d",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_Variation_5_io_Iron.png",
+      "localPath": "/images/vendor/somfy/1870375-1.png"
+    },
+    "1811736": {
+      "status": "exact",
+      "matchedSku": "1811736",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811736/situo-5-io-rts-pure",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SITUO_5_BI_RADIO_io-RTS.jpg",
+      "localPath": "/images/vendor/somfy/1811736-1.jpg"
+    },
+    "1871289": {
+      "status": "exact",
+      "matchedSku": "1871289",
+      "sourcePageUrl": "https://www.somfy.bg/products/1871289/ysia-patio-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/abce2dbf-c425-4cbb-bfe5-835dfd506ec6_Patio_duo.jpg",
+      "localPath": "/images/vendor/somfy/1871289-1.jpg"
+    },
+    "1871290": {
+      "status": "exact",
+      "matchedSku": "1871290",
+      "sourcePageUrl": "https://www.somfy.bg/products/1871290/ysia-patio-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/abce2dbf-c425-4cbb-bfe5-835dfd506ec6_Patio_duo.jpg",
+      "localPath": "/images/vendor/somfy/1871290-1.jpg"
+    },
+    "1805251": {
+      "status": "exact",
+      "matchedSku": "1805251",
+      "sourcePageUrl": "https://www.somfy.bg/products/1805251/nina-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/NINA.jpg",
+      "localPath": "/images/vendor/somfy/1805251-1.jpg"
+    },
+    "1811407": {
+      "status": "exact",
+      "matchedSku": "1811407",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811407/nina-timer-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Nina-Timer-IO-main-somfy-1811407.jpg",
+      "localPath": "/images/vendor/somfy/1811407-1.jpg"
+    },
+    "1811121": {
+      "status": "exact",
+      "matchedSku": "1811121",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811121/smoove-origin-intl-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Smoove_Origin_io.jpg",
+      "localPath": "/images/vendor/somfy/1811121-1.jpg"
+    },
+    "1800204": {
+      "status": "exact",
+      "matchedSku": "1800204",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800204/smoove-origin-2-io-frame",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_ORIGIN_2_io.jpg",
+      "localPath": "/images/vendor/somfy/1800204-1.jpg"
+    },
+    "1800205": {
+      "status": "exact",
+      "matchedSku": "1800205",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800205/smoove-origin-4-io-frame",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_ORIGIN_4_io.jpg",
+      "localPath": "/images/vendor/somfy/1800205-1.jpg"
+    },
+    "1870560": {
+      "status": "exact",
+      "matchedSku": "1870560",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870560/wall-switch-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/c9981f5e-c3c3-4c7a-8c45-5fe969aa9021_WALL_SWITCH_io_STAR.jpg",
+      "localPath": "/images/vendor/somfy/1870560-1.jpg"
+    },
+    "1811005": {
+      "status": "exact",
+      "matchedSku": "1811005",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811005/smoove-1-io-black-shine",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_1_io_star.jpg",
+      "localPath": "/images/vendor/somfy/1811005-1.jpg"
+    },
+    "1811007": {
+      "status": "exact",
+      "matchedSku": "1811007",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811007/smoove-1-io-silver-shine",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/no-image.png",
+      "localPath": "/images/vendor/somfy/1811007-1.png"
+    },
+    "9015022": {
+      "status": "exact",
+      "matchedSku": "9015022",
+      "sourcePageUrl": "https://www.somfy.bg/products/9015022/pure-smoove-frame",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9354d2e1-40e8-4f00-b74d-4a54da521d79_CADRE_PURE1.jpg",
+      "localPath": "/images/vendor/somfy/9015022-1.jpg"
+    },
+    "9015023": {
+      "status": "exact",
+      "matchedSku": "9015023",
+      "sourcePageUrl": "https://www.somfy.bg/products/9015023/black-smoove-frame",
+      "sourceImageUrl": "https://asset.somfy.com/Image/bba409ef-2691-4024-9538-780e17a2c588_90150231.jpg",
+      "localPath": "/images/vendor/somfy/9015023-1.jpg"
+    },
+    "9015025": {
+      "status": "exact",
+      "matchedSku": "9015025",
+      "sourcePageUrl": "https://www.somfy.bg/products/9015025/silvermat-smoove-frame",
+      "sourceImageUrl": "https://asset.somfy.com/Image/c27f5a99-78bd-4824-8f7e-17a5d5db196e_CADRE_SILVER_MAT.jpg",
+      "localPath": "/images/vendor/somfy/9015025-1.jpg"
+    },
+    "9014186": {
+      "status": "exact",
+      "matchedSku": "9014186",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9014186",
+      "sourceImageUrl": "https://asset.somfy.com/Image/c9572f11-ed05-4d31-bea5-a01205eb1411_90141861.jpg",
+      "localPath": "/images/vendor/somfy/9014186-1.jpg"
+    },
+    "1216558": {
+      "status": "exact",
+      "matchedSku": "1216558",
+      "sourcePageUrl": "https://www.somfy.bg/products/1216558/ixengo-l-24v-io-cft-pack",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Ixengo_L24.jpg",
+      "localPath": "/images/vendor/somfy/1216558-1.jpg"
+    },
+    "1216601": {
+      "status": "family-reference",
+      "matchedSku": "1216365",
+      "sourcePageUrl": "https://www.somfy.bg/products/1216365/elixo-500-3s-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/ELIXO_500_2013_star1.jpg",
+      "localPath": "/images/vendor/somfy/1216601-1.jpg"
+    },
+    "1216365": {
+      "status": "exact",
+      "matchedSku": "1216365",
+      "sourcePageUrl": "https://www.somfy.bg/products/1216365/elixo-500-3s-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/ELIXO_500_2013_star1.jpg",
+      "localPath": "/images/vendor/somfy/1216365-1.jpg"
+    },
+    "1216540": {
+      "status": "exact",
+      "matchedSku": "1216540",
+      "sourcePageUrl": "https://www.somfy.bg/products/1216540/dexxo-800-smart-io-",
+      "sourceImageUrl": "https://asset.somfy.com/Image/3e8e3388-8866-42fd-8993-90b7918880a5__DSC9811.jpg",
+      "localPath": "/images/vendor/somfy/1216540-1.jpg"
+    },
+    "1241569": {
+      "status": "family-reference",
+      "matchedSku": "1216540",
+      "sourcePageUrl": "https://www.somfy.bg/products/1216540/dexxo-800-smart-io-",
+      "sourceImageUrl": "https://asset.somfy.com/Image/3e8e3388-8866-42fd-8993-90b7918880a5__DSC9811.jpg",
+      "localPath": "/images/vendor/somfy/1241569-1.jpg"
+    },
+    "1871029": {
+      "status": "exact",
+      "matchedSku": "1871029",
+      "sourcePageUrl": "https://www.somfy.bg/products/1871029/keytis-2-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/10e1e543-7136-442f-8e07-bb116106b35e_keytis%20studio%2003.png",
+      "localPath": "/images/vendor/somfy/1871029-1.png"
+    },
+    "1841134": {
+      "status": "exact",
+      "matchedSku": "1841134",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841134/keygo-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/KEYGO_io_star1.jpg",
+      "localPath": "/images/vendor/somfy/1841134-1.jpg"
+    },
+    "9013811": {
+      "status": "exact",
+      "matchedSku": "9013811",
+      "sourcePageUrl": "https://www.somfy.bg/products/9013811/chaine-2-90-m-monobloc",
+      "sourceImageUrl": "https://asset.somfy.com/Image/a835486d-7ad0-4394-858c-9a8590cd4cea_GM_Rail_chaine.jpg",
+      "localPath": "/images/vendor/somfy/9013811-1.jpg"
+    },
+    "9013813": {
+      "status": "exact",
+      "matchedSku": "9013813",
+      "sourcePageUrl": "https://www.somfy.bg/products/9013813/chaine-3-50-m-monobloc",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Chain_transmission_rail_semi_intensive_use.jpg",
+      "localPath": "/images/vendor/somfy/9013813-1.jpg"
+    },
+    "9013815": {
+      "status": "exact",
+      "matchedSku": "9013815",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013815",
+      "sourceImageUrl": "https://asset.somfy.com/Image/dfcf00d4-45ed-43e4-b1e8-5e0a274275d7_GM800_a_plat.jpg",
+      "localPath": "/images/vendor/somfy/9013815-1.jpg"
+    },
+    "9013817": {
+      "status": "exact",
+      "matchedSku": "9013817",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9013817-rail-belt-3-50m-monobloc",
+      "sourceImageUrl": "https://asset.somfy.com/Image/58fb74e7-cfc7-40e7-9d2a-359b71defa92_copy_90138172.jpg",
+      "localPath": "/images/vendor/somfy/9013817-1.jpg"
+    },
+    "9011089": {
+      "status": "exact",
+      "matchedSku": "9011089",
+      "sourcePageUrl": "https://www.somfy.bg/products/9011089/cremaillere-1-m-avec-fixation",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/1_meter_of_steel-reinforced_nylon_rack_with_bottom_fastening.jpg",
+      "localPath": "/images/vendor/somfy/9011089-1.jpg"
+    },
+    "1207078": {
+      "status": "family-reference",
+      "matchedSku": "1207028",
+      "sourcePageUrl": "https://www.somfy.bg/products/1207028/centreo-75-60-200-230-50-afad",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/CENTREO.jpg",
+      "localPath": "/images/vendor/somfy/1207078-1.jpg"
+    },
+    "1207077": {
+      "status": "exact",
+      "matchedSku": "1207077",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207077",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207077-1.jpg"
+    },
+    "1207028": {
+      "status": "exact",
+      "matchedSku": "1207028",
+      "sourcePageUrl": "https://www.somfy.bg/products/1207028/centreo-75-60-200-230-50-afad",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/CENTREO.jpg",
+      "localPath": "/images/vendor/somfy/1207028-1.jpg"
+    },
+    "1207032": {
+      "status": "exact",
+      "matchedSku": "1207032",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207032",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207032-1.jpg"
+    },
+    "1207040": {
+      "status": "exact",
+      "matchedSku": "1207040",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207040",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207040-1.jpg"
+    },
+    "1207043": {
+      "status": "exact",
+      "matchedSku": "1207043",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207043",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207043-1.jpg"
+    },
+    "1207042": {
+      "status": "exact",
+      "matchedSku": "1207042",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207042",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207042-1.jpg"
+    },
+    "1207045": {
+      "status": "exact",
+      "matchedSku": "1207045",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/1207045",
+      "sourceImageUrl": "https://asset.somfy.com/Image/94ab6db8-df73-4793-91a7-3478a3115bd3_CENTRIS-1.jpg",
+      "localPath": "/images/vendor/somfy/1207045-1.jpg"
+    },
+    "1805229": {
+      "status": "exact",
+      "matchedSku": "1805229",
+      "sourcePageUrl": "https://www.somfy.bg/products/1805229/declutch-key-switch-somfy",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Key_switch_with_declutching.jpg",
+      "localPath": "/images/vendor/somfy/1805229-1.jpg"
+    },
+    "1805253": {
+      "status": "exact",
+      "matchedSku": "1805253",
+      "sourcePageUrl": "https://www.somfy.bg/products/1805253/declutchsecu-box-cm-switch-somfy",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Security_box_+_switch.jpg",
+      "localPath": "/images/vendor/somfy/1805253-1.jpg"
+    },
+    "9015366": {
+      "status": "exact",
+      "matchedSku": "9015366",
+      "sourcePageUrl": "https://www.somfy.bg/products/9015366/d60-d48-centreo",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Adaptor_set_for_ø60_Centreo_motor.jpg",
+      "localPath": "/images/vendor/somfy/9015366-1.jpg"
+    },
+    "9016731": {
+      "status": "exact",
+      "matchedSku": "9016731",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9016731",
+      "sourceImageUrl": "https://asset.somfy.com/Image/dc6a1a70-bb77-4f5f-9086-53cc4d0627cb_9016731_1.jpg",
+      "localPath": "/images/vendor/somfy/9016731-1.jpg"
+    },
+    "9015368": {
+      "status": "family-reference",
+      "matchedSku": "9013927",
+      "sourcePageUrl": "https://www.somfy.bg/products/9013927/declutch-handle-kit-6m-somfy",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Declutch_handle_kit.jpg",
+      "localPath": "/images/vendor/somfy/9015368-1.jpg"
+    },
+    "9016977": {
+      "status": "family-reference",
+      "matchedSku": "1207028",
+      "sourcePageUrl": "https://www.somfy.bg/products/1207028/centreo-75-60-200-230-50-afad",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/CENTREO.jpg",
+      "localPath": "/images/vendor/somfy/9016977-1.jpg"
+    },
+    "1800508": {
+      "status": "exact",
+      "matchedSku": "1800508",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800508/smoove-uno-fp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_UNO_FP.jpg",
+      "localPath": "/images/vendor/somfy/1800508-1.jpg"
+    },
+    "1800509": {
+      "status": "exact",
+      "matchedSku": "1800509",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800509/smoove-uno-mp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_UNO_MP.jpg",
+      "localPath": "/images/vendor/somfy/1800509-1.jpg"
+    },
+    "1800506": {
+      "status": "exact",
+      "matchedSku": "1800506",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800506/smoove-duo-fp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_DUO_FP.jpg",
+      "localPath": "/images/vendor/somfy/1800506-1.jpg"
+    },
+    "1800507": {
+      "status": "exact",
+      "matchedSku": "1800507",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800507/smoove-duo-mp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SMOOVE_DUO_МP.jpg",
+      "localPath": "/images/vendor/somfy/1800507-1.jpg"
+    },
+    "1800511": {
+      "status": "exact",
+      "matchedSku": "1800511",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800511/inis-mounted-box-fp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/INIS_MOUNTED_BOX_FP.jpg",
+      "localPath": "/images/vendor/somfy/1800511-1.jpg"
+    },
+    "1800512": {
+      "status": "exact",
+      "matchedSku": "1800512",
+      "sourcePageUrl": "https://www.somfy.bg/products/1800512/inis-mounted-box-mp",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/INIS_MOUNTED_BOX_МP.jpg",
+      "localPath": "/images/vendor/somfy/1800512-1.jpg"
+    },
+    "1871150": {
+      "status": "family-reference",
+      "matchedSku": "1805229",
+      "sourcePageUrl": "https://www.somfy.bg/products/1805229/declutch-key-switch-somfy",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Key_switch_with_declutching.jpg",
+      "localPath": "/images/vendor/somfy/1871150-1.jpg"
+    },
+    "1870305": {
+      "status": "exact",
+      "matchedSku": "1870305",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870305/rollixo-optimo-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/garage-door-motor-rollixo-optimo-rts-star.jpg",
+      "localPath": "/images/vendor/somfy/1870305-1.jpg"
+    },
+    "1841165": {
+      "status": "exact",
+      "matchedSku": "1841165",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841165/rollixo-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Rollixo_STAR_300x300.jpg",
+      "localPath": "/images/vendor/somfy/1841165-1.jpg"
+    },
+    "1870306": {
+      "status": "family-reference",
+      "matchedSku": "1871486",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/1871486-rollixo-premium-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/01f9a0be-28a0-4988-a72f-d0cb7d7dbe97_Top.png",
+      "localPath": "/images/vendor/somfy/1870306-1.png"
+    },
+    "1841102": {
+      "status": "exact",
+      "matchedSku": "1841102",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841102/rts-receiver-with-dry-contact",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/RTS_RECEIVER_WITH_DRY_CONTACT.jpg",
+      "localPath": "/images/vendor/somfy/1841102-1.jpg"
+    },
+    "1841022": {
+      "status": "exact",
+      "matchedSku": "1841022",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841022/standard-receiver-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Standard_receiver_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1841022-1.jpg"
+    },
+    "1841064": {
+      "status": "exact",
+      "matchedSku": "1841064",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841064/keygo-4-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/KEYGO_RTS_Star.jpg",
+      "localPath": "/images/vendor/somfy/1841064-1.jpg"
+    },
+    "1841026": {
+      "status": "exact",
+      "matchedSku": "1841026",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841026/keytis-2-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/KEYTIS_2_RTS_BlacK_Star1.jpg",
+      "localPath": "/images/vendor/somfy/1841026-1.jpg"
+    },
+    "1841229": {
+      "status": "exact",
+      "matchedSku": "1841229",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841229/std-receiver-compatible-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Access_receiver_io.jpg",
+      "localPath": "/images/vendor/somfy/1841229-1.jpg"
+    },
+    "1841233": {
+      "status": "exact",
+      "matchedSku": "1841233",
+      "sourcePageUrl": "https://www.somfy.bg/products/1841233/cell-master-pro-bitech",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Cell_Master_Pro_Bitech.jpg",
+      "localPath": "/images/vendor/somfy/1841233-1.jpg"
+    },
+    "1841216": {
+      "status": "exact",
+      "matchedSku": "1841216",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/1841216-photocells-master-pro-180",
+      "sourceImageUrl": "https://asset.somfy.com/Image/bbb6aa6b-d4e7-43b5-9e26-29d12b0c00de_1841216_(2).png",
+      "localPath": "/images/vendor/somfy/1841216-1.png"
+    },
+    "9013647": {
+      "status": "exact",
+      "matchedSku": "9013647",
+      "sourcePageUrl": "https://www.somfy.bg/products/9013647/reflex-photocell-kit-12m",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Reflex_photocell_+_reflector.jpg",
+      "localPath": "/images/vendor/somfy/9013647-1.jpg"
+    },
+    "9020138": {
+      "status": "exact",
+      "matchedSku": "9020138",
+      "sourcePageUrl": "https://www.somfy.bg/products/9020138/orange-light-ecopro-230v",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Orange_light_Eco_Pro_230V.jpg",
+      "localPath": "/images/vendor/somfy/9020138-1.jpg"
+    },
+    "9013451": {
+      "status": "family-reference",
+      "matchedSku": "9013454",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013454",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9735720a-514e-4916-8797-365dfdcf8995_90134541.jpg",
+      "localPath": "/images/vendor/somfy/9013451-1.jpg"
+    },
+    "9013452": {
+      "status": "family-reference",
+      "matchedSku": "9013454",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013454",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9735720a-514e-4916-8797-365dfdcf8995_90134541.jpg",
+      "localPath": "/images/vendor/somfy/9013452-1.jpg"
+    },
+    "9016875": {
+      "status": "exact",
+      "matchedSku": "9016875",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9016875-aluminium-rail-op-pge-10x3m",
+      "sourceImageUrl": "https://asset.somfy.com/Image/240791ec-78c9-42e3-b62b-0726745bfb35_9016875.jpg",
+      "localPath": "/images/vendor/somfy/9016875-1.jpg"
+    },
+    "9013454": {
+      "status": "exact",
+      "matchedSku": "9013454",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013454",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9735720a-514e-4916-8797-365dfdcf8995_90134541.jpg",
+      "localPath": "/images/vendor/somfy/9013454-1.jpg"
+    },
+    "9013456": {
+      "status": "family-reference",
+      "matchedSku": "9013454",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013454",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9735720a-514e-4916-8797-365dfdcf8995_90134541.jpg",
+      "localPath": "/images/vendor/somfy/9013456-1.jpg"
+    },
+    "9013457": {
+      "status": "exact",
+      "matchedSku": "9013457",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9013457",
+      "sourceImageUrl": "https://asset.somfy.com/Image/802aa4c6-0f67-4877-85ae-3d8334cd1f00_90134571.jpg",
+      "localPath": "/images/vendor/somfy/9013457-1.jpg"
+    },
+    "2618356-SET20": {
+      "status": "supplied-source-image",
+      "matchedSku": "2618356-SET20",
+      "sourcePageUrl": null,
+      "sourceImageUrl": null,
+      "localPath": "/images/vendor/bft/2618356-set-of-20-1.png",
+      "sourceNote": "Existing BFT image manifest from the owner-supplied BFT workbook"
+    },
+    "2618355-SET50": {
+      "status": "supplied-source-image",
+      "matchedSku": "2618355-SET50",
+      "sourcePageUrl": null,
+      "sourceImageUrl": null,
+      "localPath": "/images/vendor/bft/2618355-set-of-50-1.png",
+      "sourceNote": "Existing BFT image manifest from the owner-supplied BFT workbook"
+    },
+    "1870594": {
+      "status": "exact",
+      "matchedSku": "1870594",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870594/tahoma-switch",
+      "sourceImageUrl": "https://asset.somfy.com/Image/26aff64a-5770-42ec-b8ec-ad0bc2664079_TAHOMA_SWITCH_FACE.jpg",
+      "localPath": "/images/vendor/somfy/1870594-1.jpg"
+    },
+    "1870890": {
+      "status": "exact",
+      "matchedSku": "1870890",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/1870890-tahoma-din-rail",
+      "sourceImageUrl": "https://asset.somfy.com/Image/0a4222b2-cfa2-4b1d-b958-25cf64a53244_TaHoma%20Din%20Rail_Desssus.jpg",
+      "localPath": "/images/vendor/somfy/1870890-1.jpg"
+    },
+    "1824035": {
+      "status": "exact",
+      "matchedSku": "1824035",
+      "sourcePageUrl": "https://www.somfy.bg/products/1824035/scenario-player-for-tahoma",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Scenario_player_for_tahoma.jpg",
+      "localPath": "/images/vendor/somfy/1824035-1.jpg"
+    },
+    "1822651": {
+      "status": "exact",
+      "matchedSku": "1822651",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822651/smoove-lighting-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/smoove_lighting_somfy_1822649.jpg",
+      "localPath": "/images/vendor/somfy/1822651-1.jpg"
+    },
+    "1822421": {
+      "status": "exact",
+      "matchedSku": "1822421",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822421/light-rec-variation-io-19l",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Lighting_receiver_variation_io.jpg",
+      "localPath": "/images/vendor/somfy/1822421-1.jpg"
+    },
+    "1822611": {
+      "status": "exact",
+      "matchedSku": "1822611",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822611/white-led-receiver-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Lighting_receiver_io_STAR.jpg",
+      "localPath": "/images/vendor/somfy/1822611-1.jpg"
+    },
+    "1822612": {
+      "status": "exact",
+      "matchedSku": "1822612",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822612/rgb-led-receiver-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Lighting_receiver_io_STAR.jpg",
+      "localPath": "/images/vendor/somfy/1822612-1.jpg"
+    },
+    "1822613": {
+      "status": "exact",
+      "matchedSku": "1822613",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822613/tunable-white-led-receiver-io-16l",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Lighting_receiver_io_STAR.jpg",
+      "localPath": "/images/vendor/somfy/1822613-1.jpg"
+    },
+    "1822215": {
+      "status": "exact",
+      "matchedSku": "1822215",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822215/lighting-slim-receiverrts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Slim_lighting_receiver_RTS__1822215.jpg",
+      "localPath": "/images/vendor/somfy/1822215-1.jpg"
+    },
+    "1822478": {
+      "status": "exact",
+      "matchedSku": "1822478",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822478/light-rec-led-variation-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/LIGHTING_RECEIVER_VARIATION_LED_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1822478-1.jpg"
+    },
+    "1810628": {
+      "status": "exact",
+      "matchedSku": "1810628",
+      "sourcePageUrl": "https://www.somfy.bg/products/1810628/outdoor-lighting-receiver-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/External_light_receiver_RTS_star_1810628.jpg",
+      "localPath": "/images/vendor/somfy/1810628-1.jpg"
+    },
+    "1811632": {
+      "status": "exact",
+      "matchedSku": "1811632",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811632/heating-slim-receiver-io-2kw",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Heating_receiver_io__.jpg",
+      "localPath": "/images/vendor/somfy/1811632-1.jpg"
+    },
+    "1810917": {
+      "status": "exact",
+      "matchedSku": "1810917",
+      "sourcePageUrl": "https://www.somfy.bg/products/1810917/heating-mod-var-receiver-rts-3kw",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Heating_Modulis_Receiver_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1810917-1.jpg"
+    },
+    "1822649": {
+      "status": "exact",
+      "matchedSku": "1822649",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822649/izymo-on-off-receiver-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Izymo_OnOff_somfy_1822651.jpg",
+      "localPath": "/images/vendor/somfy/1822649-1.jpg"
+    },
+    "1822663": {
+      "status": "exact",
+      "matchedSku": "1822663",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822663/izymo-dimmer-receiver-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/IZYMO_DIMMER_RECEIVER_io.jpg",
+      "localPath": "/images/vendor/somfy/1822663-1.jpg"
+    },
+    "1822660": {
+      "status": "exact",
+      "matchedSku": "1822660",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822660/izymo-shutter-receiver-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/IZYMO_SHUTTER_RECEIVER_io.jpg",
+      "localPath": "/images/vendor/somfy/1822660-1.jpg"
+    },
+    "1822609": {
+      "status": "exact",
+      "matchedSku": "1822609",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822609/izymo-transmitter-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/IZYMO_TRANSMITTER_io.jpg",
+      "localPath": "/images/vendor/somfy/1822609-1.jpg"
+    },
+    "1811251": {
+      "status": "exact",
+      "matchedSku": "1811251",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811251/lighting-in-wall-receiver-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/LIGHTING_IN-WALL_RECEIVER_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1811251-1.jpg"
+    },
+    "1811244": {
+      "status": "exact",
+      "matchedSku": "1811244",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811244/shutter-in-wall-receiver-rts",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SHUTTER_IN-WALL_RECEIVER_RTS.jpg",
+      "localPath": "/images/vendor/somfy/1811244-1.jpg"
+    },
+    "1822618": {
+      "status": "exact",
+      "matchedSku": "1822618",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822618/on-off-plug-io-f-type",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/SOMFY_PLUG_IO_F_TYPE_STAR_ON.jpg",
+      "localPath": "/images/vendor/somfy/1822618-1.jpg"
+    },
+    "1870508": {
+      "status": "exact",
+      "matchedSku": "1870508",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870508/thermostatic-valve-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/thermostatic-valve-io-somfy-front-view.jpg",
+      "localPath": "/images/vendor/somfy/1870508-1.jpg"
+    },
+    "9014069": {
+      "status": "exact",
+      "matchedSku": "9014069",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9014069-repeater-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/9044c5e1-0c27-4962-8875-5d362e4d363b_9014069_repeater_velux_io.jpg",
+      "localPath": "/images/vendor/somfy/9014069-1.jpg"
+    },
+    "1822303": {
+      "status": "exact",
+      "matchedSku": "1822303",
+      "sourcePageUrl": "https://www.somfy.bg/products/1822303/thermis-wirefree-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Thermis_wirefree_io_star_1822303.jpg",
+      "localPath": "/images/vendor/somfy/1822303-1.jpg"
+    },
+    "1811483": {
+      "status": "exact",
+      "matchedSku": "1811483",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811483/-tahoma",
+      "sourceImageUrl": "https://asset.somfy.com/Image/846a2604-c429-4f92-a897-343efce0fb04_TAHOMA_DETECTEUR_FUMEE.jpg",
+      "localPath": "/images/vendor/somfy/1811483-1.jpg"
+    },
+    "9015971": {
+      "status": "exact",
+      "matchedSku": "9015971",
+      "sourcePageUrl": "https://www.somfy.bg/products/9015971/installation-cable-usc-typ-2",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/UNIVERSAL_SETTING_TOOL.jpg",
+      "localPath": "/images/vendor/somfy/9015971-1.jpg"
+    },
+    "1870724": {
+      "status": "exact",
+      "matchedSku": "1870724",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870724/situo-1-a-m-io-pure-ii-se-mea",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Situo_1_A-M_io_Pure_ref.№_1870724.jpg",
+      "localPath": "/images/vendor/somfy/1870724-1.jpg"
+    },
+    "9014185": {
+      "status": "exact",
+      "matchedSku": "9014185",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9014185",
+      "sourceImageUrl": "https://asset.somfy.com/Image/8ac8114c-7888-4a1f-9507-26814c23f3ce_9014185_ConnecteurStak3.jpg",
+      "localPath": "/images/vendor/somfy/9014185-1.jpg"
+    },
+    "1816084": {
+      "status": "exact",
+      "matchedSku": "1816084",
+      "sourcePageUrl": "https://www.somfy.bg/products/1816084/eolis-wirefree-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/EOLIS_WIREFREE_io_star.jpg",
+      "localPath": "/images/vendor/somfy/1816084-1.jpg"
+    },
+    "1816092": {
+      "status": "exact",
+      "matchedSku": "1816092",
+      "sourcePageUrl": "https://www.somfy.bg/products/1816092/eolis-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/NEW_Eolis_io.jpg",
+      "localPath": "/images/vendor/somfy/1816092-1.jpg"
+    },
+    "1870532": {
+      "status": "exact",
+      "matchedSku": "1870532",
+      "sourcePageUrl": "https://www.somfy.bg/products/1870532/soliris-sensor-230v-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/af839768-4e8c-4f27-b20d-a6b55690688e_Photo%20produit%20Soliris%20io.png",
+      "localPath": "/images/vendor/somfy/1870532-1.png"
+    },
+    "9016355": {
+      "status": "exact",
+      "matchedSku": "9016355",
+      "sourcePageUrl": "https://www.somfy.bg/products/9016355/eolis-3d-wirefree-io",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/EOLIS_3D_star4.jpg",
+      "localPath": "/images/vendor/somfy/9016355-1.jpg"
+    },
+    "9016353": {
+      "status": "exact",
+      "matchedSku": "9016353",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9016353-eolis-3d-wirefree-io-bronzal-ultra-light",
+      "sourceImageUrl": "https://asset.somfy.com/Image/53ab5552-f3af-4829-a36e-93158334fcaa_EOLIS_3D_star11.jpg",
+      "localPath": "/images/vendor/somfy/9016353-1.jpg"
+    },
+    "9016354": {
+      "status": "exact",
+      "matchedSku": "9016354",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9016354-eolis-3d-wirefree-io-black",
+      "sourceImageUrl": "https://asset.somfy.com/Image/c8a30980-e015-408b-96e8-6f6765e17e8d_9016354_Eolis3Dio_noir341.jpg",
+      "localPath": "/images/vendor/somfy/9016354-1.jpg"
+    },
+    "1811131": {
+      "status": "exact",
+      "matchedSku": "1811131",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811131/soliris-mod-var-slim-receiver-io-compatible-plug",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Variation_Slim_Receiver_io_Plug_1811131_main.jpg",
+      "localPath": "/images/vendor/somfy/1811131-1.jpg"
+    },
+    "1811132": {
+      "status": "exact",
+      "matchedSku": "1811132",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811132/soliris-mod-var-slim-receiver-io-compatible-cable",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/EVB_-_SLIM_RECEIVER_FOR_VARIATION_io_CABLE.jpg",
+      "localPath": "/images/vendor/somfy/1811132-1.jpg"
+    },
+    "1811685": {
+      "status": "exact",
+      "matchedSku": "1811685",
+      "sourcePageUrl": "https://www.somfy.bg/products/1811685/slim-io-",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Slim_io_receiver_RS_-_plug.jpg",
+      "localPath": "/images/vendor/somfy/1811685-1.jpg"
+    },
+    "9928200": {
+      "status": "exact",
+      "matchedSku": "9928200",
+      "sourcePageUrl": "https://www.somfypro.co.uk/products/9928200-hirschmann-plug-male",
+      "sourceImageUrl": "https://asset.somfy.com/Image/4f916a66-646b-42d6-bc01-f294eccb3082_9928198.jpg",
+      "localPath": "/images/vendor/somfy/9928200-1.jpg"
+    },
+    "9686064": {
+      "status": "family-reference",
+      "matchedSku": "9014186",
+      "sourcePageUrl": "https://master-b2b.test.somfy.com/e-catalogue/-/e-cat/9014186",
+      "sourceImageUrl": "https://asset.somfy.com/Image/c9572f11-ed05-4d31-bea5-a01205eb1411_90141861.jpg",
+      "localPath": "/images/vendor/somfy/9686064-1.jpg"
+    }
+  }
+}

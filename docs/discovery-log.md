@@ -2,6 +2,25 @@
 
 Reverse-chronological. Most recent first.
 
+## [2026-08-07] ICC audit corrected and commercial imagery imported
+**Context**: Sean asked for a second pass over ICC pricing and for missing
+commercial product images to be sourced with consistent provenance.
+**Learnings**:
+- ICC source rows 65–68 are under the BGN price header. They are now
+  quote-only; the snapshot reports 141 GBP-priced and 9 quote-only products.
+- EUR rows use the established `0.8572` EUR-to-GBP rate, remove 20% VAT from
+  recommended inc-VAT prices, and use two-decimal half-up currency rounding.
+- Official Somfy BG, Somfy Pro and Somfy master catalogue sources produced
+  133 exact SKU image matches and 15 explicitly marked family references.
+  The two existing BFT package images remain supplied-source assets.
+- `somfy-image-manifest.json` retains source page URLs, source asset URLs,
+  review status and local paths. All 150 product paths exist locally and no
+  `noimage` placeholder remains.
+**Validation**: 16 tests, TypeScript, lint (four pre-existing warnings), and
+  the complete image-file audit passed. Production build and public release
+  verification follow this audit.
+
+
 ## [2026-08-07] Shared commercial workbooks imported and released
 **Context**: Read-only `gog` access under `bojodanchev@gmail.com` exposed the
 two supplied Sheets plus four additional Gmail share notifications: REC, REA,

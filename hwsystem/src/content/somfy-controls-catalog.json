@@ -104,8 +104,8 @@
     "rawSourceRecordCount": 178,
     "uniqueSkuCount": 154,
     "selectedProductCount": 150,
-    "pricedProductCount": 143,
-    "quoteOnlyProductCount": 7,
+    "pricedProductCount": 141,
+    "quoteOnlyProductCount": 9,
     "rowsWithSourceImage": 0,
     "rowsWithoutSourceImage": 178,
     "unresolvedSkuConflicts": [
@@ -2543,15 +2543,15 @@
       "sourceName": "LUNA AC B 230V 50/60HZ, 1200W",
       "sourceDescription": "2612342 LUNA AC B 230V 50/60HZ, 1200W LUNA AC B 230V 50/60HZ, 1200W Външен приемник с възможност за добавяне на елементи за сигурност. - памет 63 дистанционни",
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 26.67,
         "sourceRecommendedIncVat": 66.68,
         "sourceQuantityOrLeadTime": null,
         "sourceQuantityOrLeadTimeLabel": "deliveryDays",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 22.86,
-        "recommendedExVatGbp": 47.63,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {
@@ -2563,15 +2563,15 @@
       "sourceName": "MITTO COOL C2",
       "sourceDescription": "2614118 MITTO COOL C2 MITTO COOL C2 Дистанционно управление с 2 канала. Подобрена конструкция: Модерен и ергономичен дизайн с по‑големи бутони и по‑удобен захват. Повишена сигурност: Криптиран rolling code, който осигурява допълнително ниво на защита и предотвратява неоторизирано клониране или копиране. Replay функция: Възможност за директно копиране от съществуващо към ново дистанционно.",
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 8.64,
         "sourceRecommendedIncVat": 21.6,
         "sourceQuantityOrLeadTime": null,
         "sourceQuantityOrLeadTimeLabel": "deliveryDays",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 7.41,
-        "recommendedExVatGbp": 15.43,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {
@@ -2583,15 +2583,15 @@
       "sourceName": "MITTO COOL C2",
       "sourceDescription": "2618356 Set of 20 x20 MITTO COOL C2 Дистанционно управление с 2 канала — комплект 20 бр. Модерен, ергономичен дизайн с по‑големи бутони Криптиран rolling code за повишена сигурност Replay функция за директно копиране между дистанционни",
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 166.0,
         "sourceRecommendedIncVat": 415.0,
         "sourceQuantityOrLeadTime": 20,
         "sourceQuantityOrLeadTimeLabel": "packageQuantity",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 142.3,
-        "recommendedExVatGbp": 296.45,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {
@@ -2603,15 +2603,15 @@
       "sourceName": "MITTO COOL C2",
       "sourceDescription": "2618355 Set of 50 x50 MITTO COOL C2 Дистанционно управление с 2 канала — комплект 50 бр. Модерен, ергономичен дизайн с по‑големи бутони Криптиран rolling code за по‑висока сигурност Replay функция за директно копиране между дистанционни",
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 400.0,
         "sourceRecommendedIncVat": 1000.0,
         "sourceQuantityOrLeadTime": 50,
         "sourceQuantityOrLeadTimeLabel": "packageQuantity",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 342.88,
-        "recommendedExVatGbp": 714.33,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {
@@ -7820,15 +7820,15 @@
 
       ],
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 166.0,
         "sourceRecommendedIncVat": 415.0,
         "sourceQuantityOrLeadTime": 20,
         "sourceQuantityOrLeadTimeLabel": "packageQuantity",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 142.3,
-        "recommendedExVatGbp": 296.45,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {
@@ -7855,15 +7855,15 @@
 
       ],
       "sourcePriceAudit": {
-        "sourceCurrency": "EUR",
+        "sourceCurrency": "BGN",
         "sourcePurchaseExVat": 400.0,
         "sourceRecommendedIncVat": 1000.0,
         "sourceQuantityOrLeadTime": 50,
         "sourceQuantityOrLeadTimeLabel": "packageQuantity",
-        "eurToGbpRate": 0.8572,
-        "purchaseExVatGbp": 342.88,
-        "recommendedExVatGbp": 714.33,
-        "quoteOnly": false
+        "eurToGbpRate": null,
+        "purchaseExVatGbp": null,
+        "recommendedExVatGbp": null,
+        "quoteOnly": true
       }
     },
     {

@@ -3,7 +3,10 @@ import { bftCatalogSnapshot, bftProducts } from "@/content/bft-catalog";
 import { products } from "@/content/catalog";
 import {
   somfyCommercialCatalogSnapshot,
+  somfyCommercialImageAuditSnapshot,
+  somfyCommercialImageManifest,
   somfyCommercialProducts,
+  somfyCommercialSourceRecords,
 } from "@/content/somfy-controls-catalog";
 import {
   getPriceBreakdown,
@@ -47,12 +50,24 @@ describe("catalog imports and commercial rules", () => {
       rawSourceRecordCount: 178,
       uniqueSkuCount: 154,
       selectedProductCount: 150,
-      pricedProductCount: 143,
-      quoteOnlyProductCount: 7,
+      pricedProductCount: 141,
+      quoteOnlyProductCount: 9,
       rowsWithSourceImage: 0,
     });
     expect(somfyCommercialProducts).toHaveLength(150);
     expect(new Set(somfyCommercialProducts.map((product) => product.sku)).size).toBe(150);
+    expect(somfyCommercialImageAuditSnapshot).toMatchObject({
+      productCount: 150,
+      exactProductCount: 133,
+      familyReferenceProductCount: 15,
+      suppliedSourceImageProductCount: 2,
+    });
+    expect(somfyCommercialProducts.every((product) => product.images.length === 1)).toBe(true);
+    expect(
+      Object.values(somfyCommercialImageManifest.products).every(
+        (image) => !image.sourceImageUrl || !image.sourceImageUrl.includes("noimage"),
+      ),
+    ).toBe(true);
     expect(somfyCommercialCatalogSnapshot.unresolvedSkuConflicts).toEqual(
       expect.arrayContaining([expect.objectContaining({ sku: "1871148" })]),
     );
@@ -77,6 +92,33 @@ describe("catalog imports and commercial rules", () => {
       products.find((product) => product.sku === "1824035")!.slug,
     );
     expect(publicCommercial?.price).not.toHaveProperty("purchaseCostExVat");
+  });
+
+  it("audits every ICC source row before GBP projection", () => {
+    const iccRecords = somfyCommercialSourceRecords.filter((record) => record.source === "icc");
+    expect(iccRecords).toHaveLength(47);
+    const roundGbp = (value: number) => Math.round((value + Number.EPSILON) * 100) / 100;
+
+    for (const record of iccRecords) {
+      const audit = record.sourcePriceAudit;
+      if (audit.sourceCurrency === "BGN") {
+        expect(audit).toMatchObject({
+          eurToGbpRate: null,
+          purchaseExVatGbp: null,
+          recommendedExVatGbp: null,
+          quoteOnly: true,
+        });
+        continue;
+      }
+
+      expect(audit.sourceCurrency).toBe("EUR");
+      expect(audit.eurToGbpRate).toBe(0.8572);
+      expect(audit.purchaseExVatGbp).toBe(roundGbp(audit.sourcePurchaseExVat! * 0.8572));
+      expect(audit.recommendedExVatGbp).toBe(
+        roundGbp((audit.sourceRecommendedIncVat! / 1.2) * 0.8572),
+      );
+      expect(audit.quoteOnly).toBe(false);
+    }
   });
 
   it("provides related fallback recommendations without claiming purchase history", () => {
