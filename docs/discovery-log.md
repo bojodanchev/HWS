@@ -16,9 +16,14 @@ commercial product images to be sourced with consistent provenance.
 - `somfy-image-manifest.json` retains source page URLs, source asset URLs,
   review status and local paths. All 150 product paths exist locally and no
   `noimage` placeholder remains.
-**Validation**: 16 tests, TypeScript, lint (four pre-existing warnings), and
-  the complete image-file audit passed. Production build and public release
-  verification follow this audit.
+**Validation**: 16 tests, TypeScript, lint (four pre-existing warnings), the
+  complete image-file audit, and the 1,681-page production build passed.
+  Commit `7972964` was pushed to `main`; Vercel deployment
+  `dpl_BrW7LMGPFsovBTsJsAdA79pLd9c6` reached Ready and the canonical
+  `hwsystem.vercel.app` OXIMO, Scenario Player and direct image routes returned
+  HTTP 200.
+**Communication**: Completion was posted as a Codex agent message in the HWS
+  topic `Abundance → SBI/Jidoro/HWS/Vectra`, Telegram message `2570`.
 
 
 ## [2026-08-07] Shared commercial workbooks imported and released

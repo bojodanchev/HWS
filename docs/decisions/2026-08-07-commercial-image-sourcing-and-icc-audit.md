@@ -45,3 +45,6 @@ were missing product imagery with consistent, high-quality assets.
 - `npm run lint`: passed with four pre-existing warnings and zero errors.
 - The image audit confirmed 150 manifest paths, zero missing files and zero
   invalid files.
+- Commit `7972964` was pushed to `main`; deployment
+  `dpl_BrW7LMGPFsovBTsJsAdA79pLd9c6` reached Ready and the canonical product
+  and direct-image routes returned HTTP 200.
