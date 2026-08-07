@@ -51,3 +51,27 @@
   be normalised into one SKU-first catalogue with deduplication, source
   provenance, approved imagery, English copy, structured specs and verified
   pricing before being presented as sellable products.
+
+## 2026-08-07 — shared commercial workbooks imported
+
+- Read the owner-approved Google Sheets with the personal `gog` account
+  `bojodanchev@gmail.com`. In addition to the supplied BFT and Controls sheets,
+  Gmail showed four newly shared workbooks: REC, REA, ICC and HA PRO.
+- The five Somfy/BFT commercial workbooks contain 178 source rows and 154
+ unique SKU keys. The canonical import selects 150 products after excluding
+ 3 SKUs already present in the image-backed BFT snapshot: 143 EUR-derived
+ GBP-priced records and 7 quote-only records.
+- The supplied BFT workbook matches the existing 203 common SKU records with
+  zero name, cost or RRP mismatches; the existing 3 local-only SKUs and the
+  206-product BFT image-backed snapshot are retained.
+- EUR values use the existing catalogue conversion boundary of `0.8572` EUR to
+  GBP, with public price as ex VAT and purchase cost retained only in the
+  source audit. ICC BGN sections remain quote-only because no approved BGN to
+  GBP conversion was supplied.
+- SKU `1871148` has conflicting ICC rows in BGN and EUR and is excluded from
+  the public projection pending review. REC takes precedence over older
+  Controls values for overlapping commercial records, including the previously
+  unpriced `1811685` record.
+- None of these Google Sheets contained source images or embedded workbook
+  media. The import preserves empty image arrays and records the gap rather
+  than presenting catalogue rows as image-complete.

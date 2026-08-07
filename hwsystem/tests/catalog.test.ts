@@ -2,6 +2,10 @@ import { describe, expect, it } from "vitest";
 import { bftCatalogSnapshot, bftProducts } from "@/content/bft-catalog";
 import { products } from "@/content/catalog";
 import {
+  somfyCommercialCatalogSnapshot,
+  somfyCommercialProducts,
+} from "@/content/somfy-controls-catalog";
+import {
   getPriceBreakdown,
   getProductBySlug,
   getRecommendationGroups,
@@ -36,6 +40,43 @@ describe("catalog imports and commercial rules", () => {
 
     const publicBft = getProductBySlug(bftProduct.slug);
     expect(publicBft?.price).not.toHaveProperty("purchaseCostExVat");
+  });
+
+  it("imports the shared commercial workbooks with precedence and audit gates", () => {
+    expect(somfyCommercialCatalogSnapshot).toMatchObject({
+      rawSourceRecordCount: 178,
+      uniqueSkuCount: 154,
+      selectedProductCount: 150,
+      pricedProductCount: 143,
+      quoteOnlyProductCount: 7,
+      rowsWithSourceImage: 0,
+    });
+    expect(somfyCommercialProducts).toHaveLength(150);
+    expect(new Set(somfyCommercialProducts.map((product) => product.sku)).size).toBe(150);
+    expect(somfyCommercialCatalogSnapshot.unresolvedSkuConflicts).toEqual(
+      expect.arrayContaining([expect.objectContaining({ sku: "1871148" })]),
+    );
+    expect(somfyCommercialCatalogSnapshot.skippedExistingBftSkus).toEqual(
+      expect.arrayContaining(["9011069"]),
+    );
+
+    const recOverride = somfyCommercialProducts.find((product) => product.sku === "1811685");
+    expect(recOverride?.price).toMatchObject({
+      currency: "GBP",
+      vatIncluded: false,
+      vatRate: 0.2,
+    });
+    expect(recOverride?.price.rrp).toBeGreaterThan(0);
+    expect(somfyCommercialProducts.find((product) => product.sku === "9013451")?.price).toEqual({
+      quoteOnly: true,
+    });
+    expect(products.filter((product) => product.sku === "1824035")).toHaveLength(1);
+    expect(new Set(products.map((product) => product.sku)).size).toBe(products.length);
+    expect(products.find((product) => product.sku === "1824035")?.price.quoteOnly).not.toBe(true);
+    const publicCommercial = getProductBySlug(
+      products.find((product) => product.sku === "1824035")!.slug,
+    );
+    expect(publicCommercial?.price).not.toHaveProperty("purchaseCostExVat");
   });
 
   it("provides related fallback recommendations without claiming purchase history", () => {

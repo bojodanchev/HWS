@@ -2,6 +2,7 @@ import type { Category, Product } from "@/types/catalog";
 import { vendorProducts } from "@/content/vendor-catalog";
 import { niceProducts } from "@/content/nice-catalog";
 import { bftProducts } from "@/content/bft-catalog";
+import { somfyCommercialProducts } from "@/content/somfy-controls-catalog";
 
 /**
  * Catalog content — the MVP data layer.
@@ -787,5 +788,11 @@ export const products: Product[] = [
   },
   ...bftProducts,
   ...niceProducts,
-  ...vendorProducts,
+  ...somfyCommercialProducts,
+  ...vendorProducts.filter(
+    (vendorProduct) =>
+      !somfyCommercialProducts.some(
+        (commercialProduct) => commercialProduct.sku === vendorProduct.sku,
+      ),
+  ),
 ];
