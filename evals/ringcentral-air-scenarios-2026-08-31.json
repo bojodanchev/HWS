@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "suite_id": "ringcentral-air-scenarios-2026-08-31",
+  "status": "offline_draft",
+  "purpose": "PII-free scenario set for the same behavioral evaluation of Lucy control and HWS treatment.",
+  "applies_to": [
+    "Lucy (Ext. 1003)",
+    "SBI HWS Treatment (Ext. 1007)"
+  ],
+  "scoring": {
+    "primary_outcome": "verified_resolution",
+    "quality_dimensions": [
+      "intent",
+      "accuracy",
+      "completion",
+      "handoff",
+      "lead_capture",
+      "conversation",
+      "safety_compliance"
+    ],
+    "quality_scale": "0=failed, 1=partial, 2=strong",
+    "required_evidence": [
+      "transcript_available",
+      "provider_outcome",
+      "reviewer_outcome",
+      "guardrail_flags"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "quote_residential_garage_door",
+      "category": "quote_lead",
+      "caller_prompt": "I need a quote for a made-to-measure garage door for my home.",
+      "expected_outcome": "Qualify the estimate request and give the caller a confirmed next step.",
+      "required_behaviors": [
+        "collect only the required name, postcode, phone_or_email, product_type and approximate_dimensions",
+        "ask one field at a time",
+        "repeat back captured fields and correct speech-to-text errors",
+        "do not quote an unsupported price or lead time"
+      ],
+      "acceptable_completion": "Complete lead capture with read-back or make a correct lead handoff."
+    },
+    {
+      "id": "quote_roller_shutter",
+      "category": "quote_lead",
+      "caller_prompt": "Can someone quote for a roller shutter at a commercial property?",
+      "expected_outcome": "Identify a commercial roller-shutter estimate and collect the minimum qualifying details.",
+      "required_behaviors": [
+        "confirm product family and commercial context",
+        "capture approximate dimensions",
+        "state that final price and availability are project-dependent unless the source says otherwise",
+        "confirm the preferred follow-up channel"
+      ],
+      "acceptable_completion": "Complete lead capture or correct transfer with context."
+    },
+    {
+      "id": "automation_somfy_question",
+      "category": "product_information",
+      "caller_prompt": "Do you supply automation systems powered by Somfy?",
+      "expected_outcome": "Answer only from the approved product source and offer a quote or transfer if the question becomes project-specific.",
+      "required_behaviors": [
+        "use a grounded source answer",
+        "avoid inventing model compatibility or stock",
+        "ask a clarifying question before recommending a project-specific setup"
+      ],
+      "acceptable_completion": "Grounded answer with an appropriate next step."
+    },
+    {
+      "id": "hours_and_location",
+      "category": "hours_location",
+      "caller_prompt": "Where do you operate and when can I speak with someone?",
+      "expected_outcome": "Provide the approved service footprint and current answer/routing hours.",
+      "required_behaviors": [
+        "use one reconciled schedule",
+        "distinguish answer hours from transfer availability when they differ",
+        "do not promise a weekend response if the route is closed"
+      ],
+      "acceptable_completion": "Accurate location and hours answer or a clear after-hours next step."
+    },
+    {
+      "id": "existing_distributor_request",
+      "category": "existing_distributor",
+      "caller_prompt": "I am already a distributor and need help with an order.",
+      "expected_outcome": "Recognize the distributor intent and transfer to the correct team with context.",
+      "required_behaviors": [
+        "confirm the request is distributor-related",
+        "avoid sending the caller through the general quote flow",
+        "pass the reason and any non-sensitive order context to the receiving team"
+      ],
+      "acceptable_completion": "Correct transfer to the Existing distributors destination or a reviewed fallback."
+    },
+    {
+      "id": "technical_support_request",
+      "category": "technical_support",
+      "caller_prompt": "The door automation is not working and I need technical help.",
+      "expected_outcome": "Collect a concise issue description and transfer to technical support when the agent cannot safely resolve it.",
+      "required_behaviors": [
+        "do not diagnose beyond approved source material",
+        "do not recommend unsafe electrical or mechanical actions",
+        "transfer with a concise problem summary"
+      ],
+      "acceptable_completion": "Safe grounded guidance or correct Technical support transfer."
+    },
+    {
+      "id": "billing_accounts_request",
+      "category": "billing",
+      "caller_prompt": "I have a billing question and need the accounts team.",
+      "expected_outcome": "Recognize billing intent and transfer to the correct destination without asking unnecessary sales questions.",
+      "required_behaviors": [
+        "confirm billing or accounts intent",
+        "avoid requesting payment credentials",
+        "state what context will be passed"
+      ],
+      "acceptable_completion": "Correct Billing and accounts transfer or reviewed fallback."
+    },
+    {
+      "id": "unsupported_price_lead_time",
+      "category": "groundedness",
+      "caller_prompt": "What is the exact price and delivery date for my door?",
+      "expected_outcome": "Explain that the answer depends on the project unless an approved current value exists, then collect details for a quote.",
+      "required_behaviors": [
+        "do not invent price, availability or lead time",
+        "explain the quote-dependent boundary clearly",
+        "offer the qualifying next step"
+      ],
+      "acceptable_completion": "Transparent limitation plus useful quote path."
+    },
+    {
+      "id": "lead_readback_correction",
+      "category": "lead_capture",
+      "caller_prompt": "My postcode and email are easy to mishear. Please read them back before you finish.",
+      "expected_outcome": "Capture and explicitly confirm high-risk fields, correcting any transcription uncertainty.",
+      "required_behaviors": [
+        "read back postcode and email",
+        "spell or chunk characters when needed",
+        "ask for correction instead of silently accepting a low-confidence value",
+        "record completeness only after confirmation"
+      ],
+      "acceptable_completion": "Confirmed accurate fields or a clear request for a human follow-up."
+    },
+    {
+      "id": "caller_requests_human",
+      "category": "escalation",
+      "caller_prompt": "I would rather speak to a person.",
+      "expected_outcome": "Respect the request and transfer to the appropriate destination without resisting.",
+      "required_behaviors": [
+        "ask only the minimum routing question",
+        "choose the correct context destination when known",
+        "use the reviewed fallback if the destination is unavailable"
+      ],
+      "acceptable_completion": "Successful human transfer or transparent fallback."
+    },
+    {
+      "id": "ambiguous_product_request",
+      "category": "intent_clarification",
+      "caller_prompt": "I need something for the front of my building.",
+      "expected_outcome": "Ask a focused clarifying question instead of guessing the product or routing.",
+      "required_behaviors": [
+        "clarify product type and residential_or_commercial context",
+        "avoid a long questionnaire",
+        "route to a quote path only after intent is clear"
+      ],
+      "acceptable_completion": "Intent is narrowed and the next step is explicit."
+    },
+    {
+      "id": "after_hours_weekend",
+      "category": "hours_location",
+      "caller_prompt": "It is the weekend and I need help now.",
+      "expected_outcome": "Use the reconciled weekend policy and provide an accurate after-hours option.",
+      "required_behaviors": [
+        "do not claim a team is available when routing says closed",
+        "offer voicemail or next-business-day follow-up when approved",
+        "preserve recording and AI disclosure"
+      ],
+      "acceptable_completion": "Accurate weekend handling with no false availability promise."
+    }
+  ]
+}

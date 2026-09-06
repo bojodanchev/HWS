@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "evaluation_id": "ringcentral-air-lucy-incumbent-2026-08-31",
+  "status": "aggregate_baseline_saved",
+  "captured_on": "2026-08-31",
+  "timezone": "Europe/Sofia",
+  "purpose": "Control-arm benchmark for the connected RingCentral AIR receptionist before treatment traffic is activated.",
+  "platform": "RingCentral AIR",
+  "agent": {
+    "name": "Lucy",
+    "extension": "1003",
+    "arm": "control_incumbent",
+    "state": "Connected",
+    "route": "Company main-number route"
+  },
+  "treatment_reference": {
+    "name": "SBI HWS Treatment",
+    "extension": "1007",
+    "arm": "treatment_pending",
+    "state": "Not connected",
+    "route": "None assigned"
+  },
+  "source_surfaces": [
+    {
+      "surface": "AIR Call history",
+      "grain": "One visible AIR conversation row",
+      "filters": "Custom date range in authenticated AIR Studio"
+    },
+    {
+      "surface": "AIR Analytics",
+      "grain": "AIR handled-call outcome counters",
+      "filters": "Same custom date range and agent filter"
+    },
+    {
+      "surface": "AIR Leads",
+      "grain": "Lead-capture response",
+      "filters": "Same custom date range; no stable provider call-id join exposed"
+    }
+  ],
+  "windows": [
+    {
+      "id": "60d",
+      "from": "2026-07-03",
+      "to": "2026-08-31",
+      "days_inclusive": 60,
+      "call_history": {
+        "rows": 25,
+        "agent_rows": 23,
+        "agent_rows_by_name": {
+          "Lucy": 23,
+          "Amelia AI": 2
+        },
+        "outcomes": {
+          "transferred": 9,
+          "ended_by_caller": 15,
+          "agent_hung_up": 1
+        },
+        "recording_duration_controls_visible": 25,
+        "recording_bytes_downloaded": 0
+      },
+      "analytics": {
+        "agent_filter": "Lucy",
+        "calls_handled": 21,
+        "resolved": 9,
+        "unresolved": 12,
+        "knowledge_base_resolutions": 2,
+        "context_transfers": 7,
+        "name_transfers": 0,
+        "usage_minutes_displayed": 21,
+        "minutes_purchased_displayed": 100
+      },
+      "leads": {
+        "responses": 4,
+        "denominator": null,
+        "provider_call_id_join_available": false
+      },
+      "duration_summary": {
+        "lucy_history_duration_seconds": 1808,
+        "lucy_mean_duration_seconds": 78.6,
+        "lucy_recording_duration_seconds": 1951,
+        "lucy_mean_recording_seconds": 84.8,
+        "amelia_history_duration_seconds": 0,
+        "amelia_recording_duration_seconds": 23
+      }
+    },
+    {
+      "id": "90d",
+      "from": "2026-06-03",
+      "to": "2026-08-31",
+      "days_inclusive": 90,
+      "call_history": {
+        "rows": 32,
+        "agent_rows": 30,
+        "agent_rows_by_name": {
+          "Lucy": 30,
+          "Amelia AI": 2
+        },
+        "outcomes": {
+          "transferred": 12,
+          "ended_by_caller": 15,
+          "agent_hung_up": 5
+        },
+        "recording_duration_controls_visible": 32,
+        "recording_bytes_downloaded": 0
+      },
+      "analytics": {
+        "agent_filter": "Lucy",
+        "calls_handled": 28,
+        "resolved": 12,
+        "unresolved": 16,
+        "knowledge_base_resolutions": 2,
+        "context_transfers": 10,
+        "name_transfers": 0,
+        "usage_minutes_displayed": null,
+        "minutes_purchased_displayed": null
+      },
+      "leads": {
+        "responses": 10,
+        "denominator": null,
+        "provider_call_id_join_available": false
+      },
+      "duration_summary": {
+        "lucy_history_duration_seconds": 3442,
+        "lucy_mean_duration_seconds": 114.7,
+        "lucy_recording_duration_seconds": 3608,
+        "lucy_mean_recording_seconds": 120.3,
+        "amelia_history_duration_seconds": 0,
+        "amelia_recording_duration_seconds": 23
+      }
+    }
+  ],
+  "historical_reference": {
+    "id": "30d_original_snapshot",
+    "from": "2026-08-02",
+    "to": "2026-08-31",
+    "call_history_rows": 18,
+    "analytics_handled": 16,
+    "resolved": 7,
+    "unresolved": 9,
+    "knowledge_base_resolutions": 2,
+    "context_transfers": 5,
+    "lead_responses": 1,
+    "note": "Retained for continuity only; use the 90-day window as the primary control and 60-day window as a recency sensitivity check."
+  },
+  "agent_activity": [
+    {
+      "window": "60d",
+      "agent": "Lucy",
+      "extension": "1003",
+      "state": "Connected",
+      "history_rows": 23,
+      "analytics_handled": 21,
+      "resolved": 9,
+      "unresolved": 12,
+      "knowledge_base_resolutions": 2,
+      "context_transfers": 7
+    },
+    {
+      "window": "60d",
+      "agent": "Amelia AI",
+      "extension": "1002",
+      "state": "Not connected",
+      "history_rows": 2,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "60d",
+      "agent": "Mark - technical support",
+      "extension": "1004",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "60d",
+      "agent": "Kristen - Billing and accounts",
+      "extension": "1005",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "60d",
+      "agent": "Jackson - Existing distributors",
+      "extension": "1006",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "60d",
+      "agent": "SBI HWS Treatment",
+      "extension": "1007",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "90d",
+      "agent": "Lucy",
+      "extension": "1003",
+      "state": "Connected",
+      "history_rows": 30,
+      "analytics_handled": 28,
+      "resolved": 12,
+      "unresolved": 16,
+      "knowledge_base_resolutions": 2,
+      "context_transfers": 10
+    },
+    {
+      "window": "90d",
+      "agent": "Amelia AI",
+      "extension": "1002",
+      "state": "Not connected",
+      "history_rows": 2,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "90d",
+      "agent": "Mark - technical support",
+      "extension": "1004",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "90d",
+      "agent": "Kristen - Billing and accounts",
+      "extension": "1005",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "90d",
+      "agent": "Jackson - Existing distributors",
+      "extension": "1006",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    },
+    {
+      "window": "90d",
+      "agent": "SBI HWS Treatment",
+      "extension": "1007",
+      "state": "Not connected",
+      "history_rows": 0,
+      "analytics_handled": 0,
+      "resolved": 0,
+      "unresolved": 0,
+      "knowledge_base_resolutions": 0,
+      "context_transfers": 0
+    }
+  ],
+  "uncertainty": [
+    {
+      "metric": "analytics_resolved_rate",
+      "window": "60d",
+      "numerator": 9,
+      "denominator": 21,
+      "observed_rate": 0.4286,
+      "wilson_95": [0.245, 0.635]
+    },
+    {
+      "metric": "analytics_resolved_rate",
+      "window": "90d",
+      "numerator": 12,
+      "denominator": 28,
+      "observed_rate": 0.4286,
+      "wilson_95": [0.265, 0.609]
+    },
+    {
+      "metric": "analytics_unresolved_rate",
+      "window": "60d",
+      "numerator": 12,
+      "denominator": 21,
+      "observed_rate": 0.5714,
+      "wilson_95": [0.365, 0.755]
+    },
+    {
+      "metric": "analytics_unresolved_rate",
+      "window": "90d",
+      "numerator": 16,
+      "denominator": 28,
+      "observed_rate": 0.5714,
+      "wilson_95": [0.391, 0.735]
+    },
+    {
+      "metric": "knowledge_base_resolution_rate",
+      "window": "60d",
+      "numerator": 2,
+      "denominator": 21,
+      "observed_rate": 0.0952,
+      "wilson_95": [0.027, 0.289]
+    },
+    {
+      "metric": "knowledge_base_resolution_rate",
+      "window": "90d",
+      "numerator": 2,
+      "denominator": 28,
+      "observed_rate": 0.0714,
+      "wilson_95": [0.02, 0.226]
+    },
+    {
+      "metric": "context_transfer_rate",
+      "window": "60d",
+      "numerator": 7,
+      "denominator": 21,
+      "observed_rate": 0.3333,
+      "wilson_95": [0.172, 0.546]
+    },
+    {
+      "metric": "context_transfer_rate",
+      "window": "90d",
+      "numerator": 10,
+      "denominator": 28,
+      "observed_rate": 0.3571,
+      "wilson_95": [0.207, 0.542]
+    },
+    {
+      "metric": "history_transferred_rate",
+      "window": "60d",
+      "numerator": 9,
+      "denominator": 25,
+      "observed_rate": 0.36,
+      "wilson_95": [0.202, 0.555]
+    },
+    {
+      "metric": "history_transferred_rate",
+      "window": "90d",
+      "numerator": 12,
+      "denominator": 32,
+      "observed_rate": 0.375,
+      "wilson_95": [0.229, 0.547]
+    },
+    {
+      "metric": "history_caller_ended_rate",
+      "window": "60d",
+      "numerator": 15,
+      "denominator": 25,
+      "observed_rate": 0.6,
+      "wilson_95": [0.407, 0.766]
+    },
+    {
+      "metric": "history_caller_ended_rate",
+      "window": "90d",
+      "numerator": 15,
+      "denominator": 32,
+      "observed_rate": 0.4688,
+      "wilson_95": [0.309, 0.636]
+    },
+    {
+      "metric": "history_agent_hung_up_rate",
+      "window": "60d",
+      "numerator": 1,
+      "denominator": 25,
+      "observed_rate": 0.04,
+      "wilson_95": [0.007, 0.195]
+    },
+    {
+      "metric": "history_agent_hung_up_rate",
+      "window": "90d",
+      "numerator": 5,
+      "denominator": 32,
+      "observed_rate": 0.1563,
+      "wilson_95": [0.069, 0.318]
+    }
+  ],
+  "metric_definitions": {
+    "analytics_resolved_rate": "AIR Analytics resolved divided by AIR Analytics calls handled for the selected agent and window.",
+    "analytics_unresolved_rate": "AIR Analytics unresolved divided by AIR Analytics calls handled for the selected agent and window.",
+    "history_transferred_rate": "AIR Call history rows marked Transferred divided by all visible history rows; not interchangeable with Analytics context transfers.",
+    "history_caller_ended_rate": "AIR Call history rows marked Ended by caller divided by all visible history rows; not automatically a failure.",
+    "knowledge_base_resolution_rate": "AIR Analytics knowledge-base resolutions divided by Analytics calls handled; this is a usage/outcome attribution, not factual accuracy.",
+    "context_transfer_rate": "AIR Analytics context transfers divided by Analytics calls handled; transfer correctness requires transcript and destination review.",
+    "verified_resolution_rate": "Reviewer-confirmed correct resolution or correct completion without an unnecessary human transfer, divided by eligible conversations with enough transcript evidence."
+  },
+  "data_quality": {
+    "primary_baseline_window": "90d",
+    "recency_sensitivity_window": "60d",
+    "partial_end_date": true,
+    "same_day_cutoff": "Latest visible AIR Call history row was around 12:49 local time at capture; 31 August is not a complete day.",
+    "history_vs_analytics_gap": {
+      "60d": {
+        "history_rows": 25,
+        "analytics_handled": 21,
+        "difference": 4,
+        "reconciled": false
+      },
+      "90d": {
+        "history_rows": 32,
+        "analytics_handled": 28,
+        "difference": 4,
+        "reconciled": false
+      }
+    },
+    "lead_join": "AIR Leads reports responses but does not expose a stable provider call-id join in the current view; lead responses are not used as a resolution rate.",
+    "account_call_log_excluded": {
+      "60d_rows": 234,
+      "90d_rows": 627,
+      "reason": "All-account traffic; extension filters did not narrow the response, so it cannot serve as a trustworthy AIR/Lucy cohort."
+    },
+    "transcript_review": "Pending",
+    "recording_review": "Pending; duration controls were visible, but no recording bytes were downloaded."
+  },
+  "review": {
+    "aggregate_baseline": "Saved",
+    "transcript_level_correctness": "Not established",
+    "winner_claim": "Not allowed until at least 50 eligible calls per arm are reviewed under the same rubric and guardrails hold.",
+    "privacy": "Caller identifiers, audio and transcript content omitted from this artifact."
+  },
+  "source_artifacts": [
+    "docs/ringcentral-air-baseline-evaluation-2026-08-31.md",
+    "docs/ringcentral-air-benchmark-plan-2026-08-31.md",
+    "docs/ringcentral-call-analysis-2026-08-31.md",
+    "docs/ringcentral-admin-portal-analysis-2026-08-31.sql"
+  ]
+}

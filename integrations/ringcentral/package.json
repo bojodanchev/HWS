@@ -1,0 +1,8 @@
+{
+  "name": "hwsystem-ringcentral-bridge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check cli.mjs && for file in src/*.mjs; do node --check \"$file\"; done"
+  }
+}

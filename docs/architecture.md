@@ -1,5 +1,15 @@
 # Architecture
 
+## Phone voice assistant
+
+The SBI phone agent is hosted in RingCentral AIR and is separate from the Next.js
+customer-assistant UI. `integrations/ringcentral/` is a local read-first Platform
+bridge; it does not host the voice runtime or publish AIR skills. `evals/` stores
+configuration receipts and test evidence. Leads from the native voice agent stay
+in RingCentral; no connection to the website's lead database or external CRM was
+added in this setup. See the
+[AIR setup decision](decisions/2026-09-06-ringcentral-air-setup-and-validation.md).
+
 ## Tech Stack
 - Next.js 16 (App Router, Turbopack, `src/` dir), TypeScript strict
 - Tailwind CSS v4 (CSS-first config — tokens in `@theme` in `globals.css`, no `tailwind.config`)

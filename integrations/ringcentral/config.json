@@ -1,0 +1,16 @@
+{
+  "endpoint": "https://platform.ringcentral.com",
+  "timeout": 30,
+  "retry_attempts": 2,
+  "scopes": [
+    "ReadAccounts",
+    "ReadMessages",
+    "ReadCallLog",
+    "TeamMessaging"
+  ],
+  "write_enabled": false,
+  "require_confirm_write": true,
+  "allowlist": {
+    "chat_ids": []
+  }
+}

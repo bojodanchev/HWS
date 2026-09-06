@@ -2,6 +2,252 @@
 
 Reverse-chronological. Most recent first.
 
+## [2026-09-06] HWS treatment configured and tested in AIR chat
+
+Owner approved the reviewed extension-1007 setup. Saved knowledge attachment,
+four departmental transfer rules, lead questionnaire, voicemail-11 fallback,
+automatic recording and FAQ corrections; settings and six active skills were
+read back. All twelve scenario categories were exercised in internal chat.
+A synthetic lead was verified in RingCentral Leads with the corrected dimensions.
+Ambiguous-request behavior required a targeted FAQ; the final retest asks a
+clarifying question. Provider limits require five custom lead questions, so
+callback timing and confirmation share the fifth question.
+
+Lucy remains on the company main-number route. The treatment has no direct
+number and remains Not connected. No unassigned numbers are available; a pilot
+number/routing decision and actual telephone/audio/handoff/recording tests remain.
+
+Full evidence and limits:
+[configuration receipt](../evals/ringcentral-air-configuration-receipt-2026-09-06.md).
+
+## [2026-08-31] Incumbent evaluation artifacts and treatment design saved
+**Context**: The owner asked to preserve the current agent's results as a
+benchmark and specify what our voice agent should do differently.
+**Results**:
+- Saved the PII-free 60-day and 90-day Lucy control snapshot as
+  [evals/ringcentral-air-lucy-incumbent-2026-08-31.json](../evals/ringcentral-air-lucy-incumbent-2026-08-31.json).
+- Saved an anonymized scenario suite for offline/manual scoring and a treatment
+  design covering grounded knowledge, deterministic intent flow, lead
+  read-back, context transfers, schedule consistency, disclosure and ledger
+  instrumentation.
+- Set a provisional practical bar of **52.9% reviewer-verified resolution**
+  versus Lucy's 42.9% observed 90-day rate, with at least 50 eligible calls per
+  arm and no critical guardrail regression. This is a directional target, not a
+  guaranteed lift.
+**Boundary**: No live route, number, queue, skill, permission or recording
+  setting was changed. Ext. 1007 remains Not connected. Transcript/recording
+  review is still required before any winner claim.
+**Artifacts**: [evals/README.md](../evals/README.md),
+[treatment design](../evals/ringcentral-air-treatment-design-2026-08-31.md).
+
+## [2026-08-31] AIR 60/90-day incumbent pool pulled
+**Context**: The user requested a larger agent-specific benchmark than the
+original 18-row/30-day snapshot.
+**Results**:
+- AIR Call History custom range **03 Jul–31 Aug (60 days)** returned **25 rows**:
+  23 Lucy and 2 Amelia. AIR Analytics returned **21 handled**, **9 resolved**,
+  **12 unresolved**, 2 knowledge-base resolutions and 7 context transfers.
+- AIR Call History custom range **03 Jun–31 Aug (90 days)** returned **32 rows**:
+  30 Lucy and 2 Amelia. AIR Analytics returned **28 handled**, **12 resolved**,
+  **16 unresolved**, 2 knowledge-base resolutions and 10 context transfers.
+- AIR Analytics agent filters show all handled calls in both windows belong to
+  Lucy; Amelia’s two history rows and the other AIRs contribute zero handled
+  calls. Lead capture shows 4 responses in 60 days and 10 in 90 days; caller
+  details were not logged.
+- Resolution is stable at **42.9%** in both windows, but the intervals remain
+  wide. Use 90 days as the primary baseline and 60 days as the recency check;
+  do not pool overlapping windows.
+**Full evaluation**: [ringcentral-air-baseline-evaluation-2026-08-31.md](ringcentral-air-baseline-evaluation-2026-08-31.md).
+
+## [2026-08-31] SBI HWS Treatment AIR created safely
+**Context**: The user completed the RingCentral SSO hand-off and continued the
+prepared treatment-agent setup.
+**Results**:
+- **SBI HWS Treatment (Ext. 1007)** was created and verified in both AIR Studio
+  and the standard extension inventory.
+- The profile is **Not connected** with no number, queue or company
+  call-handling rule, so Lucy’s live route was not changed.
+- Initial active skills are Company greeting, Location and business hours, and
+  Frequently asked questions. Transfer, knowledge-base, context-transfer, SMS,
+  appointment and lead-capture skills remain uncreated.
+- The setup uses English (UK), the same Lucy voice/personality baseline and a
+  revised company description/greeting for the treatment.
+- The supported programmatic boundary remains account/extension/call-log reads
+  through the local bridge; AIR Studio CRUD/skills/analytics/routing are not
+  exposed as documented public API/CLI operations.
+**Safety**: No test call was placed, no number or route was assigned, and no
+existing assistant or permission was changed.
+**Full boundary note**: [ringcentral-programmatic-boundary-2026-08-31.md](ringcentral-programmatic-boundary-2026-08-31.md).
+
+## [2026-08-31] Longer RingCentral windows checked for AIR benchmarking
+**Context**: Owner asked whether 60/90 days could provide a larger evaluation
+pool than the 18 AIR rows in the last 30 days.
+**Results**:
+- The broader account call log contains **234 rows in 60 days** and **627 rows
+  in 90 days** through 27 August, but these are all-account records, not an AIR
+  cohort.
+- Extension filters on that account endpoint returned the same period totals,
+  so they are not a trustworthy way to isolate Lucy/AIR traffic.
+- The valid larger pool must be pulled from AIR Studio’s authenticated custom
+  date range for Call history and Analytics. The AIR-specific 60/90-day pull is
+  now complete and is the valid larger pool.
+**Decision**: Do not use the 234/627 all-account rows as a proxy for AIR
+performance. Keep account-log rows separate from AIR denominators; the
+AIR-specific 60/90-day pull supersedes that proxy.
+
+## [2026-08-31] RingCentral AIR incumbent baseline evaluated
+**Context**: Owner asked for a benchmark using the existing AIR statistics before
+creating our treatment agent.
+**Results**:
+- AIR Call history: 18 Lucy rows in the Last 30 days, 11 caller-ended and 7
+  transferred; visible recording duration on every row.
+- AIR Analytics: 16 handled, 7 resolved (43.8%), 9 unresolved (56.3%), 2
+  knowledge-base resolutions and 5 context transfers; 18 of 100 AIR minutes
+  used.
+- Lead capture: 1 response with 3 questions. Current evidence is too small to
+  judge lead quality or answer correctness.
+- Wilson intervals and denominator conflict checks show this is a directional
+  baseline, not a winner decision. The 18 history rows and 16 analytics calls
+  must remain separate until reconciled.
+**Full evaluation**: [ringcentral-air-baseline-evaluation-2026-08-31.md](ringcentral-air-baseline-evaluation-2026-08-31.md).
+
+## [2026-08-31] AIR evaluation and benchmark plan defined
+**Context**: Owner wants to benchmark the incumbent AIR configuration against
+our treatment agent.
+**Plan**:
+- Use Lucy’s AIR Call history and AIR Analytics as the incumbent baseline, but
+  keep their 18-row history and 16-call analytics denominators separate.
+- Judge each eligible conversation with one primary outcome (verified
+  resolution) plus transcript rubric scores for intent, factual accuracy,
+  completion, handoff, lead capture, conversation quality and safety.
+- Keep routing, language, greeting/disclosure, hours, backup, lead fields and
+  recording behavior constant; vary one prompt, knowledge or workflow variable
+  at a time.
+- Use a dedicated number/queue/IVR cohort for the treatment and do not call a
+  winner from the current 18-call sample. Normalize both providers into a
+  one-row-per-conversation ledger before comparing.
+**Full plan**: [ringcentral-air-benchmark-plan-2026-08-31.md](ringcentral-air-benchmark-plan-2026-08-31.md).
+
+## [2026-08-31] RingCentral AIR versus ElevenLabs comparison scoped
+**Context**: Compared the current RingCentral AI Receptionist baseline with
+ElevenLabs Agents for the proposed incumbent-versus-our-work pilot.
+**Decision**:
+- Use Lucy on the existing RingCentral route as the control. RingCentral is the
+  lowest-risk operational path because the number, call rules, backup, AIR
+  history and AIR analytics already exist.
+- Use a separate RingCentral number/queue/IVR cohort for a treatment. If the
+  treatment is ElevenLabs, use a dedicated Twilio number or a verified
+  RingCentral SIP path; ElevenLabs adds telephony/integration work but provides
+  native branches, percentage traffic deployment, automated tests, success
+  evaluations and branch analytics.
+- Hold routing, language, greeting/recording disclosure, backup and lead fields
+  constant; vary one prompt, knowledge or workflow variable at a time. Align
+  denominators before comparing metrics.
+**Full comparison**: [ringcentral-vs-elevenlabs-voice-agent-comparison-2026-08-31.md](ringcentral-vs-elevenlabs-voice-agent-comparison-2026-08-31.md).
+
+## [2026-08-31] Admin Portal follow-up exposed the live AI receptionist setup
+**Context**: The user’s authenticated RingCentral browser session was used to
+re-test the Admin Portal boundary, with read-only navigation only.
+**Learnings**:
+- Company call handling routes both business-hours and after-hours main-number
+  traffic to **Lucy (Ext. 1003)**. Lucy has backup **Weekend AIR Voicemail
+  (Ext. 11)**, no direct number and no queue attached.
+- AIR Call history shows 18 Lucy rows in the last 30 days (11 caller-ended, 7
+  transferred). AIR Analytics reports 16 handled calls (7 resolved, 9
+  unresolved, 2 knowledge-base resolutions, 5 context transfers), so the two
+  surfaces use different denominators.
+- Lucy is the only connected/in-use assistant. Amelia, Mark, Kristen and
+  Jackson are not connected; their skill readiness is recorded in the analysis.
+- Lucy has active greeting/location/FAQ/knowledge-base/lead-capture skills, a
+  completed website knowledge source, automatic AI-call recording enabled and a
+  Weekend AIR Voicemail backup. Transfer, SMS and appointment skills are not
+  created. Google Calendar is connected account-wide.
+- A schedule mismatch needs review: company routing shows weekend 00:00–00:00,
+  while Lucy’s custom location skill shows weekend 08:00–20:00 (Europe/Lisbon).
+**Safety**: No password, PIN, audio, message, route, permission or assistant
+configuration was changed. Caller PII from the Leads view was not logged.
+The Create new AIR flow requested a fresh SSO sign-in; no credentials were
+entered.
+After explicit user approval, the browser sign-in step was submitted once; the
+saved credential did not autofill and RingCentral returned “Enter a password”.
+The password was not read or transmitted, and setup remains paused for manual
+sign-in.
+**Split-test decision**: Preserve Lucy as the control. Build the new assistant
+on an unused extension and keep it disconnected until reviewed, then use a
+dedicated number, queue or deterministic IVR branch as the treatment arm; do
+not percentage-split the live main number without first verifying the routing
+semantics.
+**Full analysis**: [ringcentral-call-analysis-2026-08-31.md](ringcentral-call-analysis-2026-08-31.md).
+
+## [2026-08-31] RingCentral calls and AI-agent inventory analyzed
+**Context**: Read-only account call-log and extension-inventory analysis after
+the SBI Voice Assistant Bridge was connected.
+**Learnings**:
+- The account call log contains 1,547 rows from 2 January through 27 August
+  2026 (UTC), with no duplicate record/session/telephony-session IDs.
+- Volume is mostly outbound overall (909 rows), but the partial August capture
+  is mostly inbound (58 of 70 rows). Weekly volume falls from 59 in W28 to 18
+  in W34; W35 is partial through 27 August.
+- Attribution is stale for current staffing: 547 rows are unattributed and 715
+  are assigned to disabled extension 313 (Antony Tucker). The five enabled
+  ApplicationExtensions named Amelia AI, Lucy, Mark, Kristen and Jackson have
+  zero direct call-log attribution in this snapshot.
+- Detailed application-extension configuration remains outside the current API
+  boundary (`TokenInvalid` on numeric detail routes); Company AI points to the
+  separately authenticated Admin Portal.
+**Full analysis**: [ringcentral-call-analysis-2026-08-31.md](ringcentral-call-analysis-2026-08-31.md).
+
+## [2026-08-30] Abundance/HWS Telegram context refreshed
+**Context**: Read-only exploration of the `Abundance` forum group and its
+`SBI/Jidoro/HWS/Vectra` topic, with the latest `tech` messages checked for
+SBI-related context.
+**Learnings**:
+- The HWS topic has 209 messages from 2026-07-15 through 2026-08-30. The
+  latest concrete signal is to start an SBI AI voice assistant, using
+  RingCentral as the current operational surface; provider, scope and success
+  criteria are still open.
+- A parallel `tech` thread ends with Alex-Shon saying he spoke with the SBI
+  owner, then shares a Google Doc titled `SBI Systems` and a company-registry
+  link. The surrounding “big game”/private-equity language is strategy context,
+  not an accepted deliverable.
+- The linked concept proposes a vertical manufacturing/trade SaaS: core business
+  objects, modular Sales/Procurement/Inventory/Production/Logistics/Finance/BI,
+  an AI/automation layer, and a first Order → Inventory → Production → Delivery
+  workflow. It explicitly says not to start with a full ERP and to keep
+  client-specific work separate from the reusable product.
+- Earlier HWS commitments cover split-testing against the incumbent team,
+  client-owned source handoff, admin/customer-support/order workflows, AWS
+  cutover with old-site preservation, Somfy/Beninca extraction, and the
+  commercial workbook/image migration. The local repo’s existing release logs
+  corroborate the catalog/image portions; Telegram alone does not prove hosting
+  or provider-side success.
+- The group participant list is Alex-Shon, Bojo and the Alfred bot; no separate
+  Sean account is a participant. “Sean” appears as project/client context in
+  update messages, so identity is not inferred.
+**Safety**: Historical auth material (AWS/RingCentral/2FA/API/password) and
+media payloads were omitted. No outbound Telegram action was performed.
+**Full log**: [telegram-context-2026-08-30.md](telegram-context-2026-08-30.md).
+
+## [2026-08-30] RingCentral bridge connected and account probed
+**Context**: The private `SBI Voice Assistant Bridge` REST API app and an
+app-restricted JWT were created, then exercised through the local bridge.
+**Learnings**:
+- JWT exchange and account/extension/Team Messaging reads succeeded. The
+  authenticated user is Trevon Shone on extension 318 with Super Admin role.
+- The account exposes 33 extensions, including existing AI application
+  extensions Amelia AI, Lucy, Mark (technical support), Kristen (Billing and
+  accounts) and Jackson (Existing distributors), plus an IVR and departmental
+  routing resources. The two visible Team Messaging chats returned no posts.
+- The account call log returned at least 100 voice records (80 inbound, 20
+  outbound; 59 with recording metadata on the first page). Further paging was
+  stopped after a provider HTTP 429. Numeric cross-extension message/detail
+  routes returned `TokenInvalid`, so Admin Portal access or additional app
+  scopes are still needed for assistant configuration.
+**Safety**: No chat post, SMS, call, routing change, recording download or
+credential export was performed. Credentials remain in the ignored local
+`.env` file with mode 0600.
+**Full log**: [ringcentral-probe-2026-08-30.md](ringcentral-probe-2026-08-30.md).
+
 ## [2026-08-07] ICC audit corrected and commercial imagery imported
 **Context**: Sean asked for a second pass over ICC pricing and for missing
 commercial product images to be sourced with consistent provenance.

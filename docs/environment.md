@@ -4,6 +4,20 @@
 - Node 22 (nvm), npm
 - `gh` CLI (authed as bojodanchev), `vercel` CLI (authed as bojodanchev-7298)
 
+## RingCentral bridge and AIR
+
+From `integrations/ringcentral`, use `npm run check` for offline syntax checks,
+`node cli.mjs voice-plan` for dated local metadata, and
+`node --env-file=.env cli.mjs doctor` for credential-mode/write-boundary checks.
+`doctor` does not verify remote authentication; use a bounded account or
+extension-inventory read for that. `.env` and `tokens/` stay ignored and must not
+be committed. Do not print credential values.
+
+AIR settings are managed in the authenticated Admin Portal. Browser handles can
+change between turns; rediscover the live tab instead of reusing a stale browser
+ID. New PIN/security-question setup can appear as an optional login modal; close
+it when only sign-in is needed. Do not change credentials as part of agent setup.
+
 ## Setup
 ```bash
 cd ~/HWS/hwsystem

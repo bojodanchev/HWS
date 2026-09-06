@@ -1,5 +1,18 @@
 # Gotchas & Lessons Learned
 
+## RingCentral AIR (2026-09-06)
+
+- `Enabled` in extension inventory does not mean connected to a number.
+- Native AIR questionnaires allow five custom questions plus mandatory name/phone.
+- Internal chat tests can create real Leads entries; synthetic-only test data
+  and stored-field read-back are required. Corrections must persist in the record.
+- Company-description instructions may not control every skill; targeted FAQ
+  corrections must be tested against actual responses.
+- Chat transfer announcements and recording switches are not proof of working
+  telephone handoffs or usable recordings.
+- Full workflow and known limits:
+  [AIR setup decision](decisions/2026-09-06-ringcentral-air-setup-and-validation.md).
+
 ## Sources & Content
 - **hwsystem.co.uk is an empty shell**: the live WP site has no products, no images, Woo Store API returns `[]`. All real imagery comes from SBI's sites (sbigaragedoors.co.uk, sbi-bg.com).
 - **sbi-bg.com needs `curl -k`**: TLS chain fails silently otherwise (empty download, no error).
