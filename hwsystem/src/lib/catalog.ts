@@ -79,6 +79,7 @@ export function getCategories(): Category[] {
     if (category.slug === "doors") return category;
     const image = products
       .filter(product => product.category === category.slug)
+      .sort((a, b) => Number(/^(commercial|bft|vendor)-/.test(b.id)) - Number(/^(commercial|bft|vendor)-/.test(a.id)))
       .flatMap(product => product.images)
       .find(candidate => !used.has(candidate.url));
     if (image) used.add(image.url);

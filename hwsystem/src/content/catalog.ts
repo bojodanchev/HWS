@@ -67,7 +67,7 @@ export const categories: Category[] = [
     slug: "gate-automation",
     name: "Gate automation",
     description:
-      "Beninca automation systems for swinging and sliding gates, imported from the public manufacturer catalogue.",
+      "Automation systems for swing and sliding gates. Confirm the model and installation requirements with your quotation.",
     image: "/images/products/automation.jpg",
     filters: ["brand", "torque", "voltage", "frequency", "inStock", "nextDay"],
   },
@@ -75,7 +75,7 @@ export const categories: Category[] = [
     slug: "barriers",
     name: "Barriers & car park automation",
     description:
-      "Public Beninca barrier and car-park automation metadata, available for quotation pending commercial confirmation.",
+      "Barrier operators, arms and parking controls for access management.",
     image: "/images/products/moovi-barrier.png",
     filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
   },
@@ -99,7 +99,7 @@ export const categories: Category[] = [
     slug: "safety",
     name: "Photocells & safety edges",
     description:
-      "Photocell pairs, resistive safety edges and flashing lamps for EN 12453 compliant installations.",
+      "Photocell pairs, resistive safety edges and flashing lamps for powered-door installations.",
     image: "/images/doors/h105-commercial.png",
     filters: ["brand", "voltage", "inStock", "nextDay"],
   },
@@ -147,7 +147,7 @@ export const categories: Category[] = [
     slug: "supplier-products",
     name: "Supplier catalogue",
     description:
-      "Public supplier product metadata imported without account-gated pricing, stock promises, or unapproved assets.",
+      "Explore additional supplier products and request a model-specific quotation.",
     image: "/images/products/automation.jpg",
     filters: ["brand", "voltage", "frequency", "inStock", "nextDay"],
   },
