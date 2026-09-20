@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-20T23:52:08.933Z",
+  "checkedAt": "2026-09-20T23:58:58.358Z",
   "products": 1637,
   "duplicateSkus": [],
   "missingPriceCount": 1273,
   "missingImageCount": 37,
   "productsWithImages": 1600,
-  "categoryCorrections": 686,
+  "categoryCorrections": 715,
   "productsWithListedRecommendations": 293,
   "missingImages": [
     {
@@ -1162,6 +1162,18 @@
       "to": "garage-door-automation"
     },
     {
+      "sku": "1241887",
+      "name": "SUNEA 40 SOLAR io 10/12 RNF 0.18 M BAR",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1241886",
+      "name": "SUNEA 40 SOLAR io 6/18 RNF 0.18 M BAR",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1241570",
       "name": "Dexxo Smart 1000 io",
       "from": "side-motors",
@@ -1192,8 +1204,20 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1181232",
+      "name": "SUNEA 60 IO 55/17 RRF 3M UNIT",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1181065",
       "name": "OREA 60 RTS 55NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1166287",
+      "name": "SUNILUS IO 100/12 VVF 5M",
       "from": "remotes",
       "to": "tubular-motors"
     },
@@ -1210,8 +1234,20 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1163145",
+      "name": "SUNILUS 60 IO 70/17 RRF 5M UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1163101",
       "name": "ALTUS 60 RTS 70/17 RRF 3M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1161204",
+      "name": "SUNILUS 60 IO 55/17 RRF 5M UNIT",
       "from": "remotes",
       "to": "tubular-motors"
     },
@@ -1228,9 +1264,21 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1118170",
+      "name": "SUNEA 50 io 50/12 RRF 3M",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1118091",
       "name": "OREA 50 RTS 50/12 VVF 5M - BAR",
       "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1117223",
+      "name": "SUNEA 50 IO 40/17 RRF 3M BAR",
+      "from": "safety",
       "to": "tubular-motors"
     },
     {
@@ -1240,9 +1288,21 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1116229",
+      "name": "SUNEA 50 IO 35/17 RRF 3M BAR",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1116122",
       "name": "OREA 50 RTS 35NM/17RPM",
       "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1115205",
+      "name": "SUNEA 50 IO 30/17 RRF 3M BAR",
+      "from": "safety",
       "to": "tubular-motors"
     },
     {
@@ -1258,9 +1318,21 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1114234",
+      "name": "SUNEA 50 IO 25/17 RRF 3M BAR",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1114127",
       "name": "OREA 50 RTS 25NM/17RPM",
       "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1113216",
+      "name": "SUNEA 50 io 20/17 RRF 3M",
+      "from": "control-panels",
       "to": "tubular-motors"
     },
     {
@@ -1272,6 +1344,18 @@
     {
       "sku": "1112323",
       "name": "MAESTRIA + 50 IO 15/32 RH VVF 5 m",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1051017",
+      "name": "VECTRAN 50/12 CSI RTS VVF 2,5M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1049881",
+      "name": "SUNILUS 50 IO 40/17 RRF 5M BAR",
       "from": "remotes",
       "to": "tubular-motors"
     },
@@ -1294,8 +1378,26 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1049037",
+      "name": "MARINER 40/12 CSI RTS VVF 2,5M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1047362",
+      "name": "SUNILUS 50 IO 35/17 RRF 5M BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1047223",
       "name": "ALTUS 50 RTS 35/17 P120",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1045767",
+      "name": "SUNILUS 50 IO 30/17 RRF 5M BAR",
       "from": "remotes",
       "to": "tubular-motors"
     },
@@ -1306,14 +1408,44 @@
       "to": "tubular-motors"
     },
     {
+      "sku": "1045023",
+      "name": "HELIOS 30/17 CSI RTS VVF 2,5M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1043416",
+      "name": "SUNILUS IO 25/17 RRF 5M",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1043329",
       "name": "ALTUS 50 RTS 25Nm/17Rpm RH VVF 5M Cable",
       "from": "remotes",
       "to": "tubular-motors"
     },
     {
+      "sku": "1042004",
+      "name": "SUNILUS IO 20/17 RRF5M BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
       "sku": "1041349",
       "name": "OXIMO RTS 20/17 VVF 5M - BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1041023",
+      "name": "METEOR 20/17 CSI RTS VVF 2,5M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1040007",
+      "name": "SUNILUS SCR IO 15/17 RRF5M BAR",
       "from": "remotes",
       "to": "tubular-motors"
     },
@@ -1351,6 +1483,24 @@
       "sku": "1033330",
       "name": "OXIMO 40 WF RTS II 6/18 UNIT",
       "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1025132",
+      "name": "Sunea screen 40 io 13/10 RNF 5M BAR",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1025124",
+      "name": "Sunea screen 40 io",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1025120",
+      "name": "SUNEA SCREEN 40 IO 3/30 VVF 5M",
+      "from": "control-panels",
       "to": "tubular-motors"
     },
     {
@@ -1442,6 +1592,12 @@
       "name": "Power supply 24V DC 1,5A",
       "from": "safety",
       "to": "control-panels"
+    },
+    {
+      "sku": "1871581",
+      "name": "Rollixo Optimo RTS UK kit + Smoove",
+      "from": "remotes",
+      "to": "garage-door-automation"
     },
     {
       "sku": "1871488",
@@ -3154,10 +3310,28 @@
       "to": "garage-door-automation"
     },
     {
+      "sku": "1216325",
+      "name": "DEXXO PRO 1000 IO MOTOR HEAD (2 KEYGO IO)",
+      "from": "remotes",
+      "to": "garage-door-automation"
+    },
+    {
       "sku": "1216269",
       "name": "DEXXO PRO 800 RTS MOTOR HEAD",
       "from": "remotes",
       "to": "garage-door-automation"
+    },
+    {
+      "sku": "1184104",
+      "name": "SUNEA 60 IO 100/12 VVF 5M UNIT",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1115202",
+      "name": "Sunea RTS",
+      "from": "remotes",
+      "to": "tubular-motors"
     },
     {
       "sku": "9017035",

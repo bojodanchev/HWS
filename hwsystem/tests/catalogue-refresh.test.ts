@@ -26,6 +26,8 @@ describe("catalogue refresh regression checks", () => {
     expect(products.find(p => p.sku === "9132087")?.category).toBe("accessories");
     expect(products.find(p => p.sku === "9015801")?.category).toBe("accessories");
     expect(vendorCategory({name:"TAHOMA DIN Rail V2",category:"accessories"})).toBe("control-panels");
+    expect(products.find(p => p.sku === "1045023")?.category).toBe("tubular-motors");
+    expect(products.find(p => p.sku === "1216325")?.category).toBe("garage-door-automation");
   });
 
   it("uses exact manufacturer imagery and keeps unpriced products quote-only", () => {

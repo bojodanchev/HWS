@@ -1,5 +1,5 @@
 # HWS reviewed commercial catalogue
-Compiled 2026-09-20T23:52:08.939Z from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.
+Compiled from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.
 
 ## SKU 2618184 — DEIMOS BT KIT B400 INT sliding gate automation kit
 24V sliding gate kit for gates up to 400 kg.

@@ -45,7 +45,7 @@ await writeFile(resolve(directory,"catalogue-audit.json"),JSON.stringify({...sum
 console.log(JSON.stringify(summary));
 if (process.argv.includes("--export-agent-knowledge")) {
   const reviewed = products.filter(product => /^(bft|commercial)-/.test(product.id));
-  const lines = ["# HWS reviewed commercial catalogue", `Compiled ${new Date().toISOString()} from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.`, ""];
+  const lines = ["# HWS reviewed commercial catalogue", `Compiled from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.`, ""];
   for (const product of reviewed) {
     const price = product.price;
     lines.push(`## SKU ${product.sku} — ${product.name}`, product.shortDescription, `Category: ${product.category}.`,
