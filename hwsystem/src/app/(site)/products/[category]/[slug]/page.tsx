@@ -104,9 +104,9 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
         {/* Gallery */}
         <div className="space-y-4">
           {product.images.length > 0 ? (
-            product.images.map((img) => (
+            product.images.map((img, index) => (
+              <figure key={img.url + img.alt}>
               <div
-                key={img.url + img.alt}
                 className="relative aspect-4/3 overflow-hidden rounded-md border border-line bg-concrete"
               >
                 <Image
@@ -115,9 +115,11 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
                   fill
                   sizes="(max-width: 1024px) 100vw, 55vw"
                   className="object-contain p-4"
-                  priority
+                  priority={index === 0}
                 />
               </div>
+              {img.caption && <figcaption className="mt-2 text-sm text-steel">{img.caption}</figcaption>}
+              </figure>
             ))
           ) : (
             <div className="flex aspect-4/3 items-center justify-center rounded-md border border-line bg-concrete text-sm text-mist">

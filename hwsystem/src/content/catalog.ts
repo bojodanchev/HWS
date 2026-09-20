@@ -3,6 +3,7 @@ import { vendorProducts } from "@/content/vendor-catalog";
 import { niceProducts } from "@/content/nice-catalog";
 import { bftProducts } from "@/content/bft-catalog";
 import { somfyCommercialProducts } from "@/content/somfy-controls-catalog";
+import representativeImages from "@/content/representative-image-manifest.json";
 
 /**
  * Catalog content — the MVP data layer.
@@ -19,7 +20,7 @@ export const categories: Category[] = [
     slug: "tubular-motors",
     name: "Tubular motors",
     description:
-      "Somfy, SBI and compatible tube motors for roller shutters, roller garage doors and awnings. Ø45–Ø59, 10–120 Nm.",
+      "Tube motors for shutters, blinds, awnings and suitable garage-door systems. Match the torque, tube fit and intended application.",
     image: "/images/products/tube-link.jpg",
     filters: ["brand", "torque", "tubeDiameter", "voltage", "inStock", "nextDay"],
   },
@@ -144,6 +145,20 @@ export const categories: Category[] = [
     filters: [],
   },
   {
+    slug: "blind-and-curtain-automation",
+    name: "Blind & curtain automation",
+    description: "Drive systems for interior blinds and curtain tracks. Confirm the control protocol and installation requirements for the exact model.",
+    image: "",
+    filters: ["brand", "voltage", "frequency"],
+  },
+  {
+    slug: "access-control",
+    name: "Intercoms & access control",
+    description: "Video door-entry equipment and access controls. Check the required monitor, entry station and system compatibility.",
+    image: "",
+    filters: ["brand", "voltage"],
+  },
+  {
     slug: "supplier-products",
     name: "Supplier catalogue",
     description:
@@ -153,7 +168,7 @@ export const categories: Category[] = [
   },
 ];
 
-export const products: Product[] = [
+const sourceProducts: Product[] = [
   // ── Tubular motors ────────────────────────────────────────────────
   {
     id: "tm-somfy-lt50",
@@ -796,3 +811,10 @@ export const products: Product[] = [
       ),
   ),
 ];
+
+// Approved illustrative alternatives never replace exact manufacturer photography.
+const representativeBySku = representativeImages.products as Record<string, { image: Product["images"][number] }>;
+export const products: Product[] = sourceProducts.map(product => {
+  const reference = representativeBySku[product.sku];
+  return product.images.length || !reference ? product : { ...product, images: [reference.image] };
+});

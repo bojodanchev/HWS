@@ -1,5 +1,6 @@
 import rawCatalog from "@/content/vendor-catalog.json";
 import rawEvidence from "@/content/somfy-product-evidence.json";
+import rawBenincaEvidence from "@/content/beninca-image-evidence.json";
 import { vendorCategory } from "@/content/vendor-category";
 import { somfyAccessorySkus } from "@/content/somfy-accessories";
 import type { Product, Spec } from "@/types/catalog";
@@ -36,6 +37,9 @@ const sourceRecords = (rawCatalog as unknown as { products: VendorCatalogRecord[
 const evidence = rawEvidence.products as Record<string, {
   imageUrl?: string | null; accessorySkus?: string[]; compatibleSkus?: string[];
   productTypes?: string[]; kitContent?: unknown;
+}>;
+const benincaEvidence = rawBenincaEvidence.products as Record<string, {
+  imageUrl?: string; localPath?: string;
 }>;
 
 function slugify(value: string): string {
@@ -94,6 +98,8 @@ function publicDescriptions(record: VendorCatalogRecord): {
 function toProduct(record: VendorCatalogRecord): Product {
   const copy = publicDescriptions(record);
   const source = record.source === "somfy-pro-uk" ? evidence[record.sku] : undefined;
+  const benincaImage = record.source === "beninca" ? benincaEvidence[record.sku]?.localPath : undefined;
+  const imageUrl = source?.imageUrl ?? benincaImage;
   return {
     id: `vendor-${record.source}-${slugify(record.sku)}`,
     sku: record.sku,
@@ -103,7 +109,7 @@ function toProduct(record: VendorCatalogRecord): Product {
     category: vendorCategory(record, source?.productTypes),
     shortDescription: copy.shortDescription,
     description: copy.description,
-    images: source?.imageUrl ? [{ url: source.imageUrl, alt: record.name, width: 800, height: 800 }] : [],
+    images: imageUrl ? [{ url: imageUrl, alt: record.name, width: 800, height: 800 }] : [],
     specs: record.specs,
     compatibility: [],
     documents: [],

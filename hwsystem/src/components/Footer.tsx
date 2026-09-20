@@ -25,9 +25,6 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1280px] gap-12 px-6 py-20 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <p className="flex items-center gap-2">
-            <span className="flex size-8 items-center justify-center rounded-sm bg-white font-heading text-sm font-semibold text-ink">
-              HW
-            </span>
             <span className="font-heading text-lg font-semibold">HWSystem</span>
           </p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-mist">

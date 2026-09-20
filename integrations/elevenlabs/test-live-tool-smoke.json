@@ -1,0 +1,16 @@
+{
+  "name": "HWS real tool persistence smoke",
+  "type": "simulation",
+  "simulation_scenario": "You are Synthetic HWS Live Tool Test. Request that the team contact you about five garage doors. Phone +447700900123, postcode SW1A 1AA. State this is a synthetic verification and no real callback is needed. Confirm the read-back, explicitly consent to saving, and finish after the enquiry is saved.",
+  "simulation_max_turns": 16,
+  "success_conditions": [
+    "The agent calls save_hws_enquiry and receives a real saved=true result before confirming the enquiry was saved."
+  ],
+  "tool_mock_config": {
+    "mocking_strategy": "none"
+  },
+  "dynamic_variables": {
+    "system__conversation_id": "conv_synthetic_hws_tool_smoke_20260921"
+  },
+  "id": "test_6601m30f3a7qfefaybc96vww0xw3"
+}

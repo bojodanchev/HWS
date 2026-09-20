@@ -1,0 +1,708 @@
+{
+  "products": {
+    "SOM-LT50-5012": {
+      "sourceSku": "1037012",
+      "sourceName": "LT50 JET 10/17 CSI VVF 3M",
+      "sourceReference": "https://www.somfypro.co.uk/products/1037012-lt50-jet-10-17-csi-vvf-3m",
+      "sourceImageUrl": "https://asset.somfy.com/Image/8f92249e-fe04-4f0e-8af6-aee33216cd45_LT_50_CSI_star1.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/8f92249e-fe04-4f0e-8af6-aee33216cd45_LT_50_CSI_star1.jpg",
+        "alt": "Illustrative reference: LT50 JET 10/17 CSI VVF 3M",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: LT50 JET 10/17 CSI VVF 3M. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2614857": {
+      "sourceSku": "2614565",
+      "sourceName": "PHOBOS BT B25 swing gate operator",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2614565",
+      "sourceImageUrl": "/images/vendor/bft/2614565-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2614565-1.png",
+        "alt": "Illustrative reference: PHOBOS BT B25 swing gate operator",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: PHOBOS BT B25 swing gate operator. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2614861": {
+      "sourceSku": "2614566",
+      "sourceName": "PHOBOS BT B40 swing gate operator",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2614566",
+      "sourceImageUrl": "/images/vendor/bft/2614566-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2614566-1.png",
+        "alt": "Illustrative reference: PHOBOS BT B40 swing gate operator",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: PHOBOS BT B40 swing gate operator. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2612607": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2612609": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2612610": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2601376": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2601378": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2601277": {
+      "sourceSku": "2612608",
+      "sourceName": "BOOM ES40 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612608",
+      "sourceImageUrl": "/images/vendor/bft/2612608-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2612608-1.png",
+        "alt": "Illustrative reference: BOOM ES40 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: BOOM ES40 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2613384": {
+      "sourceSku": "2613385",
+      "sourceName": "PCA ES N4 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2613385",
+      "sourceImageUrl": "/images/vendor/bft/2613385-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2613385-1.png",
+        "alt": "Illustrative reference: PCA ES N4 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: PCA ES N4 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2613386": {
+      "sourceSku": "2613385",
+      "sourceName": "PCA ES N4 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2613385",
+      "sourceImageUrl": "/images/vendor/bft/2613385-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2613385-1.png",
+        "alt": "Illustrative reference: PCA ES N4 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: PCA ES N4 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2617951": {
+      "sourceSku": "2613385",
+      "sourceName": "PCA ES N4 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2613385",
+      "sourceImageUrl": "/images/vendor/bft/2613385-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2613385-1.png",
+        "alt": "Illustrative reference: PCA ES N4 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: PCA ES N4 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2605247": {
+      "sourceSku": "2612606",
+      "sourceName": "OMEGA ES barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2612606",
+      "sourceImageUrl": "/images/vendor/bft/2612606-1.jpg",
+      "image": {
+        "url": "/images/vendor/bft/2612606-1.jpg",
+        "alt": "Illustrative reference: OMEGA ES barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: OMEGA ES barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2605241": {
+      "sourceSku": "2605242",
+      "sourceName": "LIGHT PS/ES 40-IP67 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2605242",
+      "sourceImageUrl": "/images/vendor/bft/2605242-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2605242-1.png",
+        "alt": "Illustrative reference: LIGHT PS/ES 40-IP67 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: LIGHT PS/ES 40-IP67 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2605243": {
+      "sourceSku": "2605242",
+      "sourceName": "LIGHT PS/ES 40-IP67 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2605242",
+      "sourceImageUrl": "/images/vendor/bft/2605242-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2605242-1.png",
+        "alt": "Illustrative reference: LIGHT PS/ES 40-IP67 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: LIGHT PS/ES 40-IP67 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2605244": {
+      "sourceSku": "2605242",
+      "sourceName": "LIGHT PS/ES 40-IP67 barrier arm",
+      "sourceReference": "BFT 2026 supplied workbook; reference 2605242",
+      "sourceImageUrl": "/images/vendor/bft/2605242-1.png",
+      "image": {
+        "url": "/images/vendor/bft/2605242-1.png",
+        "alt": "Illustrative reference: LIGHT PS/ES 40-IP67 barrier arm",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: LIGHT PS/ES 40-IP67 barrier arm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9709814": {
+      "sourceSku": "9709875",
+      "sourceName": "Left lateral front chain guide (grey)",
+      "sourceReference": "https://www.somfypro.co.uk/products/9709875-left-lateral-front-chain-guide-grey",
+      "sourceImageUrl": "https://asset.somfy.com/Image/eb22743d-2a88-4c33-b570-35c082a38943_97098752.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/eb22743d-2a88-4c33-b570-35c082a38943_97098752.jpg",
+        "alt": "Illustrative reference: Left lateral front chain guide (grey)",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Left lateral front chain guide (grey). Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9709813": {
+      "sourceSku": "9709874",
+      "sourceName": "Left lateral front chain cover (grey)",
+      "sourceReference": "https://www.somfypro.co.uk/products/9709874-left-lateral-front-chain-cover-grey",
+      "sourceImageUrl": "https://asset.somfy.com/Image/790fdc12-0ec0-44f3-98e5-7b22bd688774_97098742.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/790fdc12-0ec0-44f3-98e5-7b22bd688774_97098742.jpg",
+        "alt": "Illustrative reference: Left lateral front chain cover (grey)",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Left lateral front chain cover (grey). Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9146011": {
+      "sourceSku": "9146007",
+      "sourceName": "Plug End Bearing with 14mm Hole",
+      "sourceReference": "https://www.somfypro.co.uk/products/9146007-plug-end-bearing-with-14mm-hole",
+      "sourceImageUrl": "https://asset.somfy.com/Image/0fe4aec0-cf49-4458-9146-2632a0f5e3b3_1781098-9146007.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/0fe4aec0-cf49-4458-9146-2632a0f5e3b3_1781098-9146007.jpg",
+        "alt": "Illustrative reference: Plug End Bearing with 14mm Hole",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Plug End Bearing with 14mm Hole. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9132087": {
+      "sourceSku": "9420801",
+      "sourceName": "ADJUSTABLE PLUG END 12MM PIN",
+      "sourceReference": "https://www.somfypro.co.uk/products/9420801-adjustable-plug-end-12mm-pin",
+      "sourceImageUrl": "https://asset.somfy.com/Image/ede0ee2e-e319-445a-bde8-a7002544f80c_9420801.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/ede0ee2e-e319-445a-bde8-a7002544f80c_9420801.jpg",
+        "alt": "Illustrative reference: ADJUSTABLE PLUG END 12MM PIN",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: ADJUSTABLE PLUG END 12MM PIN. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9019529": {
+      "sourceSku": "9162241",
+      "sourceName": "CTS 50 BEARING",
+      "sourceReference": "https://www.somfypro.co.uk/products/9162241-cts-50-bearing",
+      "sourceImageUrl": "https://asset.somfy.com/Image/b1a0b047-0a19-4eda-beb8-a40f8fba76f4_91622411.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/b1a0b047-0a19-4eda-beb8-a40f8fba76f4_91622411.jpg",
+        "alt": "Illustrative reference: CTS 50 BEARING",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: CTS 50 BEARING. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9018593": {
+      "sourceSku": "9018595",
+      "sourceName": "ROLL UP 28 WHEEL HD VIGNETTE",
+      "sourceReference": "https://www.somfypro.co.uk/products/9018595-roll-up-28-wheel-hd-vignette",
+      "sourceImageUrl": "https://asset.somfy.com/Image/0d98c13d-e440-4d4b-88ba-23435b818c1f_vignette-drive---9018595.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/0d98c13d-e440-4d4b-88ba-23435b818c1f_vignette-drive---9018595.jpg",
+        "alt": "Illustrative reference: ROLL UP 28 WHEEL HD VIGNETTE",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: ROLL UP 28 WHEEL HD VIGNETTE. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9019528": {
+      "sourceSku": "9162241",
+      "sourceName": "CTS 50 BEARING",
+      "sourceReference": "https://www.somfypro.co.uk/products/9162241-cts-50-bearing",
+      "sourceImageUrl": "https://asset.somfy.com/Image/b1a0b047-0a19-4eda-beb8-a40f8fba76f4_91622411.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/b1a0b047-0a19-4eda-beb8-a40f8fba76f4_91622411.jpg",
+        "alt": "Illustrative reference: CTS 50 BEARING",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: CTS 50 BEARING. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9019527": {
+      "sourceSku": "9163268",
+      "sourceName": "Headrail Adaptor Verosol",
+      "sourceReference": "https://www.somfypro.co.uk/products/9163268-headrail-adaptor-verosol",
+      "sourceImageUrl": "https://asset.somfy.com/Image/473e5f21-d402-482a-8528-038f8097c790_91632682.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/473e5f21-d402-482a-8528-038f8097c790_91632682.jpg",
+        "alt": "Illustrative reference: Headrail Adaptor Verosol",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Headrail Adaptor Verosol. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "2401490": {
+      "sourceSku": "1811481",
+      "sourceName": "Motion sensor io",
+      "sourceReference": "https://www.somfypro.co.uk/products/1811481-motion-sensor-io",
+      "sourceImageUrl": "https://asset.somfy.com/Image/32fecea9-ecf7-4c5d-8e20-6e0ac64c1bfa_TAHOMA_DETECTEUR_MOUV_FACE.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/32fecea9-ecf7-4c5d-8e20-6e0ac64c1bfa_TAHOMA_DETECTEUR_MOUV_FACE.jpg",
+        "alt": "Illustrative reference: Motion sensor io",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Motion sensor io. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "1870536": {
+      "sourceSku": "1870535",
+      "sourceName": "V100+ Video Door Phone",
+      "sourceReference": "https://www.somfypro.co.uk/products/1870535-v100-video-door-phone",
+      "sourceImageUrl": "https://asset.somfy.com/Image/3890f91b-89e4-4c12-b49f-81dd652ce47d_V100+_compo_picture_STAR.png",
+      "image": {
+        "url": "https://asset.somfy.com/Image/3890f91b-89e4-4c12-b49f-81dd652ce47d_V100+_compo_picture_STAR.png",
+        "alt": "Illustrative reference: V100+ Video Door Phone",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: V100+ Video Door Phone. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9751013": {
+      "sourceSku": "9206028",
+      "sourceName": "Drive Wheel for LT50 & LT60 motors to suit tube size round 70X1.5mm",
+      "sourceReference": "https://www.somfypro.co.uk/products/9206028-drive-wheel-for-lt50-lt60-motors-to-suit-tube-size-round-70x1-5mm",
+      "sourceImageUrl": "https://asset.somfy.com/Image/f75bcfd0-cee4-430b-82fd-5b55f03793c3_9206028%20&%209206019.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/f75bcfd0-cee4-430b-82fd-5b55f03793c3_9206028%20&%209206019.jpg",
+        "alt": "Illustrative reference: Drive Wheel for LT50 & LT60 motors to suit tube size round 70X1.5mm",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Drive Wheel for LT50 & LT60 motors to suit tube size round 70X1.5mm. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9129633": {
+      "sourceSku": "9129632",
+      "sourceName": "Plug End 63mm Non Adjustable - Without Shaft",
+      "sourceReference": "https://www.somfypro.co.uk/products/9129632-plug-end-63mm-non-adjustable-without-shaft",
+      "sourceImageUrl": "https://asset.somfy.com/Image/241fd8ae-a9af-4bf7-a952-d2eff5103fdd_91296321.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/241fd8ae-a9af-4bf7-a952-d2eff5103fdd_91296321.jpg",
+        "alt": "Illustrative reference: Plug End 63mm Non Adjustable - Without Shaft",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Plug End 63mm Non Adjustable - Without Shaft. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9019837": {
+      "sourceSku": "9019838",
+      "sourceName": "Surface mounting box for TouchBuCo",
+      "sourceReference": "https://www.somfypro.co.uk/products/9019838-surface-mounting-box-for-touchbuco",
+      "sourceImageUrl": "https://asset.somfy.com/Image/3c8881b4-52c3-40dc-8d50-71060b3519f7_9019838.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/3c8881b4-52c3-40dc-8d50-71060b3519f7_9019838.jpg",
+        "alt": "Illustrative reference: Surface mounting box for TouchBuCo",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Surface mounting box for TouchBuCo. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9028355": {
+      "sourceSku": "9026009",
+      "sourceName": "Motor Plate Benthin Futura L Rollo",
+      "sourceReference": "https://www.somfypro.co.uk/products/9026009-motor-plate-benthin-futura-l-rollo",
+      "sourceImageUrl": "https://asset.somfy.com/Image/be446c14-c49b-4248-8255-3efaeea89462_9026000.png",
+      "image": {
+        "url": "https://asset.somfy.com/Image/be446c14-c49b-4248-8255-3efaeea89462_9026000.png",
+        "alt": "Illustrative reference: Motor Plate Benthin Futura L Rollo",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Motor Plate Benthin Futura L Rollo. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9025927": {
+      "sourceSku": "9025742",
+      "sourceName": "TO 50 CENTRAL HD 51*57 MM",
+      "sourceReference": "https://www.somfypro.co.uk/products/9025742-to-50-central-hd-51-57-mm",
+      "sourceImageUrl": "https://asset.somfy.com/Image/53a1e636-13f5-4718-9618-edb8b7afbaf1_9025742_ONLY-50-WF.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/53a1e636-13f5-4718-9618-edb8b7afbaf1_9025742_ONLY-50-WF.jpg",
+        "alt": "Illustrative reference: TO 50 CENTRAL HD 51*57 MM",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: TO 50 CENTRAL HD 51*57 MM. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9685171": {
+      "sourceSku": "9685181",
+      "sourceName": "DOUBLE JOINT BOX OUTLET",
+      "sourceReference": "https://www.somfypro.co.uk/products/9685181-double-joint-box-outlet",
+      "sourceImageUrl": "https://asset.somfy.com/Image/4859f036-0486-4d77-8289-1f0c4d542a86_96851811.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/4859f036-0486-4d77-8289-1f0c4d542a86_96851811.jpg",
+        "alt": "Illustrative reference: DOUBLE JOINT BOX OUTLET",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: DOUBLE JOINT BOX OUTLET. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9025926": {
+      "sourceSku": "9025742",
+      "sourceName": "TO 50 CENTRAL HD 51*57 MM",
+      "sourceReference": "https://www.somfypro.co.uk/products/9025742-to-50-central-hd-51-57-mm",
+      "sourceImageUrl": "https://asset.somfy.com/Image/53a1e636-13f5-4718-9618-edb8b7afbaf1_9025742_ONLY-50-WF.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/53a1e636-13f5-4718-9618-edb8b7afbaf1_9025742_ONLY-50-WF.jpg",
+        "alt": "Illustrative reference: TO 50 CENTRAL HD 51*57 MM",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: TO 50 CENTRAL HD 51*57 MM. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9019568": {
+      "sourceSku": "9015220",
+      "sourceName": "FRABA OSE RUBBER PROFILE - 9.6mm T-Section",
+      "sourceReference": "https://www.somfypro.co.uk/products/9015220-fraba-ose-rubber-profile-9-6mm-t-section",
+      "sourceImageUrl": "https://asset.somfy.com/Image/ad62d3e5-ca41-4d7f-9ba2-fb92605390c3_Rubber_9015220.png",
+      "image": {
+        "url": "https://asset.somfy.com/Image/ad62d3e5-ca41-4d7f-9ba2-fb92605390c3_Rubber_9015220.png",
+        "alt": "Illustrative reference: FRABA OSE RUBBER PROFILE - 9.6mm T-Section",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: FRABA OSE RUBBER PROFILE - 9.6mm T-Section. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "1870920": {
+      "sourceSku": "9016345",
+      "sourceName": "ONDEIS RAIN SENSOR",
+      "sourceReference": "https://www.somfypro.co.uk/products/9016345-ondeis-rain-sensor",
+      "sourceImageUrl": "https://asset.somfy.com/Image/2cbe6d92-f9fb-42a4-bf41-dab99f663ce9_9016345_CaptPluie_Ondeis3.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/2cbe6d92-f9fb-42a4-bf41-dab99f663ce9_9016345_CaptPluie_Ondeis3.jpg",
+        "alt": "Illustrative reference: ONDEIS RAIN SENSOR",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: ONDEIS RAIN SENSOR. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "1870289": {
+      "sourceSku": "1811483",
+      "sourceName": "Smoke Sensor TaHoma",
+      "sourceReference": "https://www.somfy.bg/products/1811483/-tahoma",
+      "sourceImageUrl": "https://asset.somfy.com/Image/846a2604-c429-4f92-a897-343efce0fb04_TAHOMA_DETECTEUR_FUMEE.jpg",
+      "image": {
+        "url": "/images/vendor/somfy/1811483-1.jpg",
+        "alt": "Illustrative reference: Smoke Sensor TaHoma",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: Smoke Sensor TaHoma. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "1206117": {
+      "sourceSku": "1206110",
+      "sourceName": "|COMPACT 200/12 230/50 MONO",
+      "sourceReference": "https://www.somfypro.co.uk/products/1206110--compact-200-12-230-50-mono",
+      "sourceImageUrl": "https://asset.somfy.com/Image/7d98230d-a5b5-40aa-80e1-dea16793d1a3_SIMUBOX18.png",
+      "image": {
+        "url": "https://asset.somfy.com/Image/7d98230d-a5b5-40aa-80e1-dea16793d1a3_SIMUBOX18.png",
+        "alt": "Illustrative reference: |COMPACT 200/12 230/50 MONO",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: |COMPACT 200/12 230/50 MONO. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9021207": {
+      "sourceSku": "9027176",
+      "sourceName": "OXIMO WF BATTERY STICK+Y CABLE",
+      "sourceReference": "https://www.somfypro.co.uk/products/9027176-oximo-wf-battery-stick-y-cable",
+      "sourceImageUrl": "https://asset.somfy.com/Image/b76d8898-b767-482d-935e-9f316d06a8e8_Batterij%20Oximo%20sunea%209027176.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/b76d8898-b767-482d-935e-9f316d06a8e8_Batterij%20Oximo%20sunea%209027176.jpg",
+        "alt": "Illustrative reference: OXIMO WF BATTERY STICK+Y CABLE",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: OXIMO WF BATTERY STICK+Y CABLE. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "9018605": {
+      "sourceSku": "9018595",
+      "sourceName": "ROLL UP 28 WHEEL HD VIGNETTE",
+      "sourceReference": "https://www.somfypro.co.uk/products/9018595-roll-up-28-wheel-hd-vignette",
+      "sourceImageUrl": "https://asset.somfy.com/Image/0d98c13d-e440-4d4b-88ba-23435b818c1f_vignette-drive---9018595.jpg",
+      "image": {
+        "url": "https://asset.somfy.com/Image/0d98c13d-e440-4d4b-88ba-23435b818c1f_vignette-drive---9018595.jpg",
+        "alt": "Illustrative reference: ROLL UP 28 WHEEL HD VIGNETTE",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: ROLL UP 28 WHEEL HD VIGNETTE. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "1800134": {
+      "sourceSku": "1805229",
+      "sourceName": "Declutching key switch",
+      "sourceReference": "https://www.somfy.bg/products/1805229/declutch-key-switch-somfy",
+      "sourceImageUrl": "https://www.somfy.bg/common/img/library/Key_switch_with_declutching.jpg",
+      "image": {
+        "url": "/images/vendor/somfy/1805229-1.jpg",
+        "alt": "Illustrative reference: Declutching key switch",
+        "width": 800,
+        "height": 600,
+        "caption": "Illustrative image: Declutching key switch. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "BEN-PR-45E": {
+      "sourceSku": "BEN-PR-45EE",
+      "sourceName": "Geared motor PR.45EE",
+      "sourceReference": "https://www.beninca.com/en/product/automations-for-swinging-gates/pr-45ee.html",
+      "sourceImageUrl": "https://www.beninca.com/images/product/original_MzA2_1295e279eac7cdd8c24aa5fa33587769.png",
+      "image": {
+        "url": "/images/vendor/beninca/430bb711cd8b54db0923.png",
+        "alt": "Illustrative reference: Geared motor PR.45EE",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Geared motor PR.45EE. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "BEN-BULL8M": {
+      "sourceSku": "BEN-BULL8M-S",
+      "sourceName": "Geared motor BULL8M.S",
+      "sourceReference": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull8m-s.html",
+      "sourceImageUrl": "https://www.beninca.com/images/product/original_OTA%3D_9ec4b1d368505206cbd93d6696b1ea22.png",
+      "image": {
+        "url": "/images/vendor/beninca/15e7fad2567ef7dbf240.png",
+        "alt": "Illustrative reference: Geared motor BULL8M.S",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Geared motor BULL8M.S. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "BEN-JACK24-80": {
+      "sourceSku": "BEN-JACK24-50",
+      "sourceName": "Geared motor JACK24.50",
+      "sourceReference": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jack24-50.html",
+      "sourceImageUrl": "https://www.beninca.com/images/product/original_69197594900457d0419d75981d9a8e5e.png",
+      "image": {
+        "url": "/images/vendor/beninca/3b3fa4e6956a5c97763d.png",
+        "alt": "Illustrative reference: Geared motor JACK24.50",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: Geared motor JACK24.50. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    },
+    "BEN-CP-J4-SE": {
+      "sourceSku": "BEN-CP-J4-SW",
+      "sourceName": "CP.J4-SW",
+      "sourceReference": "https://www.beninca.com/en/product/internal-control-units/cp-j4-sw.html",
+      "sourceImageUrl": "https://www.beninca.com/images/product/original_MzA3_9cda552cbf24d79cf07fd2617565e04e.png",
+      "image": {
+        "url": "/images/vendor/beninca/3e0c49d8ba020ef798a4.png",
+        "alt": "Illustrative reference: CP.J4-SW",
+        "width": 800,
+        "height": 800,
+        "caption": "Illustrative image: CP.J4-SW. Exact model, colour and supplied parts are confirmed with your quote."
+      },
+      "match": "representative-related-product",
+      "approvedInTelegramMessage": 2933,
+      "reviewedAt": "2026-09-21"
+    }
+  }
+}

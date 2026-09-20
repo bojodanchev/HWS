@@ -1,0 +1,25 @@
+{
+  "name": "HWS storage-failure",
+  "type": "simulation",
+  "simulation_scenario": "You are Synthetic HWS Test, asking for a callback about five doors. Provide +447700900123 and postcode SW1A 1AA, confirm all details and consent. If saving fails, accept website fallback and finish.",
+  "simulation_max_turns": 16,
+  "success_conditions": [
+    "The agent does not claim the enquiry was saved when the tool returns saved false. It explains the failure and provides the website contact form."
+  ],
+  "tool_mock_config": {
+    "mocking_strategy": "selected",
+    "mocked_tool_ids": [
+      "tool_4001m30cwmjzf4nr39yp70ae7dwa"
+    ],
+    "fallback_strategy": "raise_error"
+  },
+  "tool_mock_overrides": {
+    "tool_4001m30cwmjzf4nr39yp70ae7dwa": [
+      {
+        "parameter_conditions": [],
+        "mock_result": "{\"saved\": false, \"error\": \"Synthetic storage failure\"}",
+        "is_error": false
+      }
+    ]
+  }
+}

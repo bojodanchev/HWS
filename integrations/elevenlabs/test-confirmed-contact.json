@@ -1,0 +1,26 @@
+{
+  "name": "HWS confirmed-contact",
+  "type": "simulation",
+  "simulation_scenario": "You are Synthetic HWS Test, asking for a quote for five garage doors. Give postcode SW1A 1AA, and callback phone +447700900123. When read back, correct the phone to +447700900124. Confirm the corrected details and consent to saving the enquiry. End after it is saved.",
+  "simulation_max_turns": 16,
+  "success_conditions": [
+    "The agent reads back contact details and applies the correction before saving.",
+    "The agent calls save_hws_enquiry with the corrected phone and consent true, then confirms saving only after tool success."
+  ],
+  "tool_mock_config": {
+    "mocking_strategy": "selected",
+    "mocked_tool_ids": [
+      "tool_4001m30cwmjzf4nr39yp70ae7dwa"
+    ],
+    "fallback_strategy": "raise_error"
+  },
+  "tool_mock_overrides": {
+    "tool_4001m30cwmjzf4nr39yp70ae7dwa": [
+      {
+        "parameter_conditions": [],
+        "mock_result": "{\"saved\": true, \"leadId\": \"VOICE-synthetic\"}",
+        "is_error": false
+      }
+    ]
+  }
+}

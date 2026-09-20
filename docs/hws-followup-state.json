@@ -1,0 +1,65 @@
+{
+  "chatId": "-1003537714997",
+  "topicId": 1891,
+  "topicTitle": "SBI/Jidoro/HWS/Vectra",
+  "lastReadMessageId": 2937,
+  "lastSentMessageId": 2937,
+  "automationId": "hws-alex-shon-follow-up",
+  "decisions": [
+    {
+      "messageId": 2922,
+      "decision": "Enable ElevenLabs recording, disclosed in greeting, seven-day retention."
+    },
+    {
+      "messageId": 2930,
+      "decision": "Popup at nine seconds with 24-hour dismissal suppression."
+    },
+    {
+      "messageId": 2928,
+      "decision": "Installation page is a review draft; team confirmation follows."
+    },
+    {
+      "messageId": 2933,
+      "decision": "Representative product photos permitted where appropriate; preserve SKU-level provenance and label illustrative images."
+    },
+    {
+      "messageId": 2936,
+      "decision": "Warm empathetic AI persona with brief general conversation; published as Sam on Main version agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb after four passing simulations."
+    }
+  ],
+  "pending": [
+    {
+      "key": "pro_discount_meaning",
+      "askedAtMessageId": 2917
+    },
+    {
+      "key": "lead_owner_and_exact_transfer_numbers",
+      "askedAtMessageId": 2917
+    },
+    {
+      "key": "garage_door_costs_models",
+      "askedAtMessageId": 2917
+    },
+    {
+      "key": "installation_coverage_terms_company_facts",
+      "askedAtMessageId": 2927
+    },
+    {
+      "key": "legacy_sbi_sku_identity_and_photos",
+      "askedAtMessageId": 2932
+    },
+    {
+      "key": "exact_lead_notification_destination",
+      "askedAtMessageId": 2935,
+      "remindedAtMessageId": 2937
+    }
+  ],
+  "alexShonSenderId": "7932023856",
+  "implementationCheckpoint": {
+    "websiteProductionCommit": "742fe8ea0644fc6a6dcbbc97b5eea39030130ec5",
+    "agentMainVersion": "agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb",
+    "ringCentral": "Awaiting owner SSO sign-in in Brave. Keep Lucy route unchanged.",
+    "localWebsiteWork": "Uncommitted: nine-second/24h popup, Special order tabs, admin enquiry inbox, preview-only installation draft, category corrections and manufacturer photos. Verify and release through Git push.",
+    "imageWork": "1556 of 1637 images before representative fallback; reviewed proposals in /tmp/hws-representative-proposals.json have incorrect matches and must not be applied blindly."
+  }
+}

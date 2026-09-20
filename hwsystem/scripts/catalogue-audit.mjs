@@ -16,6 +16,9 @@ function load(file) {
   return loadedModule.exports;
 }
 const { products } = load(resolve("src/content/catalog.ts"));
+if (process.argv.includes("--export-image-index")) {
+  await writeFile("/tmp/hws-image-index.json", JSON.stringify(products.map(({sku,name,brand,category,images}) => ({sku,name,brand,category,images})), null, 2));
+}
 const seen = new Set();
 const duplicateSkus = [];
 for (const p of products) {
@@ -40,4 +43,18 @@ const csv = [Object.keys(rows[0]), ...rows.map(Object.values)].map(row => row.ma
 await writeFile(resolve(directory,"missing-prices.csv"),csv+"\n");
 await writeFile(resolve(directory,"catalogue-audit.json"),JSON.stringify({...summary,missingImages,categoryChanges},null,2)+"\n");
 console.log(JSON.stringify(summary));
+if (process.argv.includes("--export-agent-knowledge")) {
+  const reviewed = products.filter(product => /^(bft|commercial)-/.test(product.id));
+  const lines = ["# HWS reviewed commercial catalogue", `Compiled ${new Date().toISOString()} from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.`, ""];
+  for (const product of reviewed) {
+    const price = product.price;
+    lines.push(`## SKU ${product.sku} — ${product.name}`, product.shortDescription, `Category: ${product.category}.`,
+      price.quoteOnly !== true && Number.isFinite(price.rrp) ? `Indicative public price GBP ${price.rrp.toFixed(2)} ex VAT; GBP ${(price.rrp * 1.2).toFixed(2)} inc VAT.` : "Price on request; no approved GBP price.",
+      "Availability and delivery: not verified.", "");
+  }
+  const text = lines.join("\n");
+  if (text.includes("purchaseCostExVat") || text.includes("tradeTiers")) throw new Error("Private pricing leaked into knowledge export");
+  await writeFile(resolve("../integrations/elevenlabs/catalogue-knowledge.md"), text);
+  console.log(JSON.stringify({agentKnowledgeProducts:reviewed.length}));
+}
 if (duplicateSkus.length) process.exitCode = 1;

@@ -1,150 +1,91 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { usePathname } from "next/navigation";
 import { ArrowRight, X } from "lucide-react";
+import { contactCaptureSchema } from "@/lib/contactCaptureSchema";
 
-const inputClass =
-  "h-10 w-full rounded-md border border-line bg-white px-3 text-sm text-ink outline-none transition-colors placeholder:text-mist focus:border-ink focus:ring-2 focus:ring-signal/20";
 const STORAGE_KEY = "hws-contact-popup-last-seen";
-const SHOW_AFTER_MS = 18_000;
-const HIDE_FOR_MS = 7 * 24 * 60 * 60 * 1000;
+const SHOW_AFTER_MS = 9_000;
+const HIDE_FOR_MS = 24 * 60 * 60 * 1000;
+const inputClass = "h-11 w-full rounded-md border border-line bg-white px-3 text-sm text-ink outline-none placeholder:text-mist focus:border-ink focus:ring-2 focus:ring-signal/20";
+const offers = {
+  "trade-pricing": { title: "Pricing for your next job", text: "Tell us the parts and quantities you need. Request a checked trade quotation.", action: "Request trade pricing" },
+  "door-enquiry": { title: "Planning a new door?", text: "Send your opening size and postcode. Ask the team to review the options for your project.", action: "Discuss my project" },
+  "product-selection": { title: "Find the right part", text: "Share the model or SKU and what you need it to do. Ask for product-selection help.", action: "Ask the team" },
+};
 
 export function ContactCapturePopup() {
+  const pathname = usePathname();
+  const purpose = pathname.startsWith("/products") || pathname.startsWith("/trade") ? "trade-pricing" : pathname === "/" || pathname.startsWith("/doors") || pathname.startsWith("/installation") ? "door-enquiry" : "product-selection";
+  const offer = offers[purpose];
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const mounted = useSyncExternalStore(
-    () => () => undefined,
-    () => true,
-    () => false,
-  );
+  const shown = useRef(false);
+  const mounted = useSyncExternalStore(() => () => undefined, () => true, () => false);
 
   useEffect(() => {
-    const lastSeen = Number(window.localStorage.getItem(STORAGE_KEY) ?? 0);
+    let lastSeen = 0;
+    try { lastSeen = Number(window.localStorage.getItem(STORAGE_KEY) ?? 0); } catch { /* Storage may be unavailable. */ }
     if (Number.isFinite(lastSeen) && Date.now() - lastSeen < HIDE_FOR_MS) return;
-
-    // Keep the small-screen journey clear; the explicit help button still opens it.
-    const timer = window.setTimeout(() => {
-      const editing = document.activeElement?.matches("input, textarea, select");
-      const browsingMenu = document.querySelector("header button[aria-expanded='true']");
-      if (window.innerWidth >= 768 && !editing && !browsingMenu) setOpen(true);
-    }, SHOW_AFTER_MS);
-    return () => window.clearTimeout(timer);
+    let elapsed = false;
+    function showWhenReady() {
+      const availableScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = availableScroll > 0 ? window.scrollY / availableScroll : 0;
+      const threshold = window.innerWidth < 768 ? 0.6 : 0.3;
+      if (!elapsed || shown.current || progress < threshold || document.visibilityState !== "visible") return;
+      if (document.activeElement?.matches("input, textarea, select") || document.querySelector("header button[aria-expanded='true']")) return;
+      shown.current = true;
+      setOpen(true);
+    }
+    const timer = window.setTimeout(() => { elapsed = true; showWhenReady(); }, SHOW_AFTER_MS);
+    window.addEventListener("scroll", showWhenReady, { passive: true });
+    return () => { window.clearTimeout(timer); window.removeEventListener("scroll", showWhenReady); };
   }, []);
 
   function dismiss() {
-    window.localStorage.setItem(STORAGE_KEY, String(Date.now()));
+    try { window.localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch { /* Dismiss still works. */ }
+    shown.current = true;
     setOpen(false);
   }
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setError(null);
-    setBusy(true);
+    if (busy) return;
     const form = new FormData(event.currentTarget);
-
+    const contact = String(form.get("contact") ?? "").trim();
+    const parsed = contactCaptureSchema.safeParse({ name: String(form.get("name") ?? ""), email: contact.includes("@") ? contact : "", phone: contact.includes("@") ? "" : contact, message: String(form.get("message") ?? ""), purpose, company_website: String(form.get("company_website") ?? "") });
+    if (!parsed.success) { setError("Enter a valid email address or callback phone number."); return; }
+    setBusy(true); setError(null);
     try {
-      const response = await fetch("/api/contact-capture", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: String(form.get("name") ?? ""),
-          phone: String(form.get("phone") ?? ""),
-          email: String(form.get("email") ?? ""),
-          company_website: String(form.get("company_website") ?? ""),
-        }),
-      });
-
-      if (!response.ok) throw new Error("Request failed");
-      window.localStorage.setItem(STORAGE_KEY, String(Date.now()));
+      const response = await fetch("/api/contact-capture", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(parsed.data) });
+      if (!response.ok) throw new Error("Unable to save");
+      try { window.localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch { /* Submission was saved. */ }
       setSubmitted(true);
-    } catch {
-      setError("We could not save your details. Please try again or call the team.");
-    } finally {
-      setBusy(false);
-    }
+    } catch { setError("We could not save your request. Please try again."); }
+    finally { setBusy(false); }
   }
 
   if (!mounted) return null;
-
-  return (
-    <div className="fixed bottom-24 right-6 z-40 w-[min(100%-2rem,380px)]">
-      {!open ? (
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="ml-auto flex items-center gap-2 rounded-full bg-ink px-4 py-3 text-sm font-medium text-white shadow-overlay transition-colors hover:bg-steel"
-        >
-          Need help choosing?
-          <ArrowRight aria-hidden className="size-4" strokeWidth={1.5} />
-        </button>
-      ) : (
-        <section
-          role="dialog"
-          aria-modal="false"
-          aria-labelledby="contact-capture-heading"
-          className="rounded-md border border-line bg-white p-5 shadow-overlay"
-        >
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">HWSystem</p>
-              <h2 id="contact-capture-heading" className="mt-1 text-h3 text-ink">
-                Need help choosing a part?
-              </h2>
-            </div>
-            <button
-              type="button"
-              onClick={dismiss}
-              aria-label="Close contact form"
-              className="rounded-md p-1 text-mist transition-colors hover:bg-concrete hover:text-ink"
-            >
-              <X aria-hidden className="size-5" strokeWidth={1.5} />
-            </button>
-          </div>
-
-          {submitted ? (
-            <p className="mt-4 rounded-md bg-concrete p-4 text-sm leading-relaxed text-steel">
-              Thanks — your details are with the team. We&apos;ll follow up using the contact details you provided.
-            </p>
-          ) : (
-            <>
-              <p className="mt-2 text-sm leading-relaxed text-steel">
-                Leave your details and we&apos;ll help you find the right product or route to a trade quote.
-              </p>
-              <form onSubmit={submit} className="mt-4 space-y-3">
-                <label className="block text-sm font-medium text-ink">
-                  Name
-                  <input name="name" required minLength={2} autoComplete="name" className={`mt-1 ${inputClass}`} />
-                </label>
-                <label className="block text-sm font-medium text-ink">
-                  Phone
-                  <input name="phone" required minLength={7} type="tel" autoComplete="tel" className={`mt-1 ${inputClass}`} />
-                </label>
-                <label className="block text-sm font-medium text-ink">
-                  Email
-                  <input name="email" required type="email" autoComplete="email" className={`mt-1 ${inputClass}`} />
-                </label>
-                <div aria-hidden className="absolute left-[-9999px]">
-                  <label>
-                    Company website
-                    <input name="company_website" tabIndex={-1} autoComplete="off" />
-                  </label>
-                </div>
-                {error && <p role="alert" className="text-sm text-danger">{error}</p>}
-                <button
-                  type="submit"
-                  disabled={busy}
-                  className="flex h-10 w-full items-center justify-center gap-2 rounded-md bg-signal px-4 text-sm font-medium text-white transition-colors hover:bg-signal-hover disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  {busy ? "Saving…" : "Send my details"}
-                  {!busy && <ArrowRight aria-hidden className="size-4" strokeWidth={1.5} />}
-                </button>
-              </form>
-            </>
-          )}
-        </section>
-      )}
-    </div>
-  );
+  return <div className="fixed bottom-24 right-6 z-40 w-[min(100%-2rem,380px)]" onKeyDown={event => { if (event.key === "Escape") dismiss(); }}>
+    {!open ? <button type="button" onClick={() => { shown.current = true; setOpen(true); }} className="ml-auto flex min-h-11 items-center gap-2 rounded-md bg-ink px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-steel">
+      Need help choosing? <ArrowRight aria-hidden className="size-4" strokeWidth={1.5} />
+    </button> : <section role="dialog" aria-modal="false" aria-labelledby="contact-capture-heading" className="max-h-[70svh] overflow-y-auto rounded-md border border-line bg-white p-5 shadow-overlay">
+      <div className="flex items-start justify-between gap-3"><h2 id="contact-capture-heading" className="text-h3 text-ink">{offer.title}</h2><button type="button" onClick={dismiss} aria-label="Close contact form" className="flex size-11 shrink-0 items-center justify-center rounded-md text-steel hover:bg-concrete"><X aria-hidden className="size-5" /></button></div>
+      {submitted ? <p className="mt-4 text-sm text-steel">Your enquiry is saved in the team’s inbox. We’ll use your contact details to respond.</p> : <>
+        <p className="mt-2 text-sm text-steel">{offer.text}</p>
+        <form onSubmit={submit} className="mt-4 space-y-3">
+          <label className="block text-sm font-medium text-ink">Name <span className="font-normal text-steel">(optional)</span><input name="name" autoComplete="name" maxLength={200} className={`mt-1 ${inputClass}`} /></label>
+          <label className="block text-sm font-medium text-ink">Email or phone<input name="contact" required maxLength={254} className={`mt-1 ${inputClass}`} /></label>
+          <label className="block text-sm font-medium text-ink">What do you need? <span className="font-normal text-steel">(optional)</span><textarea name="message" maxLength={1000} rows={2} className="mt-1 w-full rounded-md border border-line p-3 text-sm text-ink focus:border-ink" /></label>
+          <div aria-hidden className="absolute left-[-9999px]"><label>Company website<input name="company_website" tabIndex={-1} autoComplete="off" /></label></div>
+          <p className="text-xs text-steel">We’ll use these details to respond to this enquiry.</p>
+          {error && <p role="alert" className="text-sm text-danger">{error}</p>}
+          <button type="submit" disabled={busy} className="flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-signal px-4 py-3 text-sm font-medium text-white hover:bg-signal-hover disabled:opacity-50">{busy ? "Saving…" : offer.action}<ArrowRight aria-hidden className="size-4" /></button>
+        </form>
+      </>}
+    </section>}
+  </div>;
 }

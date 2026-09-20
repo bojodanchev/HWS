@@ -13,9 +13,6 @@ export default function AdminLayout({
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex h-14 w-full max-w-[1280px] items-center justify-between px-6">
           <Link href="/admin" className="flex items-center gap-2.5">
-            <span className="flex size-7 items-center justify-center rounded-sm bg-ink font-heading text-[11px] font-semibold text-white">
-              HW
-            </span>
             <span className="font-heading text-sm font-semibold text-ink">
               HWSystem admin
             </span>

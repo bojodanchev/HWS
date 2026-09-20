@@ -46,3 +46,12 @@ export async function persistVoiceLead(db: Client, lead: VoiceLead): Promise<{ l
   ], "write");
   return { leadId };
 }
+
+export async function updateVoiceEnquiryStatus(db: Client, id: string, status: "new" | "contacted" | "closed"): Promise<boolean> {
+  const ticketStatus = status === "closed" ? "resolved" : status === "contacted" ? "pending" : "open";
+  const results = await db.batch([
+    { sql: "UPDATE leads SET status=? WHERE id=?", args: [status, id] },
+    { sql: "UPDATE tickets SET status=? WHERE id=? AND EXISTS (SELECT 1 FROM leads WHERE id=?)", args: [ticketStatus, id.replace(/^VOICE-/, "VT-"), id] },
+  ], "write");
+  return results[0].rowsAffected > 0;
+}

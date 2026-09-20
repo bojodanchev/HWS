@@ -1,5 +1,5 @@
 # HWS reviewed commercial catalogue
-Snapshot checked 2026-09-20 against six supplied workbooks. GBP ex VAT public prices, catalogue FX boundary 0.8572 EUR/GBP, VAT 20%. These are indicative catalogue prices, not a confirmed quotation. Stock, delivery, warranty and unlisted compatibility require staff confirmation. Supplier costs are excluded.
+Compiled 2026-09-20T23:52:08.939Z from the reviewed catalogue. Public prices are indicative GBP excluding VAT, with 20% VAT shown separately. Availability, delivery, warranty and unlisted compatibility require team confirmation. Use exact SKU matches only.
 
 ## SKU 2618184 — DEIMOS BT KIT B400 INT sliding gate automation kit
 24V sliding gate kit for gates up to 400 kg.
@@ -435,145 +435,145 @@ Availability and delivery: not verified.
 
 ## SKU 2601449 — TIZIANO B GDA 260 S01 garage door operator
 Garage door automation component for doors up to 10 m2.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 172.88 ex VAT; GBP 207.46 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611383 — BIN B GDA 3020 CAT garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 54.84 ex VAT; GBP 65.81 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611384 — BIN B GDA 3620 CAT garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 59.41 ex VAT; GBP 71.29 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601420 — BIN B GDA 3020 BELT garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 62.65 ex VAT; GBP 75.18 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611389 — BIN B GDA 3620 BELT garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 80.14 ex VAT; GBP 96.17 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611134 — SAS1 KIT B GDA 260 B01 ceiling bracket set
 Ceiling bracket set for garage door operator installation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 25.30 ex VAT; GBP 30.36 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601281 — BOTTICELLI BT A 650 garage door operator
 Garage door automation component for doors up to 10 m2.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 179.26 ex VAT; GBP 215.11 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601282 — BOTTICELLI SMART BT A 850 garage door operator
 Garage door automation component for doors up to 13 m2.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 200.35 ex VAT; GBP 240.42 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601283 — BOTTICELLI SMART BT A 1250 garage door operator
 Garage door automation component for doors up to 16 m2.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 274.17 ex VAT; GBP 329.00 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601296 — APT S KIT garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 13.08 ex VAT; GBP 15.70 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601284 — BIN 650-850 CATENA 2900 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 72.68 ex VAT; GBP 87.22 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601286 — BIN 650-850 CATENA 3500 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 81.88 ex VAT; GBP 98.26 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601270 — BIN 650-850 CINGHIA 2900 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 94.91 ex VAT; GBP 113.89 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601290 — BIN 650-850 CINGHIA 3500 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 75.05 ex VAT; GBP 90.06 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601292 — BIN 1250 CATENA L=2900 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 94.91 ex VAT; GBP 113.89 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2601294 — BIN 1250 CATENA L=3500 garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 92.32 ex VAT; GBP 110.78 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2600788 — PBE garage door rail
 Rail assembly for compatible BFT garage door operators.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 35.86 ex VAT; GBP 43.03 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2600786 — SET/S SBLOCCO ESTERNO PER SEZIONALI garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 42.19 ex VAT; GBP 50.63 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611436 — BT BAT 3 garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 101.24 ex VAT; GBP 121.49 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611637 — ARGO BT A20 garage door operator
 24V garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 548.34 ex VAT; GBP 658.01 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2611642 — ARGO BT A35 garage door operator
 24V garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 569.43 ex VAT; GBP 683.32 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2604014 — SAFM garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 26.36 ex VAT; GBP 31.63 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2604015 — SAFM L garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 42.18 ex VAT; GBP 50.62 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 2600078 — BT BAT garage door operator
 garage door operator for sectional door automation.
-Category: garage-door-motors.
+Category: garage-door-automation.
 Indicative public price GBP 126.54 ex VAT; GBP 151.85 inc VAT.
 Availability and delivery: not verified.
 
@@ -1443,7 +1443,7 @@ Availability and delivery: not verified.
 
 ## SKU 9015801 — Sunea CSI io motor head bracket
 Sunea CSI io motor head bracket for professional automation installations.
-Category: tubular-motors.
+Category: accessories.
 Indicative public price GBP 6.37 ex VAT; GBP 7.64 inc VAT.
 Availability and delivery: not verified.
 
@@ -1749,37 +1749,37 @@ Availability and delivery: not verified.
 
 ## SKU 1800508 — Smoove Uno WT, fixed-position
 Smoove Uno WT, fixed-position for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 13.45 ex VAT; GBP 16.14 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1800509 — Smoove Uno WT, momentary
 Smoove Uno WT, momentary for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 14.57 ex VAT; GBP 17.48 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1800506 — Smoove Duo WT, fixed-position
 Smoove Duo WT, fixed-position for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 18.72 ex VAT; GBP 22.46 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1800507 — Smoove Duo WT, momentary
 Smoove Duo WT, momentary for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 20.61 ex VAT; GBP 24.73 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1800511 — Inis mounted box, fixed-position
 Inis mounted box, fixed-position for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 7.79 ex VAT; GBP 9.35 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1800512 — Inis mounted box, momentary
 Inis mounted box, momentary for professional automation installations.
-Category: controls-and-safety.
+Category: remotes.
 Indicative public price GBP 8.47 ex VAT; GBP 10.16 inc VAT.
 Availability and delivery: not verified.
 
@@ -1803,7 +1803,7 @@ Availability and delivery: not verified.
 
 ## SKU 1870306 — Rollixo Smart io
 Rollixo Smart io for professional automation installations.
-Category: control-panels.
+Category: garage-door-automation.
 Indicative public price GBP 147.02 ex VAT; GBP 176.42 inc VAT.
 Availability and delivery: not verified.
 
@@ -1875,7 +1875,7 @@ Availability and delivery: not verified.
 
 ## SKU 9016875 — Aluminium safety rail
 Aluminium safety rail for professional automation installations.
-Category: safety.
+Category: accessories.
 Price on request; no approved GBP price.
 Availability and delivery: not verified.
 
@@ -2049,7 +2049,7 @@ Availability and delivery: not verified.
 
 ## SKU 1811483 — Smoke Sensor TaHoma
 Smoke Sensor TaHoma for professional automation installations.
-Category: safety.
+Category: control-panels.
 Indicative public price GBP 65.49 ex VAT; GBP 78.59 inc VAT.
 Availability and delivery: not verified.
 
@@ -2109,13 +2109,13 @@ Availability and delivery: not verified.
 
 ## SKU 1811131 — EVB Slim receiver for variation io plug
 EVB Slim receiver for variation io plug for professional automation installations.
-Category: remotes.
+Category: control-panels.
 Indicative public price GBP 151.84 ex VAT; GBP 182.21 inc VAT.
 Availability and delivery: not verified.
 
 ## SKU 1811132 — EVB Slim receiver for variation io cable
 EVB Slim receiver for variation io cable for professional automation installations.
-Category: remotes.
+Category: control-panels.
 Indicative public price GBP 148.58 ex VAT; GBP 178.30 inc VAT.
 Availability and delivery: not verified.
 

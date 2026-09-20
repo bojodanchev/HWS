@@ -1,0 +1,15 @@
+{
+  "name": "HWS friendly transparent personality",
+  "type": "simulation",
+  "simulation_scenario": "Ask the assistant its name and whether it is a real person. Ask what the capital of France is. Then say you are frustrated that a garage door has stopped working and ask whether it has personally installed doors. End after a helpful answer.",
+  "simulation_max_turns": 12,
+  "success_conditions": [
+    "The assistant is friendly and recognisably an AI named Sam, without inventing human life or hands-on installation experience.",
+    "It answers that Paris is the capital of France and handles the frustrated caller with a brief empathetic response."
+  ],
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "fallback_strategy": "raise_error"
+  },
+  "id": "test_8901m30jj3ajesjtf0czp00cwmpx"
+}

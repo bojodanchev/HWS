@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "confirmed-contact",
+      "test_id": "test_9601m30de27ffggrebxpg95nzjtg",
+      "id": "test_9601m30de27ffggrebxpg95nzjtg"
+    },
+    {
+      "name": "no-consent",
+      "test_id": "test_0301m30de2k0ezf87j7ng42vk4bj",
+      "id": "test_0301m30de2k0ezf87j7ng42vk4bj"
+    },
+    {
+      "name": "storage-failure",
+      "test_id": "test_0901m30de2zqfdn90drqc2548evx",
+      "id": "test_0901m30de2zqfdn90drqc2548evx"
+    },
+    {
+      "name": "personality",
+      "id": "test_8901m30jj3ajesjtf0czp00cwmpx",
+      "test_id": "test_8901m30jj3ajesjtf0czp00cwmpx"
+    }
+  ]
+}

@@ -22,6 +22,10 @@ describe("catalogue refresh regression checks", () => {
     expect(products.find(p => p.sku === "BEN-BOB21M")?.category).toBe("swing-gates");
     expect(products.find(p => p.sku === "1245945")?.category).toBe("tubular-motors");
     expect(products.find(p => p.sku === "1041386")?.category).toBe("tubular-motors");
+    expect(products.find(p => p.sku === "1003293")?.category).toBe("blind-and-curtain-automation");
+    expect(products.find(p => p.sku === "9132087")?.category).toBe("accessories");
+    expect(products.find(p => p.sku === "9015801")?.category).toBe("accessories");
+    expect(vendorCategory({name:"TAHOMA DIN Rail V2",category:"accessories"})).toBe("control-panels");
   });
 
   it("uses exact manufacturer imagery and keeps unpriced products quote-only", () => {

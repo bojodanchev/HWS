@@ -9,6 +9,7 @@
  */
 
 import { categories, products } from "@/content/catalog";
+import categoryImageReferences from "@/content/category-image-references.json";
 import { productForViewer as publicProduct } from "@/lib/publicPrice";
 import type {
   Category,
@@ -83,7 +84,8 @@ export function getCategories(): Category[] {
       .flatMap(product => product.images)
       .find(candidate => !used.has(candidate.url));
     if (image) used.add(image.url);
-    return { ...category, image: image?.url ?? "" };
+    const illustration = (categoryImageReferences as Record<string, { localPath: string }>)[category.slug];
+    return { ...category, image: image?.url ?? illustration?.localPath ?? "" };
   });
 }
 

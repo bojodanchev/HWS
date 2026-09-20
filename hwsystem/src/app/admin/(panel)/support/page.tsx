@@ -49,6 +49,7 @@ export default async function AdminSupportPage() {
 
   return (
     <div className="space-y-8">
+      <Link href="/admin/leads" className="inline-flex min-h-11 items-center text-sm font-medium text-ink underline underline-offset-4">Open enquiry inbox — contact details and full voice enquiries</Link>
       <section aria-label="Support key numbers" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard
           label="Open tickets"

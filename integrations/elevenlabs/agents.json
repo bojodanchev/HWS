@@ -1,0 +1,11 @@
+{
+  "agents": [
+    {
+      "id": "agent_2801m309e67weanb0ky1gd5414zk",
+      "name": "SBI HWS \u2014 UK pilot",
+      "branch_id": "agtbrch_9201m309e8bwe3ra1rsm12r3gd9r",
+      "version_id": "agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb",
+      "config": "hws-pilot.json"
+    }
+  ]
+}

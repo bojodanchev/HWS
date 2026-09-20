@@ -1,0 +1,128 @@
+{
+  "SPIDER1200BLW": {
+    "localPath": "/images/vendor/nice/spider1200blw.png",
+    "page": 148,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 385,
+    "height": 280
+  },
+  "SPIDER800W": {
+    "localPath": "/images/vendor/nice/spider800w.png",
+    "page": 150,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 385,
+    "height": 280
+  },
+  "SPIDO1000": {
+    "localPath": "/images/vendor/nice/spido1000.png",
+    "page": 152,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 387,
+    "height": 246
+  },
+  "SPIDO600": {
+    "localPath": "/images/vendor/nice/spido600.png",
+    "page": 154,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 387,
+    "height": 246
+  },
+  "SPY650HSBDKCE": {
+    "localPath": "/images/vendor/nice/spy650hsbdkce.png",
+    "page": 46,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 772,
+    "height": 309
+  },
+  "SPYKIT650BD": {
+    "localPath": "/images/vendor/nice/spykit650bd.png",
+    "page": 156,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 560,
+    "height": 210
+  },
+  "SPYKIT800BD": {
+    "localPath": "/images/vendor/nice/spykit800bd.png",
+    "page": 156,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 560,
+    "height": 210
+  },
+  "SPYKIT550": {
+    "localPath": "/images/vendor/nice/spykit550.png",
+    "page": 158,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 560,
+    "height": 210
+  },
+  "TEN": {
+    "localPath": "/images/vendor/nice/ten.png",
+    "page": 160,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 221,
+    "height": 276
+  },
+  "TENKIT": {
+    "localPath": "/images/vendor/nice/tenkit.png",
+    "page": 162,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 237,
+    "height": 246
+  },
+  "SOON": {
+    "localPath": "/images/vendor/nice/soon.png",
+    "page": 164,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 185,
+    "height": 257
+  },
+  "SUMO": {
+    "localPath": "/images/vendor/nice/sumo.png",
+    "page": 166,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 229,
+    "height": 281
+  },
+  "HYPPO": {
+    "localPath": "/images/vendor/nice/hyppo.png",
+    "page": 168,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jpg",
+    "width": 297,
+    "height": 230
+  },
+  "RONDOROLSIDE": {
+    "localPath": "/images/vendor/nice/rondorolside.png",
+    "page": 172,
+    "sourceUrl": "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf",
+    "match": "manufacturer-family",
+    "imageObject": "Im0.jp2",
+    "width": 385,
+    "height": 257
+  }
+}

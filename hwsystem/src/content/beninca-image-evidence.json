@@ -1,0 +1,1410 @@
+{
+  "retrievedAt": "2026-09-21",
+  "products": {
+    "BEN-BOB21M": {
+      "sourceUrl": "https://www.beninca.com/es/product/automatismos-para-hojas-batientes/bob21m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b03849320f204bbff511c54bc53f5b72.png",
+      "localPath": "/images/vendor/beninca/5aa825108bbc23070e37.png",
+      "sourceImageLabel": "BOB21M",
+      "matchedName": "Geared motor BOB21M"
+    },
+    "BEN-BOB2124-DK": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob2124-dk.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjk5_974db690002a59cebcd8210de66fc080.png",
+      "sourceImageLabel": "BOB2124.DK | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB2124.DK",
+      "localPath": "/images/vendor/beninca/341958cf466cc33b3ce7.png"
+    },
+    "BEN-BOB30M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob30m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8383d896e5d244b410311130bb0e27a1.png",
+      "sourceImageLabel": "BOB30M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB30M",
+      "localPath": "/images/vendor/beninca/8d8c2abf71a4489f5440.png"
+    },
+    "BEN-BOB30ME": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob30me.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_669db195b3ff0f723c532320d2c21266.png",
+      "sourceImageLabel": "BOB30ME | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB30ME",
+      "localPath": "/images/vendor/beninca/dbe8df46ddedd8ccfcfd.png"
+    },
+    "BEN-BOB30ME-DA": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob30me-da.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_a4d9525b0dfa346f7857c49dddbb9e8c.png",
+      "sourceImageLabel": "BOB30ME.DK | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB30ME.DK",
+      "localPath": "/images/vendor/beninca/3ff39b54f3ef02c868d5.png"
+    },
+    "BEN-BOB3024E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob3024e.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_97b3a3dcb834725b8265687932fd8631.png",
+      "sourceImageLabel": "BOB3024E | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB3024E",
+      "localPath": "/images/vendor/beninca/c734ffa17ee80e71163e.png"
+    },
+    "BEN-BOB3024E-DK": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob3024e-dk.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzA0_52370eee5c6f2c158502c2162cf1079a.png",
+      "sourceImageLabel": "BOB3024E.DK | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB3024E.DK",
+      "localPath": "/images/vendor/beninca/376fec9fbc478c1b70cc.png"
+    },
+    "BEN-BOB50M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob50m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_f38f8ba8c63e12af27803ec7ba394242.png",
+      "sourceImageLabel": "BOB50M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB50M",
+      "localPath": "/images/vendor/beninca/db2cb40eac95efb2b67c.png"
+    },
+    "BEN-BOB50ME": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob50me.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_5d8f371d4324bc68957444caf2f55a73.png",
+      "sourceImageLabel": "BOB50ME | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB50ME",
+      "localPath": "/images/vendor/beninca/33efd9df1d03c64df735.png"
+    },
+    "BEN-BOB5024E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob5024e.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_5d908e9bff0a1050fff43d30445d3f5d.png",
+      "sourceImageLabel": "BOB5024E | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB5024E",
+      "localPath": "/images/vendor/beninca/dc1878a8812d924cfa8f.png"
+    },
+    "BEN-TOM30M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom30m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzI5_e3ffcfe3659ccea2bfcbf0645df901e0.png",
+      "sourceImageLabel": "TOM30M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM30M",
+      "localPath": "/images/vendor/beninca/853b2eef271010b394b8.png"
+    },
+    "BEN-BOB50ME-DA": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bob50me-da.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c9579ccdd2e32f23cfd72f753803f085.png",
+      "sourceImageLabel": "BOB50ME.DK | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BOB50ME.DK",
+      "localPath": "/images/vendor/beninca/52a875b4b14d13e5346f.png"
+    },
+    "BEN-TOM30ME": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom30me.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzMx_721768274abec422260b015b94501826.png",
+      "sourceImageLabel": "TOM30ME | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM30ME",
+      "localPath": "/images/vendor/beninca/54c3a0894bb26b2f393e.png"
+    },
+    "BEN-TOM3024E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom3024e.html",
+      "error": "No product image link found"
+    },
+    "BEN-TOM40M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom40m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzM1_6e014a9d0df9f12f74055c48e39133bf.png",
+      "sourceImageLabel": "TOM40M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM40M",
+      "localPath": "/images/vendor/beninca/2315a45dfa5c0420ad44.png"
+    },
+    "BEN-TOM4024E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom4024e.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzM3_dde759ec4454faaab24ef11e6b8c904e.png",
+      "sourceImageLabel": "TOM4024E | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM4024E",
+      "localPath": "/images/vendor/beninca/73146b108cf76acd67ac.png"
+    },
+    "BEN-TOM4024E-REVERSE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom4024e-reverse.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mzc0_8c22700be056a79f27b025298f2e6b64.png",
+      "sourceImageLabel": "TOM4024E REVERSE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM4024E REVERSE",
+      "localPath": "/images/vendor/beninca/1d732517c8e12c83f3c8.png"
+    },
+    "BEN-TOM50M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom50m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzM4_6b0ed097852c8863187b45fb70ed237f.png",
+      "sourceImageLabel": "TOM50M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM50M",
+      "localPath": "/images/vendor/beninca/00538126e83422315519.png"
+    },
+    "BEN-TOM5024E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom5024e.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzM5_352499eaebb7d3e0e8f22762c030152f.png",
+      "sourceImageLabel": "TOM5024E | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM5024E",
+      "localPath": "/images/vendor/beninca/b1b0241947d8e58dd0e5.png"
+    },
+    "BEN-TOM30MLT": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom30mlt.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzQy_8826424f4ca825851ffe8141b280a7f6.png",
+      "sourceImageLabel": "TOM30MLT | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM30MLT",
+      "localPath": "/images/vendor/beninca/12c63d0ccb5b08717138.png"
+    },
+    "BEN-TOM3024LT": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom3024lt.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzQz_9ea618c46c5d84c5a4f83bd65c94d711.png",
+      "sourceImageLabel": "TOM3024LT | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM3024LT",
+      "localPath": "/images/vendor/beninca/dfc3e2e387e31a1f2f70.png"
+    },
+    "BEN-TOM40MLT": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom40mlt.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzQ2_f50e5b9931332482fc61f0f35c166eae.png",
+      "sourceImageLabel": "TOM40MLT | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM40MLT",
+      "localPath": "/images/vendor/beninca/ffb1a75320276282a22e.png"
+    },
+    "BEN-TOM4024LT": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/tom4024lt.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzQ3_8dbcb57d8e386295f9a785ea467e63de.png",
+      "sourceImageLabel": "TOM4024LT | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor TOM4024LT",
+      "localPath": "/images/vendor/beninca/7f9b628aa11748c66ca2.png"
+    },
+    "BEN-BILL30M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bill30m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ad786dbd017b83fe11c7bc6e8da2e092.png",
+      "sourceImageLabel": "BILL30M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BILL30M",
+      "localPath": "/images/vendor/beninca/dff8c9b371cd6ff2a94b.png"
+    },
+    "BEN-BILL40M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bill40m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_a22b47f5b7bd1984ae4ce069d10d0ad5.png",
+      "sourceImageLabel": "BILL40M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BILL40M",
+      "localPath": "/images/vendor/beninca/fefc875e6b76e4ba4d63.png"
+    },
+    "BEN-BILL4024": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bill4024.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_0e298d19746a70d848b49ecce6d9ea5a.png",
+      "sourceImageLabel": "BILL4024 | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BILL4024",
+      "localPath": "/images/vendor/beninca/bad5eaf813e640f68a50.png"
+    },
+    "BEN-BILL50M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/bill50m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_50af9d67873357dae25aab1184ed0086.png",
+      "sourceImageLabel": "BILL50M | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor BILL50M",
+      "localPath": "/images/vendor/beninca/43d9a5bb8c8d1791b065.png"
+    },
+    "BEN-SAM-E24": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/sam-e24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjk0_73d08835f3c3b145a91fa35c951f2907.png",
+      "sourceImageLabel": "SAM.E24 | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor SAM.E24",
+      "localPath": "/images/vendor/beninca/993d8483b8003f1897b8.png"
+    },
+    "BEN-SAM-24": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/sam-24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjk2_ad16af0b6ef3d8e25a92a64ced275fc1.png",
+      "sourceImageLabel": "SAM.24 | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor SAM.24",
+      "localPath": "/images/vendor/beninca/f91c4f844dc7bb7b4381.png"
+    },
+    "BEN-SAM-E24-PLUS": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/sam-e24-plus.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzU1_14cb2db5bb880afef8e85a6fc0bbbd2d.png",
+      "sourceImageLabel": "SAM.E24 PLUS | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor SAM.E24 PLUS",
+      "localPath": "/images/vendor/beninca/63059db00a842b3aabe8.png"
+    },
+    "BEN-SAM-24-PLUS": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/sam-24-plus.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzU2_57738bbee0d8c457d64a60ff2571610c.png",
+      "sourceImageLabel": "SAM.24 PLUS | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor SAM.24 PLUS",
+      "localPath": "/images/vendor/beninca/9715bfb065b3d6d9150a.png"
+    },
+    "BEN-PR-45E": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/pr-45e.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_4c3128b9562e4c2e1e1abc447004e158.png",
+      "sourceImageLabel": "PR.45E | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor PR.45E",
+      "downloadError": "fetch failed"
+    },
+    "BEN-PR-45EE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/pr-45ee.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzA2_1295e279eac7cdd8c24aa5fa33587769.png",
+      "sourceImageLabel": "PR.45EE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor PR.45EE",
+      "localPath": "/images/vendor/beninca/430bb711cd8b54db0923.png"
+    },
+    "BEN-PR-45EL": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/pr-45el.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b88c638f4b15bcf247e3057ffc09edbd.png",
+      "sourceImageLabel": "PR.45EL | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor PR.45EL",
+      "localPath": "/images/vendor/beninca/329cf8f78be261e0f9f6.png"
+    },
+    "BEN-PR-45E24": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/pr-45e24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ecbb67e15b55675b94dc8bc1c5048c04.png",
+      "sourceImageLabel": "PR.45E24 | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor PR.45E24",
+      "localPath": "/images/vendor/beninca/5ea78a6a432388984b96.png"
+    },
+    "BEN-DU-350FX": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-350fx.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzQ4_12f23a32a5435f55773d714313aee4f6.png",
+      "sourceImageLabel": "DU.350FX | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.350FX",
+      "localPath": "/images/vendor/beninca/7ef22e8527eb3b3ceb73.png"
+    },
+    "BEN-DU-IT14N": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-it14n.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9a0e9cfd1faabcc45af20ee3387c4974.png",
+      "sourceImageLabel": "DU.IT14N | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.IT14N",
+      "localPath": "/images/vendor/beninca/f06199452760b421153c.png"
+    },
+    "BEN-DU-IT14NE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-it14ne.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_f969776bc31f6d9b2b2f451ba61dd517.png",
+      "sourceImageLabel": "DU.IT14NE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.IT14NE",
+      "localPath": "/images/vendor/beninca/773f3cfce73d55ba7d14.png"
+    },
+    "BEN-DU-IT14NV": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-it14nv.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b4974c9c16e23f93d555cd1a530ef995.png",
+      "sourceImageLabel": "DU.IT14NV | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.IT14NV",
+      "localPath": "/images/vendor/beninca/fa584b5f28909bd3ebea.png"
+    },
+    "BEN-DU-IT14NVE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-it14nve.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9d4c98b203319c3385ceaf6b4d29e14c.png",
+      "sourceImageLabel": "DU.IT14NVE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.IT14NVE",
+      "localPath": "/images/vendor/beninca/6ee788004d2ce1e9e7bf.png"
+    },
+    "BEN-DU-IT24NVE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-it24nve.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_870794610d184fb5d32a3ee51946fb09.png",
+      "sourceImageLabel": "DU.IT24NVE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.IT24NVE",
+      "localPath": "/images/vendor/beninca/f240f3cf017b4ef91f5d.png"
+    },
+    "BEN-DU-350N": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-350n.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8559781994c67abda88a8c94b6723be0.png",
+      "sourceImageLabel": "DU.350N | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.350N",
+      "localPath": "/images/vendor/beninca/0d8d279d47c825db4543.png"
+    },
+    "BEN-DU-350NGE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-350nge.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9008bb11f63b4490d2231196af09900f.png",
+      "sourceImageLabel": "DU.350NGE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.350NGE",
+      "localPath": "/images/vendor/beninca/b22bb7bbf27f9572eb29.png"
+    },
+    "BEN-DU-350NV": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-350nv.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_444aa4ded6a51ed694a08c71e7a5c52b.png",
+      "sourceImageLabel": "DU.350NV | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.350NV",
+      "localPath": "/images/vendor/beninca/e04bff9dae390e304ad4.png"
+    },
+    "BEN-DU-350NVE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-swinging-gates/du-350nve.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_5a8d190aad3e90e244b1113e25bb2ad2.png",
+      "sourceImageLabel": "DU.350NVE | Automations for swing gates | Automatismi Benincà",
+      "matchedName": "Geared motor DU.350NVE",
+      "localPath": "/images/vendor/beninca/c0ef703b7c41fbbce006.png"
+    },
+    "BEN-WOLF424": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/wolf424.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mzc1_56e052ceadfbadb01bbbfb125eb121d3.png",
+      "sourceImageLabel": "WOLF424 | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor WOLF424",
+      "localPath": "/images/vendor/beninca/c1fc6c8543da37313051.png"
+    },
+    "BEN-WOLF624": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/wolf624.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mzgy_0eac1ef1a17a443ad1180cd8319bd9cf.png",
+      "sourceImageLabel": "WOLF624 | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Gear motor WOLF624",
+      "localPath": "/images/vendor/beninca/c39067e832aa487d3bc1.png"
+    },
+    "BEN-BULL424SW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull424sw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzE1_86c4a4460725c3f623f5c67ab6e4dc69.png",
+      "sourceImageLabel": "BULL424SW | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL424SW",
+      "localPath": "/images/vendor/beninca/c56bb7a431903c168f09.png"
+    },
+    "BEN-BULL624SW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull624sw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzE2_2db625e3f226113dcba8a7946a194083.png",
+      "sourceImageLabel": "BULL624SW | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL624SW",
+      "localPath": "/images/vendor/beninca/2be789f3006d576a7199.png"
+    },
+    "BEN-BULL424SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull424se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzE5_ab22183af0086d72a277ed9dda8a0858.png",
+      "sourceImageLabel": "BULL424SE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL424SE",
+      "localPath": "/images/vendor/beninca/27f6e8f881054680f6da.png"
+    },
+    "BEN-BULL624SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull624se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzIy_12e87565d53c531763679b34458ea6f8.png",
+      "sourceImageLabel": "BULL624SE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL624SE",
+      "localPath": "/images/vendor/beninca/4803b237a42f41e709a9.png"
+    },
+    "BEN-BULL624SE-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull624se-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzIz_edb2576ac87688bc828313d9bc511ad5.png",
+      "sourceImageLabel": "BULL624SE.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL624SE.S",
+      "localPath": "/images/vendor/beninca/b232ec65faf550024c09.png"
+    },
+    "BEN-BULL624-TURBO": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull624-turbo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ODY%3D_d5f2baa8a6252e6dfeaa828af650b68e.png",
+      "sourceImageLabel": "BULL624 TURBO | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL624 TURBO",
+      "localPath": "/images/vendor/beninca/c3823189822b8ed8dbd3.png"
+    },
+    "BEN-BULL624-TURBO-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull624-turbo-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ODc%3D_91e1d74304408815d44efc78534c4ded.png",
+      "sourceImageLabel": "BULL624 TURBO.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL624 TURBO.S",
+      "localPath": "/images/vendor/beninca/1e3b8d252946d0f2bcfd.png"
+    },
+    "BEN-BULL6M-SE-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull6m-se-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzU5_a7f0f4096b2329fac68e308bccb81413.png",
+      "sourceImageLabel": "BULL6M SE.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL6M SE.S",
+      "localPath": "/images/vendor/beninca/3ea49f8d68441b8a47b0.png"
+    },
+    "BEN-BULL6MLT-SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull6mlt-se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzYw_27d636d28b2ed80d718e140143b76cf3.png",
+      "sourceImageLabel": "BULL6MLT SE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL6MLT SE",
+      "localPath": "/images/vendor/beninca/dfd597625682a0fc29a2.png"
+    },
+    "BEN-BULL8M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull8m.html",
+      "error": "No product image link found"
+    },
+    "BEN-BULL8M-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull8m-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTA%3D_9ec4b1d368505206cbd93d6696b1ea22.png",
+      "sourceImageLabel": "BULL8M.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL8M.S",
+      "localPath": "/images/vendor/beninca/15e7fad2567ef7dbf240.png"
+    },
+    "BEN-BULL8-OM": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull8-om.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTE%3D_7173117e703eb259e4b730a096275f06.png",
+      "sourceImageLabel": "BULL8 OM | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL8 OM",
+      "localPath": "/images/vendor/beninca/0e7888735a3222a2af8d.png"
+    },
+    "BEN-BULL8-OM-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull8-om-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTM%3D_d3ad0f10d17a9111e0b343173acb0ba1.png",
+      "sourceImageLabel": "BULL8 OM.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL8 OM.S",
+      "localPath": "/images/vendor/beninca/9ce59f75e260c5e486cd.png"
+    },
+    "BEN-BULL10M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull10m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTU%3D_477bf87308990470de37af7853616cd8.png",
+      "sourceImageLabel": "BULL10M | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL10M",
+      "localPath": "/images/vendor/beninca/6f3a713a26b94c232f06.png"
+    },
+    "BEN-BULL10M-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull10m-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTY%3D_66feed70c929fe1fb8d067726ad4391f.png",
+      "sourceImageLabel": "BULL10M.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL10M.S",
+      "localPath": "/images/vendor/beninca/c2379105e4aae691dee6.png"
+    },
+    "BEN-BULL1024SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1024se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzUw_18364a9fe74b9308334a9d9581ced287.png",
+      "sourceImageLabel": "BULL1024SE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1024SE",
+      "localPath": "/images/vendor/beninca/ca28c5d3e1c57fbc06c9.png"
+    },
+    "BEN-BULL1024SE-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1024se-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzUx_470a2f138ba90dbdae174a95456e858c.png",
+      "sourceImageLabel": "BULL1024SE.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1024SE.S",
+      "localPath": "/images/vendor/beninca/377d3d42100861d818c5.png"
+    },
+    "BEN-BULL1224-TURBO": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1224-turbo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_OTc%3D_83b2b3a98722c9d7d96afeb42723603a.png",
+      "sourceImageLabel": "BULL1224 TURBO | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1224 TURBO",
+      "localPath": "/images/vendor/beninca/ef8190b59435c80d36a5.png"
+    },
+    "BEN-BULL1224-TURBO-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1224-turbo-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTA0_c99e277a2d4dfe3208ecd631ff35da5c.png",
+      "sourceImageLabel": "BULL1224 TURBO.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1224 TURBO.S",
+      "localPath": "/images/vendor/beninca/4649eef3153002368a86.png"
+    },
+    "BEN-BULL-HE-REVERSE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull-he-reverse.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTEy_10c7cb45379cab6f29aa4b54b32c9596.png",
+      "sourceImageLabel": "BULL HE REVERSE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL HE REVERSE",
+      "localPath": "/images/vendor/beninca/ffc4fc3cac558911ac08.png"
+    },
+    "BEN-BULL15M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull15m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTA4_a29bbb4c897de4e026d8cec8c1ad62df.png",
+      "sourceImageLabel": "BULL15M | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL15M",
+      "localPath": "/images/vendor/beninca/1338cc143d5175926faa.png"
+    },
+    "BEN-BULL15M-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull15m-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTA5_27134e0bfa77f4b806152d32b725c9f9.png",
+      "sourceImageLabel": "BULL15M.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL15M.S",
+      "localPath": "/images/vendor/beninca/eb2ce288d43c285b04c7.png"
+    },
+    "BEN-BULL1524SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1524se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzI2_764f3cba2aff6574efa62ec4d9c6c286.png",
+      "sourceImageLabel": "BULL1524SE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1524SE",
+      "localPath": "/images/vendor/beninca/9dca0301281849c7354b.png"
+    },
+    "BEN-BULL1524SE-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull1524se-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzI3_06e572f72cdbbb2dfa9e557f82d1cf93.png",
+      "sourceImageLabel": "BULL1524SE.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL1524SE.S",
+      "localPath": "/images/vendor/beninca/4ea08da8e23a7da02688.png"
+    },
+    "BEN-BULL17-OMI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull17-omi.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTEz_cddfe935703668e2a4c45c14c19c0fd6.png",
+      "sourceImageLabel": "BULL17 OMI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL17 OMI",
+      "localPath": "/images/vendor/beninca/42ac5d34ed5ab218f6e6.png"
+    },
+    "BEN-BULL17-OMI-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull17-omi-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTE0_53aafcc6835264606b2f2abd61fd0124.png",
+      "sourceImageLabel": "BULL17 OMI.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL17 OMI.S",
+      "localPath": "/images/vendor/beninca/4e4dedf485bc50ad21fb.png"
+    },
+    "BEN-BULL20M": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull20m.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTE1_109efe0a6f812cddc4d26c5ba6e4ead7.png",
+      "sourceImageLabel": "BULL20M | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL20M",
+      "localPath": "/images/vendor/beninca/07895cd8c2ec52a02aec.png"
+    },
+    "BEN-BULL20M-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull20m-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTE2_3978a2551be0d43523c54383287cf092.png",
+      "sourceImageLabel": "BULL20M.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL20M.S",
+      "localPath": "/images/vendor/beninca/5c492ff8b7cccb47d11b.png"
+    },
+    "BEN-BULL20T": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull20t.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTE3_b2fe3484cbd619c10c82c6f6ed4d401b.png",
+      "sourceImageLabel": "BULL20T | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL20T",
+      "localPath": "/images/vendor/beninca/e82a4dac74891aefca53.png"
+    },
+    "BEN-BULL20-HE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull20-he.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTE5_4b8c9a64397c890a9fd8af4a7aa1bfc3.png",
+      "sourceImageLabel": "BULL20 HE | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL20 HE",
+      "localPath": "/images/vendor/beninca/e97e36942279a36c2d57.png"
+    },
+    "BEN-BULL20-HE-S": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bull20-he-s.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTIw_36b4ca77f4b7e8106ed58f421192435b.png",
+      "sourceImageLabel": "BULL20 HE.S | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BULL20 HE.S",
+      "localPath": "/images/vendor/beninca/b4eb61179691ff463743.png"
+    },
+    "BEN-YAK25-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/yak25-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_199b05cf7cab6da1eb561a3ca9581d3f.png",
+      "sourceImageLabel": "YAK25 OTI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor YAK25 OTI",
+      "localPath": "/images/vendor/beninca/ab47a951f23eb61ef1be.png"
+    },
+    "BEN-BISON25-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bison25-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTIy_ed7f0e3130f1dcda855dd048ae11f201.png",
+      "sourceImageLabel": "BISON25 OTI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BISON25 OTI",
+      "localPath": "/images/vendor/beninca/36fc0c2efc0ad612e293.png"
+    },
+    "BEN-BISON35-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bison35-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTIz_121534e02416ffe2fcac97d873ccbcca.png",
+      "sourceImageLabel": "BISON35 OTI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BISON35 OTI",
+      "localPath": "/images/vendor/beninca/7b92cbf77f1530f3f897.png"
+    },
+    "BEN-BISON35-OTIL": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bison35-otil.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI0_b4fcf2481548e497dfaa455400cc13d9.png",
+      "sourceImageLabel": "BISON35 OTI L | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BISON35 OTI L",
+      "localPath": "/images/vendor/beninca/d8377a66786007508490.png"
+    },
+    "BEN-BISON45-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/bison45-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI1_d01da9d253515fe2e34e8dda466e28f0.png",
+      "sourceImageLabel": "BISON45 OTI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Geared motor BISON45 OTI",
+      "localPath": "/images/vendor/beninca/c24af42bb2910d6fa76c.png"
+    },
+    "BEN-BUFFALO160-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/buffalo160-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mzcw_3084fd9fade4f65b3f4e5ad772127520.png",
+      "sourceImageLabel": "BUFFALO160 OTI | Automations for sliding gates | Automatismi Benincà",
+      "matchedName": "Control unit BUFFALO160 OTI",
+      "localPath": "/images/vendor/beninca/a60b5cb3a63b80b1db14.png"
+    },
+    "BEN-BUFFALO160-OTI-SC": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-sliding-gates/buffalo160-oti-sc.html",
+      "error": "No product image link found"
+    },
+    "BEN-MARK": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/mark.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzEy_d931535fcf44a33bc0e62e745342028d.png",
+      "sourceImageLabel": "MARK | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor MARK",
+      "localPath": "/images/vendor/beninca/e5e9fb6ba1f4f4500630.png"
+    },
+    "BEN-MARK-SC": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/mark-sc.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzEz_11a8150bc75ee24c1c702d5e6cf908c5.png",
+      "sourceImageLabel": "MARK.SC | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor MARK.SC",
+      "localPath": "/images/vendor/beninca/7bd7c58aaf653df695ba.png"
+    },
+    "BEN-ZED-RIE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed-rie.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI2_2c75ccba8a6a960f80170e7daa42f1ea.png",
+      "sourceImageLabel": "ZED.RIE | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED.RIE",
+      "localPath": "/images/vendor/beninca/532831dc9221642c6f02.png"
+    },
+    "BEN-ZED-SC": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed-sc.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI3_935737a985bdc44ad69662e47d5ea798.png",
+      "sourceImageLabel": "ZED.SC | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED.SC",
+      "localPath": "/images/vendor/beninca/10771c7133e812522033.png"
+    },
+    "BEN-ZED-LRIE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed-lrie.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI4_4307e8639f3c235ca8b850fd9a0af4c0.png",
+      "sourceImageLabel": "ZED.LRIE | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED.LRIE",
+      "localPath": "/images/vendor/beninca/5d4a983b4aa4a03e0d8e.png"
+    },
+    "BEN-ZED-LSC": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed-lsc.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTI5_66e0ff7824abc28a0065ed2f2d219e3b.png",
+      "sourceImageLabel": "ZED.LSC | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED.LSC",
+      "localPath": "/images/vendor/beninca/c86c1b389d68f56aa386.png"
+    },
+    "BEN-ZED24-RI": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed24-ri.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTMw_daed315a6e3f03b45fa3979ef1112bde.png",
+      "sourceImageLabel": "ZED24.RI | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED24.RI",
+      "localPath": "/images/vendor/beninca/8becc19b3a419e40171d.png"
+    },
+    "BEN-ZED24-SC": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/zed24-sc.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTMx_39ab9454900934bde3277c54ead43b7f.png",
+      "sourceImageLabel": "ZED24.SC | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ZED24.SC",
+      "localPath": "/images/vendor/beninca/2b81bc585712fc57f606.png"
+    },
+    "BEN-JM-3": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-3.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_a33e0307ecf9863665817a29daee6342.png",
+      "sourceImageLabel": "JM.3 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.3",
+      "localPath": "/images/vendor/beninca/c1558254b5537c2e93ba.png"
+    },
+    "BEN-JM-4": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-4.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzA4_4c0c419281aaaa925554d501cd0eacb4.png",
+      "sourceImageLabel": "JM.4 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.4",
+      "localPath": "/images/vendor/beninca/7d499d3bae523e7290e2.png"
+    },
+    "BEN-JM-3SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-3se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzY0_1f4fd56e0fed27e7ad81bf36292e4c42.png",
+      "sourceImageLabel": "JM.3SE | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.3SE",
+      "localPath": "/images/vendor/beninca/3cd0138cfae15cdda4c0.png"
+    },
+    "BEN-JM-4SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-4se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzY1_86a0cb46072152b8c3c75718e4ac801e.png",
+      "sourceImageLabel": "JM.4SE | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.4SE",
+      "localPath": "/images/vendor/beninca/534a2b4ae721c970db94.png"
+    },
+    "BEN-JM-3ESA-TURBO": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-3esa-turbo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_3c5979025af0a56b36d13b8982f62493.png",
+      "sourceImageLabel": "JM.3ESA TURBO | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.3ESA TURBO",
+      "localPath": "/images/vendor/beninca/1864db6690ff2d626644.png"
+    },
+    "BEN-JM-4ESA": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jm-4esa.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_dd3934a1db2b79f417f325aa94e54339.png",
+      "sourceImageLabel": "JM.4ESA | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JM.4ESA",
+      "localPath": "/images/vendor/beninca/648f0719c62256fb5039.png"
+    },
+    "BEN-JACK24-50": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jack24-50.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_69197594900457d0419d75981d9a8e5e.png",
+      "sourceImageLabel": "JACK24.50 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor JACK24.50",
+      "localPath": "/images/vendor/beninca/3b3fa4e6956a5c97763d.png"
+    },
+    "BEN-JACK24-80": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/jack24-80.html",
+      "error": "No product image link found"
+    },
+    "BEN-VN-S20": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s20.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_6d3c5c389c787ddaa695c844f9589e3e.png",
+      "sourceImageLabel": "VN.S20 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S20",
+      "localPath": "/images/vendor/beninca/269c43f55d06b8f86a5b.png"
+    },
+    "BEN-VN-S20-UP": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s20-up.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_bb4370670aa1b2da364ef0733036824e.png",
+      "sourceImageLabel": "VN.S20 UP | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S20 UP",
+      "localPath": "/images/vendor/beninca/bbfeba9a19f1580fb560.png"
+    },
+    "BEN-VN-S20-ESW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s20-esw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_caa8b49f3f3f665374c2761a89329e49.png",
+      "sourceImageLabel": "VN.S20 ESW | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S20 ESW",
+      "localPath": "/images/vendor/beninca/22c8186a2c25907c2241.png"
+    },
+    "BEN-VN-S40": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s40.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_2fee9735d1df29a6eed5d98e32b9c4c7.png",
+      "sourceImageLabel": "VN.S40 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S40",
+      "localPath": "/images/vendor/beninca/ef5f5b3fefe917f0d359.png"
+    },
+    "BEN-VN-S40-UP": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s40-up.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9808f52b8f6102a8ce36efb751754aba.png",
+      "sourceImageLabel": "VN.S40 UP | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S40 UP",
+      "localPath": "/images/vendor/beninca/f2749baca37ef78aa25c.png"
+    },
+    "BEN-VN-ST20": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-st20.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_45d37a33c61c0c8230b257ffa5606043.png",
+      "sourceImageLabel": "VN.ST20 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.ST20",
+      "localPath": "/images/vendor/beninca/b53ee324dcb8ccfda5a5.png"
+    },
+    "BEN-VN-ST20-ESW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-st20-esw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_6f1476f7640a6c06f1614dd536fa614c.png",
+      "sourceImageLabel": "VN.ST20 ESW | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.ST20 ESW",
+      "localPath": "/images/vendor/beninca/18cda0dedb3ec838a906.png"
+    },
+    "BEN-VN-M20": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-m20.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8fb59848d6271ecc4407efa2b8df6db9.png",
+      "sourceImageLabel": "VN.M20 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.M20",
+      "localPath": "/images/vendor/beninca/271f3cae449c14627070.png"
+    },
+    "BEN-VN-M20-UP": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-m20-up.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_13d2c8d9b25ead2f8393fa1ab2473bc9.png",
+      "sourceImageLabel": "VN.M20 UP | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.M20 UP",
+      "localPath": "/images/vendor/beninca/964589c749676e80afaf.png"
+    },
+    "BEN-VN-M20-ESW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-m20-esw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ffc4f764c799cb60c073ca17c42ad10b.png",
+      "sourceImageLabel": "VN.M20 ESW | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.M20 ESW",
+      "localPath": "/images/vendor/beninca/aa5e332ab8d95ea66719.png"
+    },
+    "BEN-VN-M40": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-m40.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_3eb1ce6130641122c091509c8b5f06df.png",
+      "sourceImageLabel": "VN.M40 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.M40",
+      "localPath": "/images/vendor/beninca/f561de35ed9d99b4b42e.png"
+    },
+    "BEN-VN-M40-UP": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-m40-up.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c399ba34ba981e52b2d12036c32df657.png",
+      "sourceImageLabel": "VN.M40 UP | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.M40 UP",
+      "localPath": "/images/vendor/beninca/9e65d8ba86d14f8ff93f.png"
+    },
+    "BEN-VN-MT20": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-mt20.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ffac4a8f68d7c62a564034e938d49855.png",
+      "sourceImageLabel": "VN.MT20 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.MT20",
+      "localPath": "/images/vendor/beninca/371178ed20d682e79722.png"
+    },
+    "BEN-VN-MT20-ESW": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-mt20-esw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c0a1c886b8c5995fd7b0f14c5f9c72b8.png",
+      "sourceImageLabel": "VN.MT20 ESW | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.MT20 ESW",
+      "localPath": "/images/vendor/beninca/55feea3d5a4492c89631.png"
+    },
+    "BEN-VN-MT40": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-mt40.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_72553ec96134e03b1186bb20c0cefdf5.png",
+      "sourceImageLabel": "VN.MT40 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.MT40",
+      "localPath": "/images/vendor/beninca/38a8b8937d4dd6552d62.png"
+    },
+    "BEN-VN-MT40V": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-mt40v.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_50c393af64f0cd787841b7cd45681aba.png",
+      "sourceImageLabel": "VN.MT40V | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.MT40V",
+      "localPath": "/images/vendor/beninca/c06c49005c708fc3e585.png"
+    },
+    "BEN-VN-S40V": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/vn-s40v.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_983565cf04c2bf287e5a6abf8a77d4b5.png",
+      "sourceImageLabel": "VN.S40V | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor VN.S40V",
+      "localPath": "/images/vendor/beninca/d4717126b634fdc19863.png"
+    },
+    "BEN-ADAM": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/adam.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c61bde259396f3f959d5c39bd83b1a58.png",
+      "sourceImageLabel": "ADAM | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ADAM",
+      "localPath": "/images/vendor/beninca/e0c1cc478185302fbd9f.png"
+    },
+    "BEN-ADAM-24": {
+      "sourceUrl": "https://www.beninca.com/en/product/automations-for-garage-industrial-doors/adam-24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b4c433b6cc8e9089ed9b7102d69109d3.png",
+      "sourceImageLabel": "ADAM24 | Automations for garage & industrial doors | Automatismi Benincà",
+      "matchedName": "Geared motor ADAM24",
+      "localPath": "/images/vendor/beninca/018867c9b60aeffc83d9.png"
+    },
+    "BEN-DIVA-3": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/diva-3.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTQy_d46e493208f30bbf964898eff24e63a8.png",
+      "sourceImageLabel": "DIVA.3 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier DIVA.3",
+      "localPath": "/images/vendor/beninca/bef176e2b4747559a1a3.png"
+    },
+    "BEN-DIVA-5": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/diva-5.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzE0_147e27de14329fef6c265f700bda97ad.png",
+      "sourceImageLabel": "DIVA.5 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier DIVA.5",
+      "localPath": "/images/vendor/beninca/85e48a2a5d581a4f9b77.png"
+    },
+    "BEN-EVA-5": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/eva-5.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8159de0800a6135901dc5807c8db5c53.png",
+      "sourceImageLabel": "EVA.5 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier EVA.5",
+      "localPath": "/images/vendor/beninca/3f0fcbfece65c16f264b.png"
+    },
+    "BEN-EVA-7": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/eva-7.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_eb64fce84efe1b85265bf467c3ad0c11.png",
+      "sourceImageLabel": "EVA.7 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier EVA.7",
+      "localPath": "/images/vendor/beninca/99264d0331e3d88c14df.png"
+    },
+    "BEN-EVA-8": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/eva-8.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9ffdc0e2a0428549512717b1b041fb75.png",
+      "sourceImageLabel": "EVA.8 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier EVA.8",
+      "localPath": "/images/vendor/beninca/721547c074a9eacb5ade.png"
+    },
+    "BEN-LADY": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/lady.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_cc076360dd51ec3f499c632b5650973b.png",
+      "sourceImageLabel": "LADY | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier LADY",
+      "localPath": "/images/vendor/beninca/2e7d2205bf351df17447.png"
+    },
+    "BEN-LADY-I": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/lady-i.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_7f6e13a81290096c3bed8141317a03ce.png",
+      "sourceImageLabel": "LADY.I | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier LADY.I",
+      "localPath": "/images/vendor/beninca/cce4844f548a72aab383.png"
+    },
+    "BEN-LADY-5": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/lady-5.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_6caec61ddf9c120c90427d3968d851d2.png",
+      "sourceImageLabel": "LADY.5 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier LADY.5",
+      "localPath": "/images/vendor/beninca/d90041d0df4b591345f2.png"
+    },
+    "BEN-LADY5-I": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/lady5-i.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_4fb87a80d9f77d70825a139a9cdb4a75.png",
+      "sourceImageLabel": "LADY5.I | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier LADY5.I",
+      "localPath": "/images/vendor/beninca/440c8fc1f6b3935c5ff3.png"
+    },
+    "BEN-VE-650": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/ve-650.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_dc6a5a852f5923c0f9be64f355a8bdd5.png",
+      "sourceImageLabel": "VE.650 | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier VE.650",
+      "localPath": "/images/vendor/beninca/6afc27bff96fff9523f4.png"
+    },
+    "BEN-VE-650I": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/ve-650i.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_15aaf7ba78c2556c53a32d8df154ca25.png",
+      "sourceImageLabel": "VE.650I | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Barrier VE.650I",
+      "localPath": "/images/vendor/beninca/e468c0a8836e718aff7d.png"
+    },
+    "BEN-VE-SOR-VE-SOM": {
+      "sourceUrl": "https://www.beninca.com/en/product/road-barriers-car-park-saver/ve-sor-ve-som.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_0d14ba9b80f05a463c82792c6e6d6fbd.png",
+      "sourceImageLabel": "VE.SOR | VE.SOM | Road barriers & car park saver | Automatismi Benincà",
+      "matchedName": "Car park saver VE.SOR | VE.SOM",
+      "localPath": "/images/vendor/beninca/12e106985454dbcb82c8.png"
+    },
+    "BEN-BRAINY-PLUS": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/brainy-plus.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzY3_5970ccdf460892927c59df85520a1c22.png",
+      "sourceImageLabel": "BRAINY PLUS | External control units | Automatismi Benincà",
+      "matchedName": "Control unit BRAINY PLUS",
+      "localPath": "/images/vendor/beninca/1a33c5096a1b79a01d26.png"
+    },
+    "BEN-BRAINY": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/brainy.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_7e8831c91c86a39fd05cc37e9e97d484.png",
+      "sourceImageLabel": "BRAINY | External control units | Automatismi Benincà",
+      "matchedName": "Control unit BRAINY",
+      "localPath": "/images/vendor/beninca/46ce4bac07bbcc6d14cd.png"
+    },
+    "BEN-HEADY": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/heady.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_aa862819c70e468580d3b702e8a8bbdc.png",
+      "sourceImageLabel": "HEADY | External control units | Automatismi Benincà",
+      "matchedName": "Control unit HEADY",
+      "localPath": "/images/vendor/beninca/3b3705baa317cb00c34e.png"
+    },
+    "BEN-CORE": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/core.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c0a7eab5a7fff3a189c62151142076eb.png",
+      "sourceImageLabel": "CORE | External control units | Automatismi Benincà",
+      "matchedName": "Control unit CORE",
+      "localPath": "/images/vendor/beninca/08cb123ead97aa157dc6.png"
+    },
+    "BEN-MATRIX": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/matrix.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_a2d1c560d18dd0c310826fc21182ff0c.png",
+      "sourceImageLabel": "MATRIX | External control units | Automatismi Benincà",
+      "matchedName": "Control unit MATRIX",
+      "localPath": "/images/vendor/beninca/bcca4e83624eea000df5.png"
+    },
+    "BEN-LOGICA": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/logica.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9a72e03ff0e3a997203ca0b12b2a4deb.png",
+      "sourceImageLabel": "LOGICA | External control units | Automatismi Benincà",
+      "matchedName": "Control unit LOGICA",
+      "localPath": "/images/vendor/beninca/eec4d8b9a0fe5fea5249.png"
+    },
+    "BEN-CELL-P": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/cell-p.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_914357d49d8696fa36c3fd52e9b8e560.png",
+      "sourceImageLabel": "CELL.P | External control units | Automatismi Benincà",
+      "matchedName": "Control unit CELL.P",
+      "localPath": "/images/vendor/beninca/59b41877a1ae47e7262d.png"
+    },
+    "BEN-THINKY": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/thinky.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjc%3D_c4fdeb0a77d9b5951308bc581a1a79bc.png",
+      "sourceImageLabel": "THINKY | External control units | Automatismi Benincà",
+      "matchedName": "Control unit THINKY",
+      "localPath": "/images/vendor/beninca/ce275e5c88ff079291d6.png"
+    },
+    "BEN-THINKY-P": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/thinky-p.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_47d6d2e2022a6e70de416a44ef9cef95.png",
+      "sourceImageLabel": "THINKY.P | External control units | Automatismi Benincà",
+      "matchedName": "Control unit THINKY.P",
+      "localPath": "/images/vendor/beninca/039df072714b8e5977fc.png"
+    },
+    "BEN-THINKY-I": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/thinky-i.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_1871c23032a03083db045544dcc85c49.png",
+      "sourceImageLabel": "THINKY.I | External control units | Automatismi Benincà",
+      "matchedName": "Control unit THINKY.I",
+      "localPath": "/images/vendor/beninca/0045b96c35ddf8b4c0a5.png"
+    },
+    "BEN-START": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/start.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8bb8f1f8eb16490b9fefd4a0ff7554c8.png",
+      "sourceImageLabel": "START | External control units | Automatismi Benincà",
+      "matchedName": "Control unit START",
+      "localPath": "/images/vendor/beninca/994c8850eca1055da30f.png"
+    },
+    "BEN-START-I": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/start-i.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_9002e73ed65c07daf2e520de684d96c6.png",
+      "sourceImageLabel": "START.I | External control units | Automatismi Benincà",
+      "matchedName": "Control unit START.I",
+      "localPath": "/images/vendor/beninca/88481a4844902f24d5a5.png"
+    },
+    "BEN-BUFFALO-DRIVE": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/buffalo-drive.html",
+      "error": "No product image link found"
+    },
+    "BEN-BRAINY24-PLUS": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/brainy24-plus.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzAx_60211162b7e2a84a836626e85a8f16e7.png",
+      "sourceImageLabel": "BRAINY24 PLUS | External control units | Automatismi Benincà",
+      "matchedName": "Control unit BRAINY24 PLUS",
+      "localPath": "/images/vendor/beninca/afb98352e7a2725a0a56.png"
+    },
+    "BEN-BRAINY24-119": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/brainy24-119.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_68e747d6d9fbe8cd2b3b26d8bc38c11b.png",
+      "sourceImageLabel": "BRAINY24 | External control units | Automatismi Benincà",
+      "matchedName": "Control unit BRAINY24",
+      "localPath": "/images/vendor/beninca/e00ef48f9137b10fd2e4.png"
+    },
+    "BEN-TRUST24": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/trust24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzAy_a4759f3c1238427782264310a32850a3.png",
+      "sourceImageLabel": "TRUST24 | External control units | Automatismi Benincà",
+      "matchedName": "Control unit TRUST24",
+      "localPath": "/images/vendor/beninca/57844bef2d0039311b39.png"
+    },
+    "BEN-TILTY24": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/tilty24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzAz_143c3277ea55ba9da42b47c02aa8aa77.png",
+      "sourceImageLabel": "TILTY24 | External control units | Automatismi Benincà",
+      "matchedName": "Control unit TILTY24",
+      "localPath": "/images/vendor/beninca/0659376b3bacd41e9951.png"
+    },
+    "BEN-LOGICA24": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/logica24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_1586ce732f623dc05c1586a317acdfd6.png",
+      "sourceImageLabel": "LOGICA24 | External control units | Automatismi Benincà",
+      "matchedName": "Control unit LOGICA24",
+      "localPath": "/images/vendor/beninca/0354a0b0e3b185cd09c7.png"
+    },
+    "BEN-DA-SO4": {
+      "sourceUrl": "https://www.beninca.com/en/product/external-control-units/da-so4.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_801f762ccbd6356ba8d3e64e66db0c05.png",
+      "sourceImageLabel": "DA.SO4 | External control units | Automatismi Benincà",
+      "matchedName": "Control unit DA.SO4",
+      "localPath": "/images/vendor/beninca/0bb9b2826944ac696fd8.png"
+    },
+    "BEN-CP-SAM": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-sam.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjk3_a9ce93c9a1861142e92697cf26d6f132.png",
+      "sourceImageLabel": "CP.SAM | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.SAM",
+      "localPath": "/images/vendor/beninca/446590ff51da495337d8.png"
+    },
+    "BEN-CP-W24": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-w24.html",
+      "error": "No product image link found"
+    },
+    "BEN-CP-W24-5IN": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-w24-5in.html",
+      "error": "No product image link found"
+    },
+    "BEN-CP-B24-SW": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-b24-sw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzA5_07c508a589b534927b83ad970fd615bb.png",
+      "sourceImageLabel": "CP.B24-SW | Internal control units | Automatismi Benincà",
+      "matchedName": "Control unit CP.B24-SW",
+      "localPath": "/images/vendor/beninca/565adc61782c7dbd19d8.png"
+    },
+    "BEN-CP-B24-D120": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-b24-d120.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzEw_5659588004f57317063021581971710a.png",
+      "sourceImageLabel": "CP.B24-D120 | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.B24-D120",
+      "localPath": "/images/vendor/beninca/12671636f33c9e769bc5.png"
+    },
+    "BEN-CP-B24-TURBO": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-b24-turbo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MjQ3_8f893100b187a90b336e2506a1abeb08.png",
+      "sourceImageLabel": "CP.B24 TURBO | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.B24 TURBO",
+      "localPath": "/images/vendor/beninca/829991a4eb24b15f5aca.png"
+    },
+    "BEN-CP-BULL6-SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull6-se.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzYz_333173caf416b612d919d87788da4d7d.png",
+      "sourceImageLabel": "CP.BULL6-SE | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL6-SE",
+      "localPath": "/images/vendor/beninca/1c2c4f8662ee5022c872.png"
+    },
+    "BEN-CP-BULL8-OM": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull8-om.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_c16e204fc15228dd6ad068f84fc76e83.png",
+      "sourceImageLabel": "CP.BULL8-OM | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL8-OM",
+      "localPath": "/images/vendor/beninca/b367d28082bc4bdc28a9.png"
+    },
+    "BEN-CP-BULL-RI": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull-ri.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b6db7aedce2b9179910753b6c95b6d72.png",
+      "sourceImageLabel": "CP.BULL-RI | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL-RI",
+      "localPath": "/images/vendor/beninca/5be7b6628e2497456080.png"
+    },
+    "BEN-CP-BULL-REV": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull-rev.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_f76109719682644091cccce56c2f09e4.png",
+      "sourceImageLabel": "CP.BULL-REV | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL-REV",
+      "localPath": "/images/vendor/beninca/5dd3c7784cedd8fdeb94.png"
+    },
+    "BEN-CP-BULL20-HE": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull20-he.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b6c743e5bfb44c71a643872a1b3a451a.png",
+      "sourceImageLabel": "CP.BULL20-HE | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL20-HE",
+      "localPath": "/images/vendor/beninca/c9f8a046ac96e6961b7a.png"
+    },
+    "BEN-CP-BULL-OMI": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bull-omi.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_a0f4bcf2b9327c6be52f01c1cd22cf4e.png",
+      "sourceImageLabel": "CP.BULL OMI | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BULL OMI",
+      "localPath": "/images/vendor/beninca/fe4547647ca914dd64d5.png"
+    },
+    "BEN-CP-BISON-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bison-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_d681758afe235e84f7764ed9397bd151.png",
+      "sourceImageLabel": "CP.BISON OTI | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BISON OTI",
+      "localPath": "/images/vendor/beninca/ef3d0bccb7a610a287f2.png"
+    },
+    "BEN-CP-BISON-OTI-L": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-bison-oti-l.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b4cbe0c62cba5c95ca08f5c782f7391c.png",
+      "sourceImageLabel": "CP.BISON OTI L | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.BISON OTI L",
+      "localPath": "/images/vendor/beninca/556e8a16ed3d5beb27e7.png"
+    },
+    "BEN-CP-YAK-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-yak-oti.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_d8a5090cc1e9a101da6adb4b8745494f.png",
+      "sourceImageLabel": "CP.YAK OTI | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.YAK OTI",
+      "localPath": "/images/vendor/beninca/d01fe9280b1e6f979a62.png"
+    },
+    "BEN-CP-BUFFALO-OTI": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-buffalo-oti.html",
+      "error": "No product image link found"
+    },
+    "BEN-CP-MARK": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-mark.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzEx_351cce395cdba8e6a43a8a5cd11159ca.png",
+      "sourceImageLabel": "CP.MARK | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.MARK",
+      "localPath": "/images/vendor/beninca/3253365e64b424bd16b6.png"
+    },
+    "BEN-CP-ZED24": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-zed24.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_cfc58cab251c9ef406a721a4e9ccb307.png",
+      "sourceImageLabel": "CP.ZED24 | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.ZED24",
+      "localPath": "/images/vendor/beninca/b8e33a46da7a907c0629.png"
+    },
+    "BEN-CP-ZED-AUTR": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-zed-autr.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_86096b58bdc22662d47a655c25a05b7c.png",
+      "sourceImageLabel": "CP.ZED-AUTR | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.ZED-AUTR",
+      "localPath": "/images/vendor/beninca/c55a9000c0e6aeacb1bc.png"
+    },
+    "BEN-CP-J3-SW": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-j3-sw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_43dd5d0ce9bf9ab0ca50451a487b91df.png",
+      "sourceImageLabel": "CP.J3-SW | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.J3-SW",
+      "localPath": "/images/vendor/beninca/215f197bbde8f5607249.png"
+    },
+    "BEN-CP-J4-SW": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-j4-sw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzA3_9cda552cbf24d79cf07fd2617565e04e.png",
+      "sourceImageLabel": "CP.J4-SW | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.J4-SW",
+      "localPath": "/images/vendor/beninca/3e0c49d8ba020ef798a4.png"
+    },
+    "BEN-CP-J4-SE": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-j4-se.html",
+      "error": "No product image link found"
+    },
+    "BEN-CP-J4ESA": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-j4esa.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_4b2151bc2b5c2fecfcdd0c456658eaf2.png",
+      "sourceImageLabel": "CP.J4ESA | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.J4ESA",
+      "localPath": "/images/vendor/beninca/a2c1354266cbe7320e6c.png"
+    },
+    "BEN-CP-JT": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-jt.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_75dac2f13619b7fa11a47b43f44201b7.png",
+      "sourceImageLabel": "CP.JT | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.JT",
+      "localPath": "/images/vendor/beninca/cdded0258c06a1de9fd7.png"
+    },
+    "BEN-CP-JACK": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-jack.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_3f08d84d6aeeec371f2b9a361493d373.png",
+      "sourceImageLabel": "CP.JACK | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.JACK",
+      "localPath": "/images/vendor/beninca/4a084a5a811d17de3151.png"
+    },
+    "BEN-UP-VN": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/up-vn.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_0c8686ac29caf139181e277a113644d5.png",
+      "sourceImageLabel": "UP.VN | Internal control units | Automatismi Benincà",
+      "matchedName": "UP.VN",
+      "localPath": "/images/vendor/beninca/5f907a7013ce6695bbbe.png"
+    },
+    "BEN-CP-DIVA": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-diva.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_743dbf0cba6cc7e0e243846235bfe2fd.png",
+      "sourceImageLabel": "CP.DIVA | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.DIVA",
+      "localPath": "/images/vendor/beninca/a57445ece53124ae6206.png"
+    },
+    "BEN-CP-EVA": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-eva.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b5b7fb8b95ed811cae192bc45fd3633d.png",
+      "sourceImageLabel": "CP.EVA | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.EVA",
+      "localPath": "/images/vendor/beninca/d3f866727c2f5f0f0b74.png"
+    },
+    "BEN-CP-LADY": {
+      "sourceUrl": "https://www.beninca.com/en/product/internal-control-units/cp-lady.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_1271cb8efc84d18c69eea75cb96a085e.png",
+      "sourceImageLabel": "CP.LADY | Internal control units | Automatismi Benincà",
+      "matchedName": "CP.LADY",
+      "localPath": "/images/vendor/beninca/737fadd30fba39600bf0.png"
+    },
+    "BEN-IRI-TX4VA": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/iri-tx4va.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTY2_c18b3dc232e470129476cde567e31cd8.png",
+      "sourceImageLabel": "IRI.TX4VA | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter IRI.TX4VA",
+      "localPath": "/images/vendor/beninca/fca924d96af3f52a0d1a.png"
+    },
+    "BEN-IRI-TX4AK": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/iri-tx4ak.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTY3_77c228dac0249fcdb27b435e83c2c942.png",
+      "sourceImageLabel": "IRI.TX4AK | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter IRI.TX4AK",
+      "localPath": "/images/vendor/beninca/bad6339fe274e33652b0.png"
+    },
+    "BEN-TO-GO2A": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go2a.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_cc000d66b20478e68cf0a18adcee3173.png",
+      "sourceImageLabel": "TO.GO2A | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO2A",
+      "localPath": "/images/vendor/beninca/6be42056638c68d9d215.png"
+    },
+    "BEN-TO-GO4A": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go4a.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_1128f26e2c63543c2b1bb4a853ca5a3f.png",
+      "sourceImageLabel": "TO.GO4A | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO4A",
+      "localPath": "/images/vendor/beninca/1938da18c1490a1bf63c.png"
+    },
+    "BEN-TO-GO2AS": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go2as.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_bf733c37d8d040cdfad865196921fd0d.png",
+      "sourceImageLabel": "TO.GO2AS | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO2AS",
+      "localPath": "/images/vendor/beninca/a33d8124b8458ea18ee4.png"
+    },
+    "BEN-TO-GO4AS": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go4as.html",
+      "error": "No product image link found"
+    },
+    "BEN-TO-GO2VA": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go2va.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_cffa7339d47cfd45314827e58eef977c.png",
+      "sourceImageLabel": "TO.GO2VA | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO2VA",
+      "localPath": "/images/vendor/beninca/ad533fe38dd6b529b1d2.png"
+    },
+    "BEN-TO-GO4VA": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go4va.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_bd70d99968c8f91befdeb54be02a3996.png",
+      "sourceImageLabel": "TO.GO4VA | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO4VA",
+      "localPath": "/images/vendor/beninca/fb8a814afe6984e7a9f7.png"
+    },
+    "BEN-TO-GO2AK": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go2ak.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_ed46e7db39994d7701a00567fbe20757.png",
+      "sourceImageLabel": "TO.GO2AK | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO2AK",
+      "localPath": "/images/vendor/beninca/be07fe71049f7febcf8d.png"
+    },
+    "BEN-TO-GO4AK": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go4ak.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_d42c52de3b00c33b31f4b89df02e1bc7.png",
+      "sourceImageLabel": "TO.GO4AK | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO4AK",
+      "localPath": "/images/vendor/beninca/8958857b9df934deaf1a.png"
+    },
+    "BEN-TO-GO4QV": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/to-go4qv.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MTU3_54160bdb6b6dca56a2a61f9844cfa16b.png",
+      "sourceImageLabel": "TO.GO2QV | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter TO.GO2QV",
+      "localPath": "/images/vendor/beninca/ad5f59fd4323ed286258.png"
+    },
+    "BEN-HAPPY-2VA": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/happy-2va.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_0e72f2998ea56b4224ef786bc68a7406.png",
+      "sourceImageLabel": "HAPPY.2VA | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter HAPPY.2VA",
+      "localPath": "/images/vendor/beninca/c53e5694935ab41550f3.png"
+    },
+    "BEN-HAPPY-4VA": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/happy-4va.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_00855410cec8d760365d7ade1c337487.png",
+      "sourceImageLabel": "HAPPY.4VA | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter HAPPY.4VA",
+      "localPath": "/images/vendor/beninca/011fa54a59f4affd9e6c.png"
+    },
+    "BEN-HAPPY-2AK": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/happy-2ak.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_abe697afb46367aa23c6811537268faf.png",
+      "sourceImageLabel": "HAPPY.2AK | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter HAPPY.2AK",
+      "localPath": "/images/vendor/beninca/dc1cb5516115999e8576.png"
+    },
+    "BEN-HAPPY-4AK": {
+      "sourceUrl": "https://www.beninca.com/en/product/transmitters/happy-4ak.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_b2e9b465dd53e3a0676c43f01affed3c.png",
+      "sourceImageLabel": "HAPPY.4AK | Transmitters | Automatismi Benincà",
+      "matchedName": "Transmitter HAPPY.4AK",
+      "localPath": "/images/vendor/beninca/01b3eabd6076d8563c08.png"
+    },
+    "BEN-SE-MODULE": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/se-module.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_MzY4_b2c3b54fc8a865457d151da84103557f.png",
+      "sourceImageLabel": "SE.MODULE | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "Receiver SE.MODULE",
+      "localPath": "/images/vendor/beninca/aec36e8937161c63c5c4.png"
+    },
+    "BEN-SUNNY": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/sunny.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_Mjg5_0c29f8ac34a88ea76571513d1074ef2c.png",
+      "sourceImageLabel": "SUNNY | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver SUNNY",
+      "localPath": "/images/vendor/beninca/877cd204b54e321db7a7.png"
+    },
+    "BEN-ONE-4WB": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-4wb.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_fe034ebe2df50110adc734b09ed31308.png",
+      "sourceImageLabel": "ONE.4WB | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.4WB",
+      "localPath": "/images/vendor/beninca/d7a6906389b9b9242f9f.png"
+    },
+    "BEN-ONE-2WB-MS": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-2wb-ms.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_82c8ef01a6356e8676ec4708166aca06.png",
+      "sourceImageLabel": "ONE.2WB-MS | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.2WB-MS",
+      "localPath": "/images/vendor/beninca/c1453c8d2715634b9a54.png"
+    },
+    "BEN-ONE-2WO": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-2wo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_8bbc0a3ff57fc534317f2051a8fb3363.png",
+      "sourceImageLabel": "ONE.2WO | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.2WO",
+      "localPath": "/images/vendor/beninca/5e51983e3675ca8264c1.png"
+    },
+    "BEN-ONE-2WB": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-2wb.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_f30fe6713aabab9050f1ae8026b50467.png",
+      "sourceImageLabel": "ONE.2WB | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.2WB",
+      "localPath": "/images/vendor/beninca/7a22cb0d0c59525c9b7e.png"
+    },
+    "BEN-ONE-2WI": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-2wi.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_81e6e39b9e7f7320ca0c55c48c3c026d.png",
+      "sourceImageLabel": "ONE.2WI | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.2WI",
+      "localPath": "/images/vendor/beninca/e95c16a95981ad1951ff.png"
+    },
+    "BEN-ONE-2QB": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/one-2qb.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_bef30548a02aa72981ecca6c0c754163.png",
+      "sourceImageLabel": "ONE.2QB | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver ONE.2QB",
+      "localPath": "/images/vendor/beninca/9af8d8886b54c9097ba6.png"
+    },
+    "BEN-AWO": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/awo.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_70daa4b6de01b65c74769026714e5ba8.png",
+      "sourceImageLabel": "AWO | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver AWO",
+      "localPath": "/images/vendor/beninca/9634e3b4c10c76705117.png"
+    },
+    "BEN-AW": {
+      "sourceUrl": "https://www.beninca.com/en/product/receivers/aw.html",
+      "imageUrl": "https://www.beninca.com/images/product/original_50168c6bf96fa0a398e93e57e7216e46.png",
+      "sourceImageLabel": "AW | Receivers and aerials | Automatismi Benincà",
+      "matchedName": "receiver AW",
+      "localPath": "/images/vendor/beninca/b832ea6423c30ccf2afb.png"
+    }
+  }
+}

@@ -70,6 +70,7 @@ type Image = {
   alt: string;
   width: number;
   height: number;
+  caption?: string; // visible qualification when an image is representative or family-level
 };
 ```
 

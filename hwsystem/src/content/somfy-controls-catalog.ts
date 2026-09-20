@@ -2,6 +2,7 @@ import rawCatalog from "@/content/somfy-controls-catalog.json";
 import rawImageManifest from "@/content/somfy-image-manifest.json";
 import type { Brand, Product, Spec } from "@/types/catalog";
 import { somfyAccessorySkus } from "@/content/somfy-accessories";
+import { vendorCategory } from "@/content/vendor-category";
 
 type CommercialSource = "rec" | "rea" | "icc" | "ha" | "controls";
 type SourceCurrency = "EUR" | "BGN";
@@ -102,7 +103,7 @@ function toProduct(record: CommercialRecord): Product {
     name: record.name,
     slug: slugify(`${record.name}-${record.sku}`),
     brand: record.brand,
-    category: record.category,
+    category: record.brand === "Somfy" ? vendorCategory(record) : record.category,
     shortDescription: record.shortDescription,
     description: record.description,
     images: imageUrls.map((url, index) => ({
@@ -111,7 +112,7 @@ function toProduct(record: CommercialRecord): Product {
       width: 800,
       height: 600,
     })),
-    specs: record.specs,
+    specs: record.sku === "9015801" ? record.specs.filter(spec => spec.key !== "torque") : record.specs,
     compatibility: record.compatibility,
     documents: [],
     price: hasPrice

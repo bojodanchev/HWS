@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const TABS = [
   { href: "/admin", label: "Overview" },
   { href: "/admin/support", label: "Customer support" },
+  { href: "/admin/leads", label: "Enquiry inbox" },
   { href: "/admin/orders", label: "Order manager" },
   { href: "/admin/catalogue", label: "Catalogue & pricing" },
 ];
@@ -15,7 +16,7 @@ export function AdminNav() {
 
   return (
     <nav aria-label="Admin sections" className="border-b border-line">
-      <ul className="flex gap-1 overflow-x-auto">
+      <ul className="flex gap-1 overflow-x-auto overflow-y-hidden">
         {TABS.map((tab) => {
           const active =
             tab.href === "/admin"

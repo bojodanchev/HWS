@@ -7,6 +7,7 @@ import {
   getCategory,
   getFacets,
   getProducts,
+  hasPublicPrice,
   type CatalogFilters,
 } from "@/lib/catalog";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -62,7 +63,21 @@ export default async function CategoryPage({
     filters.sort = sort;
   }
 
-  const products = getProducts(filters);
+  const matchingProducts = getProducts(filters);
+  const priced = matchingProducts.filter(product => hasPublicPrice(product.price));
+  const specialOrder = matchingProducts.filter(product => !hasPublicPrice(product.price));
+  const requestedView = firstValue(sp.view);
+  const view = requestedView === "special-order" || requestedView === "all" || requestedView === "priced" ? requestedView : priced.length ? "priced" : "special-order";
+  const products = view === "all" ? matchingProducts : view === "priced" ? priced : specialOrder;
+  function viewHref(nextView: string) {
+    const query = new URLSearchParams();
+    for (const [key,value] of Object.entries(sp)) {
+      const first = firstValue(value);
+      if (first && key !== "view") query.set(key,first);
+    }
+    query.set("view",nextView);
+    return `/products/${category}?${query}`;
+  }
   const facets = getFacets(getProducts({ category }));
 
   return (
@@ -80,6 +95,15 @@ export default async function CategoryPage({
       </nav>
       <h1 className="mt-4 text-h1 text-ink">{cat.name}</h1>
       <p className="mt-3 max-w-2xl text-steel">{cat.description}</p>
+      <nav aria-label="Catalogue price availability" className="mt-6 flex flex-wrap gap-2 border-b border-line">
+        {[
+          {id:"priced",label:`Priced catalogue (${priced.length})`},
+          {id:"special-order",label:`Special order (${specialOrder.length})`},
+          {id:"all",label:`All products (${matchingProducts.length})`},
+        ].map(item => <Link key={item.id} href={viewHref(item.id)} aria-current={view === item.id ? "page" : undefined}
+          className={`inline-flex min-h-11 items-center border-b-2 px-4 text-sm font-medium ${view === item.id ? "border-ink text-ink" : "border-transparent text-steel hover:text-ink"}`}>{item.label}</Link>)}
+      </nav>
+      {view === "special-order" && <p className="mt-3 text-sm text-steel">Ask for a confirmed price and availability for these models. They remain searchable by SKU.</p>}
 
       <div className="mt-10 flex gap-10">
         <Suspense>

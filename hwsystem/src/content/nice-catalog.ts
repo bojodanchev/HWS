@@ -1,4 +1,5 @@
 import type { Product } from "@/types/catalog";
+import imageManifest from "@/content/nice-image-manifest.json";
 
 const NICE_CATALOGUE_URL =
   "https://www.niceforyou.com/sites/default/files/upload/catalogues-brochures/nice_gate_door_catalogue_en.pdf";
@@ -25,6 +26,7 @@ function niceProduct({
   specs?: Product["specs"];
   category?: string;
 }): Product {
+  const image = (imageManifest as Record<string, {localPath: string; width: number; height: number}>)[sku];
   return {
     id: `nice-${sku.toLowerCase()}`,
     sku,
@@ -34,7 +36,7 @@ function niceProduct({
     category,
     shortDescription,
     description,
-    images: [],
+    images: image ? [{url:image.localPath,alt:name,width:image.width,height:image.height,caption:"Manufacturer range image. Exact model and kit contents are confirmed with your quote."}] : [],
     specs,
     compatibility: [],
     documents: [catalogueDocument],
@@ -157,18 +159,18 @@ export const niceProducts: Product[] = [
   }),
   niceProduct({
     sku: "HYPPO",
-    name: "Nice Hyppo articulated-arm gate operator",
-    category: "swing-gates",
-    shortDescription: "Articulated-arm automation family for swing gates.",
+    name: "Nice Hyppo folding-door operator",
+    category: "garage-door-automation",
+    shortDescription: "Telescopic-arm automation family for two-leaf folding doors.",
     description:
-      "Nice Hyppo articulated-arm operator family for swing gates. The exact model determines the power supply, control unit and installation limits; request a checked configuration and UK quotation.",
+      "The Hyppo range in the garage and industrial doors section of the Nice 2026 catalogue is for two-leaf folding doors. The exact HY7100 or HY7124 model determines the power supply and control unit; request a checked configuration and UK quotation.",
   }),
   niceProduct({
     sku: "RONDOROLSIDE",
     name: "Nice Rondo / RolSide garage door automation",
-    shortDescription: "Balanced rolling-door automation families from Nice.",
+    shortDescription: "Rondo for balanced rolling doors; RolSide for unbalanced rolling shutters.",
     description:
-      "Rondo and RolSide are the balanced rolling-door families listed in the supplied Nice catalogue. HWS will confirm the exact model, accessories and current UK price against the measured door before quote acceptance.",
+      "Rondo and RolSide are separate rolling-door ranges in the Nice 2026 catalogue. Rondo is for balanced rolling doors; RolSide is for unbalanced rolling shutters. HWS will confirm the appropriate range, exact model, accessories and current UK price before quote acceptance.",
     specs: [{ key: "voltage", value: "230V AC" }],
   }),
 ];

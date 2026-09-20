@@ -4,5 +4,11 @@
   "initial_version_id": "agtvrsn_5301m309e8gaedttm1v7awehrjff",
   "phone_number_id": "phnum_6101m309h986efhsv23c0hkss2py",
   "phone_number": "+442045774094",
-  "knowledge_id": "HZGvgSzF62D0T36XDyki"
+  "knowledge_id": "HZGvgSzF62D0T36XDyki",
+  "voice_tool_secret_id": "jE1RWCMsUzfDEr9OFJSJ",
+  "voice_tool_id": "tool_4001m30cwmjzf4nr39yp70ae7dwa",
+  "lead_capture_branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+  "lead_capture_version_id": "agtvrsn_9301m30cxpfsemkvc9y95m4m1f6a",
+  "personality_branch_id": "agtbrch_9301m30hsjnne38a8z26hjj1wf0n",
+  "personality_live_version_id": "agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb"
 }

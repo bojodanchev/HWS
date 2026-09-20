@@ -10,6 +10,7 @@ import "server-only";
 import type { Row } from "@libsql/client";
 import { getDb } from "@/lib/db";
 import { getProducts, getProductsBySkus } from "@/lib/catalog";
+import { updateVoiceEnquiryStatus } from "@/lib/voiceLead";
 import type {
   AdminOrder,
   LeadDay,
@@ -122,6 +123,23 @@ export async function getRecentLeads(limit = 8): Promise<LeadRecord[]> {
   return rows.map(rowToLead);
 }
 
+export async function getLeadInbox({ status = "new", query = "", page = 1 }: {
+  status?: string; query?: string; page?: number;
+} = {}): Promise<{ leads: LeadRecord[]; total: number }> {
+  const db = await getDb();
+  const safeStatus = ["new", "contacted", "closed"].includes(status) ? status : "";
+  const term = query.trim().slice(0, 120);
+  const pattern = `%${term}%`;
+  const where = "WHERE (?='' OR status=?) AND (?='' OR name LIKE ? OR email LIKE ? OR phone LIKE ? OR detail LIKE ?)";
+  const args = [safeStatus, safeStatus, term, pattern, pattern, pattern, pattern];
+  const offset = (Math.max(1, Math.min(2000, Math.floor(page) || 1)) - 1) * 50;
+  const [rows, count] = await Promise.all([
+    db.execute({ sql: `SELECT * FROM leads ${where} ORDER BY created_at DESC LIMIT 50 OFFSET ?`, args: [...args, offset] }),
+    db.execute({ sql: `SELECT COUNT(*) AS count FROM leads ${where}`, args }),
+  ]);
+  return { leads: rows.rows.map(rowToLead), total: Number(count.rows[0]?.count ?? 0) };
+}
+
 const LEAD_STATUSES: LeadStatus[] = ["new", "contacted", "closed"];
 
 export async function updateLeadStatus(
@@ -130,6 +148,7 @@ export async function updateLeadStatus(
 ): Promise<boolean> {
   if (!LEAD_STATUSES.includes(status)) return false;
   const db = await getDb();
+  if (id.startsWith("VOICE-")) return updateVoiceEnquiryStatus(db, id, status);
   const result = await db.execute({
     sql: "UPDATE leads SET status = ? WHERE id = ?",
     args: [status, id],

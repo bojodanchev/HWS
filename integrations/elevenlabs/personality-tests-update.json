@@ -1,0 +1,21 @@
+{
+  "platform_settings": {
+    "testing": {
+      "attached_tests": [
+        {
+          "test_id": "test_9601m30de27ffggrebxpg95nzjtg"
+        },
+        {
+          "test_id": "test_0301m30de2k0ezf87j7ng42vk4bj"
+        },
+        {
+          "test_id": "test_0901m30de2zqfdn90drqc2548evx"
+        },
+        {
+          "test_id": "test_8901m30jj3ajesjtf0czp00cwmpx"
+        }
+      ]
+    }
+  },
+  "version_description": "Attach personality and enquiry regression suite"
+}

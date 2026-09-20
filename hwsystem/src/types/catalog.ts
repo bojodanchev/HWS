@@ -56,6 +56,8 @@ export type Image = {
   alt: string;
   width: number;
   height: number;
+  /** Visible qualification for a family or representative image. */
+  caption?: string;
 };
 
 export type DocumentType =

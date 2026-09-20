@@ -4,6 +4,7 @@ import { ProductMenu } from "@/components/ProductMenu";
 
 const NAV = [
   { href: "/trade", label: "Trade account" },
+  ...((process.env.NODE_ENV === "development" || process.env.VERCEL_ENV === "preview") ? [{ href: "/installation", label: "Installation" }] : []),
   { href: "/doors", label: "Doors" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -30,9 +31,6 @@ export function Header() {
       </div>
       <div className="mx-auto flex h-16 max-w-[1280px] items-center gap-6 px-6">
         <Link href="/" className="flex items-center gap-2" aria-label="HWSystem home">
-          <span className="flex size-8 items-center justify-center rounded-sm bg-ink font-heading text-sm font-semibold text-white">
-            HW
-          </span>
           <span className="font-heading text-lg font-semibold text-ink">HWSystem</span>
         </Link>
         <nav aria-label="Main" className="hidden flex-1 lg:block">

@@ -9,6 +9,8 @@ export const productNavigation = [
   { title: "Motors & controls", links: [
     { label: "Tubular motors", href: "/products/tubular-motors" },
     { label: "Side & axial motors", href: "/products/side-motors" },
+    { label: "Blind & curtain automation", href: "/products/blind-and-curtain-automation" },
+    { label: "Intercoms & access control", href: "/products/access-control" },
     { label: "Control panels & receivers", href: "/products/control-panels" },
     { label: "Remotes & switches", href: "/products/remotes" },
     { label: "Safety devices", href: "/products/safety" },

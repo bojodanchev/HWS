@@ -1,0 +1,23 @@
+{
+  "springs": {
+    "slug": "springs",
+    "sourceUrl": "https://www.flexiforce.com/us/en/products/springs",
+    "imageUrl": "https://gw-assets.assaabloy.com/is/image/assaabloy/product-springs-galv",
+    "localPath": "/images/reference/galvanized-torsion-springs.jpg",
+    "usage": "Category illustration only; not evidence of an exact SBI product identity."
+  },
+  "cables": {
+    "slug": "cables",
+    "sourceUrl": "https://swrtradespares.com/rollmatic-cables-to-suit-2301-2675mm-height-doors.html",
+    "imageUrl": "https://swrtradespares.com/media/catalog/product/h/o/hor2494_1.jpg?width=529&height=463&store=ts_default&image-type=image",
+    "localPath": "/images/reference/garage-door-lifting-cables.jpg",
+    "usage": "Category illustration only; not evidence of an exact SBI product identity."
+  },
+  "locks": {
+    "slug": "locks",
+    "sourceUrl": "https://www.asec.co.uk/asec-0612-asec-oval-bullet-lock.html",
+    "imageUrl": "https://www.asec.co.uk/media/catalog/product/cache/95bafef87d6358d888d2ead7d60692cc/a/s/as1992_1.png",
+    "localPath": "/images/reference/asec-oval-bullet-lock.png",
+    "usage": "Category illustration only; not evidence of an exact SBI product identity."
+  }
+}

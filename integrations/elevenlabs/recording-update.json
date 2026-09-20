@@ -1,0 +1,14 @@
+{
+  "conversation_config": {
+    "agent": {
+      "first_message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. This call is recorded to help handle your enquiry. How can I help?"
+    }
+  },
+  "platform_settings": {
+    "privacy": {
+      "record_voice": true,
+      "retention_days": 7
+    }
+  },
+  "version_description": "Enable owner-delegated call recording with explicit greeting disclosure and seven-day retention"
+}

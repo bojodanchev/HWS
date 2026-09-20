@@ -1,0 +1,64 @@
+{
+  "tool_config": {
+    "type": "webhook",
+    "name": "save_hws_enquiry",
+    "description": "Save a confirmed, consented enquiry into the HWS team inbox. Ask one field at a time, read back the details and get consent first. A retry or correction within this call updates the same enquiry. Say saved only if response.saved is true. This does not book a callback time or make a transfer.",
+    "response_timeout_secs": 20,
+    "api_schema": {
+      "url": "https://hwsystem.co.uk/api/voice/leads",
+      "method": "POST",
+      "request_headers": {
+        "x-hws-voice-key": {
+          "secret_id": "jE1RWCMsUzfDEr9OFJSJ"
+        }
+      },
+      "request_body_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Caller name confirmed in read-back."
+          },
+          "phone": {
+            "type": "string",
+            "description": "Confirmed callback phone; empty string if caller provided email instead."
+          },
+          "email": {
+            "type": "string",
+            "description": "Confirmed callback email; empty string if caller provided phone instead."
+          },
+          "postcode": {
+            "type": "string",
+            "description": "Confirmed postcode if relevant, otherwise empty string."
+          },
+          "summary": {
+            "type": "string",
+            "description": "Concise enquiry, exact product references, quantities and measurements with units. Apply all caller corrections; no invented facts."
+          },
+          "conversationId": {
+            "type": "string",
+            "dynamic_variable": "system__conversation_id"
+          },
+          "confirmed": {
+            "type": "boolean",
+            "description": "True only after the caller has confirmed the read-back of their contact details and enquiry."
+          },
+          "consent": {
+            "type": "boolean",
+            "description": "True only if the caller agreed to their details being saved for the HWS team to handle the enquiry."
+          }
+        },
+        "required": [
+          "name",
+          "phone",
+          "email",
+          "postcode",
+          "summary",
+          "conversationId",
+          "confirmed",
+          "consent"
+        ]
+      }
+    }
+  }
+}

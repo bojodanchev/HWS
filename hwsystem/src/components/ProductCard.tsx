@@ -45,6 +45,7 @@ export function ProductCard({ product }: { product: Product }) {
             </div>
           )}
         </div>
+        {image?.caption && <p className="mt-2 text-xs leading-relaxed text-steel">{image.caption}</p>}
         <p className="mt-4 text-xs font-medium uppercase tracking-[0.08em] text-steel">
           {product.brand}
         </p>

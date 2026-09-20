@@ -1,15 +1,8 @@
 import { NextResponse } from "next/server";
-import { z } from "zod";
+import { contactCaptureSchema } from "@/lib/contactCaptureSchema";
 import { recordLead } from "@/lib/adminOps";
 import { deliverLead } from "@/lib/leads";
 import { consumeRateLimit } from "@/lib/rateLimit";
-
-const schema = z.object({
-  name: z.string().trim().min(2).max(200),
-  phone: z.string().trim().min(7).max(50),
-  email: z.string().trim().email().max(200),
-  company_website: z.string().max(0).optional(),
-});
 
 export async function POST(request: Request) {
   const rateLimit = await consumeRateLimit(request, "contact-capture", 3, 60 * 60);
@@ -27,7 +20,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const parsed = schema.safeParse(body);
+  const parsed = contactCaptureSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: "Invalid contact details" }, { status: 422 });
   if (parsed.data.company_website) return NextResponse.json({ ok: true });
 
@@ -35,6 +28,8 @@ export async function POST(request: Request) {
     name: parsed.data.name,
     phone: parsed.data.phone,
     email: parsed.data.email,
+    purpose: parsed.data.purpose,
+    message: parsed.data.message,
   };
   try {
     await recordLead({
@@ -42,7 +37,7 @@ export async function POST(request: Request) {
     name: fields.name,
     email: fields.email,
     phone: fields.phone,
-    detail: "Contact popup — requested product-selection help",
+    detail: `Contact popup — ${fields.purpose}${fields.message ? `: ${fields.message}` : ""}`,
     });
   } catch {
     console.error("[lead] persistence failed");

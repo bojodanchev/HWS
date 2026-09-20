@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { createClient, type Client } from "@libsql/client";
-import { persistVoiceLead, validVoiceKey, voiceLeadSchema } from "@/lib/voiceLead";
+import { persistVoiceLead, updateVoiceEnquiryStatus, validVoiceKey, voiceLeadSchema } from "@/lib/voiceLead";
 
 let db: Client;
 const enquiry = {
@@ -25,7 +25,7 @@ afterEach(() => db.close());
 describe("confirmed voice enquiry persistence", () => {
   it("upserts retries and corrected contact details without duplicating or reopening handled work", async () => {
     const first = await persistVoiceLead(db, enquiry);
-    await db.execute({sql:"UPDATE leads SET status='contacted' WHERE id=?",args:[first.leadId]});
+    await updateVoiceEnquiryStatus(db, first.leadId, "contacted");
     const second = await persistVoiceLead(db, {...enquiry, email:"corrected@example.invalid"});
     expect(second).toEqual(first);
     const leads = await db.execute("SELECT * FROM leads");
@@ -33,6 +33,9 @@ describe("confirmed voice enquiry persistence", () => {
     expect(leads.rows[0].email).toBe("corrected@example.invalid");
     expect(leads.rows[0].status).toBe("contacted");
     expect((await db.execute("SELECT * FROM tickets")).rows).toHaveLength(1);
+    expect((await db.execute("SELECT status FROM tickets")).rows[0].status).toBe("pending");
+    await updateVoiceEnquiryStatus(db, first.leadId, "closed");
+    expect((await db.execute("SELECT status FROM tickets")).rows[0].status).toBe("resolved");
   });
   it("rolls back the lead when its matching ticket cannot be stored", async () => {
     await db.execute("DROP TABLE tickets");

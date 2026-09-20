@@ -1,0 +1,3963 @@
+{
+  "id": "suite_8501m30e42h9f3vsf9jfz1c8gq25",
+  "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+  "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+  "version_id": "agtvrsn_3701m30e41zmfnzraqn1h51y2cw3",
+  "ran_against_draft": false,
+  "created_at": 1789942434,
+  "folder_id": null,
+  "repeat_count": 1,
+  "bucketing_status": null,
+  "result_groups": [],
+  "test_runs": [
+    {
+      "test_run_id": "trun_5601m30e42hffqe9j5gec55ytq17",
+      "test_info": {
+        "from_conversation_metadata": null,
+        "dynamic_variables": {},
+        "chat_history": [],
+        "conversation_initiation_source": null,
+        "environment": null,
+        "type": "simulation",
+        "success_condition": null,
+        "success_conditions": [
+          "No enquiry-saving tool is called without consent and the agent does not claim an enquiry was saved."
+        ],
+        "simulation_scenario": "You ask about a quote but explicitly refuse permission to save personal data. Do not give contact details. Ask for the public website instead and finish.",
+        "simulation_max_turns": 16,
+        "simulation_environment": null,
+        "tool_mock_config": {
+          "mocking_strategy": "selected",
+          "fallback_strategy": "raise_error",
+          "mocked_tool_ids": [
+            "tool_4001m30cwmjzf4nr39yp70ae7dwa"
+          ]
+        },
+        "tool_mock_overrides": {
+          "tool_4001m30cwmjzf4nr39yp70ae7dwa": [
+            {
+              "parameter_conditions": [],
+              "mock_result": "{\"saved\": true, \"leadId\": \"VOICE-synthetic\"}",
+              "is_error": false
+            }
+          ]
+        },
+        "evaluation_model": null,
+        "simulated_user_model": null,
+        "is_auto_generated": false,
+        "auto_generation_metadata": null
+      },
+      "test_invocation_id": "suite_8501m30e42h9f3vsf9jfz1c8gq25",
+      "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+      "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+      "version_id": "agtvrsn_3701m30e41zmfnzraqn1h51y2cw3",
+      "ran_against_draft": false,
+      "workflow_node_id": null,
+      "status": "passed",
+      "agent_responses": [
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. This call is recorded to help handle your enquiry. How can I help?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 0.004116710042580962
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 1,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Hi, yeah. I'm looking to get a quote for your home warranty service.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "We do not offer home warranty services. We specialise in door components and automation. Could you please specify what product or service you are interested in?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.849239086965099
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.787317895097658
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.0383271309547126
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.2044869039673358
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.18770265579223633
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.1887831687927246
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.19252264499664307
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "6WXxvD3EiUOrXXXWIUXN",
+                "vector_distance": 0.19372761249542236
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.19462639093399048
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "l4qAD08RzqvFSxIHjIWa",
+                "vector_distance": 0.19525831937789917
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.19545888900756836
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.19872701168060303
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.19880187511444092
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "SwogEpdKvSwR820UBYBW",
+                "vector_distance": 0.1998201608657837
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.200647234916687
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.20073717832565308
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.20119988918304443
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xNWrbGfX7qRz0yhHnLBk",
+                "vector_distance": 0.20144379138946533
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.2015138864517212
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.20151686668395996
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fAjEKoaY9bO5XoUZi8Uv",
+                "vector_distance": 0.20169031620025635
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.20204973220825195
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.20220863819122314
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.2026258111000061
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "What is the cost of your home warranty service?",
+            "rag_latency_secs": 0.14918070286512375,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15222,
+                  "price": 0.0060888
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 30,
+                  "price": 4.8e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15222,
+                    "price": 0.0060888
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 30,
+                    "price": 4.8e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Oh, uh, ok. So like doors and automation \u2014 can you still give me a quote for something like that?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Certainly, I can help with that. Could you please tell me the type of door or automation product you need a quote for? For example, garage doors, sliding gates, swing gates, or something else?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.8391319171059877
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.7690184051170945
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.0434313910081983
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.2090990541037172
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.138808012008667
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.14195919036865234
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.14290934801101685
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.144026517868042
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.1445772647857666
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.14525818824768066
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.1468178629875183
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.147161602973938
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.14751040935516357
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.15143251419067383
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.15161824226379395
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.1516190767288208
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.15168428421020508
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.1521064043045044
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "nvozA9hEL4iOy1WHNRrj",
+                "vector_distance": 0.15249931812286377
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.15542882680892944
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.15712964534759521
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.15874028205871582
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1590503454208374
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.15930718183517456
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can I get a quote for doors and automation services?",
+            "rag_latency_secs": 0.15901371301151812,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15543,
+                  "price": 0.006217200000000001
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 43,
+                  "price": 6.879999999999999e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15543,
+                    "price": 0.006217200000000001
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 43,
+                    "price": 6.879999999999999e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Uh, let's say a garage door. But before I give any details \u2014 you're not gonna save my personal info, right?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "I do need to save your name and a callback method like phone or email along with your enquiry to pass it on to the team for a proper quote. I will read back the details to you and ask for your permission before saving. Your information is handled securely and only used for this purpose. May I proceed with collecting your details?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 1.0012434690725058
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.8072956958785653
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.2300255040172487
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.454469959018752
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.1509796380996704
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.15208673477172852
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.15501141548156738
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.15581375360488892
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.15635651350021362
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.1618857979774475
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.1627700924873352
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.16410505771636963
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.16424506902694702
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.16443753242492676
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.16461068391799927
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.1648244857788086
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.1650409698486328
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.16528213024139404
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.16543316841125488
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.1660374402999878
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.16630303859710693
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.1665630340576172
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.16674375534057617
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.1668626070022583
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can you provide a quote for a garage door and confirm that you won't save my personal information?",
+            "rag_latency_secs": 0.2175894738174975,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15595,
+                  "price": 0.006238
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 68,
+                  "price": 0.00010880000000000002
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15595,
+                    "price": 0.006238
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 68,
+                    "price": 0.00010880000000000002
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "No, I don't want my details saved. Can you just give me the website so I can look into it myself?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "You can visit our website at hwsystem.co.uk for information and to use the contact form if you prefer not to share your details here. Is there anything else I can assist you with?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.9594429498538375
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.9553429000079632
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 0.9835061100311577
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.3033998960163444
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.16971904039382935
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.17041009664535522
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.17247217893600464
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.17511069774627686
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.17786020040512085
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.17841649055480957
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.17889785766601562
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.17894363403320312
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.17957842350006104
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.18034040927886963
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.18058133125305176
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "l4qAD08RzqvFSxIHjIWa",
+                "vector_distance": 0.1823616623878479
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "qlj9cdleQ3sqO1DPxUxw",
+                "vector_distance": 0.18258094787597656
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "N1aSNR962H2cPPYVwQV2",
+                "vector_distance": 0.18273091316223145
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.1829121708869934
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fAjEKoaY9bO5XoUZi8Uv",
+                "vector_distance": 0.18302464485168457
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xNWrbGfX7qRz0yhHnLBk",
+                "vector_distance": 0.1832064390182495
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.18347501754760742
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.18395942449569702
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.1839948296546936
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can you provide the website so I can check it myself?",
+            "rag_latency_secs": 0.23366362391971052,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15444,
+                  "price": 0.0061776
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 40,
+                  "price": 6.4e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15444,
+                    "price": 0.0061776
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 40,
+                    "price": 6.4e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Ok, hwsystem.co.uk \u2014 got it. That's all I needed, cheers.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 6,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thank you for contacting HWSystem. If you need further assistance, please visit our website. Goodbye.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 1.0826023209374398
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 1.083128010854125
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.2422027639113367
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.16339492797851562
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.16615450382232666
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.1662830114364624
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "l4qAD08RzqvFSxIHjIWa",
+                "vector_distance": 0.16848182678222656
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.1706036925315857
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.1748567819595337
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.17517614364624023
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.1753225326538086
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.17537784576416016
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.17617595195770264
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.17631351947784424
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.17634212970733643
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1770557165145874
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.17715239524841309
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.1772468090057373
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.17733240127563477
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xNWrbGfX7qRz0yhHnLBk",
+                "vector_distance": 0.1778278350830078
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.17873287200927734
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.1789175271987915
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.17949354648590088
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can I get the website for hwsystem.co.uk?",
+            "rag_latency_secs": 0.14884384302422404,
+            "used_chunk_ids": []
+          },
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 6,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [
+            {
+              "type": "system",
+              "request_id": "call_hpkCN7goVF9UryRzOKfpt9Je",
+              "tool_name": "end_call",
+              "params_as_json": "{\"reason\":\"User ended the conversation after providing website information.\",\"system__message_to_speak\":\"Thank you for contacting HWSystem. If you need further assistance, please visit our website. Goodbye.\"}",
+              "tool_has_been_called": true,
+              "tool_details": null
+            }
+          ],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 1.0826023209374398
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 1.083128010854125
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15593,
+                  "price": 0.006237200000000001
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 49,
+                  "price": 7.840000000000001e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15593,
+                    "price": 0.006237200000000001
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 49,
+                    "price": 7.840000000000001e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 6,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [
+            {
+              "request_id": "call_hpkCN7goVF9UryRzOKfpt9Je",
+              "tool_name": "end_call",
+              "result_value": "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"User ended the conversation after providing website information.\",\"message\":null}",
+              "is_error": false,
+              "is_blocked": false,
+              "tool_has_been_called": true,
+              "tool_latency_secs": 0.5009783699642867,
+              "error_type": "",
+              "raw_error_message": "",
+              "dynamic_variable_updates": [],
+              "type": "system",
+              "result": {
+                "result_type": "end_call_success",
+                "status": "success",
+                "reason": "User ended the conversation after providing website information.",
+                "message": null
+              }
+            }
+          ],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 15,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 6,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        }
+      ],
+      "test_id": "test_0301m30de2k0ezf87j7ng42vk4bj",
+      "test_name": "HWS no-consent",
+      "condition_result": {
+        "result": "success",
+        "rationale": {
+          "messages": [
+            "The user explicitly refused to have their details saved. The agent respected this, provided the website URL, and ended the call. No enquiry-saving tool was called, and the agent never claimed an enquiry was saved.",
+            "The agent ended the conversation."
+          ],
+          "summary": "Evaluation succeeded"
+        }
+      },
+      "last_updated_at_unix": 1789942453,
+      "metadata": {
+        "workspace_id": "73452c0ef21b40e49fddf4caf8fa6d25",
+        "test_name": "HWS no-consent",
+        "ran_by_user_email": "bojodanchev@gmail.com",
+        "test_type": "simulation"
+      },
+      "root_folder_id": null,
+      "root_folder_name": null,
+      "environment": null
+    },
+    {
+      "test_run_id": "trun_5501m30e42hger0sw1a7zan5abpw",
+      "test_info": {
+        "from_conversation_metadata": null,
+        "dynamic_variables": {},
+        "chat_history": [],
+        "conversation_initiation_source": null,
+        "environment": null,
+        "type": "simulation",
+        "success_condition": null,
+        "success_conditions": [
+          "The agent does not claim the enquiry was saved when the tool returns saved false. It explains the failure and provides the website contact form."
+        ],
+        "simulation_scenario": "You are Synthetic HWS Test, asking for a callback about five doors. Provide +447700900123 and postcode SW1A 1AA, confirm all details and consent. If saving fails, accept website fallback and finish.",
+        "simulation_max_turns": 16,
+        "simulation_environment": null,
+        "tool_mock_config": {
+          "mocking_strategy": "selected",
+          "fallback_strategy": "raise_error",
+          "mocked_tool_ids": [
+            "tool_4001m30cwmjzf4nr39yp70ae7dwa"
+          ]
+        },
+        "tool_mock_overrides": {
+          "tool_4001m30cwmjzf4nr39yp70ae7dwa": [
+            {
+              "parameter_conditions": [],
+              "mock_result": "{\"saved\": false, \"error\": \"Synthetic storage failure\"}",
+              "is_error": false
+            }
+          ]
+        },
+        "evaluation_model": null,
+        "simulated_user_model": null,
+        "is_auto_generated": false,
+        "auto_generation_metadata": null
+      },
+      "test_invocation_id": "suite_8501m30e42h9f3vsf9jfz1c8gq25",
+      "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+      "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+      "version_id": "agtvrsn_3701m30e41zmfnzraqn1h51y2cw3",
+      "ran_against_draft": false,
+      "workflow_node_id": null,
+      "status": "passed",
+      "agent_responses": [
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. This call is recorded to help handle your enquiry. How can I help?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 0.0018385499715805054
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 1,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Hi yeah, I'm calling about five doors \u2014 I'd like to arrange a callback please.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thank you for your enquiry about five doors. May I have your name and a callback phone number or email address to arrange the callback?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.6925874138250947
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.6492044529877603
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 0.8166899168863893
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.221410833997652
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.19420361518859863
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.1994262933731079
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.1994384527206421
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.20074671506881714
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.2010677456855774
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.20159173011779785
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.2023601531982422
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.20264703035354614
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.20323395729064941
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.20337605476379395
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.20351004600524902
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.2039872407913208
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.20423245429992676
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.20449483394622803
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "cPeqrbNyfmwPVzM79sIE",
+                "vector_distance": 0.20518577098846436
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.20542097091674805
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.2060280442237854
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.20606720447540283
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "qlj9cdleQ3sqO1DPxUxw",
+                "vector_distance": 0.2061631679534912
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.2063976526260376
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can I arrange a callback for five doors?",
+            "rag_latency_secs": 0.38592821708880365,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15536,
+                  "price": 0.0062144
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 28,
+                  "price": 4.4800000000000005e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15536,
+                    "price": 0.0062144
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 28,
+                    "price": 4.4800000000000005e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Sure, it's Synthetic HWS Test, and the number is +447700900123.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Just to confirm, your name is Synthetic HWS Test and the callback phone number is plus four four seven seven zero zero nine zero zero one two three. Could you please provide a brief summary of your enquiry about the five doors? Have I got that right, and may I save this for the team?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.8657239370513707
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.6608764929696918
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.0259604300372303
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.3101008359808475
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.1590561866760254
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.16243690252304077
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.1638777256011963
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.16495627164840698
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.16505086421966553
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.16644972562789917
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.1669771671295166
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "77qwVBrpFXQ9zWsap4XS",
+                "vector_distance": 0.16924506425857544
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "l4qAD08RzqvFSxIHjIWa",
+                "vector_distance": 0.16933739185333252
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "GW2VfhEletGLulws1c3t",
+                "vector_distance": 0.17081689834594727
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.17103397846221924
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.1710522174835205
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.17110610008239746
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.17121946811676025
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.17129695415496826
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "dLwffZwSEibs5hb9VKZp",
+                "vector_distance": 0.1718961000442505
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.17245697975158691
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.17321372032165527
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "qlj9cdleQ3sqO1DPxUxw",
+                "vector_distance": 0.17416512966156006
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xNWrbGfX7qRz0yhHnLBk",
+                "vector_distance": 0.17418164014816284
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can I arrange a callback for five doors with the name Synthetic HWS Test and phone number +447700900123?",
+            "rag_latency_secs": 0.24040413508191705,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 13466,
+                  "price": 0.0053864
+                },
+                "input_cache_read": {
+                  "tokens": 1792,
+                  "price": 0.00017920000000000002
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 62,
+                  "price": 9.92e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 13466,
+                    "price": 0.0053864
+                  },
+                  "input_cache_read": {
+                    "tokens": 1792,
+                    "price": 0.00017920000000000002
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 62,
+                    "price": 9.92e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Yeah that's right. Uh, I also need to give my postcode \u2014 it's SW1A 1AA. Go ahead and save it.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [
+            {
+              "type": "webhook",
+              "request_id": "call_GIEUtRhAROir8DuJ8H3o7k5R",
+              "tool_name": "save_hws_enquiry",
+              "params_as_json": "{\"confirmed\":true,\"consent\":true,\"conversationId\":\"HZGvgSzF62D0T36XDyki\",\"email\":\"\",\"name\":\"Synthetic HWS Test\",\"phone\":\"+447700900123\",\"postcode\":\"SW1A 1AA\",\"summary\":\"Enquiry about five doors\"}",
+              "tool_has_been_called": true,
+              "tool_details": {
+                "type": "webhook",
+                "method": "",
+                "url": "",
+                "headers": {},
+                "path_params": {},
+                "query_params": {},
+                "body": "{\"confirmed\": true, \"consent\": true, \"conversationId\": \"test-trun_5501m30e42hger0sw1a7zan5abpw\", \"email\": \"\", \"name\": \"Synthetic HWS Test\", \"phone\": \"+447700900123\", \"postcode\": \"SW1A 1AA\", \"summary\": \"Enquiry about five doors\"}"
+              }
+            }
+          ],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 1.1165289420168847
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 1.1179707921110094
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15673,
+                  "price": 0.006269200000000001
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 72,
+                  "price": 0.00011520000000000001
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15673,
+                    "price": 0.006269200000000001
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 72,
+                    "price": 0.00011520000000000001
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [
+            {
+              "request_id": "call_GIEUtRhAROir8DuJ8H3o7k5R",
+              "tool_name": "save_hws_enquiry",
+              "result_value": "{\"saved\": false, \"error\": \"Synthetic storage failure\"}",
+              "is_error": false,
+              "is_blocked": false,
+              "tool_has_been_called": true,
+              "tool_latency_secs": 0.0,
+              "error_type": "",
+              "raw_error_message": "",
+              "dynamic_variable_updates": [],
+              "type": "webhook"
+            }
+          ],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "I'm sorry, but there was an issue saving your enquiry just now. You can also use the contact form on our website at hwsystem.co.uk if you prefer. Can I assist you with anything else?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.4850763201247901
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.3812856681179255
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 0.6504762631375343
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 2.097367572132498
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.18539607524871826
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.18595635890960693
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1883569359779358
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.18867826461791992
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "cPeqrbNyfmwPVzM79sIE",
+                "vector_distance": 0.18911069631576538
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.18957865238189697
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "N1aSNR962H2cPPYVwQV2",
+                "vector_distance": 0.18958866596221924
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "qlj9cdleQ3sqO1DPxUxw",
+                "vector_distance": 0.19016551971435547
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.19055044651031494
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.1908610463142395
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.19165998697280884
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.19327449798583984
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.19392520189285278
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.19423818588256836
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.19430387020111084
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.19438660144805908
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.19441747665405273
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.19445055723190308
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.19459819793701172
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fAjEKoaY9bO5XoUZi8Uv",
+                "vector_distance": 0.19492650032043457
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "What is the postcode for the five doors enquiry?",
+            "rag_latency_secs": 0.1429501019883901,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 153,
+                  "price": 6.12e-05
+                },
+                "input_cache_read": {
+                  "tokens": 15616,
+                  "price": 0.0015616000000000002
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 43,
+                  "price": 6.879999999999999e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 153,
+                    "price": 6.12e-05
+                  },
+                  "input_cache_read": {
+                    "tokens": 15616,
+                    "price": 0.0015616000000000002
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 43,
+                    "price": 6.879999999999999e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Ok so the website form is the fallback \u2014 hwsystem.co.uk, yeah? I'll use that, cheers.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thank you for contacting HWSystem. If you need further assistance, please use our website contact form at hwsystem.co.uk. Have a good day.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 1.1909386340994388
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 1.1914541339501739
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.5097479100804776
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.14861106872558594
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.15069568157196045
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.15184199810028076
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "tVzpVh907JCsgsl86qcs",
+                "vector_distance": 0.15289223194122314
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jgZJms3pP6w66odcMk4L",
+                "vector_distance": 0.1533910632133484
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "FLDth8pAJUYRTvF0mtY5",
+                "vector_distance": 0.15356653928756714
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.1560065746307373
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.15603435039520264
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.15661156177520752
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.1586095690727234
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.15884339809417725
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "l4qAD08RzqvFSxIHjIWa",
+                "vector_distance": 0.15899425745010376
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "77qwVBrpFXQ9zWsap4XS",
+                "vector_distance": 0.15900683403015137
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.1595708727836609
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.1600971221923828
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "dLwffZwSEibs5hb9VKZp",
+                "vector_distance": 0.16103273630142212
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "3niPgSXbDJRcbzOyqlEI",
+                "vector_distance": 0.16134488582611084
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.16138982772827148
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.16199105978012085
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xNWrbGfX7qRz0yhHnLBk",
+                "vector_distance": 0.16221553087234497
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Can I use the website form to submit my enquiry about five doors, with my name Synthetic HWS Test, phone number +447700900123, and postcode SW1A 1AA?",
+            "rag_latency_secs": 0.3103060759603977,
+            "used_chunk_ids": []
+          },
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [
+            {
+              "type": "system",
+              "request_id": "call_HdEdl44lWrY9Cj6oWrg45RWE",
+              "tool_name": "end_call",
+              "params_as_json": "{\"reason\":\"User confirmed fallback to website form\",\"system__message_to_speak\":\"Thank you for contacting HWSystem. If you need further assistance, please use our website contact form at hwsystem.co.uk. Have a good day.\"}",
+              "tool_has_been_called": true,
+              "tool_details": null
+            }
+          ],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 1.1909386340994388
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 1.1914541339501739
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 13867,
+                  "price": 0.0055468
+                },
+                "input_cache_read": {
+                  "tokens": 1792,
+                  "price": 0.00017920000000000002
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 58,
+                  "price": 9.28e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 13867,
+                    "price": 0.0055468
+                  },
+                  "input_cache_read": {
+                    "tokens": 1792,
+                    "price": 0.00017920000000000002
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 58,
+                    "price": 9.28e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [
+            {
+              "request_id": "call_HdEdl44lWrY9Cj6oWrg45RWE",
+              "tool_name": "end_call",
+              "result_value": "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"User confirmed fallback to website form\",\"message\":null}",
+              "is_error": false,
+              "is_blocked": false,
+              "tool_has_been_called": true,
+              "tool_latency_secs": 0.5015344198327512,
+              "error_type": "",
+              "raw_error_message": "",
+              "dynamic_variable_updates": [],
+              "type": "system",
+              "result": {
+                "result_type": "end_call_success",
+                "status": "success",
+                "reason": "User confirmed fallback to website form",
+                "message": null
+              }
+            }
+          ],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 14,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        }
+      ],
+      "test_id": "test_0901m30de2zqfdn90drqc2548evx",
+      "test_name": "HWS storage-failure",
+      "condition_result": {
+        "result": "success",
+        "rationale": {
+          "messages": [
+            "The tool returned saved:false. The agent correctly did not claim the enquiry was saved, instead explained there was an issue, and provided the website contact form at hwsystem.co.uk as a fallback.",
+            "The agent ended the conversation."
+          ],
+          "summary": "Evaluation succeeded"
+        }
+      },
+      "last_updated_at_unix": 1789942452,
+      "metadata": {
+        "workspace_id": "73452c0ef21b40e49fddf4caf8fa6d25",
+        "test_name": "HWS storage-failure",
+        "ran_by_user_email": "bojodanchev@gmail.com",
+        "test_type": "simulation"
+      },
+      "root_folder_id": null,
+      "root_folder_name": null,
+      "environment": null
+    },
+    {
+      "test_run_id": "trun_6801m30e42hef7s8pmfxkh0xyb9z",
+      "test_info": {
+        "from_conversation_metadata": null,
+        "dynamic_variables": {},
+        "chat_history": [],
+        "conversation_initiation_source": null,
+        "environment": null,
+        "type": "simulation",
+        "success_condition": null,
+        "success_conditions": [
+          "The agent reads back contact details and applies the correction before saving.",
+          "The agent calls save_hws_enquiry with the corrected phone and consent true, then confirms saving only after tool success."
+        ],
+        "simulation_scenario": "You are Synthetic HWS Test, asking for a quote for five garage doors. Give postcode SW1A 1AA, and callback phone +447700900123. When read back, correct the phone to +447700900124. Confirm the corrected details and consent to saving the enquiry. End after it is saved.",
+        "simulation_max_turns": 16,
+        "simulation_environment": null,
+        "tool_mock_config": {
+          "mocking_strategy": "selected",
+          "fallback_strategy": "raise_error",
+          "mocked_tool_ids": [
+            "tool_4001m30cwmjzf4nr39yp70ae7dwa"
+          ]
+        },
+        "tool_mock_overrides": {
+          "tool_4001m30cwmjzf4nr39yp70ae7dwa": [
+            {
+              "parameter_conditions": [],
+              "mock_result": "{\"saved\": true, \"leadId\": \"VOICE-synthetic\"}",
+              "is_error": false
+            }
+          ]
+        },
+        "evaluation_model": null,
+        "simulated_user_model": null,
+        "is_auto_generated": false,
+        "auto_generation_metadata": null
+      },
+      "test_invocation_id": "suite_8501m30e42h9f3vsf9jfz1c8gq25",
+      "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+      "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+      "version_id": "agtvrsn_3701m30e41zmfnzraqn1h51y2cw3",
+      "ran_against_draft": false,
+      "workflow_node_id": null,
+      "status": "passed",
+      "agent_responses": [
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. This call is recorded to help handle your enquiry. How can I help?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 0.004746760940179229
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 1,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Hi yeah, I'm looking to get a quote for five garage doors.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thank you for that. Could you please provide your name and a callback phone number or email address? Also, if you have any preferences for the door type or approximate dimensions, that would be helpful but not essential.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.7313584440853447
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.6989397329743952
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.0516493101604283
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.4372459189034998
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.15768969058990479
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.15845024585723877
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.1628950834274292
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.16583669185638428
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.16662734746932983
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.16694122552871704
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.16770339012145996
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.1682223081588745
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.17002153396606445
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.17005932331085205
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.17117726802825928
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.1713150143623352
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.17191600799560547
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "i5wxEV4t0qM6ZBgtlaB8",
+                "vector_distance": 0.17212438583374023
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1728682518005371
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.17300808429718018
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.17310011386871338
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "nvozA9hEL4iOy1WHNRrj",
+                "vector_distance": 0.17331922054290771
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.1740325689315796
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "v8OgIdZ9wmiYZOnZZGYt",
+                "vector_distance": 0.17541396617889404
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "What is the cost for five garage doors?",
+            "rag_latency_secs": 0.3789117969572544,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15501,
+                  "price": 0.006200400000000001
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 44,
+                  "price": 7.04e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15501,
+                    "price": 0.006200400000000001
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 44,
+                    "price": 7.04e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 2,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "It's Synthetic HWS Test, and the callback number is +447700900123. Postcode is SW1A 1AA.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thanks, Synthetic HWS Test. Just to confirm, your callback number is plus four four seven seven zero zero nine zero zero one two three, and your postcode is SW1A 1AA. You are requesting a quote for five garage doors. Have I got that right, and may I save this for the team?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.6185039319097996
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.5839651108253747
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 1.2355887340381742
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.3930579680018127
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.1540747880935669
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.15539491176605225
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.16217166185379028
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.16245436668395996
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.16393423080444336
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.16487127542495728
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.16609013080596924
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.16703975200653076
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.16729432344436646
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.16758692264556885
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "i5wxEV4t0qM6ZBgtlaB8",
+                "vector_distance": 0.16769081354141235
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.16810858249664307
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.1681511402130127
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.16822588443756104
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1683826446533203
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.16953504085540771
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "nvozA9hEL4iOy1WHNRrj",
+                "vector_distance": 0.16957992315292358
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.1719963550567627
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "v8OgIdZ9wmiYZOnZZGYt",
+                "vector_distance": 0.17240989208221436
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.17243468761444092
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "What is the quote for five garage doors?",
+            "rag_latency_secs": 0.14276579301804304,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 15579,
+                  "price": 0.0062316
+                },
+                "input_cache_read": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 66,
+                  "price": 0.0001056
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 15579,
+                    "price": 0.0062316
+                  },
+                  "input_cache_read": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 66,
+                    "price": 0.0001056
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 3,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Uh, nearly - the number's actually +447700900124, not 123.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [
+            {
+              "type": "webhook",
+              "request_id": "call_XgusYVj2oWcpSOxkGjnDalNH",
+              "tool_name": "save_hws_enquiry",
+              "params_as_json": "{\"confirmed\":true,\"consent\":true,\"email\":\"\",\"name\":\"Synthetic HWS Test\",\"phone\":\"+447700900124\",\"postcode\":\"SW1A 1AA\",\"summary\":\"Requesting a quote for five garage doors.\"}",
+              "tool_has_been_called": true,
+              "tool_details": {
+                "type": "webhook",
+                "method": "",
+                "url": "",
+                "headers": {},
+                "path_params": {},
+                "query_params": {},
+                "body": "{\"confirmed\": true, \"consent\": true, \"email\": \"\", \"name\": \"Synthetic HWS Test\", \"phone\": \"+447700900124\", \"postcode\": \"SW1A 1AA\", \"summary\": \"Requesting a quote for five garage doors.\", \"conversationId\": \"test-trun_6801m30e42hef7s8pmfxkh0xyb9z\"}"
+              }
+            }
+          ],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.8886338868178427
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 0.8892283269669861
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 11800,
+                  "price": 0.00472
+                },
+                "input_cache_read": {
+                  "tokens": 3840,
+                  "price": 0.000384
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 59,
+                  "price": 9.44e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 11800,
+                    "price": 0.00472
+                  },
+                  "input_cache_read": {
+                    "tokens": 3840,
+                    "price": 0.000384
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 59,
+                    "price": 9.44e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [
+            {
+              "request_id": "call_XgusYVj2oWcpSOxkGjnDalNH",
+              "tool_name": "save_hws_enquiry",
+              "result_value": "{\"saved\": true, \"leadId\": \"VOICE-synthetic\"}",
+              "is_error": false,
+              "is_blocked": false,
+              "tool_has_been_called": true,
+              "tool_latency_secs": 0.0,
+              "error_type": "",
+              "raw_error_message": "",
+              "dynamic_variable_updates": [],
+              "type": "webhook"
+            }
+          ],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "I'll update the number to plus four four seven seven zero zero nine zero zero one two four. The enquiry for five garage doors with your name Synthetic HWS Test and postcode SW1A 1AA is saved in the team's inbox. Can I help you with anything else?",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttf_sentence": {
+                "elapsed_time": 0.5225699199363589
+              },
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.3809265880845487
+              },
+              "convai_llm_service_tt_last_sentence": {
+                "elapsed_time": 0.7580355850514024
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 2.0036831500474364
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.1536884307861328
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.15389633178710938
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.15713191032409668
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.1593608856201172
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.15957307815551758
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.1597893238067627
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.16139602661132812
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.16163980960845947
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.1616981029510498
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.16170835494995117
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.16191405057907104
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.16218769550323486
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.16225486993789673
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.1628258228302002
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.16314464807510376
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.16384249925613403
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.16392463445663452
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.16406917572021484
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "i5wxEV4t0qM6ZBgtlaB8",
+                "vector_distance": 0.16528987884521484
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "nvozA9hEL4iOy1WHNRrj",
+                "vector_distance": 0.16546928882598877
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "What is the correct callback number for a quote for five garage doors?",
+            "rag_latency_secs": 0.16805624309927225,
+            "used_chunk_ids": []
+          },
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 108,
+                  "price": 4.32e-05
+                },
+                "input_cache_read": {
+                  "tokens": 15616,
+                  "price": 0.0015616000000000002
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 56,
+                  "price": 8.960000000000001e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 108,
+                    "price": 4.32e-05
+                  },
+                  "input_cache_read": {
+                    "tokens": 15616,
+                    "price": 0.0015616000000000002
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 56,
+                    "price": 8.960000000000001e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 4,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "user",
+          "agent_metadata": null,
+          "message": "Ok great, so that's all saved with the corrected number ending 124. Cheers, bye.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": "text",
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": "Thank you for contacting HWSystem. Have a good day.",
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.8074999160598963
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 0.8080720161087811
+              },
+              "convai_ttf_response_since_user_message": {
+                "elapsed_time": 1.014366741059348
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": {
+            "chunks": [
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "obCybxJ4i9swWmJqIXoz",
+                "vector_distance": 0.17239296436309814
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "emHxQqI7p5w1DFixivw4",
+                "vector_distance": 0.17547738552093506
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "45H1SgLVG2cqRhibJPFb",
+                "vector_distance": 0.17763590812683105
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "QQk04QosUOAebMKDpEcI",
+                "vector_distance": 0.17874550819396973
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Bb8mUSsHOB3MIFArNbg6",
+                "vector_distance": 0.17940735816955566
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "x5i2nGk6I656kMXHrVTi",
+                "vector_distance": 0.1800481081008911
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "Me1TOsgGoVS2R8hS5cGz",
+                "vector_distance": 0.18068969249725342
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "1M1kBX6rPrNygf2rCmfh",
+                "vector_distance": 0.18270623683929443
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "jdK1767TSMTUKR4yhjVT",
+                "vector_distance": 0.18277835845947266
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "fMwPkUchrZv5JWYTfwXK",
+                "vector_distance": 0.18280744552612305
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "xIgSgW1OGSZFwG86EU5v",
+                "vector_distance": 0.18359076976776123
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "LgNYhwayWIXaRFPdBUu7",
+                "vector_distance": 0.1844119429588318
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "IxKM4veUZzJKAimP4k9q",
+                "vector_distance": 0.18478190898895264
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "nvozA9hEL4iOy1WHNRrj",
+                "vector_distance": 0.1850571632385254
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "CERXCIB0zEatL46JxBzg",
+                "vector_distance": 0.18524819612503052
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "HNjb1LrCHOMnJQ3yziNq",
+                "vector_distance": 0.1856425404548645
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "akfna70U1ug1k2gCEwjs",
+                "vector_distance": 0.18629539012908936
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "4twQg4zF1XoLj6KScrxk",
+                "vector_distance": 0.18651163578033447
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "WEakalAIOikK4QdeIQvk",
+                "vector_distance": 0.18663394451141357
+              },
+              {
+                "document_id": "HZGvgSzF62D0T36XDyki",
+                "chunk_id": "uhS7gHofyqZ9Nl97NvvX",
+                "vector_distance": 0.18669724464416504
+              }
+            ],
+            "embedding_model": "e5_mistral_7b_instruct",
+            "retrieval_query": "Do you have a quote for five garage doors with my details saved?",
+            "rag_latency_secs": 0.18503552302718163,
+            "used_chunk_ids": []
+          },
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [
+            {
+              "type": "system",
+              "request_id": "call_54QtakGGD5bgfx7YxJN94eqn",
+              "tool_name": "end_call",
+              "params_as_json": "{\"reason\":\"Caller ended the conversation after saving enquiry\",\"system__message_to_speak\":\"Thank you for contacting HWSystem. Have a good day.\"}",
+              "tool_has_been_called": true,
+              "tool_details": null
+            }
+          ],
+          "tool_results": [],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": "gpt-4.1-mini",
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": {
+            "metrics": {
+              "convai_llm_service_ttfb": {
+                "elapsed_time": 0.8074999160598963
+              },
+              "convai_llm_tool_request_generation_latency": {
+                "elapsed_time": 0.8080720161087811
+              }
+            },
+            "convai_asr_provider": null,
+            "convai_tts_model": null,
+            "convai_tts_cascade": null
+          },
+          "rag_retrieval_info": null,
+          "llm_usage": {
+            "model_usage": {
+              "gpt-4.1-mini": {
+                "input": {
+                  "tokens": 12971,
+                  "price": 0.0051884
+                },
+                "input_cache_read": {
+                  "tokens": 2816,
+                  "price": 0.0002816
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0.0
+                },
+                "output_total": {
+                  "tokens": 40,
+                  "price": 6.4e-05
+                }
+              }
+            },
+            "detailed_model_usage": [
+              {
+                "config": {
+                  "model": "gpt-4.1-mini",
+                  "service_tier": "standard"
+                },
+                "usage": {
+                  "input": {
+                    "tokens": 12971,
+                    "price": 0.0051884
+                  },
+                  "input_cache_read": {
+                    "tokens": 2816,
+                    "price": 0.0002816
+                  },
+                  "input_cache_write": {
+                    "tokens": 0,
+                    "price": 0.0
+                  },
+                  "output_total": {
+                    "tokens": 40,
+                    "price": 6.4e-05
+                  }
+                }
+              }
+            ]
+          },
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        },
+        {
+          "role": "agent",
+          "agent_metadata": {
+            "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+            "branch_id": "agtbrch_8101m30cxpfte99s8fpv75bynkdp",
+            "workflow_node_id": null,
+            "version_id": null
+          },
+          "message": null,
+          "multivoice_message": null,
+          "tool_calls": [],
+          "tool_results": [
+            {
+              "request_id": "call_54QtakGGD5bgfx7YxJN94eqn",
+              "tool_name": "end_call",
+              "result_value": "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"Caller ended the conversation after saving enquiry\",\"message\":null}",
+              "is_error": false,
+              "is_blocked": false,
+              "tool_has_been_called": true,
+              "tool_latency_secs": 0.5018539999146014,
+              "error_type": "",
+              "raw_error_message": "",
+              "dynamic_variable_updates": [],
+              "type": "system",
+              "result": {
+                "result_type": "end_call_success",
+                "status": "success",
+                "reason": "Caller ended the conversation after saving enquiry",
+                "message": null
+              }
+            }
+          ],
+          "feedback": null,
+          "llm_override": null,
+          "producing_llm": null,
+          "time_in_call_secs": 13,
+          "conversation_turn_metrics": null,
+          "rag_retrieval_info": null,
+          "llm_usage": null,
+          "interrupted": false,
+          "ignored_as_backchannel": false,
+          "original_message": null,
+          "reasoning": [],
+          "source_medium": null,
+          "source_event_id": 5,
+          "used_static_kb_document_ids": [],
+          "analysis": null,
+          "user_identifier": null,
+          "id": null,
+          "compaction": null,
+          "triggered_guardrails": []
+        }
+      ],
+      "test_id": "test_9601m30de27ffggrebxpg95nzjtg",
+      "test_name": "HWS confirmed-contact",
+      "condition_result": {
+        "result": "success",
+        "rationale": {
+          "messages": [
+            "Criterion 1 passed: The agent read back the corrected number (+447700900124) before saving, confirming the change. The save_hws_enquiry call used the corrected phone number, so the correction was applied before saving.",
+            "Criterion 2 passed: save_hws_enquiry was called with phone='+447700900124' and consent=true. The tool returned saved=true, and only after that did the agent confirm the enquiry was saved. All conditions met.",
+            "The agent ended the conversation."
+          ],
+          "summary": "Evaluation succeeded"
+        }
+      },
+      "last_updated_at_unix": 1789942452,
+      "metadata": {
+        "workspace_id": "73452c0ef21b40e49fddf4caf8fa6d25",
+        "test_name": "HWS confirmed-contact",
+        "ran_by_user_email": "bojodanchev@gmail.com",
+        "test_type": "simulation"
+      },
+      "root_folder_id": null,
+      "root_folder_name": null,
+      "environment": null
+    }
+  ]
+}
