@@ -36,14 +36,19 @@ export async function POST(request: Request) {
     phone: parsed.data.phone,
     email: parsed.data.email,
   };
-  await deliverLead({ kind: "quote", fields: { source: "contact-popup", ...fields } });
-  await recordLead({
+  try {
+    await recordLead({
     kind: "quote",
     name: fields.name,
     email: fields.email,
     phone: fields.phone,
     detail: "Contact popup — requested product-selection help",
-  }).catch((error) => console.error("[lead] contact popup persistence failed", error));
+    });
+  } catch {
+    console.error("[lead] persistence failed");
+    return NextResponse.json({ error: "Unable to save your request. Please try again." }, { status: 503 });
+  }
+  await deliverLead({ kind: "quote", fields: { source: "contact-popup", ...fields } });
 
   return NextResponse.json({ ok: true });
 }

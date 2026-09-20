@@ -30,16 +30,21 @@ export async function POST(request: Request) {
   }
 
   const { company_website: _hp, ...fields } = parsed.data;
-  await deliverLead({ kind: "trade-application", fields });
 
-  // Persist for the admin panel; delivery above must not depend on the DB.
-  await recordLead({
+  // Persist before acknowledging; notification delivery cannot substitute for storage.
+  try {
+    await recordLead({
     kind: "trade_application",
     name: fields.companyName,
     email: fields.email,
     phone: fields.phone,
     detail: `Contact ${fields.contactName} — monthly volume ${fields.monthlyVolume}`,
-  }).catch((err) => console.error("[lead] db persist failed", err));
+    });
+  } catch {
+    console.error("[lead] persistence failed");
+    return NextResponse.json({ error: "Unable to save your request. Please try again." }, { status: 503 });
+  }
+  await deliverLead({ kind: "trade-application", fields });
 
   return NextResponse.json({ ok: true });
 }

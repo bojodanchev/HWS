@@ -17,21 +17,22 @@ export async function deliverLead(lead: Lead): Promise<void> {
     .join("\n");
   const text = `New ${lead.kind === "quote" ? "quote request" : "trade application"} — hwsystem\n${lines}`;
 
-  console.log(`[lead] ${JSON.stringify(lead)}`);
+  console.info(`[lead] notification requested: ${lead.kind}`);
 
   const slackUrl = process.env.SLACK_WEBHOOK_URL;
   if (slackUrl) {
-    await fetch(slackUrl, {
+    const response = await fetch(slackUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
-    }).catch((err) => console.error("[lead] slack delivery failed", err));
+    }).catch(() => undefined);
+    if (!response?.ok) console.error("[lead] slack delivery failed");
   }
 
   const resendKey = process.env.RESEND_API_KEY;
   const leadInbox = process.env.LEAD_INBOX_EMAIL;
   if (resendKey && leadInbox) {
-    await fetch("https://api.resend.com/emails", {
+    const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,6 +44,7 @@ export async function deliverLead(lead: Lead): Promise<void> {
         subject: text.split("\n")[0],
         text,
       }),
-    }).catch((err) => console.error("[lead] email delivery failed", err));
+    }).catch(() => undefined);
+    if (!response?.ok) console.error("[lead] email delivery failed");
   }
 }
