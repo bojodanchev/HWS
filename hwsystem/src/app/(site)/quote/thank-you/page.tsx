@@ -14,10 +14,9 @@ export default function QuoteThankYouPage() {
         <CheckCircle2 aria-hidden className="mx-auto size-12 text-success" strokeWidth={1.5} />
         <h1 className="mt-5 text-h1 text-ink">Quote request received</h1>
         <p className="mt-4 text-steel">
-          We&apos;ll come back to you within the hour on working days. If it&apos;s
-          urgent, call{" "}
-          <a href="tel:+443301234567" className="font-medium text-ink underline underline-offset-4">
-            +44 (0)330 123 4567
+          The team will review your request. For a question about your enquiry, call{" "}
+          <a href="tel:+442045774094" className="font-medium text-ink underline underline-offset-4">
+            +44 (0)20 4577 4094
           </a>
           .
         </p>

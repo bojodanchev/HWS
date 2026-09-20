@@ -8,7 +8,8 @@
 
 import "server-only";
 
-import type { Category, Price, Product, TradeTier } from "@/types/catalog";
+import type { Category, Product } from "@/types/catalog";
+export { priceForViewer } from "@/lib/publicPrice";
 
 const WOO_URL = process.env.WOO_URL;
 const WOO_CONSUMER_KEY = process.env.WOO_CONSUMER_KEY;
@@ -57,14 +58,6 @@ async function wooFetch<T>(
  * Strip trade pricing unless the caller has an authenticated trade tier.
  * Call this on EVERY product before it crosses to a component.
  */
-export function priceForViewer(price: Price, tier?: TradeTier): Price {
-  if (tier && price.tradeTiers) {
-    return price;
-  }
-  const { tradeTiers: _hidden, ...publicPrice } = price;
-  return publicPrice;
-}
-
 export type ProductQuery = {
   category?: string;
   search?: string;

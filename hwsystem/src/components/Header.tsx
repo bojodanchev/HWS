@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Search, UserRound } from "lucide-react";
+import { ProductMenu } from "@/components/ProductMenu";
 
 const NAV = [
-  { href: "/products", label: "Products" },
   { href: "/trade", label: "Trade account" },
   { href: "/doors", label: "Doors" },
   { href: "/about", label: "About" },
@@ -15,13 +15,13 @@ export function Header() {
       <div className="border-b border-line bg-concrete">
         <div className="mx-auto flex h-9 max-w-[1280px] items-center justify-between gap-4 px-6 text-[13px] text-steel">
           <p className="flex items-center gap-4">
-            <a href="tel:+443301234567" className="hover:text-ink">
-              +44 (0)330 123 4567
+            <a href="tel:+442045774094" className="hover:text-ink">
+              +44 (0)20 4577 4094
             </a>
             <span aria-hidden className="hidden text-line sm:inline">
               |
             </span>
-            <span className="hidden sm:inline">Order by 2pm for next-day delivery</span>
+            <span className="hidden sm:inline">Product advice & trade enquiries</span>
           </p>
           <Link href="/trade" className="font-medium text-signal hover:text-signal-hover">
             Open trade account
@@ -37,6 +37,7 @@ export function Header() {
         </Link>
         <nav aria-label="Main" className="hidden flex-1 lg:block">
           <ul className="flex items-center justify-center gap-7">
+            <li><ProductMenu /></li>
             {NAV.map((item) => (
               <li key={item.href}>
                 <Link
@@ -91,6 +92,7 @@ export function Header() {
       </div>
       <nav aria-label="Main mobile" className="border-t border-line lg:hidden">
         <ul className="mx-auto flex max-w-[1280px] items-center gap-5 overflow-x-auto px-6 py-2.5">
+          <li className="shrink-0"><ProductMenu /></li>
           {NAV.map((item) => (
             <li key={item.href} className="shrink-0">
               <Link

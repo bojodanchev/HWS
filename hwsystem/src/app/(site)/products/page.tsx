@@ -7,7 +7,7 @@ import { getCategories, getProducts } from "@/lib/catalog";
 export const metadata: Metadata = {
   title: "Product catalogue",
   description:
-    "Garage door motors, control panels, remotes, safety devices, springs, cables and locks. Trade pricing and next-day delivery across the UK.",
+    "Garage door motors, control panels, remotes, safety devices, springs, cables and locks. Product specifications and UK trade quotations.",
 };
 
 export default function ProductsPage() {
@@ -32,8 +32,7 @@ export default function ProductsPage() {
       <h1 className="mt-4 text-h1 text-ink">Product catalogue</h1>
       <p className="mt-3 max-w-2xl text-steel">
         Search by SKU in the header if you know exactly what you need — or
-        browse by category below. Every product lists full specs, availability
-        and compliance documents.
+        browse by category below. Confirm availability, compatibility and any required documents with your quote.
       </p>
       <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {visibleCategories.map((cat) => {
@@ -46,13 +45,13 @@ export default function ProductsPage() {
                 className="group flex h-full flex-col rounded-md border border-line bg-white transition-colors duration-150 hover:border-ink"
               >
                 <div className="relative aspect-4/3 overflow-hidden rounded-t-md bg-concrete">
-                  <Image
+                  {cat.image ? <Image
                     src={cat.image}
                     alt={cat.name}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                  />
+                    className="object-contain p-6"
+                  /> : <div className="flex h-full items-center justify-center p-6 text-center font-heading text-h2 text-steel">{cat.name}</div>}
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <h2 className="text-h3 text-ink">{cat.name}</h2>

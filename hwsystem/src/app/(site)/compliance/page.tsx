@@ -5,29 +5,29 @@ import { FileCheck, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "Compliance — EN 13241, EN 12453, UKCA",
   description:
-    "Every HWSystem product ships with its compliance pack: Declaration of Performance, UKCA marking and technical documentation for EN 13241 and EN 12453.",
+    "Request model-specific declarations, installation manuals and technical documentation for your project.",
 };
 
 const STANDARDS = [
   {
     code: "EN 13241",
     title: "Product standard for doors and gates",
-    text: "The harmonised standard every powered door on the UK market must meet. SBI doors are tested and declared against it — the DoP ships with the door and lives on the product page.",
+    text: "Ask for the declaration and supporting documentation for the exact door or gate model being specified.",
   },
   {
     code: "EN 12453",
     title: "Safety in use of power-operated doors",
-    text: "Defines the safeguarding a powered door needs: force limits, photocells, safety edges. Our catalogue is organised so the compliant combination is the easy one to buy.",
+    text: "The complete installation and its safety devices need a project-specific review. A catalogue recommendation does not certify an installation.",
   },
   {
     code: "EN 12978",
     title: "Safety devices for power-operated doors",
-    text: "Covers the pressure-sensitive edges and monitoring circuits themselves. Our safety edges are 8.2 kΩ monitored types that panels check on every cycle.",
+    text: "Confirm the safety device, control unit and monitoring requirements against the manufacturer documentation.",
   },
   {
     code: "UKCA",
     title: "UK conformity marking",
-    text: "Post-Brexit conformity marking for Great Britain. Products carry UKCA (and CE where relevant) with documentation naming SBI Group as manufacturer — one accountable party, not an import chain.",
+    text: "Request the conformity documentation applicable to the selected product and destination. Manufacturer and marking details vary by product.",
   },
 ];
 
@@ -35,12 +35,9 @@ export default function CompliancePage() {
   return (
     <main className="mx-auto w-full max-w-[1280px] px-6 py-12 lg:py-16">
       <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">Compliance</p>
-      <h1 className="mt-3 text-h1 text-ink">Paperwork that&apos;s already done</h1>
+      <h1 className="mt-3 text-h1 text-ink">Product documentation</h1>
       <p className="mt-4 max-w-2xl text-steel">
-        For architects, specifiers and building control, the documents are the
-        product. As the manufacturer, we issue them ourselves — every product
-        page links its Declaration of Performance, certificates and technical
-        files.
+        Check the documents for the exact product and installation. Where a document is not listed, send us the SKU and the information you need.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -71,7 +68,7 @@ export default function CompliancePage() {
               <a href="mailto:sales@hwsystem.co.uk" className="font-medium text-ink underline underline-offset-4">
                 sales@hwsystem.co.uk
               </a>{" "}
-              with the SKU and we&apos;ll send it same-day — or{" "}
+              with the SKU, or{" "}
               <Link href="/quote" className="font-medium text-ink underline underline-offset-4">
                 raise it with a quote request
               </Link>

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | HWSystem",
   },
   description:
-    "UK trade and retail supplier of garage door automation, motors, and components. Trade accounts with exclusive pricing and next-day delivery.",
+    "UK trade and retail supplier of garage door automation, motors, and components. Product specifications, trade applications and quotations.",
   openGraph: {
     siteName: "HWSystem",
     type: "website",

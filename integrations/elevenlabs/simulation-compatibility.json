@@ -1,0 +1,343 @@
+{
+  "simulated_conversation": [
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. How can I help with your door or automation enquiry?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 0,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Hi, I want to know if any random Somfy remote will operate a BFT sliding gate,  and also, does the kit definitely include a safety edge?  Just a yes or no for each,  please.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 1,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "No, a random Somfy remote will not operate a BFT sliding gate.  No, the kit does not definitely include a safety edge.  Would you like details on compatible remotes or kit contents?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.7585449249017984
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.6623865868896246
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 0.8854513929691166
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": null,
+        "convai_tts_cascade": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 2,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Yes or no is perfect,  thanks.  So, no on both counts.  That clears it up.",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 3,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": null,
+      "multivoice_message": null,
+      "tool_calls": [
+        {
+          "type": "system",
+          "request_id": "call_MNsTdqZWi0UBe9mrozRLoT4c",
+          "tool_name": "end_call",
+          "params_as_json": "{\"reason\":\"User confirmed their enquiry is fully addressed and is satisfied with the answers.\",\"system__message_to_speak\":\"No, a random Somfy remote will not operate a BFT sliding gate, and the kit does not definitely include a safety edge. If you need further assistance in the future, please do not hesitate to contact us. Goodbye.\"}",
+          "tool_has_been_called": false,
+          "tool_details": null
+        }
+      ],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 4,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": null,
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [
+        {
+          "request_id": "call_MNsTdqZWi0UBe9mrozRLoT4c",
+          "tool_name": "end_call",
+          "result_value": "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"User confirmed their enquiry is fully addressed and is satisfied with the answers.\",\"message\":null}",
+          "is_error": false,
+          "is_blocked": false,
+          "tool_has_been_called": true,
+          "tool_latency_secs": 0.5013074509333819,
+          "error_type": "",
+          "raw_error_message": "",
+          "dynamic_variable_updates": [],
+          "type": "system",
+          "result": {
+            "result_type": "end_call_success",
+            "status": "success",
+            "reason": "User confirmed their enquiry is fully addressed and is satisfied with the answers.",
+            "message": null
+          }
+        }
+      ],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 5,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    }
+  ],
+  "analysis": {
+    "evaluation_criteria_results": {},
+    "data_collection_results": {
+      "enquiry_summary": {
+        "data_collection_id": "enquiry_summary",
+        "name": null,
+        "value": "The user enquired if a random Somfy remote would operate a BFT sliding gate and if a kit definitely included a safety edge. The agent confirmed \"no\" to both questions, and the user was satisfied with the answers, leading to the call being ended.",
+        "json_schema": {
+          "type": "string",
+          "description": "Concise enquiry and confirmed next step. Explicitly identify any action that could not be completed.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user's initial query and the agent's direct responses, followed by the user's confirmation of satisfaction and the call ending, provide the complete summary."
+      },
+      "callback_contact": {
+        "data_collection_id": "callback_contact",
+        "name": null,
+        "value": null,
+        "json_schema": {
+          "type": "string",
+          "description": "Only the callback phone or email explicitly provided and confirmed by caller, applying all corrections. Empty if not provided.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user did not provide any callback phone or email contact information during the conversation."
+      }
+    },
+    "evaluation_criteria_results_list": [],
+    "data_collection_results_list": [
+      {
+        "data_collection_id": "enquiry_summary",
+        "name": null,
+        "value": "The user enquired if a random Somfy remote would operate a BFT sliding gate and if a kit definitely included a safety edge. The agent confirmed \"no\" to both questions, and the user was satisfied with the answers, leading to the call being ended.",
+        "json_schema": {
+          "type": "string",
+          "description": "Concise enquiry and confirmed next step. Explicitly identify any action that could not be completed.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user's initial query and the agent's direct responses, followed by the user's confirmation of satisfaction and the call ending, provide the complete summary."
+      },
+      {
+        "data_collection_id": "callback_contact",
+        "name": null,
+        "value": null,
+        "json_schema": {
+          "type": "string",
+          "description": "Only the callback phone or email explicitly provided and confirmed by caller, applying all corrections. Empty if not provided.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user did not provide any callback phone or email contact information during the conversation."
+      }
+    ],
+    "call_successful": "success",
+    "call_success_score": null,
+    "transcript_summary": "The user inquired if a random Somfy remote would operate a BFT sliding gate and if a kit definitely includes a safety edge, requesting yes/no answers. The agent responded \"No\" to both questions. The user confirmed satisfaction with these direct answers, leading to the conclusion of the conversation.",
+    "call_summary_title": "Gate Remote Safety Edge",
+    "scoped": [],
+    "sentiment_analysis": null
+  },
+  "guardrails_result": null
+}

@@ -1,0 +1,4795 @@
+{
+  "checkedAt": "2026-09-20T21:14:15.915Z",
+  "products": 1637,
+  "duplicateSkus": [],
+  "missingPriceCount": 1273,
+  "missingImageCount": 289,
+  "productsWithImages": 1348,
+  "categoryCorrections": 556,
+  "productsWithListedRecommendations": 293,
+  "missingImages": [
+    {
+      "sku": "SOM-LT50-5012",
+      "name": "Somfy LT50 CSI 50/12 tubular motor",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "SBI-TM45-30",
+      "name": "SBI TM45 30 Nm tubular motor",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-TM45-50",
+      "name": "SBI TM45 50 Nm tubular motor",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-TM59-100",
+      "name": "SBI TM59 100 Nm tubular motor",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-AX140",
+      "name": "SBI AX140 axial side motor",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-CP1-433",
+      "name": "SBI CP1 single-phase control panel",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-RM4-433",
+      "name": "SBI 4-channel rolling-code remote",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-PHOTO-KIT",
+      "name": "SBI photocell pair, surface mount",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-EDGE-25",
+      "name": "SBI resistive safety edge, 2.5 m",
+      "brand": "SBI"
+    },
+    {
+      "sku": "SBI-TSPRING-152",
+      "name": "Torsion spring, 152 mm × 6.3 mm wire",
+      "brand": "Generic"
+    },
+    {
+      "sku": "SBI-CABLE-3-6",
+      "name": "Lifting cable pair, 3 mm × 6 m",
+      "brand": "Generic"
+    },
+    {
+      "sku": "SBI-LOCK-BULLET",
+      "name": "Roller door bullet lock kit",
+      "brand": "Generic"
+    },
+    {
+      "sku": "SBI-SBRAKE-1",
+      "name": "Safety brake, 102 mm tube",
+      "brand": "SBI"
+    },
+    {
+      "sku": "2614857",
+      "name": "PHOBOS BT B25 SMART KIT INT swing gate automation kit",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2614861",
+      "name": "PHOBOS BT B40 SMART KIT INT swing gate automation kit",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2612607",
+      "name": "BOOM ES30 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2612609",
+      "name": "BOOM ES50 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2612610",
+      "name": "BOOM ES60 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2601376",
+      "name": "BOOM PS30 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2601378",
+      "name": "BOOM PS50 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2601277",
+      "name": "BOOM PS60 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2613384",
+      "name": "PCA ES N3 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2613386",
+      "name": "PCA ES N5 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2617951",
+      "name": "PCA ES N6 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2605247",
+      "name": "OMEGA PS barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2605241",
+      "name": "LIGHT PS/ES 30-IP67 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2605243",
+      "name": "LIGHT PS/ES 50-IP67 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "2605244",
+      "name": "LIGHT PS/ES 60-IP67 barrier arm",
+      "brand": "BFT"
+    },
+    {
+      "sku": "SPIDER1200BLW",
+      "name": "Nice Spider 1200BLW garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPIDER800W",
+      "name": "Nice Spider 800W garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPIDO600",
+      "name": "Nice Spido 600 garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPIDO1000",
+      "name": "Nice Spido 1000 garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPY650HSBDKCE",
+      "name": "Nice Spykit 650 HS BD garage door kit",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPYKIT650BD",
+      "name": "Nice Spykit 650 BD garage door kit",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPYKIT800BD",
+      "name": "Nice Spykit 800 BD garage door kit",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SPYKIT550",
+      "name": "Nice Spykit 550 garage door kit",
+      "brand": "Nice"
+    },
+    {
+      "sku": "TEN",
+      "name": "Nice Ten garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "TENKIT",
+      "name": "Nice Tenkit garage door kit",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SOON",
+      "name": "Nice Soon garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "SUMO",
+      "name": "Nice Sumo garage door operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "HYPPO",
+      "name": "Nice Hyppo articulated-arm gate operator",
+      "brand": "Nice"
+    },
+    {
+      "sku": "RONDOROLSIDE",
+      "name": "Nice Rondo / RolSide garage door automation",
+      "brand": "Nice"
+    },
+    {
+      "sku": "1246814",
+      "name": "TLV25 WF ZIGBEE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9709814",
+      "name": "LEFT LATERAL FRONT CHAIN GUIDE-WHITE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9709813",
+      "name": "LEFT LATERAL FRONT CHAIN COVER-WHITE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9146011",
+      "name": "Plug End Bearing with 16mm Hole",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9132087",
+      "name": "Plug End (Non adjustable) with 12mm Pin for 50 x 1.5mm Tube",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019529",
+      "name": "BEARING CTS 25 DECORA LEFT",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9018593",
+      "name": "ROLL UP 28 WHEEL HUNTER DOUGLAS 37 MM",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1201075",
+      "name": "LT80S CSI 200NM Ø94 220V/60HZ WITH SAFETY END LIMIT",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019528",
+      "name": "BEARING CTS 25 DECORA RIGHT",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019527",
+      "name": "HEADRAIL ADAPTOR DECORA 37x55",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "2401490",
+      "name": "Somfy Protect Motion Sensor",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1870536",
+      "name": "V100+ Video Door Phone + Additional Monitor",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1810068",
+      "name": "PACKAGED SHIFT MODULE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9990263",
+      "name": "3 PIN PLUG AND CORD GRIP",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9990176",
+      "name": "Orion Key",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9751013",
+      "name": "DRIVE WHEEL FOR LT50/60 TO SUIT 60X1.5MM ROUND TUBE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9129633",
+      "name": "Plug end without shaft 70x1.5mm",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9029053",
+      "name": "Connection cable for LEDs without fast connector",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9025707",
+      "name": "24V DC lightning protection for weather station",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9020247",
+      "name": "KIT10 JUNIOR RU TUBE HD31",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019837",
+      "name": "Flush-mounting box for Animeo IB+ TouchBuCo",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019003",
+      "name": "RS485 Network Power Supply",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9018000",
+      "name": "Fixing brackets for recessed boxes without screws",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9016868",
+      "name": "RS485 DEMO TOOL KIT",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "2401496",
+      "name": "Somfy wall mount for Security Indoor Camera",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "2300240",
+      "name": "Compact Carrier Strip 3M",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9028355",
+      "name": "SONESSE 40 WF BENTHIN L PLATE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9025927",
+      "name": "TO 50 CENTRAL HILLARYS WOOD",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9685171",
+      "name": "60 BOX OUTLET 260MM",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9028030",
+      "name": "UK adapter for NiMH charger",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9025926",
+      "name": "TO 50 CENTRAL HILLARYS FXWOOD",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9019568",
+      "name": "OSE RUB PROFILE 3CH 14-40-01",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1870920",
+      "name": "Rain Sensor Almot AC 230V",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1870289",
+      "name": "Somfy Protect Smoke Detector",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9015870",
+      "name": "Universal Shaft Adaptor Kit",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1206117",
+      "name": "|COMPACT 120/25 400/50 TRI EI",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9021207",
+      "name": "OXIMO WIREFREE BATTERY STICK",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9018605",
+      "name": "ROLL UP 28 WHEEL MECHOSHADE",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9014452",
+      "name": "DEXXO MOTOR HEAD SCREWS BAG",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9020246",
+      "name": "KIT10 JUNIOR RU TUBE LOUVOL40",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "9660274",
+      "name": "Spring Barrel with 3 Keys",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "1800134",
+      "name": "Surface Mounted Key Switch W/O Cylinder",
+      "brand": "Somfy"
+    },
+    {
+      "sku": "BEN-BOB21M",
+      "name": "Geared motor BOB21M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB2124-DK",
+      "name": "Geared motor BOB2124.DK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB30M",
+      "name": "Geared motor BOB30M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB30ME",
+      "name": "Geared motor BOB30ME",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB30ME-DA",
+      "name": "Geared motor BOB30ME.DK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB3024E",
+      "name": "Geared motor BOB3024E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB3024E-DK",
+      "name": "Geared motor BOB3024E.DK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB50M",
+      "name": "Geared motor BOB50M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB50ME",
+      "name": "Geared motor BOB50ME",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB5024E",
+      "name": "Geared motor BOB5024E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM30M",
+      "name": "Geared motor TOM30M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BOB50ME-DA",
+      "name": "Geared motor BOB50ME.DK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM30ME",
+      "name": "Geared motor TOM30ME",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM3024E",
+      "name": "Geared motor TOM3024E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM40M",
+      "name": "Geared motor TOM40M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM4024E",
+      "name": "Geared motor TOM4024E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM4024E-REVERSE",
+      "name": "Geared motor TOM4024E REVERSE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM50M",
+      "name": "Geared motor TOM50M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM5024E",
+      "name": "Geared motor TOM5024E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM30MLT",
+      "name": "Geared motor TOM30MLT",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM3024LT",
+      "name": "Geared motor TOM3024LT",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM40MLT",
+      "name": "Geared motor TOM40MLT",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TOM4024LT",
+      "name": "Geared motor TOM4024LT",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BILL30M",
+      "name": "Geared motor BILL30M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BILL40M",
+      "name": "Geared motor BILL40M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BILL4024",
+      "name": "Geared motor BILL4024",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BILL50M",
+      "name": "Geared motor BILL50M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SAM-E24",
+      "name": "Geared motor SAM.E24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SAM-24",
+      "name": "Geared motor SAM.24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SAM-E24-PLUS",
+      "name": "Geared motor SAM.E24 PLUS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SAM-24-PLUS",
+      "name": "Geared motor SAM.24 PLUS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-PR-45E",
+      "name": "Geared motor PR.45E",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-PR-45EE",
+      "name": "Geared motor PR.45EE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-PR-45EL",
+      "name": "Geared motor PR.45EL",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-PR-45E24",
+      "name": "Geared motor PR.45E24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-350FX",
+      "name": "Geared motor DU.350FX",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-IT14N",
+      "name": "Geared motor DU.IT14N",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-IT14NE",
+      "name": "Geared motor DU.IT14NE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-IT14NV",
+      "name": "Geared motor DU.IT14NV",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-IT14NVE",
+      "name": "Geared motor DU.IT14NVE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-IT24NVE",
+      "name": "Geared motor DU.IT24NVE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-350N",
+      "name": "Geared motor DU.350N",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-350NGE",
+      "name": "Geared motor DU.350NGE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-350NV",
+      "name": "Geared motor DU.350NV",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DU-350NVE",
+      "name": "Geared motor DU.350NVE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-WOLF424",
+      "name": "Geared motor WOLF424",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-WOLF624",
+      "name": "Gear motor WOLF624",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL424SW",
+      "name": "Geared motor BULL424SW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL624SW",
+      "name": "Geared motor BULL624SW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL424SE",
+      "name": "Geared motor BULL424SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL624SE",
+      "name": "Geared motor BULL624SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL624SE-S",
+      "name": "Geared motor BULL624SE.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL624-TURBO",
+      "name": "Geared motor BULL624 TURBO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL624-TURBO-S",
+      "name": "Geared motor BULL624 TURBO.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL6M-SE-S",
+      "name": "Geared motor BULL6M SE.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL6MLT-SE",
+      "name": "Geared motor BULL6MLT SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL8M",
+      "name": "Geared motor BULL8M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL8M-S",
+      "name": "Geared motor BULL8M.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL8-OM",
+      "name": "Geared motor BULL8 OM",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL8-OM-S",
+      "name": "Geared motor BULL8 OM.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL10M",
+      "name": "Geared motor BULL10M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL10M-S",
+      "name": "Geared motor BULL10M.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1024SE",
+      "name": "Geared motor BULL1024SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1024SE-S",
+      "name": "Geared motor BULL1024SE.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1224-TURBO",
+      "name": "Geared motor BULL1224 TURBO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1224-TURBO-S",
+      "name": "Geared motor BULL1224 TURBO.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL-HE-REVERSE",
+      "name": "Geared motor BULL HE REVERSE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL15M",
+      "name": "Geared motor BULL15M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL15M-S",
+      "name": "Geared motor BULL15M.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1524SE",
+      "name": "Geared motor BULL1524SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL1524SE-S",
+      "name": "Geared motor BULL1524SE.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL17-OMI",
+      "name": "Geared motor BULL17 OMI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL17-OMI-S",
+      "name": "Geared motor BULL17 OMI.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL20M",
+      "name": "Geared motor BULL20M",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL20M-S",
+      "name": "Geared motor BULL20M.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL20T",
+      "name": "Geared motor BULL20T",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL20-HE",
+      "name": "Geared motor BULL20 HE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BULL20-HE-S",
+      "name": "Geared motor BULL20 HE.S",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-YAK25-OTI",
+      "name": "Geared motor YAK25 OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BISON25-OTI",
+      "name": "Geared motor BISON25 OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BISON35-OTI",
+      "name": "Geared motor BISON35 OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BISON35-OTIL",
+      "name": "Geared motor BISON35 OTI L",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BISON45-OTI",
+      "name": "Geared motor BISON45 OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BUFFALO160-OTI",
+      "name": "Control unit BUFFALO160 OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BUFFALO160-OTI-SC",
+      "name": "Control unit BUFFALO160 OTI SC",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-MARK",
+      "name": "Geared motor MARK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-MARK-SC",
+      "name": "Geared motor MARK.SC",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED-RIE",
+      "name": "Geared motor ZED.RIE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED-SC",
+      "name": "Geared motor ZED.SC",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED-LRIE",
+      "name": "Geared motor ZED.LRIE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED-LSC",
+      "name": "Geared motor ZED.LSC",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED24-RI",
+      "name": "Geared motor ZED24.RI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ZED24-SC",
+      "name": "Geared motor ZED24.SC",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-3",
+      "name": "Geared motor JM.3",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-4",
+      "name": "Geared motor JM.4",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-3SE",
+      "name": "Geared motor JM.3SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-4SE",
+      "name": "Geared motor JM.4SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-3ESA-TURBO",
+      "name": "Geared motor JM.3ESA TURBO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JM-4ESA",
+      "name": "Geared motor JM.4ESA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JACK24-50",
+      "name": "Geared motor JACK24.50",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-JACK24-80",
+      "name": "Geared motor JACK24.80",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S20",
+      "name": "Geared motor VN.S20",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S20-UP",
+      "name": "Geared motor VN.S20 UP",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S20-ESW",
+      "name": "Geared motor VN.S20 ESW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S40",
+      "name": "Geared motor VN.S40",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S40-UP",
+      "name": "Geared motor VN.S40 UP",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-ST20",
+      "name": "Geared motor VN.ST20",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-ST20-ESW",
+      "name": "Geared motor VN.ST20 ESW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-M20",
+      "name": "Geared motor VN.M20",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-M20-UP",
+      "name": "Geared motor VN.M20 UP",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-M20-ESW",
+      "name": "Geared motor VN.M20 ESW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-M40",
+      "name": "Geared motor VN.M40",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-M40-UP",
+      "name": "Geared motor VN.M40 UP",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-MT20",
+      "name": "Geared motor VN.MT20",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-MT20-ESW",
+      "name": "Geared motor VN.MT20 ESW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-MT40",
+      "name": "Geared motor VN.MT40",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-MT40V",
+      "name": "Geared motor VN.MT40V",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VN-S40V",
+      "name": "Geared motor VN.S40V",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ADAM",
+      "name": "Geared motor ADAM",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ADAM-24",
+      "name": "Geared motor ADAM24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DIVA-3",
+      "name": "Barrier DIVA.3",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DIVA-5",
+      "name": "Barrier DIVA.5",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-EVA-5",
+      "name": "Barrier EVA.5",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-EVA-7",
+      "name": "Barrier EVA.7",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-EVA-8",
+      "name": "Barrier EVA.8",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LADY",
+      "name": "Barrier LADY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LADY-I",
+      "name": "Barrier LADY.I",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LADY-5",
+      "name": "Barrier LADY.5",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LADY5-I",
+      "name": "Barrier LADY5.I",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VE-650",
+      "name": "Barrier VE.650",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VE-650I",
+      "name": "Barrier VE.650I",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-VE-SOR-VE-SOM",
+      "name": "Car park saver VE.SOR | VE.SOM",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BRAINY-PLUS",
+      "name": "Control unit BRAINY PLUS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BRAINY",
+      "name": "Control unit BRAINY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-HEADY",
+      "name": "Control unit HEADY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CORE",
+      "name": "Control unit CORE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-MATRIX",
+      "name": "Control unit MATRIX",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LOGICA",
+      "name": "Control unit LOGICA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CELL-P",
+      "name": "Control unit CELL.P",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-THINKY",
+      "name": "Control unit THINKY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-THINKY-P",
+      "name": "Control unit THINKY.P",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-THINKY-I",
+      "name": "Control unit THINKY.I",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-START",
+      "name": "Control unit START",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-START-I",
+      "name": "Control unit START.I",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BUFFALO-DRIVE",
+      "name": "BUFFALO DRIVE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BRAINY24-PLUS",
+      "name": "Control unit BRAINY24 PLUS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-BRAINY24-119",
+      "name": "Control unit BRAINY24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TRUST24",
+      "name": "Control unit TRUST24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TILTY24",
+      "name": "Control unit TILTY24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-LOGICA24",
+      "name": "Control unit LOGICA24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-DA-SO4",
+      "name": "Control unit DA.SO4",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-SAM",
+      "name": "CP.SAM",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-W24",
+      "name": "CP.W24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-W24-5IN",
+      "name": "CP.W24-5IN",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-B24-SW",
+      "name": "Control unit CP.B24-SW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-B24-D120",
+      "name": "CP.B24-D120",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-B24-TURBO",
+      "name": "CP.B24 TURBO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL6-SE",
+      "name": "CP.BULL6-SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL8-OM",
+      "name": "CP.BULL8-OM",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL-RI",
+      "name": "CP.BULL-RI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL-REV",
+      "name": "CP.BULL-REV",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL20-HE",
+      "name": "CP.BULL20-HE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BULL-OMI",
+      "name": "CP.BULL OMI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BISON-OTI",
+      "name": "CP.BISON OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BISON-OTI-L",
+      "name": "CP.BISON OTI L",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-YAK-OTI",
+      "name": "CP.YAK OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-BUFFALO-OTI",
+      "name": "CP.BUFFALO OTI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-MARK",
+      "name": "CP.MARK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-ZED24",
+      "name": "CP.ZED24",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-ZED-AUTR",
+      "name": "CP.ZED-AUTR",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-J3-SW",
+      "name": "CP.J3-SW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-J4-SW",
+      "name": "CP.J4-SW",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-J4-SE",
+      "name": "CP.J4-SE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-J4ESA",
+      "name": "CP.J4ESA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-JT",
+      "name": "CP.JT",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-JACK",
+      "name": "CP.JACK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-UP-VN",
+      "name": "UP.VN",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-DIVA",
+      "name": "CP.DIVA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-EVA",
+      "name": "CP.EVA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-CP-LADY",
+      "name": "CP.LADY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-IRI-TX4VA",
+      "name": "Transmitter IRI.TX4VA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-IRI-TX4AK",
+      "name": "Transmitter IRI.TX4AK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO2A",
+      "name": "Transmitter TO.GO2A",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO4A",
+      "name": "Transmitter TO.GO4A",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO2AS",
+      "name": "Transmitter TO.GO2AS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO4AS",
+      "name": "Transmitter TO.GO4AS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO2VA",
+      "name": "Transmitter TO.GO2VA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO4VA",
+      "name": "Transmitter TO.GO4VA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO2AK",
+      "name": "Transmitter TO.GO2AK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO4AK",
+      "name": "Transmitter TO.GO4AK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-TO-GO4QV",
+      "name": "Transmitter TO.GO2QV",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-HAPPY-2VA",
+      "name": "Transmitter HAPPY.2VA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-HAPPY-4VA",
+      "name": "Transmitter HAPPY.4VA",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-HAPPY-2AK",
+      "name": "Transmitter HAPPY.2AK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-HAPPY-4AK",
+      "name": "Transmitter HAPPY.4AK",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SE-MODULE",
+      "name": "Receiver SE.MODULE",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-SUNNY",
+      "name": "receiver SUNNY",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-4WB",
+      "name": "receiver ONE.4WB",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-2WB-MS",
+      "name": "receiver ONE.2WB-MS",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-2WO",
+      "name": "receiver ONE.2WO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-2WB",
+      "name": "receiver ONE.2WB",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-2WI",
+      "name": "receiver ONE.2WI",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-ONE-2QB",
+      "name": "receiver ONE.2QB",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-AWO",
+      "name": "receiver AWO",
+      "brand": "Beninca"
+    },
+    {
+      "sku": "BEN-AW",
+      "name": "receiver AW",
+      "brand": "Beninca"
+    }
+  ],
+  "categoryChanges": [
+    {
+      "sku": "1810803",
+      "name": "RS485/RTS transmitter",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9021027",
+      "name": "LI-ION CHARGER V2 PLUG UK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870755",
+      "name": "CONNECTIVITY KIT",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1870600",
+      "name": "TAHOMA SWITCH",
+      "from": "safety",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1818293",
+      "name": "SOLIRIS SMOOVE UNO PURE + FRAME",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800518",
+      "name": "INIS 80X80 MP",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800505",
+      "name": "SMOOVE DUO 5P",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1246777",
+      "name": "SONESSE2 BASIC 28 WF ZIGBEE LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1246037",
+      "name": "ROLL UP2 24 WIREFREE ZIGBEE 0.55/38 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245995",
+      "name": "SONESSE2 40 WF ZIGBEE 4/20 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245945",
+      "name": "SONESSE2 28 WIREFREE ZIGBEE 1.1/20 - EXTERNAL BATTERY",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245943",
+      "name": "SONESSE2 28 WIREFREE ZIGBEE 2/20 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245934",
+      "name": "SONESSE2 ULTRA 30 WIREFREE ZIGBEE 2/20 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245919",
+      "name": "SONESSE2 40 ZIGBEE 9/12 WHITE 3.5M CABLE",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245918",
+      "name": "SONESSE2 40 ZIGBEE 6/20 WHITE 3.5M CABLE",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245917",
+      "name": "SONESSE2 40 ZIGBEE 3/30 WHITE 3.5M CABLE",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1245549",
+      "name": "SONESSE2 30 ZIGBEE 2/25 - 24V",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1241480",
+      "name": "SONESSE 30 RTS 2/25 - 24V",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1241444",
+      "name": "ROLL UP BASIC 28 WIREFREE RTS 0.7/28 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1240485",
+      "name": "SONESSE 40 WIREFREE RTS 3/20 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1240280",
+      "name": "ROLL UP 24 WIREFREE RTS 0.55/38 LI-ION KIT - INCLUDES REMOTE CONTROL",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1240279",
+      "name": "ROLL UP 24 WIREFREE RTS 0.55/38 LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1240278",
+      "name": "ROLL UP 24 WIREFREE RTS 0.55/38 LI-ION - ORDER IN QTY 40",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1240241",
+      "name": "SONESSE 28 WIREFREE™ RTS LI-ION WITH REMOTE CONTROL ORDER IN QTY 10",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1041386",
+      "name": "ALTUS 50 RTS 20Nm/17Rpm RRF 3M CABLE",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1037397",
+      "name": "ALTUS 50 RTS 10Nm/17Rpm RRF 3M Cable",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1032534",
+      "name": "ALTUS RH 50 RTS 6/17 VVF 5M - BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1020126",
+      "name": "ALTUS 40 RTS433 3/30 VVF5M BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003310",
+      "name": "SONESSE ULTRA 30 WIREFREE RTS 2/20 LI-ION",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003297",
+      "name": "SONESSE 28 WIREFREE™ RTS LI-ION BULK PACK",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003296",
+      "name": "SONESSE 28 WIREFREE™ RTS LI-ION",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003046",
+      "name": "SONESSE ULTRA 50 RTS 6/20 VVF3M UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1002499",
+      "name": "SONESSE50 RS485 6/17 VVF3M UN",
+      "from": "tubular-motors",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1001578",
+      "name": "SONESSE 40 RTS 6/20 WHITE 3M CABLE",
+      "from": "safety",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028930",
+      "name": "ZIGBEE LI-ION 2 EXTERNAL BATTERY PACK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028920",
+      "name": "LI-ION 2 USB-C CHARGER UK ZIGBEE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028565",
+      "name": "LI-ION 2 EXTENSION CABLE 20CM ZIGBEE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028564",
+      "name": "LI-ION 2 MAGNETIC ADAPTER ZIGBEE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019972",
+      "name": "SMOOVE SURFACE MOUNTED BOX",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9013705",
+      "name": "PACK OF 10 TELIS MOUNTING PINS (WHITE)",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9000997",
+      "name": "Surface mounted back box for Centralis IB switch",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1871082",
+      "name": "Amy 1 channel Auto/Manu Modes io - square frame",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1871081",
+      "name": "Amy 1 channel Auto/Manu Modes io - round frame",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1871049",
+      "name": "Amy 1 io",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1870137",
+      "name": "DC RTS RECEIVER",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9910007",
+      "name": "UNIVERSAL MOTOR BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707026",
+      "name": "CROWN WHEEL FOR LT50 MOTOR TO SUIT ROUND TUBE 63X1.5MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701209",
+      "name": "Crown Wheel for LS40 motor to suit 50X1.5mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500736",
+      "name": "CTS40 bracket for 51x57 headrail",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500688",
+      "name": "LS40 PLUG END 8MM PIN",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500687",
+      "name": "LS40 Intermediate Bracket",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500685",
+      "name": "LS40 PLUG END BRACKET DIAM 8MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500683",
+      "name": "LS40 MOTOR BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500455",
+      "name": "Crown wheel for LS40 to suit 45mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500444",
+      "name": "Drive Wheel for LS40 motor to suit 45mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500344",
+      "name": "DRIVE WHEEL FOR LS40 MOTOR TO SUIT OCT TUBE 40X0.6MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500322",
+      "name": "LS40 WHEEL FOR TUBE DIAM 47",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9430603",
+      "name": "Plug end bracket FTS60",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9430601",
+      "name": "Actuator Bracket for FTS/LT50/60 motor",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410715",
+      "name": "LT50 Steel Bracket Spring Clip",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410639",
+      "name": "L Shaped Plain Steel Bracket",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9206088",
+      "name": "Drive Wheel for All LT50 Range for Round Tube size 50X1.5mm",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9206029",
+      "name": "Steel Universal Bracket For LT50 & 60 Range Motors - To Be Welded",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9206028",
+      "name": "Drive Wheel for LT50 & LT60 motors to suit tube size round 70X1.5mm",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9163910",
+      "name": "Wheel For Cord Drive Syetem suitable for 3.1mm Cord & 4.5X12 Chain",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9163256",
+      "name": "Long Shaft Adapter 5mm Square For LV & LW Motors",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9163255",
+      "name": "Long Shaft Adapter 6mm Hex For LV & LW Motors",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9163254",
+      "name": "Long Shaft Adapter 5mm Hex For LV & LW Motors",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9163030",
+      "name": "AMS 25 (Adjustable Mechanical Stop) For CTS25 & 35",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9162257",
+      "name": "Stop Ring For 5mm Square & 6mm Hex Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9162145",
+      "name": "Large Bearing for Cord Take Up System (CTS) 40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9162144",
+      "name": "Large Cone for Cord Take Up System (CTS)40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9154122",
+      "name": "Surface Mounted Box For Centralis Indoor Receiver, Dry contact Transmitter / Receivers",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9147545",
+      "name": "Drive Wheel for LS40 Motors to suit 40mm Oct Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147330",
+      "name": "Crown Wheel For 40mm Dia Motors to suit 40x1.5mm Round Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147327",
+      "name": "Crown Wheel For 40mm Dia Motors to suit 40x0.8MM Oct Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9146007",
+      "name": "Plug End Bearing with 14mm Hole",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9137018",
+      "name": "Octagonal Plug End For 40mm Deprat Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9137009",
+      "name": "Bracket and Plug End Kit for LS40 Range Motors",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9132145",
+      "name": "Crown Wheel for LS40 Range motors to suit 40mm x 0.6 Oct Tube with external seam",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9129632",
+      "name": "Plug End 63mm Non Adjustable - Without Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9127808",
+      "name": "Small Plug End Bracket 16mm square c/w locking screw",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028933",
+      "name": "WIREFREE 2 HEAD COVER GREY (FOR ZIGBEE MOTORS ONLY)",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028932",
+      "name": "WIREFREE 2 HEAD COVER BLACK (FOR ZIGBEE MOTORS ONLY)",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028931",
+      "name": "WIREFREE 2 HEAD COVER WHITE (FOR ZIGBEE MOTORS ONLY)",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028298",
+      "name": "Setting tool for TL 25 WT motorization",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9027701",
+      "name": "CLIP PACK FOR LI-ION BAT. PACK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9027507",
+      "name": "TL 25 WT Cable+C Setting tool",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025929",
+      "name": "TO 50 ADAPT HEXA 5.5MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025811",
+      "name": "SONESSE 28/30 WIREFREE LOUVOLITE 45 CROWN & DRIVE WITH MOTOR PLATE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025745",
+      "name": "ROLL UP 24 WF HD 31 C&D",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9025744",
+      "name": "ROLL UP 24 WF 28 MM TUBE C&D",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9025742",
+      "name": "TO 50 CENTRAL HD 51*57 MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025739",
+      "name": "TILT ONLY 50 RTS CENTRAL DECORA SUNWOOD",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025738",
+      "name": "ROLL UP 24 PIN 6*3 MOTOR PLATE",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9025736",
+      "name": "RU 24 LOUVOLITE 32 MOTOR PLATE (FOR RTS MOTORS ONLY)",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025700",
+      "name": "Setting tool cable for TL 25 WT motorization",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025293",
+      "name": "WF LI-ION SOLAR PANEL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9021217",
+      "name": "EXTERNAL LI-ION BATTERY PACK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9021131",
+      "name": "20CM EXTENSION CABLE FOR LI-ION",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9021018",
+      "name": "SONESSE 30 WIREFREE ACMEDA 45 CROWN & DRIVE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9021016",
+      "name": "240 CM EXTENSION CABLE FOR LI-ION",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020812",
+      "name": "ROLL UP 28 BASIC LI-ION CHARGER (ONLY FOR USE WITH MOTOR 1240638)",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020699",
+      "name": "SONESSE 30 WIREFREE HD 37MM CROWN & DRIVE KIT",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020676",
+      "name": "SONESSE 30 WIREFREE CROWN & DRIVE INTERFACE SONESSE 40-LS40",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020675",
+      "name": "SONESSE 28/30 WIREFREE LOUVOLITE 40 CROWN & DRIVE WITH MOTOR PLATE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020674",
+      "name": "SONESSE 30 WIREFREE ROLLEASE 1.5\"/38MM CROWN & DRIVE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020673",
+      "name": "ROLL UP 28 BASIC LI-ION 2.4M EXTENSION CABLE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019580",
+      "name": "COULISSE MOTOR BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019574",
+      "name": "SONESSE 40 CROWN COULISSERTU-42-52",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019004",
+      "name": "RS485 6 x RJ45 Bridging Adapter",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9018598",
+      "name": "RollUp 28 RTS Drive Wheel & Motor Plate Pack for Louvolite System 40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9018590",
+      "name": "ROLL UP 28 CROWN SILHOUETTE II",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9018588",
+      "name": "RollUp 28 RTS Crown Wheel for Louvolite System 40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9018585",
+      "name": "ROLL UP 28 CROWN HD VIGNETTE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9018583",
+      "name": "RollUp 28 RTS Crown Wheel for HD 31mm",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9017142",
+      "name": "RS485 SETTING TOOL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9016655",
+      "name": "Sonesse 40 Crown & Wheel kit for 40mm Oct Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9016654",
+      "name": "Sonesse 40 Crown & Wheel kit for 40x1.5mm Round Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015897",
+      "name": "Solar Panel Mounting brackets",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014333",
+      "name": "SONESSE 30 (24V) CROWN & DRIVE PACK LOUVOLITE 45",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014180",
+      "name": "12MM SQUARE SHAFT ADAPTER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014072",
+      "name": "ST30 LOUVOLITE PLATE AND SCREWS (FOR RTS MOTORS ONLY)",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013933",
+      "name": "LT28 Plug end with 4mm pin for 28mm x 0.7mm and 29mm x 1.15mm Tubes",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013776",
+      "name": "SONESSE 30 (24V) ADAPTER KIT TO FIT LS40 RANGE OF CROWN AND DRIVE WHEELS",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013291",
+      "name": "Wirefree Cord Lift Setting Tool",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013263",
+      "name": "Wall mounted clip pack for wirefree batteries",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9010010",
+      "name": "LT28 aluminium tube 29mm x 1.2mm x 6M - 3 x 2M Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1246298",
+      "name": "Dexxo Compact 1000 io 2 TX",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1245542",
+      "name": "Dexxo Compact 750 io 1 TX",
+      "from": "control-panels",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1245541",
+      "name": "Dexxo Compact 600 io 1 TX",
+      "from": "control-panels",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1244773",
+      "name": "Dexxo Compact 750 io 2 TX (Pallet)",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1244772",
+      "name": "Dexxo Compact 600 io 2 TX (Pallet)",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1241570",
+      "name": "Dexxo Smart 1000 io",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1216539",
+      "name": "Dexxo Smart 800 io",
+      "from": "control-panels",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1184056",
+      "name": "OREA 60 RTS 100NM/12RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1183055",
+      "name": "OREA 60 RTS 85NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1182003",
+      "name": "OREA 60 RTS 70NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1181065",
+      "name": "OREA 60 RTS 55NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1166060",
+      "name": "ALTUS 60 RTS 100/12 VVF 5M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1165099",
+      "name": "ALTUS 60 RTS 85/17 RRF 3M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1163101",
+      "name": "ALTUS 60 RTS 70/17 RRF 3M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1161114",
+      "name": "ALTUS 60 RTS 55/17 RRF 3M - UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1130127",
+      "name": "ILMO 50 S WT 6/17 VVF 3M- BAR",
+      "from": "control-panels",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1118091",
+      "name": "OREA 50 RTS 50/12 VVF 5M - BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1117115",
+      "name": "OREA 50 RTS 40NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1116122",
+      "name": "OREA 50 RTS 35NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1115105",
+      "name": "OREA 50 RTS 30NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1114278",
+      "name": "MAESTRIA+50 IO 25/17 RH RRF 5M",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1114127",
+      "name": "OREA 50 RTS 25NM/17RPM",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1112324",
+      "name": "MAESTRIA + 50 IO 15/32 RH RRF",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1112323",
+      "name": "MAESTRIA + 50 IO 15/32 RH VVF 5 m",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1049607",
+      "name": "Oximo IO 40/17 VVF 5M",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1049443",
+      "name": "ALTUS 50 RTS 40Nm/17Rpm RRF 3M Cable",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1049429",
+      "name": "Oximo RTS 40/17 VVF 5m",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1047223",
+      "name": "ALTUS 50 RTS 35/17 P120",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1045311",
+      "name": "Oximo RTS 30/17 VVF 5m",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1043329",
+      "name": "ALTUS 50 RTS 25Nm/17Rpm RH VVF 5M Cable",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1041349",
+      "name": "OXIMO RTS 20/17 VVF 5M - BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1039829",
+      "name": "ALTUS 50 RTS 15/17 RH VVF 5M",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1039438",
+      "name": "ALTUS 50 RTS 15/17 RRF 3M - UN",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1038100",
+      "name": "OXIMO 40 WF RTS 10/12 UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1037690",
+      "name": "Oximo IO 10/17 VVF 5M",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1037382",
+      "name": "OXIMO RTS 10/17 VVF 5M - BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1033330",
+      "name": "OXIMO 40 WF RTS II 6/18 UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1024175",
+      "name": "ALTUS 40 RTS 13/10 VVF 5M BAR",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1871111",
+      "name": "Amy 4 channels Modes io - square frame",
+      "from": "control-panels",
+      "to": "remotes"
+    },
+    {
+      "sku": "1871101",
+      "name": "Amy 1 Channel RS100 io",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1871053",
+      "name": "Amy 1 io + Fr",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1816091",
+      "name": "EOLIS IO 5M BLACK CABLE",
+      "from": "remotes",
+      "to": "safety"
+    },
+    {
+      "sku": "9050100",
+      "name": "Sun sensor without mounting bracket",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028412",
+      "name": "CURTAIN MOTOR ZIGBEE MODULE",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1871488",
+      "name": "ROLLIXO OPTIMO RTS UK KIT",
+      "from": "tubular-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1871486",
+      "name": "ROLLIXO® PREMIUM Io",
+      "from": "remotes",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1871431",
+      "name": "ROLLIXO OPTIMO RTS 2 TX UK",
+      "from": "tubular-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1871097",
+      "name": "Amy 1 Channel RS100 io",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1871072",
+      "name": "Amy 1 Channel Modes io",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1871069",
+      "name": "Amy 1 Channel Modes io",
+      "from": "safety",
+      "to": "remotes"
+    },
+    {
+      "sku": "1860292",
+      "name": "Animeo KNX/RTS receiver",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1860286",
+      "name": "Animeo KNX/RS485 motor controller",
+      "from": "side-motors",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1818316",
+      "name": "SOLIRIS SMOOVE IB+ PURE",
+      "from": "control-panels",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800517",
+      "name": "INIS 80X80 FP",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1780895",
+      "name": "MOTOR HOOK GA",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028054",
+      "name": "TaHoma switch Ethernet adapter",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9928199",
+      "name": "HIRSCHMANN PLUG FEMALE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910019",
+      "name": "ADJUSTABLE TOOL LT CSI",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910014",
+      "name": "LT50 BRACKET 10MM SQUARE ADAPTER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910003",
+      "name": "BRACKET UNIVERSAL ZAMAC + STOP RING LOCKING",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910001",
+      "name": "MOTOR BRACKET UNIVERSAL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9763508",
+      "name": "LT60 ALULUX BRACKET 100X100",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9761011",
+      "name": "DRIVE WHEEL FOR LT50/60 TO SUIT 71MM PERMA TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9761005",
+      "name": "DRIVE WHEEL FOR LT50/60 TO SUIT 78M ROCHLING TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9761004",
+      "name": "DRIVE WHEEL FOR LT60 TO SUIT 78MM DOHNER TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9761002",
+      "name": "DRIVE WHEEL FOR LT50 & LT60 TO SUIT 70MM OCT TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9761001",
+      "name": "Drive Wheel for LT50/60 motor to suit 78mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9751013",
+      "name": "DRIVE WHEEL FOR LT50/60 TO SUIT 60X1.5MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9751012",
+      "name": "Drive wheel for LT50 to suit 71mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9751005",
+      "name": "DRIVE WHEEL FOR LT50 MOTOR TO SUIT 70MM DOHNER TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9751002",
+      "name": "DRIVE WHEEL FOR LT50 TO SUIT 65MM TUBE SUNMASTER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9751001",
+      "name": "DRIVE WHEEL FOR LT50 TO SUIT OCT TUBE 63MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707034",
+      "name": "Crown wheel for LT50 motor to suit 70MM Dohner",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707031",
+      "name": "Crown wheel for LT50 to suit 70x1.5mm round tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707027",
+      "name": "Crown wheel for LT50 motor to suit 78mm dohner",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707025",
+      "name": "CROWN WHEEL FOR LT50 TO SUIT OCT TUBE 60MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9706034",
+      "name": "CSI50/60 bracket 100 X 100",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9705341",
+      "name": "CROWN WHEEL FOR LT60 MOTOR TO SUIT 78MM DOHNER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9705340",
+      "name": "CROWN WHEEL FOR LT60 TO SUIT 70MM OCT TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701210",
+      "name": "Drive wheel for LS40 to suit 50x1.5mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701069",
+      "name": "Crown wheel for LT60 to suit 125mm heroal tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701051",
+      "name": "CROWN WHEEL FOR LT60 MOTOR TO SUIT 78M TUBE ROCHLING",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701047",
+      "name": "CROWN WHEEL FOR LT50 MOTOR TO SUIT 63MM SUNMASTER TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9700998",
+      "name": "CROWN WHEEL FOR LT50 MOTOR TO SUIT SUNMASTER TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9700994",
+      "name": "Crown wheel for LS50 motor to suit 71mm tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685183",
+      "name": "60 DEG BOX OUTLET WITH EYE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685181",
+      "name": "DOUBLE JOINT BOX OUTLET",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685180",
+      "name": "60 DEG BOX OUTLET WITH EYE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685144",
+      "name": "Universal Joint 7 - 7mm hex",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685120",
+      "name": "ADAPTER HEX 7-7MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685118",
+      "name": "Adaptor 7mm hex to 8mm square",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9685037",
+      "name": "LONG EYE OUTLET 175MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9660135",
+      "name": "ROCKER SWITCH SURFACE BOX",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9530346",
+      "name": "CROWN WHEEL FO CS80 MOTOR TO SUIT 102X1.6MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9530324",
+      "name": "CROWN WHEEL FOR CS80 TO SUIT 102X3.25MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9510658",
+      "name": "Motor Bracket",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420801",
+      "name": "ADJUSTABLE PLUG END 12MM PIN",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420659",
+      "name": "HEX EXTENSION SHAFT 330MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420657",
+      "name": "Hexagonal Extension Shaft 220MM",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420654",
+      "name": "CSI Adjustable Bracket",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420602",
+      "name": "L Bracket for LT60 Motor",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420371",
+      "name": "CROWN WHEEL FOR LT60 TO SUIT 102X3.25MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420370",
+      "name": "CROWN WHEEL FOR LT60 TO SUIT 102X1.6MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420343",
+      "name": "Drive wheel for LT60 motor to suit 125mm heroal tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420341",
+      "name": "CROWN WHEEL FOR LT60 TO SUIT 89MM DEPRAT TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420309",
+      "name": "DRIVE WHEEL FOR LT60 TO SUIT ROUND TUBE 102X3.25MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420304",
+      "name": "Drive Wheel for LT50 & LT60 Motors to suit round tube 102x1.6MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420301",
+      "name": "LT50 & LT60 Drive Wheel to suit 89mm Deprat Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410703",
+      "name": "LT50 DEPRAT BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410665",
+      "name": "LT50 & LS40 L Shaped Bracket With 10mm pin",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410651",
+      "name": "LT50 Range L Shaped Bracket with Universal Bracket welded",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410635",
+      "name": "ZINCKED PLUG END BRACK. PIN 10",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410633",
+      "name": "Plug End L Bracket with 12mm nylon socket",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410357",
+      "name": "LT50 CROWN TUBE CENTERED ZF64",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410303",
+      "name": "DRIVE WHEEL FOR LT50 70X1.2MM WELSER TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410302",
+      "name": "DRIVE WHEEL FOR LT50/60 TO SUIT AXION TUBE 2000-62MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9410300",
+      "name": "CROWN WHEEL FOR LT50 MOTOR TO SUIT 60X1.5MM AXION TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9340020",
+      "name": "Extended Eye Outlet For Hercules & Type 8 Motors c/w 248mm Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9206019",
+      "name": "Drive Wheel for Diam 50 63x1.5mm Round Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9203804",
+      "name": "LT HiPro Supply Cable - 5M",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147544",
+      "name": "Drive Wheel for LS40 Motors to suit round tube 40x1.5mm",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147337",
+      "name": "LS40 SUPPORT BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147334",
+      "name": "Motor Bracket Adapter with 10mm Square Pin for LS40 Motors",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9147332",
+      "name": "LS40 SETTING TOOL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9146580",
+      "name": "Compact Motor 30mm Keyed Drive Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9146500",
+      "name": "SIDE MOTORS BRACKET KIT",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9137159",
+      "name": "Faceplate For Rocker Switch",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9137047",
+      "name": "Manual Overide Eye Outlet for Hercules & Type 8 Motors",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9132143",
+      "name": "CROWN WHEEL FOR LS40 TO SUIT 40X1MM ROUND TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9132142",
+      "name": "DRIVE WHEEL FOR LS40 TO SUIT ROUND TUBE 40X1MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9132080",
+      "name": "Small Plug End Bracket for ZF Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9132065",
+      "name": "Adjustable plug end plate",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9129671",
+      "name": "Crank Handle for CSI / RDO motors 1.25M long with hook",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9129631",
+      "name": "Plug End 50mm Non Adjustable - Without Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9128890",
+      "name": "LS60 CROWN FOR TUBE ZF80",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9128765",
+      "name": "Recessed Back Box for most AC & DC switches - 40mm Deep",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9128429",
+      "name": "CROWN WHEEL FOR LT50 TO SUIT 70MM TUBE WELSER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9128088",
+      "name": "Waterproof Junction Box",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9102073",
+      "name": "White surface mounted box for Inteo range switches",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9029053",
+      "name": "Connection cable for LEDs without fast connector",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028482",
+      "name": "KNX TP to BACnet IP&MS/TP server gateway - 600 datapoints",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9027562",
+      "name": "KNX-IP router (KNX secure)",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025737",
+      "name": "RU 24 ROLLEASE SKYLINE MTR PLT",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025735",
+      "name": "ROLL UP 24 EARS MOTOR PLATE",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9025713",
+      "name": "ROLL UP 24 STARHOLE MOTOR PLATE",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9025712",
+      "name": "RU24 ROLLEASE 1,125",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025711",
+      "name": "RU24 WF ROLLEASE 1,25/32MM C&D",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025303",
+      "name": "SITUO WALL HOLDER PACK OF 6",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9020247",
+      "name": "KIT10 JUNIOR RU TUBE HD31",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019791",
+      "name": "RESIN SOLAR PANEL BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019581",
+      "name": "ROLL UP CROWN COULISSE RTU-28",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019225",
+      "name": "30MM (small) OSE End Stoppers",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019005",
+      "name": "RS485 Terminator",
+      "from": "accessories",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9019003",
+      "name": "RS485 Network Power Supply",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9016868",
+      "name": "RS485 DEMO TOOL KIT",
+      "from": "accessories",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9016762",
+      "name": "BOTTOM SLAT STOPPERS FOR OSE SYSTEM",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015607",
+      "name": "MECHANICAL LOCK FOR DEXXO",
+      "from": "accessories",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "9015220",
+      "name": "FRABA OSE RUBBER PROFILE - 9.6mm T-Section",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015196",
+      "name": "SURFACE MOUNTING BOX PM3/10",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015132",
+      "name": "Photocells protection cover",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014599",
+      "name": "DCT Setting Tool",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014462",
+      "name": "DEXXO PRO CEILING FIXATION KIT",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "9012961",
+      "name": "EMERGENCY RELEASE WITH KEY",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9008049",
+      "name": "DIN-rail adapter",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9002550",
+      "name": "LT50 ADJUSTABLE L BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001659",
+      "name": "LT 3-W VV-F 10 M FOR ELECTRONIC LSU CABLE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001658",
+      "name": "LT 3-W RR-F 5 M FOR ELECTRONIC LSU CABLE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001414",
+      "name": "ANGLE BRACKET WALL T8 & LT80 U",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001413",
+      "name": "LT80 Motor Bracket Kit",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "2400650",
+      "name": "SECTIONAL DOOR KIT",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1871216",
+      "name": "SMART PLUG ZIGBEE G-TYPE",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870463",
+      "name": "SM S1 2 kW io terrace heater anthracite 5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870461",
+      "name": "SM S1 2 kW io terrace heater white 5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1800516",
+      "name": "INIS MOUNTED BOX MP",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800515",
+      "name": "INIS MOUNTED BOX FP",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1782844",
+      "name": "EXTENSION CABLE 1M SOLAR PANEL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1782100",
+      "name": "SAFETY BRAKE 147NM SQUARE 18 MM CABLE 5M",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1782099",
+      "name": "SAFETY BRAKE 147NM SQUARE 18 MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1782098",
+      "name": "SAFETY BRAKE 95NM SQUARE 18 MM CABLE 5M",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1782097",
+      "name": "SAFETY BRAKE 95NM SQUARE 18 MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1781030",
+      "name": "Nylon Ball Holder",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1781018",
+      "name": "INTERMEDIATE SHAFT 13MM",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1781015",
+      "name": "SQUARE NYLON BEARING 12MM BORE",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1781011",
+      "name": "Plug end for 14mm square shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1781009",
+      "name": "Plug end for 12mm square shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1780913",
+      "name": "ROTATING RUNNER EYELET GA",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9029168",
+      "name": "SONESSE2 28/30 WF LOUVOLITE 45 CROWN & DRIVE (FOR ZIGBEE MOTORS ONLY)",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9029167",
+      "name": "SONESSE2 28/30 WF LOUVOLITE 40 CROWN & DRIVE (FOR ZIGBEE MOTORS ONLY)",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9029166",
+      "name": "ROLL UP2 24 WIREFREE LOUVOLITE 32 C&D (FOR ZIGBEE MOTORS ONLY)",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028666",
+      "name": "SONESSE 28 WF 28x0,7 MM CROWN",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028562",
+      "name": "EXT MAGNETIC ADAPTER FOR LIION",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028235",
+      "name": "CORD LIFT 45 COVER White Right",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028233",
+      "name": "CORD LIFT 45 COVER Black Right",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028232",
+      "name": "CORD LIFT 45 COVER White Left",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028230",
+      "name": "CORD LIFT 45 COVER Black Left",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9027381",
+      "name": "Cable of 2,5m for TL 25 WT motorization",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9026644",
+      "name": "Crown & Drive Set Adaptor for 26.6mm Tube",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9025815",
+      "name": "Rollease 1.25\" Crown & Drive",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015030",
+      "name": "SONESSE CROWN AND DRIVE BLOCKER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9029482",
+      "name": "DRIVE PULLEY ADAPTER GA2",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028493",
+      "name": "Li-ion Battery Pack for Movelite Wirefree RTS (Micro USB)",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1003184",
+      "name": "Charger Irismo 45 WF 0.6 DC - 230V/29",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028028",
+      "name": "NiMH battery charger",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910040",
+      "name": "CSI MULTI-ENTRAXE BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9910008",
+      "name": "BRACKET UNIVERSAL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707638",
+      "name": "LT60 CROWN TUBE E-DS 78 FLAT G",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707037",
+      "name": "LT50 CROWN FOR DOHNER DIAM.74",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707036",
+      "name": "LT50 CROWN FOR PERMA 68/70/71",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9707028",
+      "name": "LT50 CROWN TUBE E-DS 63",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9705345",
+      "name": "LT50 CROWN FOR TUBE OCTO 50",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701240",
+      "name": "MOTOR BRACKET LS 40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9701207",
+      "name": "LS40 CROWN FOR TUBE 50",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9690085",
+      "name": "LT60 CROWN TUBE IMBAC 85 GUT",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9520391",
+      "name": "LS60 CROWN FOR TUBE 130X2",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9500659",
+      "name": "LS40 / LT50 BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420646",
+      "name": "BRACKET FOR AWNING",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420613",
+      "name": "SETTING TOOL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420601",
+      "name": "DEPRAT ADJUSTING BRACKET",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9420372",
+      "name": "CROWN LT60 TUBE 100X2",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9128427",
+      "name": "LS60 CROWN TUBE MADOPRON 80",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028030",
+      "name": "UK adapter for NiMH charger",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9027176",
+      "name": "OXIMO WF BATTERY STICK+Y CABLE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014336",
+      "name": "CROWN OPTINUTROHR",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9002515",
+      "name": "KIT BRACKET FOR COMBINED SENSOR",
+      "from": "safety",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001654",
+      "name": "MOTOR CABLE RTS/IO RR-F 5 M 3 WIRES",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9001648",
+      "name": "MOTOR CABLE RTS/IO VV-F 5 M 3 WIRES",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1816066",
+      "name": "EOLIS SENSOR RTS WITHOUT CABLE",
+      "from": "remotes",
+      "to": "safety"
+    },
+    {
+      "sku": "1782667",
+      "name": "OXIMO WIREFREE Y CONNECTION CABLE NEW MOTOR NEW BATTERY",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1782666",
+      "name": "EXTENSION CABLE 5M SOLAR PANEL",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1811541",
+      "name": "Somfy TaHoma",
+      "from": "safety",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1039375",
+      "name": "ALTUS 50 RTS 15Nm/17Rpm RRF 3M CABLE",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1032444",
+      "name": "ALTUS 50 RTS 6Nm/17Rpm RRF 3M Cable",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003047",
+      "name": "SONESSE ULTRA 50 RTS RH 6/20 VVF3M UNIT",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003019",
+      "name": "ROLL UP 28 RTS RECHARGEABLE HD 37",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003018",
+      "name": "ROLL UP 28 RTS RECHARGEABLE HD 31",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003017",
+      "name": "ROLL UP 28 RTS RECHARGEABLE ROLLEASE 32",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003016",
+      "name": "ROLL UP 28 RTS RECHARGEABLE ROLLEASE 38",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003014",
+      "name": "ROLL UP 28 RTS RECHARGEABLE 28MM.",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003013",
+      "name": "ROLL UP 28 RTS ALKALINE 28MM.",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003012",
+      "name": "ROLL UP 28 RTS ALKALINE HD 37",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003011",
+      "name": "ROLL UP 28 RTS ALKALINE HD 31",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003010",
+      "name": "ROLL UP 28 RTS ALKALINE ROLLEASE 38",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1003009",
+      "name": "ROLL UP 28 RTS ALKALINE ROLLEASE 32",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1002999",
+      "name": "ROLL UP 28 RTS PACK ALKALINE",
+      "from": "remotes",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1800192",
+      "name": "Inis Duo Switch Fixed Position",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800030",
+      "name": "INIS KEO Surface mounted Momentary Position Switch",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "1800017",
+      "name": "INIS UNO Fixed Position Switch",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9203895",
+      "name": "White RTS Motor 3 Wire Indoor VVF Cable 3M Length",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9129630",
+      "name": "Plug End 40mm Non Adjustable - Without Shaft",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019576",
+      "name": "SONESSE 40 CROWN COULISSERTU-80",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9015870",
+      "name": "Universal Shaft Adaptor Kit",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014535",
+      "name": "Shaft Adaptor 5mm Hexagonal",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014019",
+      "name": "Dual battery wand for Wirefree products - contains batteries",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013938",
+      "name": "SONESSE 30 CROWN & DRIVE PACK HD 38MM TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013937",
+      "name": "SONESSE 30 CROWN & DRIVE PACK HD 47MM TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013775",
+      "name": "SONESSE 30 (24V) CROWN AND DRIVE PACK ROLLEASE 38MM TUBE",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013285",
+      "name": "Shaft Adaptor 5mm Hex",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9013269",
+      "name": "Shaft Adaptor 4mm Square",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1822445",
+      "name": "12V AC/DC PLUG IN POWER SUPPLY",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1240357",
+      "name": "Dexxo GDK 700 - DIY ONLY - EU Plug",
+      "from": "remotes",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1216424",
+      "name": "DEXXO PRO 1000 RTS UK",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1216423",
+      "name": "DEXXO COMPACT RTS UK",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1216408",
+      "name": "DEXXO OPTIMO RTS UK",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1216269",
+      "name": "DEXXO PRO 800 RTS MOTOR HEAD",
+      "from": "remotes",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1810624",
+      "name": "UNIVERSAL RECEIVER RTS",
+      "from": "safety",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1871272",
+      "name": "ROLLIXO IO PREMIUM UK",
+      "from": "remotes",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1860201",
+      "name": "ANIMEO IP/RS485 SUBCO",
+      "from": "remotes",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1810784",
+      "name": "UNIVERSAL SLIM RECEIVER RTS WITH HIRSCHMANN PLUG",
+      "from": "safety",
+      "to": "control-panels"
+    },
+    {
+      "sku": "1818245",
+      "name": "SUNIS WIREFREE IO",
+      "from": "remotes",
+      "to": "safety"
+    },
+    {
+      "sku": "1860306",
+      "name": "Animeo weather station M8",
+      "from": "remotes",
+      "to": "safety"
+    },
+    {
+      "sku": "9015006",
+      "name": "OXIMO WIREFREE CHARGER",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9021207",
+      "name": "OXIMO WIREFREE BATTERY STICK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028429",
+      "name": "Eolis 3D Sticker - Consumer Kit",
+      "from": "tubular-motors",
+      "to": "safety"
+    },
+    {
+      "sku": "9025766",
+      "name": "USB charger with UK plug, Movelite WF",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9019191",
+      "name": "RS485 CABLE JST II - RJ45",
+      "from": "tubular-motors",
+      "to": "control-panels"
+    },
+    {
+      "sku": "9020202",
+      "name": "ALKALINE BATTERY PACK",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9028231",
+      "name": "CORD LIFT 45 COVER Grey Left",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "9028234",
+      "name": "CORD LIFT 45 COVER Grey Right.",
+      "from": "side-motors",
+      "to": "tubular-motors"
+    },
+    {
+      "sku": "1216409",
+      "name": "DEXXO PRO 800 RTS UK",
+      "from": "safety",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "1822492",
+      "name": "Z-Wave USB Module",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870459",
+      "name": "SM S1 2 kW io terrace heater white 0,5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870460",
+      "name": "SM S1 2 kW io terrace heater white 2,5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870462",
+      "name": "SM S1 2 kW io terrace heater anthracite 0,5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1870466",
+      "name": "SM S1 2 kW io terrace heater anthracite 2,5m",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1871214",
+      "name": "Smart Plug Zigbee F-type",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "1871215",
+      "name": "Smart Plug Zigbee E",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "2401563",
+      "name": "Somfy Outdoor Camera - Grey",
+      "from": "control-panels",
+      "to": "accessories"
+    },
+    {
+      "sku": "9012962",
+      "name": "EMERGENCY RELEASE WITHOUT KEY",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "1003284",
+      "name": "RU 28 RTS NOMH HD 37 WITHOUT SITUO",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9014082",
+      "name": "AMBER LIGHT MASTER PRO 24V antenna RTS",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9014452",
+      "name": "DEXXO MOTOR HEAD SCREWS BAG",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "9015237",
+      "name": "WALNUT SMOOVE FRAME",
+      "from": "tubular-motors",
+      "to": "remotes"
+    },
+    {
+      "sku": "9015608",
+      "name": "ALARM BUZZER FOR DEXXO",
+      "from": "safety",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "9017842",
+      "name": "AMBER LIGHT MASTER PRO 24V LED",
+      "from": "side-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9020246",
+      "name": "KIT10 JUNIOR RU TUBE LOUVOL40",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "9102004",
+      "name": "INTEO GREY SURFACE MOUNTED BOX",
+      "from": "tubular-motors",
+      "to": "accessories"
+    },
+    {
+      "sku": "BEN-BOB21M",
+      "name": "Geared motor BOB21M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB2124-DK",
+      "name": "Geared motor BOB2124.DK",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB30M",
+      "name": "Geared motor BOB30M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB30ME",
+      "name": "Geared motor BOB30ME",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB30ME-DA",
+      "name": "Geared motor BOB30ME.DK",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB3024E",
+      "name": "Geared motor BOB3024E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB3024E-DK",
+      "name": "Geared motor BOB3024E.DK",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB50M",
+      "name": "Geared motor BOB50M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB50ME",
+      "name": "Geared motor BOB50ME",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB5024E",
+      "name": "Geared motor BOB5024E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM30M",
+      "name": "Geared motor TOM30M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BOB50ME-DA",
+      "name": "Geared motor BOB50ME.DK",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM30ME",
+      "name": "Geared motor TOM30ME",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM3024E",
+      "name": "Geared motor TOM3024E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM40M",
+      "name": "Geared motor TOM40M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM4024E",
+      "name": "Geared motor TOM4024E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM4024E-REVERSE",
+      "name": "Geared motor TOM4024E REVERSE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM50M",
+      "name": "Geared motor TOM50M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM5024E",
+      "name": "Geared motor TOM5024E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM30MLT",
+      "name": "Geared motor TOM30MLT",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM3024LT",
+      "name": "Geared motor TOM3024LT",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM40MLT",
+      "name": "Geared motor TOM40MLT",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-TOM4024LT",
+      "name": "Geared motor TOM4024LT",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BILL30M",
+      "name": "Geared motor BILL30M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BILL40M",
+      "name": "Geared motor BILL40M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BILL4024",
+      "name": "Geared motor BILL4024",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-BILL50M",
+      "name": "Geared motor BILL50M",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-SAM-E24",
+      "name": "Geared motor SAM.E24",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-SAM-24",
+      "name": "Geared motor SAM.24",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-SAM-E24-PLUS",
+      "name": "Geared motor SAM.E24 PLUS",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-SAM-24-PLUS",
+      "name": "Geared motor SAM.24 PLUS",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-PR-45E",
+      "name": "Geared motor PR.45E",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-PR-45EE",
+      "name": "Geared motor PR.45EE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-PR-45EL",
+      "name": "Geared motor PR.45EL",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-PR-45E24",
+      "name": "Geared motor PR.45E24",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-350FX",
+      "name": "Geared motor DU.350FX",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-IT14N",
+      "name": "Geared motor DU.IT14N",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-IT14NE",
+      "name": "Geared motor DU.IT14NE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-IT14NV",
+      "name": "Geared motor DU.IT14NV",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-IT14NVE",
+      "name": "Geared motor DU.IT14NVE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-IT24NVE",
+      "name": "Geared motor DU.IT24NVE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-350N",
+      "name": "Geared motor DU.350N",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-350NGE",
+      "name": "Geared motor DU.350NGE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-350NV",
+      "name": "Geared motor DU.350NV",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-DU-350NVE",
+      "name": "Geared motor DU.350NVE",
+      "from": "side-motors",
+      "to": "swing-gates"
+    },
+    {
+      "sku": "BEN-WOLF424",
+      "name": "Geared motor WOLF424",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-WOLF624",
+      "name": "Gear motor WOLF624",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL424SW",
+      "name": "Geared motor BULL424SW",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL624SW",
+      "name": "Geared motor BULL624SW",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL424SE",
+      "name": "Geared motor BULL424SE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL624SE",
+      "name": "Geared motor BULL624SE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL624SE-S",
+      "name": "Geared motor BULL624SE.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL624-TURBO",
+      "name": "Geared motor BULL624 TURBO",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL624-TURBO-S",
+      "name": "Geared motor BULL624 TURBO.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL6M-SE-S",
+      "name": "Geared motor BULL6M SE.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL6MLT-SE",
+      "name": "Geared motor BULL6MLT SE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL8M",
+      "name": "Geared motor BULL8M",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL8M-S",
+      "name": "Geared motor BULL8M.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL8-OM",
+      "name": "Geared motor BULL8 OM",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL8-OM-S",
+      "name": "Geared motor BULL8 OM.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL10M",
+      "name": "Geared motor BULL10M",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL10M-S",
+      "name": "Geared motor BULL10M.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1024SE",
+      "name": "Geared motor BULL1024SE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1024SE-S",
+      "name": "Geared motor BULL1024SE.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1224-TURBO",
+      "name": "Geared motor BULL1224 TURBO",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1224-TURBO-S",
+      "name": "Geared motor BULL1224 TURBO.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL-HE-REVERSE",
+      "name": "Geared motor BULL HE REVERSE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL15M",
+      "name": "Geared motor BULL15M",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL15M-S",
+      "name": "Geared motor BULL15M.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1524SE",
+      "name": "Geared motor BULL1524SE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL1524SE-S",
+      "name": "Geared motor BULL1524SE.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL17-OMI",
+      "name": "Geared motor BULL17 OMI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL17-OMI-S",
+      "name": "Geared motor BULL17 OMI.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL20M",
+      "name": "Geared motor BULL20M",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL20M-S",
+      "name": "Geared motor BULL20M.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL20T",
+      "name": "Geared motor BULL20T",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL20-HE",
+      "name": "Geared motor BULL20 HE",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BULL20-HE-S",
+      "name": "Geared motor BULL20 HE.S",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-YAK25-OTI",
+      "name": "Geared motor YAK25 OTI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BISON25-OTI",
+      "name": "Geared motor BISON25 OTI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BISON35-OTI",
+      "name": "Geared motor BISON35 OTI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BISON35-OTIL",
+      "name": "Geared motor BISON35 OTI L",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BISON45-OTI",
+      "name": "Geared motor BISON45 OTI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BUFFALO160-OTI",
+      "name": "Control unit BUFFALO160 OTI",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-BUFFALO160-OTI-SC",
+      "name": "Control unit BUFFALO160 OTI SC",
+      "from": "side-motors",
+      "to": "sliding-gates"
+    },
+    {
+      "sku": "BEN-MARK",
+      "name": "Geared motor MARK",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-MARK-SC",
+      "name": "Geared motor MARK.SC",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED-RIE",
+      "name": "Geared motor ZED.RIE",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED-SC",
+      "name": "Geared motor ZED.SC",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED-LRIE",
+      "name": "Geared motor ZED.LRIE",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED-LSC",
+      "name": "Geared motor ZED.LSC",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED24-RI",
+      "name": "Geared motor ZED24.RI",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ZED24-SC",
+      "name": "Geared motor ZED24.SC",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-3",
+      "name": "Geared motor JM.3",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-4",
+      "name": "Geared motor JM.4",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-3SE",
+      "name": "Geared motor JM.3SE",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-4SE",
+      "name": "Geared motor JM.4SE",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-3ESA-TURBO",
+      "name": "Geared motor JM.3ESA TURBO",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JM-4ESA",
+      "name": "Geared motor JM.4ESA",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JACK24-50",
+      "name": "Geared motor JACK24.50",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-JACK24-80",
+      "name": "Geared motor JACK24.80",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S20",
+      "name": "Geared motor VN.S20",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S20-UP",
+      "name": "Geared motor VN.S20 UP",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S20-ESW",
+      "name": "Geared motor VN.S20 ESW",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S40",
+      "name": "Geared motor VN.S40",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S40-UP",
+      "name": "Geared motor VN.S40 UP",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-ST20",
+      "name": "Geared motor VN.ST20",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-ST20-ESW",
+      "name": "Geared motor VN.ST20 ESW",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-M20",
+      "name": "Geared motor VN.M20",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-M20-UP",
+      "name": "Geared motor VN.M20 UP",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-M20-ESW",
+      "name": "Geared motor VN.M20 ESW",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-M40",
+      "name": "Geared motor VN.M40",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-M40-UP",
+      "name": "Geared motor VN.M40 UP",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-MT20",
+      "name": "Geared motor VN.MT20",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-MT20-ESW",
+      "name": "Geared motor VN.MT20 ESW",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-MT40",
+      "name": "Geared motor VN.MT40",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-MT40V",
+      "name": "Geared motor VN.MT40V",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-VN-S40V",
+      "name": "Geared motor VN.S40V",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ADAM",
+      "name": "Geared motor ADAM",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-ADAM-24",
+      "name": "Geared motor ADAM24",
+      "from": "side-motors",
+      "to": "garage-door-automation"
+    },
+    {
+      "sku": "BEN-DIVA-3",
+      "name": "Barrier DIVA.3",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-DIVA-5",
+      "name": "Barrier DIVA.5",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-EVA-5",
+      "name": "Barrier EVA.5",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-EVA-7",
+      "name": "Barrier EVA.7",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-EVA-8",
+      "name": "Barrier EVA.8",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-LADY",
+      "name": "Barrier LADY",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-LADY-I",
+      "name": "Barrier LADY.I",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-LADY-5",
+      "name": "Barrier LADY.5",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-LADY5-I",
+      "name": "Barrier LADY5.I",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-VE-650",
+      "name": "Barrier VE.650",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-VE-650I",
+      "name": "Barrier VE.650I",
+      "from": "side-motors",
+      "to": "barriers"
+    },
+    {
+      "sku": "BEN-VE-SOR-VE-SOM",
+      "name": "Car park saver VE.SOR | VE.SOM",
+      "from": "side-motors",
+      "to": "barriers"
+    }
+  ]
+}

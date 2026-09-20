@@ -745,8 +745,8 @@ export const products: Product[] = [
     sku: "BFT-MOOVI-30",
     name: "BFT Moovi 30 barrier, 3 m arm",
     slug: "bft-moovi-30-barrier",
-    brand: "Generic",
-    category: "side-motors",
+    brand: "BFT",
+    category: "barriers",
     shortDescription:
       "230V electromechanical rising barrier with 3 m arm, for car parks and yard entrances.",
     description:

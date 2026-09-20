@@ -1,6 +1,7 @@
 import rawCatalog from "@/content/somfy-controls-catalog.json";
 import rawImageManifest from "@/content/somfy-image-manifest.json";
 import type { Brand, Product, Spec } from "@/types/catalog";
+import { somfyAccessorySkus } from "@/content/somfy-accessories";
 
 type CommercialSource = "rec" | "rea" | "icc" | "ha" | "controls";
 type SourceCurrency = "EUR" | "BGN";
@@ -123,7 +124,7 @@ function toProduct(record: CommercialRecord): Product {
         }
       : { quoteOnly: true },
     stock: { status: "unknown" },
-    relatedSkus: [],
+    relatedSkus: record.brand === "Somfy" ? somfyAccessorySkus(record.sku) : [],
     replacesSkus: [],
   };
 }

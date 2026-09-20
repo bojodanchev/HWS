@@ -14,8 +14,7 @@ export default function TradeThankYouPage() {
         <CheckCircle2 aria-hidden className="mx-auto size-12 text-success" strokeWidth={1.5} />
         <h1 className="mt-5 text-h1 text-ink">Application received</h1>
         <p className="mt-4 text-steel">
-          We review every application manually and reply within one working
-          day. Keep an eye on your inbox — we may call to confirm details.
+          We review every application manually and will contact you about the next step. Keep an eye on your inbox — we may call to confirm details.
         </p>
         <Link
           href="/products"

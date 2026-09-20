@@ -9,6 +9,7 @@
  */
 
 import { categories, products } from "@/content/catalog";
+import { productForViewer as publicProduct } from "@/lib/publicPrice";
 import type {
   Category,
   FilterKey,
@@ -72,19 +73,17 @@ export function formatVatRate(rate: number): string {
   return `${Math.round(rate * 100)}%`;
 }
 
-function publicPrice(price: Price, tier?: TradeTier): Price {
-  const withoutCost = { ...price };
-  delete withoutCost.purchaseCostExVat;
-  if (!tier) delete withoutCost.tradeTiers;
-  return withoutCost;
-}
-
-function publicProduct(p: Product, tier?: TradeTier): Product {
-  return { ...p, price: publicPrice(p.price, tier) };
-}
-
 export function getCategories(): Category[] {
-  return categories;
+  const used = new Set<string>();
+  return categories.map(category => {
+    if (category.slug === "doors") return category;
+    const image = products
+      .filter(product => product.category === category.slug)
+      .flatMap(product => product.images)
+      .find(candidate => !used.has(candidate.url));
+    if (image) used.add(image.url);
+    return { ...category, image: image?.url ?? "" };
+  });
 }
 
 export function getCategory(slug: string): Category | undefined {

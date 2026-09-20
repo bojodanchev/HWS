@@ -4,6 +4,8 @@ import { Database, LogOut } from "lucide-react";
 import { AdminNav } from "@/components/admin/AdminNav";
 import { isAdminAuthed } from "@/lib/adminAuth";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: {
     default: "Admin",

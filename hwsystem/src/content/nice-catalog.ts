@@ -16,12 +16,14 @@ function niceProduct({
   shortDescription,
   description,
   specs = [],
+  category = "garage-door-automation",
 }: {
   sku: string;
   name: string;
   shortDescription: string;
   description: string;
   specs?: Product["specs"];
+  category?: string;
 }): Product {
   return {
     id: `nice-${sku.toLowerCase()}`,
@@ -29,7 +31,7 @@ function niceProduct({
     name,
     slug: sku.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
     brand: "Nice",
-    category: "garage-door-automation",
+    category,
     shortDescription,
     description,
     images: [],
@@ -148,18 +150,18 @@ export const niceProducts: Product[] = [
   niceProduct({
     sku: "SUMO",
     name: "Nice Sumo garage door operator",
-    shortDescription: "Garage-door operator for balanced rolling-door applications.",
+    shortDescription: "Operator family for sectional and two-leaf sliding doors.",
     description:
-      "Nice Sumo family automation listed for balanced rolling doors. The correct drive and accessories depend on the curtain, shaft and duty cycle; current UK pricing remains quote-only.",
+      "Nice Sumo family automation for sectional and two-leaf sliding doors. Confirm the exact model, mounting arrangement and required accessories with the team; current UK pricing remains quote-only.",
     specs: [{ key: "voltage", value: "24V DC" }],
   }),
   niceProduct({
     sku: "HYPPO",
-    name: "Nice Hyppo garage door operator",
-    shortDescription: "Heavy-duty automation family for balanced rolling doors.",
+    name: "Nice Hyppo articulated-arm gate operator",
+    category: "swing-gates",
+    shortDescription: "Articulated-arm automation family for swing gates.",
     description:
-      "Nice Hyppo family automation for balanced rolling-door applications. Confirm the opening, door weight and required duty cycle before ordering; the supplied catalogue provides product orientation, not current UK commercial pricing.",
-    specs: [{ key: "voltage", value: "24V DC" }],
+      "Nice Hyppo articulated-arm operator family for swing gates. The exact model determines the power supply, control unit and installation limits; request a checked configuration and UK quotation.",
   }),
   niceProduct({
     sku: "RONDOROLSIDE",

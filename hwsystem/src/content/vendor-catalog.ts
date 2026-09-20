@@ -1,4 +1,7 @@
 import rawCatalog from "@/content/vendor-catalog.json";
+import rawEvidence from "@/content/somfy-product-evidence.json";
+import { vendorCategory } from "@/content/vendor-category";
+import { somfyAccessorySkus } from "@/content/somfy-accessories";
 import type { Product, Spec } from "@/types/catalog";
 
 type VendorCatalogRecord = {
@@ -30,6 +33,10 @@ export const vendorCatalogSnapshot = {
 } as const;
 
 const sourceRecords = (rawCatalog as unknown as { products: VendorCatalogRecord[] }).products;
+const evidence = rawEvidence.products as Record<string, {
+  imageUrl?: string | null; accessorySkus?: string[]; compatibleSkus?: string[];
+  productTypes?: string[]; kitContent?: unknown;
+}>;
 
 function slugify(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
@@ -40,6 +47,7 @@ function normalizePublicCopy(value: string): string {
     .replace(/&rsquo;|&#8217;/gi, "’")
     .replace(/&trade;|&#8482;/gi, "™")
     .replace(/&hellip;|&#8230;/gi, "…")
+    .replace(/Public source tags:/gi, "Product details:")
     .replace(/Become Somfy Expert/gi, "SBI")
     .replace(/Become an Expert/gi, "SBI");
 }
@@ -85,22 +93,23 @@ function publicDescriptions(record: VendorCatalogRecord): {
 
 function toProduct(record: VendorCatalogRecord): Product {
   const copy = publicDescriptions(record);
+  const source = record.source === "somfy-pro-uk" ? evidence[record.sku] : undefined;
   return {
     id: `vendor-${record.source}-${slugify(record.sku)}`,
     sku: record.sku,
     name: normalizePublicCopy(record.name),
     slug: slugify(record.slug),
     brand: record.source === "somfy-pro-uk" ? "Somfy" : "Beninca",
-    category: record.category,
+    category: vendorCategory(record, source?.productTypes),
     shortDescription: copy.shortDescription,
     description: copy.description,
-    images: [],
+    images: source?.imageUrl ? [{ url: source.imageUrl, alt: record.name, width: 800, height: 800 }] : [],
     specs: record.specs,
     compatibility: [],
     documents: [],
     price: { quoteOnly: true },
     stock: { status: "unknown" },
-    relatedSkus: [],
+    relatedSkus: source ? somfyAccessorySkus(record.sku) : [],
     replacesSkus: [],
   };
 }

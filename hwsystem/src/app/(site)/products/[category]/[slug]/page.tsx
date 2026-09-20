@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import {
   getCategory,
@@ -41,7 +41,8 @@ export async function generateMetadata({
 export default async function ProductPage({ params }: { params: Promise<Params> }) {
   const { category, slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product || product.category !== category) notFound();
+  if (!product) notFound();
+  if (product.category !== category) permanentRedirect(`/products/${product.category}/${product.slug}`);
   const cat = getCategory(product.category);
   const recommendations = getRecommendationGroups(product);
   const publicPrice = hasPublicPrice(product.price) ? product.price : undefined;
@@ -146,16 +147,15 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
                 <ArrowRight aria-hidden className="size-4" strokeWidth={1.5} />
               </Link>
               <a
-                href="tel:+443301234567"
+                href="tel:+442045774094"
                 className="flex h-11 items-center gap-2 rounded-md border border-line px-6 text-sm font-medium text-ink transition-colors duration-150 hover:bg-concrete"
               >
                 <PhoneCall aria-hidden className="size-4" strokeWidth={1.5} />
-                Order by phone
+                Phone enquiries
               </a>
             </div>
             <p className="mt-4 text-[13px] text-mist">
-              Online checkout is coming soon — quotes are answered within the
-              hour on working days.
+              Request a quote to confirm the price, availability and suitability for your installation.
             </p>
           </div>
 

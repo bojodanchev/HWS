@@ -22,8 +22,8 @@ export default function ContactPage() {
           <Phone aria-hidden className="size-5 text-ink" strokeWidth={1.5} />
           <h2 className="mt-3 text-h3 text-ink">Phone</h2>
           <p className="mt-1.5 text-sm text-steel">
-            <a href="tel:+443301234567" className="font-medium text-ink hover:underline">
-              +44 (0)330 123 4567
+            <a href="tel:+442045774094" className="font-medium text-ink hover:underline">
+              +44 (0)20 4577 4094
             </a>
             <br />
             Sales &amp; technical support
@@ -55,7 +55,7 @@ export default function ContactPage() {
           <p className="mt-1.5 text-sm text-steel">
             Mon–Fri: 8am–5pm
             <br />
-            Orders by 2pm ship same day
+            Dispatch and delivery confirmed per order
           </p>
         </section>
       </div>

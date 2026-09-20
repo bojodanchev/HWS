@@ -1,0 +1,46 @@
+{
+  "readAt": "2026-09-20T20:42:00Z",
+  "sheetRanges": [
+    "Sheet1!A1:H400",
+    "Sheet1!A401:H1000"
+  ],
+  "tailRangesEmpty": true,
+  "sheets": [
+    {
+      "source": "bft",
+      "spreadsheetId": "1LlMJWKUC8-G-MWZVDTdxw_l-VUq5aARbRdB0hVtcTVQ",
+      "lastNonemptyRowInRead": 216
+    },
+    {
+      "source": "controls",
+      "spreadsheetId": "1Gqkmqf1HNWivDvw0Y19p2_dkPQ0VyiqF_CvvarICXfk",
+      "lastNonemptyRowInRead": 49
+    },
+    {
+      "source": "ha",
+      "spreadsheetId": "15VZRgZ6oHsmuggafYoe3ynDxSpWJJ_ShfUWhKIGaJZk",
+      "lastNonemptyRowInRead": 40
+    },
+    {
+      "source": "icc",
+      "spreadsheetId": "1pY_DxdTNxMMPJxJiGe8uT4QAHiWbnOZxZbsEluPtnBM",
+      "lastNonemptyRowInRead": 359
+    },
+    {
+      "source": "rea",
+      "spreadsheetId": "1PKTQeQX_Ha_JVqq8jwkDIhL7Uc1OGNiSYWvUml7FnQo",
+      "lastNonemptyRowInRead": 21
+    },
+    {
+      "source": "rec",
+      "spreadsheetId": "1A_3UPT9qYuW8Nihe2g_jiAilDAihrR5fqNs3t4qFLIQ",
+      "lastNonemptyRowInRead": 107
+    }
+  ],
+  "result": "All 178 commercial source rows matched by source row after whitespace normalization; numeric recommended prices unchanged. ICC BGN pricing and SKU 1871148 conflict remain gated. BFT retains its earlier 206-product snapshot; current sheet has three fewer numeric references.",
+  "commercialRowsCheckedBySourceRow": 178,
+  "sourceRowDifferences": [],
+  "normalizationNotes": [
+    "ICC rows 67 and 68 differ only by line-break versus space in bundle SKU labels; 20-unit and 50-unit pack identities preserved."
+  ]
+}

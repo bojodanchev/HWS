@@ -24,7 +24,12 @@ export function ContactCapturePopup() {
     const lastSeen = Number(window.localStorage.getItem(STORAGE_KEY) ?? 0);
     if (Number.isFinite(lastSeen) && Date.now() - lastSeen < HIDE_FOR_MS) return;
 
-    const timer = window.setTimeout(() => setOpen(true), SHOW_AFTER_MS);
+    // Keep the small-screen journey clear; the explicit help button still opens it.
+    const timer = window.setTimeout(() => {
+      const editing = document.activeElement?.matches("input, textarea, select");
+      const browsingMenu = document.querySelector("header button[aria-expanded='true']");
+      if (window.innerWidth >= 768 && !editing && !browsingMenu) setOpen(true);
+    }, SHOW_AFTER_MS);
     return () => window.clearTimeout(timer);
   }, []);
 

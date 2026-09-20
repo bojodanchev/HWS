@@ -77,24 +77,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="border-t border-line bg-concrete py-20 lg:py-32">
-        <div className="mx-auto max-w-[1280px] px-6">
-          <h2 className="text-h1 text-ink">The numbers</h2>
-          <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { value: "1997", label: "Family business since" },
-              { value: "500+", label: "UK trade customers" },
-              { value: "95%", label: "Stock lines available same-day" },
-              { value: "24hr", label: "Typical UK delivery" },
-            ].map((stat) => (
-              <div key={stat.label} className="rounded-md border border-line bg-white p-6">
-                <dt className="text-sm text-steel">{stat.label}</dt>
-                <dd className="mt-1 font-heading text-h1 font-semibold text-ink">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
+
     </main>
   );
 }

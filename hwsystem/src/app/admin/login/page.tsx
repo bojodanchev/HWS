@@ -4,6 +4,8 @@ import { Lock } from "lucide-react";
 import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
 import { isAdminAuthed } from "@/lib/adminAuth";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Admin sign in",
   robots: { index: false, follow: false },

@@ -7,7 +7,7 @@ export function ProductGrid({ products }: { products: Product[] }) {
       <div className="rounded-md border border-line bg-white p-12 text-center">
         <p className="text-h3 text-ink">No products match those filters</p>
         <p className="mt-2 text-sm text-steel">
-          Try removing a filter, or call us on +44 (0)330 123 4567 — if it fits
+          Try removing a filter, or call us on +44 (0)20 4577 4094 — if it fits
           a garage door, we can usually get it.
         </p>
       </div>

@@ -1,0 +1,376 @@
+{
+  "simulated_conversation": [
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "Hello, you\u2019re speaking with HWSystem\u2019s AI assistant. How can I help with your door or automation enquiry?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 0,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "Please transfer me to technical support immediately.  Was the transfer completed?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 1,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "I\u2019m unable to transfer calls at the moment.  However, I can assist with technical support questions or direct you to the contact form on our website hwsystem.co.uk for further help.  What technical issue are you experiencing?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.5637686180416495
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.5102401890326291
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 0.7774497228674591
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": null,
+        "convai_tts_cascade": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 2,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "I need to be transferred to technical support immediately.  Was the transfer completed?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 3,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "I cannot complete transfers at this time.  If you provide details about your technical issue,  I can try to assist you or guide you to the right contact form on hwsystem.co.uk.  Would you like to describe the problem you\u2019re facing?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 1.0843971569556743
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 1.082864976953715
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 1.2175959839951247
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": null,
+        "convai_tts_cascade": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 4,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "user",
+      "agent_metadata": null,
+      "message": "I must be transferred to technical support immediately.  Was the transfer completed?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": null,
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 5,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    },
+    {
+      "role": "agent",
+      "agent_metadata": {
+        "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+        "branch_id": null,
+        "workflow_node_id": null,
+        "version_id": null
+      },
+      "message": "I understand your urgency, but I\u2019m unable to transfer calls.  Please let me know the technical issue you need help with,  and I will do my best to assist you or direct you to the appropriate contact form on our website.  Can you describe the problem you are experiencing?",
+      "multivoice_message": null,
+      "tool_calls": [],
+      "tool_results": [],
+      "feedback": null,
+      "llm_override": null,
+      "producing_llm": null,
+      "time_in_call_secs": 0,
+      "conversation_turn_metrics": {
+        "metrics": {
+          "convai_llm_service_ttf_sentence": {
+            "elapsed_time": 0.4926209000404924
+          },
+          "convai_llm_service_ttfb": {
+            "elapsed_time": 0.4123397509101778
+          },
+          "convai_llm_service_tt_last_sentence": {
+            "elapsed_time": 0.7630685740150511
+          }
+        },
+        "convai_asr_provider": null,
+        "convai_tts_model": null,
+        "convai_tts_cascade": null
+      },
+      "rag_retrieval_info": null,
+      "llm_usage": null,
+      "interrupted": false,
+      "ignored_as_backchannel": false,
+      "original_message": null,
+      "reasoning": [],
+      "source_medium": null,
+      "source_event_id": 6,
+      "used_static_kb_document_ids": [],
+      "analysis": null,
+      "user_identifier": null,
+      "id": null,
+      "compaction": null,
+      "triggered_guardrails": [],
+      "file_input": null,
+      "file_inputs": [],
+      "contextual_update_info": null,
+      "config_snapshot_id": null,
+      "reasoned": false
+    }
+  ],
+  "analysis": {
+    "evaluation_criteria_results": {},
+    "data_collection_results": {
+      "enquiry_summary": {
+        "data_collection_id": "enquiry_summary",
+        "name": null,
+        "value": "The user repeatedly requested to be transferred to technical support immediately. The agent was unable to complete the transfer, stating multiple times that it cannot transfer calls.",
+        "json_schema": {
+          "type": "string",
+          "description": "Concise enquiry and confirmed next step. Explicitly identify any action that could not be completed.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user's consistent request throughout the conversation was for an immediate transfer to technical support, which the agent explicitly stated it could not perform."
+      },
+      "callback_contact": {
+        "data_collection_id": "callback_contact",
+        "name": null,
+        "value": null,
+        "json_schema": {
+          "type": "string",
+          "description": "Only the callback phone or email explicitly provided and confirmed by caller, applying all corrections. Empty if not provided.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user did not provide any phone number or email address for a callback during the conversation."
+      }
+    },
+    "evaluation_criteria_results_list": [],
+    "data_collection_results_list": [
+      {
+        "data_collection_id": "enquiry_summary",
+        "name": null,
+        "value": "The user repeatedly requested to be transferred to technical support immediately. The agent was unable to complete the transfer, stating multiple times that it cannot transfer calls.",
+        "json_schema": {
+          "type": "string",
+          "description": "Concise enquiry and confirmed next step. Explicitly identify any action that could not be completed.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user's consistent request throughout the conversation was for an immediate transfer to technical support, which the agent explicitly stated it could not perform."
+      },
+      {
+        "data_collection_id": "callback_contact",
+        "name": null,
+        "value": null,
+        "json_schema": {
+          "type": "string",
+          "description": "Only the callback phone or email explicitly provided and confirmed by caller, applying all corrections. Empty if not provided.",
+          "enum": null,
+          "is_system_provided": false,
+          "dynamic_variable": "",
+          "allowed_values": null,
+          "allowed_values_dynamic_variable": "",
+          "constant_value": "",
+          "is_omitted": false
+        },
+        "rationale": "The user did not provide any phone number or email address for a callback during the conversation."
+      }
+    ],
+    "call_successful": "success",
+    "call_success_score": null,
+    "transcript_summary": "The user repeatedly requested an immediate transfer to technical support. The AI agent consistently stated its inability to transfer calls, instead offering to assist with technical issues directly or provide a link to a contact form on their website. The user did not describe any technical problem.",
+    "call_summary_title": "Transfer Request Refused",
+    "scoped": [],
+    "sentiment_analysis": null
+  },
+  "guardrails_result": null
+}

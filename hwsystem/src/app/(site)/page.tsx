@@ -18,31 +18,31 @@ import { getCategories } from "@/lib/catalog";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "HWSystem — The parts you need. Delivered tomorrow.",
+  title: "HWSystem — Door components & automation",
   description:
-    "UK trade and retail supplier of garage door motors, controls and automation. Own European factory, full compliance documentation, next-day delivery.",
+    "Garage door motors, controls and automation for UK installations. Browse by product, compare specifications and request a checked quote.",
 };
 
 const TRUST_ITEMS = [
   {
     icon: Truck,
-    title: "Next-day delivery",
-    text: "Order by 2pm for next working day",
+    title: "Delivery planning",
+    text: "Availability confirmed with your quote",
   },
   {
     icon: BadgeCheck,
-    title: "UKCA certified",
-    text: "Full compliance documentation",
+    title: "Product documentation",
+    text: "Ask for model-specific documents",
   },
   {
     icon: Factory,
     title: "Direct from factory",
-    text: "Own manufacturing, better prices",
+    text: "SBI doors and selected component brands",
   },
   {
     icon: Users,
     title: "Trade accounts",
-    text: "Exclusive pricing for professionals",
+    text: "Apply for reviewed trade terms",
   },
 ];
 
@@ -50,32 +50,32 @@ const WHY_ITEMS = [
   {
     icon: Factory,
     title: "Own manufacturing",
-    text: "Our SBI factory produces doors and components to exacting standards. No middlemen means better quality control and sharper pricing for you.",
+    text: "Explore SBI door systems alongside automation and components from established manufacturers.",
   },
   {
     icon: FileCheck,
-    title: "Full compliance pack",
-    text: "Every product ships with Declaration of Performance, UKCA marking, and technical documentation. No chasing paperwork — it's all there.",
+    title: "Documentation",
+    text: "Request the documents for your exact model and installation before ordering.",
   },
   {
     icon: Clock,
-    title: "Same-day dispatch",
-    text: "Order before 2pm and we ship same day. Most of the UK receives next working day. Because your customer is waiting.",
+    title: "Delivery enquiries",
+    text: "Share your postcode and required date so the team can confirm availability and delivery options.",
   },
   {
     icon: Percent,
     title: "Trade pricing",
-    text: "Qualified trade accounts unlock tiered pricing that improves with volume. The more you buy, the better your margins.",
+    text: "Trade applications are reviewed individually. Pricing and order terms are confirmed with your quotation.",
   },
   {
     icon: Headset,
     title: "Technical support",
-    text: "Stuck on a job? Our team knows these products inside out. Call us and speak to someone who's actually installed them.",
+    text: "Send the model reference, installation details and your question for a product-specific response.",
   },
   {
     icon: RefreshCcw,
-    title: "Hassle-free returns",
-    text: "Ordered the wrong part? It happens. Return unused stock within 30 days for a full refund. No questions, no drama.",
+    title: "Returns enquiries",
+    text: "Contact the team with your order reference before returning an item. The applicable terms will be confirmed.",
   },
 ];
 
@@ -86,20 +86,19 @@ export default function Home() {
     <main>
       {/* Hero */}
       <section className="border-b border-line bg-white">
-        <div className="mx-auto grid max-w-[1280px] items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-32">
+        <div className="mx-auto grid max-w-[1280px] items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-20">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">
               Trade &amp; retail garage door supplies
             </p>
             <h1 className="mt-4 text-h1 text-ink lg:text-display">
-              The parts you need.
+              Door components.
               <br />
-              Delivered tomorrow.
+              Clearly specified.
             </h1>
             <p className="mt-5 max-w-md text-lg text-steel">
               UK supplier of garage door motors, controls, and automation.
-              Trade accounts available with exclusive pricing and next-day
-              delivery.
+              Compare the details and request a quote for your installation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -116,19 +115,6 @@ export default function Home() {
                 Open trade account
               </Link>
             </div>
-            <dl className="mt-12 flex gap-8 border-t border-line pt-8">
-              {[
-                { value: "500+", label: "Trade customers" },
-                { value: "95%", label: "In-stock rate" },
-                { value: "24hr", label: "Delivery" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <dt className="sr-only">{stat.label}</dt>
-                  <dd className="font-heading text-h2 font-semibold text-ink">{stat.value}</dd>
-                  <dd className="mt-0.5 text-sm text-steel">{stat.label}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
           <div className="relative overflow-hidden rounded-lg border border-line bg-concrete">
             <Image
@@ -140,12 +126,6 @@ export default function Home() {
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="h-full w-full object-cover"
             />
-            <p className="absolute left-4 top-4 rounded-sm border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink">
-              UKCA certified
-            </p>
-            <p className="absolute bottom-4 right-4 rounded-sm bg-ink px-3 py-1.5 text-xs font-medium text-white">
-              Next-day delivery
-            </p>
           </div>
         </div>
       </section>
@@ -168,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* Categories */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-20">
         <div className="mx-auto max-w-[1280px] px-6">
           <Reveal className="mx-auto max-w-xl text-center">
             <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">
@@ -188,13 +168,13 @@ export default function Home() {
                   className="group flex h-full flex-col rounded-md border border-line bg-white transition-colors duration-150 hover:border-ink"
                 >
                   <div className="relative aspect-4/3 overflow-hidden rounded-t-md bg-concrete">
-                    <Image
+                    {cat.image ? <Image
                       src={cat.image}
                       alt={cat.name}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover"
-                    />
+                      className="object-contain p-6"
+                    /> : <div className="flex h-full items-center justify-center p-6 text-h2 text-steel">{cat.name}</div>}
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="text-h3 text-ink">{cat.name}</h3>
@@ -220,24 +200,22 @@ export default function Home() {
       </section>
 
       {/* Why us */}
-      <section className="border-y border-line bg-concrete py-20 lg:py-32">
+      <section className="border-y border-line bg-concrete py-20 lg:py-20">
         <div className="mx-auto max-w-[1280px] px-6">
           <Reveal className="max-w-2xl">
             <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">
               Why choose HWSystem
             </p>
             <h2 className="mt-3 text-h1 text-ink">
-              Built for professionals who demand more
+              Find the right part for the job
             </h2>
             <p className="mt-4 text-steel">
-              We&apos;re not just another supplier. With our own factory in Europe
-              and decades of industry experience, we deliver quality parts at
-              prices the competition can&apos;t match.
+              Start with the model reference, check the specifications, and confirm the details with our team.
             </p>
           </Reveal>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {WHY_ITEMS.map((item) => (
-              <li key={item.title} className="rounded-md border border-line bg-white p-6">
+              <li key={item.title} className="border-t border-line py-6">
                 <span className="flex size-11 items-center justify-center rounded-md border border-line bg-concrete">
                   <item.icon aria-hidden className="size-5 text-ink" strokeWidth={1.5} />
                 </span>
@@ -250,7 +228,7 @@ export default function Home() {
       </section>
 
       {/* Doors CTA */}
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-20">
         <div className="mx-auto grid max-w-[1280px] items-center gap-12 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="relative overflow-hidden rounded-lg border border-line">
@@ -262,10 +240,7 @@ export default function Home() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="h-full w-full object-cover"
               />
-              <p className="absolute left-4 top-4 rounded-sm border border-line bg-white px-3 py-1.5 text-xs font-medium text-ink">
-                EN 13241 certified
-              </p>
-            </div>
+              </div>
           </Reveal>
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.08em] text-steel">
@@ -274,15 +249,14 @@ export default function Home() {
             <h2 className="mt-3 text-h1 text-ink">Need the whole door?</h2>
             <p className="mt-4 max-w-md text-steel">
               Our SBI range includes complete sectional and roller doors for
-              residential and commercial applications. Manufactured in Europe
-              to EN 13241 standards.
+              residential and commercial applications. Available by quotation for trade accounts, with a minimum order of five doors.
             </p>
             <ul className="mt-6 grid max-w-md gap-3 sm:grid-cols-2">
               {[
                 "Custom sizes available",
                 "Choice of finishes and colours",
-                "Full installation support",
-                "Extended warranty options",
+                "Installation requirements reviewed",
+                "Model-specific warranty information",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-sm text-ink">
                   <CheckCircle2 aria-hidden className="size-4 shrink-0 text-success" strokeWidth={1.5} />

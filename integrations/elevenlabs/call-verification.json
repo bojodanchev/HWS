@@ -1,0 +1,24 @@
+{
+  "ownerConfirmedWorking": true,
+  "checkedAt": "2026-09-20T21:09:56.259484+00:00",
+  "conversations": [
+    {
+      "conversation_id": "conv_5401m30ac7atf23srw8ddm2z34dj",
+      "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+      "status": "done",
+      "start_time_unix_secs": 1789938507,
+      "call_duration_secs": 5,
+      "message_count": 1,
+      "call_successful": "success",
+      "conversation_initiation_source": "sip_trunk"
+    }
+  ],
+  "callReadback": {
+    "status": "done",
+    "agent_id": "agent_2801m309e67weanb0ky1gd5414zk",
+    "durationSeconds": 5,
+    "calledAgentNumber": "+442045774094",
+    "direction": "inbound",
+    "terminationReason": "Client disconnected: 1000"
+  }
+}
