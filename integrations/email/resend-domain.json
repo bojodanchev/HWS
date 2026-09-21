@@ -1,0 +1,46 @@
+{
+  "object": "domain",
+  "id": "018f3193-e835-4602-aaec-78aa3aad36ac",
+  "name": "notify.hwsystem.co.uk",
+  "created_at": "2026-09-21 00:01:56.120466+00",
+  "status": "not_started",
+  "capabilities": {
+    "sending": "enabled",
+    "receiving": "disabled"
+  },
+  "records": [
+    {
+      "record": "DKIM",
+      "name": "resend._domainkey.notify",
+      "value": "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/bWjD3By3mj6xr6W9+e2tKowt1ElXTSr7FrgMhWLV2+ldlj5MnAB+QsIVFbd5+6zWZ2lrFbG9Qo0wKvfZViY5jV+RAryudelxCNP/6GIz0Mry+/MxS2Rez96kkbN9X5K5gSNcDgDv77c6YlDWJo3NCiNVnclsnuPNjvu+Bwz4PQIDAQAB",
+      "type": "TXT",
+      "status": "not_started",
+      "ttl": "Auto"
+    },
+    {
+      "record": "SPF",
+      "name": "send.notify",
+      "type": "MX",
+      "ttl": "Auto",
+      "status": "not_started",
+      "value": "10 feedback-smtp.eu-west-1.amazonses.com"
+    },
+    {
+      "record": "SPF",
+      "name": "send.notify",
+      "value": "v=spf1 include:amazonses.com ~all",
+      "type": "TXT",
+      "ttl": "Auto",
+      "status": "not_started"
+    },
+    {
+      "record": "SPF",
+      "name": "rsend.notify",
+      "value": "send.forge.rmta.net",
+      "type": "CNAME",
+      "status": "not_started",
+      "ttl": "Auto"
+    }
+  ],
+  "region": "eu-west-1"
+}

@@ -2,8 +2,8 @@
   "chatId": "-1003537714997",
   "topicId": 1891,
   "topicTitle": "SBI/Jidoro/HWS/Vectra",
-  "lastReadMessageId": 2937,
-  "lastSentMessageId": 2937,
+  "lastReadMessageId": 2939,
+  "lastSentMessageId": 2939,
   "automationId": "hws-alex-shon-follow-up",
   "decisions": [
     {
@@ -25,6 +25,10 @@
     {
       "messageId": 2936,
       "decision": "Warm empathetic AI persona with brief general conversation; published as Sam on Main version agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb after four passing simulations."
+    },
+    {
+      "messageId": 2938,
+      "decision": "Email enquiry notifications to codeabundance2026@gmail.com."
     }
   ],
   "pending": [
@@ -49,17 +53,20 @@
       "askedAtMessageId": 2932
     },
     {
-      "key": "exact_lead_notification_destination",
-      "askedAtMessageId": 2935,
-      "remindedAtMessageId": 2937
+      "key": "resend_sending_domain_dns_verification",
+      "askedAtMessageId": 2939,
+      "domainId": "018f3193-e835-4602-aaec-78aa3aad36ac",
+      "records": "integrations/email/resend-domain.json",
+      "nextAction": "Verify DNS and domain; create a sending-only key restricted to this domain and save directly as sensitive Vercel production RESEND_API_KEY without printing. Git-push release, synthetic end-to-end send, then provider delivered read-back. Do not send old real leads as tests."
     }
   ],
   "alexShonSenderId": "7932023856",
   "implementationCheckpoint": {
-    "websiteProductionCommit": "742fe8ea0644fc6a6dcbbc97b5eea39030130ec5",
+    "websiteProductionCommit": "d642d5928c3cb962560e57bed7361b3caad2b28f",
     "agentMainVersion": "agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb",
     "ringCentral": "Awaiting owner SSO sign-in in Brave. Keep Lucy route unchanged.",
-    "localWebsiteWork": "Uncommitted: nine-second/24h popup, Special order tabs, admin enquiry inbox, preview-only installation draft, category corrections and manufacturer photos. Verify and release through Git push.",
-    "imageWork": "1556 of 1637 images before representative fallback; reviewed proposals in /tmp/hws-representative-proposals.json have incorrect matches and must not be applied blindly."
+    "localWebsiteWork": "Website continuation committed and released; email notification continuation awaiting DNS and provider credential. Preview-only installation draft is ready.",
+    "imageWork": "1600/1637 image references including 44 labelled representative mappings; 37 remain missing. See audit and representative-images.csv.",
+    "installationPreview": "https://hwsystem-gdbnt5t5u-bojidars-projects-2603784f.vercel.app/installation"
   }
 }

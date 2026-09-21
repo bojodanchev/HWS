@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
 import { persistVoiceLead, validVoiceKey, voiceLeadSchema } from "@/lib/voiceLead";
+import { notifyVoiceEnquiry } from "@/lib/voiceEmail";
 
 export async function POST(request: Request) {
   if (!validVoiceKey(request.headers.get("x-hws-voice-key"), process.env.HWS_VOICE_WEBHOOK_SECRET)) {
@@ -21,8 +22,11 @@ export async function POST(request: Request) {
   const parsed = voiceLeadSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: "Confirmed contact details and consent are required" }, { status: 422 });
   try {
-    const result = await persistVoiceLead(await getDb(), parsed.data);
-    return NextResponse.json({ saved: true, ...result, nextStep: "The enquiry is saved in the HWS team's inbox. No callback time has been booked." });
+    const db = await getDb();
+    const result = await persistVoiceLead(db, parsed.data);
+    // Delivery failure must never turn a successfully stored lead into a failed save.
+    const notification = await notifyVoiceEnquiry(db, result.leadId, parsed.data).catch(() => ({ status: "failed" as const }));
+    return NextResponse.json({ saved: true, ...result, notification: notification.status, nextStep: "The enquiry is saved in the HWS team's inbox. No callback time has been booked." });
   } catch {
     // Do not log caller details or claim delivery after storage failure.
     console.error("[voice-lead] persistence failed");
