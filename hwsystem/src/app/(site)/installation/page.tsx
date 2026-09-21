@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { installationDraft as copy } from "@/content/installation";
 
 export const metadata: Metadata = { title: "Installation — draft for review", robots: { index: false, follow: false } };
 
 export default function InstallationDraftPage() {
-  // Alex-Shon requested a visual draft for team review, not publication of service promises.
-  if (process.env.NODE_ENV === "production" && process.env.VERCEL_ENV !== "preview") notFound();
+  // Alex-Shon approved the public review URL in Telegram 2942; service facts remain provisional.
   return <main>
     <p className="border-b border-line bg-concrete px-6 py-3 text-center text-sm text-steel">Draft for team review · coverage, prices, timing and service terms await confirmation.</p>
     <section className="border-b border-line bg-white">

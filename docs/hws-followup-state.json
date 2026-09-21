@@ -2,8 +2,8 @@
   "chatId": "-1003537714997",
   "topicId": 1891,
   "topicTitle": "SBI/Jidoro/HWS/Vectra",
-  "lastReadMessageId": 2939,
-  "lastSentMessageId": 2939,
+  "lastReadMessageId": 2942,
+  "lastSentMessageId": 2941,
   "automationId": "hws-alex-shon-follow-up",
   "decisions": [
     {
@@ -29,6 +29,10 @@
     {
       "messageId": 2938,
       "decision": "Email enquiry notifications to codeabundance2026@gmail.com."
+    },
+    {
+      "messageId": 2942,
+      "decision": "Publish installation draft directly at https://hwsystem.co.uk/installation because preview did not load. Retain draft/noindex and provisional-service labels until factual review."
     }
   ],
   "pending": [
@@ -62,11 +66,14 @@
   ],
   "alexShonSenderId": "7932023856",
   "implementationCheckpoint": {
-    "websiteProductionCommit": "d642d5928c3cb962560e57bed7361b3caad2b28f",
+    "websiteProductionCommit": "c74e3fd468f34e55d63a78d8a6b38a2d01efdb95",
     "agentMainVersion": "agtvrsn_8601m30kjtpqftcs7fy3rtm5sbeb",
     "ringCentral": "Awaiting owner SSO sign-in in Brave. Keep Lucy route unchanged.",
     "localWebsiteWork": "Website continuation committed and released; email notification continuation awaiting DNS and provider credential. Preview-only installation draft is ready.",
     "imageWork": "1600/1637 image references including 44 labelled representative mappings; 37 remain missing. See audit and representative-images.csv.",
-    "installationPreview": "https://hwsystem-gdbnt5t5u-bojidars-projects-2603784f.vercel.app/installation"
+    "installationPreview": "https://hwsystem-gdbnt5t5u-bojidars-projects-2603784f.vercel.app/installation",
+    "emailNotificationCodeCommit": "c74e3fd468f34e55d63a78d8a6b38a2d01efdb95",
+    "emailVerification": "Production synthetic save/replay passed with notification=unconfigured; one notification record, no email sent, synthetic lead/ticket closed. Await sender DNS.",
+    "installationPublication": "Publishing direct public review URL following Alex-Shon approval 2942."
   }
 }

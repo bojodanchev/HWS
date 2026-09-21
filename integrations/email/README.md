@@ -10,7 +10,7 @@ Add these records in the hwsystem.co.uk Lightsail DNS zone (TTL 300 or provider 
 - TXT `send.notify` → `v=spf1 include:amazonses.com ~all`
 - CNAME `rsend.notify` → `send.forge.rmta.net`
 
-After DNS is published, run `resend domains verify --id 018f3193-e835-4602-aaec-78aa3aad36ac --json` and read back verified status before enabling email. No domain verification or email delivery is claimed yet.
+After DNS is published, run `resend domains verify 018f3193-e835-4602-aaec-78aa3aad36ac --json` and read back verified status before enabling email. No domain verification or email delivery is claimed yet.
 
 ## Delivery activation and verification
 

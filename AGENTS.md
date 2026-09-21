@@ -36,7 +36,7 @@ this file.
 - Current decisions, Telegram cursor and pending blockers: [follow-up receipt](docs/hws-followup-state.json). Alex-Shon's verified sender ID is `7932023856`; exact Abundance topic is `SBI/Jidoro/HWS/Vectra`, ID 1891. Use the personal-telegram operator's `read-topic`; read back sends and avoid duplicate questions.
 - The separate ElevenLabs UK pilot uses `+442045774094`. Versioned config, tools, tests and resource IDs live in `integrations/elevenlabs/`. Preserve unrelated agents. Use a review branch for behavioral changes, poll simulations, merge, and verify live Main and the phone assignment.
 - Voice enquiries persist through `/api/voice/leads` with the workspace-secret-backed webhook; website forms fail closed on database failure. Do not claim an external notification or transfer until its destination and delivery are verified.
-- See [task review](docs/task-list-review-2026-09-21.md) for remaining commercial/identity gaps. The installation page is preview-only pending team review. Illustrative product photos require visible captions and entries in `representative-image-manifest.json`; never replace exact photography with a fallback.
+- See [task review](docs/task-list-review-2026-09-21.md) for remaining commercial/identity gaps. The installation page is a public, noindex review draft at `/installation` (Alex-Shon approved publication in message 2942); service facts still await team confirmation. Illustrative product photos require visible captions and entries in `representative-image-manifest.json`; never replace exact photography with a fallback.
 
 ## Earlier RingCentral knowledge pointers
 
