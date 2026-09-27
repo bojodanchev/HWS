@@ -43,3 +43,7 @@ next-env.d.ts
 
 # local admin database
 /data
+
+# Reproducible, content-addressed image build output
+/public/optimized/
+/src/generated/image-manifest.json

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "@/components/OptimizedImage";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { installationDraft as copy } from "@/content/installation";

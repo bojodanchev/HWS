@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/OptimizedImage";
 import Link from "next/link";
 import type { Product } from "@/types/catalog";
 import { formatGBP, formatVatRate, getPriceBreakdown, hasPublicPrice } from "@/lib/catalog";
